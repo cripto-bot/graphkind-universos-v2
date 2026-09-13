@@ -11,11 +11,11 @@ jobs:
         with: {python-version: "3.12"}
       - name: Deps
         run: pip install -q -r requirements.txt
-      - name: Rapidas: V1 (ley), V3 (T4_k), V5 (Rook), V8 (R3), V10 (hash), V11 (convergencia)
+      - name: "Rapidas: V1 (ley), V3 (T4_k), V5 (Rook), V8 (R3), V10 (hash), V11 (convergencia)"
         env:
           N_JOBS: "2"
         run: python codigo/verificaciones.py --rapido
-      - name: v2: V13 (multicapa), V14 (hipergrafos), V15 (dual), V16 (aridades)
+      - name: "v2: V13 (multicapa), V14 (hipergrafos), V15 (dual), V16 (aridades)"
         run: python codigo/verificaciones_v2.py
 
   completo:
