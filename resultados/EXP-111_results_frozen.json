@@ -1,0 +1,32 @@
+{
+  "B_exhaustivo_n4": {
+    "iotas": 528,
+    "id": {
+      "viven": 96,
+      "viven_uniformes": 96,
+      "viven_no_uniformes": 0
+    },
+    "const1": {
+      "viven": 48,
+      "viven_uniformes": 48,
+      "viven_no_uniformes": 0
+    }
+  },
+  "C_dirigido_n5": {
+    "iotas": 8160,
+    "con_testigo": 7680,
+    "sin_testigo": 480,
+    "sin_testigo_uniformes": 480,
+    "candidatas_viven_10k": 480
+  },
+  "D_afin_aleatoria_n4": {
+    "n": 10000,
+    "con_testigo": 10000
+  },
+  "esperado": {
+    "viven_f_id": 96,
+    "viven_f_const1": 48,
+    "nota": "96 = |S4|*|K| = 24*4; 48 = 24*2 (id/transp: c=0)"
+  },
+  "nota": "caracterizaci\u00f3n S\u2099\u00b7K: (\u21d0) probada estructuralmente (README); (\u21d2) verificada exhaustivo n<=4 + dirigida n=5; fuera del espacio (af\u00edn aleatoria): testigos"
+}

@@ -1,0 +1,17 @@
+== VERIFICACIONES DEL PAPER (GraphKind: universos) ==
+/home/juri/graphlang-natural/.venv/lib/python3.12/site-packages/networkx/algorithms/graph_hashing.py:211: UserWarning: The hashes produced for graphs without node or edge attributes changed in v3.5 due to a bugfix (see documentation).
+  node_labels = _init_node_labels(G, edge_attr, node_attr)
+V1 ley f(1)!=f(2) (n<=6): 34/34 OK
+V2 caracterización n=4: viven 96 (f=id) y 48 (const1) de 528: OK (96=24*4, 48=24*2)
+V3 T4_k (k-FWL ≡ (k+1)-WL): 153/153 (51 grafos x k=1,2,3): complemento-invariante OK
+V4 cascada n<=7: k=1 -> 26 pares, k=2 -> 0: OK
+V5 Rook vs Shrikhande (k-FWL): k=1 no, k=2 no, k=3 SI: OK (el 3-WL estandar NO los separa)
+V6 Z3 determinista (T4-período): lin_2_1: 6.7% | maj: 52.4% | prod1: 10.6% | sum: 11.5% | sum_closed: 15.9% | xor3: 16.6% -> NO vive: OK
+V7 R1 aleatorio (n<=5, 1096 grafos x 100 perms): T4-distribución 204/1096 (18.6%) NO vive: OK
+V8 R3: inducidas 96/528 (18.2%); uniforme ~0% (EXP-113: 0/5000): OK
+V9 búsqueda autónoma: el ciclo falla en 99.63% de las 6424 iotas no-uniformes (99.63%): OK
+V10 hash: partición 12-hex == 64-hex en 74 grafos x 17 f: OK (sin colisiones)
+V11 convergencia: partición estable == n+2 rondas en 1098 grafos x 17 f: OK
+V12 clasificación universal (n=4, constancia por grafo): {('comp', 'id'): 'dual', ('comp', 'const1'): 'dual', ('comp', 'mod2'): 'dual', ('comp_parcial', 'id'): 'local', ('comp_parcial', 'const1'): 'local', ('comp_parcial', 'mod2'): 'local'}: OK
+
+TODAS LAS VERIFICACIONES OK

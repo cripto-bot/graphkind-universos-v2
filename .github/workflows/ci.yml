@@ -1,0 +1,33 @@
+name: Verificaciones del paper
+on: [push, pull_request, workflow_dispatch]
+
+jobs:
+  rapido:
+    name: Verificaciones (rapido)
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: {python-version: "3.12"}
+      - name: Deps
+        run: pip install -q -r requirements.txt
+      - name: Rapidas: V1 (ley), V3 (T4_k), V5 (Rook), V8 (R3), V10 (hash), V11 (convergencia)
+        env:
+          N_JOBS: "2"
+        run: python codigo/verificaciones.py --rapido
+
+  completo:
+    name: Verificaciones (completo, manual)
+    if: github.event_name == 'workflow_dispatch'
+    runs-on: ubuntu-latest
+    timeout-minutes: 120
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: {python-version: "3.12"}
+      - name: Deps
+        run: pip install -q -r requirements.txt
+      - name: V1-V12 completas
+        env:
+          N_JOBS: "2"
+        run: python codigo/verificaciones.py

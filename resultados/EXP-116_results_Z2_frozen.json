@@ -1,0 +1,200 @@
+{
+  "lin_2_1": {
+    "pares": 33864,
+    "t4_periodo_pct": 100.0,
+    "t4_orbita_pct": 100.0,
+    "periodos": {
+      "1": 33864
+    },
+    "ejemplos_fallo": []
+  },
+  "maj": {
+    "pares": 33864,
+    "t4_periodo_pct": 58.6,
+    "t4_orbita_pct": 35.81,
+    "periodos": {
+      "1": 22962,
+      "2": 10902
+    },
+    "ejemplos_fallo": [
+      {
+        "n": 2,
+        "mask": 0,
+        "pG": 1,
+        "pGbar": 2,
+        "tG": 0,
+        "tGbar": 0
+      },
+      {
+        "n": 2,
+        "mask": 0,
+        "pG": 1,
+        "pGbar": 2,
+        "tG": 0,
+        "tGbar": 0
+      },
+      {
+        "n": 2,
+        "mask": 1,
+        "pG": 2,
+        "pGbar": 1,
+        "tG": 0,
+        "tGbar": 0
+      }
+    ]
+  },
+  "prod1": {
+    "pares": 33864,
+    "t4_periodo_pct": 43.27,
+    "t4_orbita_pct": 15.57,
+    "periodos": {
+      "1": 17010,
+      "2": 6450,
+      "3": 1476,
+      "4": 4464,
+      "6": 4464
+    },
+    "ejemplos_fallo": [
+      {
+        "n": 2,
+        "mask": 0,
+        "pG": 1,
+        "pGbar": 2,
+        "tG": 1,
+        "tGbar": 0
+      },
+      {
+        "n": 2,
+        "mask": 0,
+        "pG": 1,
+        "pGbar": 2,
+        "tG": 1,
+        "tGbar": 0
+      },
+      {
+        "n": 2,
+        "mask": 1,
+        "pG": 2,
+        "pGbar": 1,
+        "tG": 0,
+        "tGbar": 1
+      }
+    ]
+  },
+  "sum": {
+    "pares": 33864,
+    "t4_periodo_pct": 43.27,
+    "t4_orbita_pct": 15.57,
+    "periodos": {
+      "1": 17010,
+      "2": 6450,
+      "3": 1476,
+      "4": 4464,
+      "6": 4464
+    },
+    "ejemplos_fallo": [
+      {
+        "n": 2,
+        "mask": 0,
+        "pG": 1,
+        "pGbar": 2,
+        "tG": 1,
+        "tGbar": 0
+      },
+      {
+        "n": 2,
+        "mask": 0,
+        "pG": 1,
+        "pGbar": 2,
+        "tG": 1,
+        "tGbar": 0
+      },
+      {
+        "n": 2,
+        "mask": 1,
+        "pG": 2,
+        "pGbar": 1,
+        "tG": 0,
+        "tGbar": 1
+      }
+    ]
+  },
+  "sum_closed": {
+    "pares": 33864,
+    "t4_periodo_pct": 38.24,
+    "t4_orbita_pct": 8.97,
+    "periodos": {
+      "1": 14766,
+      "2": 3210,
+      "3": 1476,
+      "4": 7068,
+      "6": 4464,
+      "8": 2880
+    },
+    "ejemplos_fallo": [
+      {
+        "n": 3,
+        "mask": 1,
+        "pG": 1,
+        "pGbar": 4,
+        "tG": 2,
+        "tGbar": 0
+      },
+      {
+        "n": 3,
+        "mask": 1,
+        "pG": 1,
+        "pGbar": 4,
+        "tG": 2,
+        "tGbar": 0
+      },
+      {
+        "n": 3,
+        "mask": 1,
+        "pG": 1,
+        "pGbar": 2,
+        "tG": 0,
+        "tGbar": 0
+      }
+    ]
+  },
+  "xor3": {
+    "pares": 33864,
+    "t4_periodo_pct": 38.24,
+    "t4_orbita_pct": 8.97,
+    "periodos": {
+      "1": 14766,
+      "2": 3210,
+      "3": 1476,
+      "4": 7068,
+      "6": 4464,
+      "8": 2880
+    },
+    "ejemplos_fallo": [
+      {
+        "n": 3,
+        "mask": 1,
+        "pG": 1,
+        "pGbar": 4,
+        "tG": 2,
+        "tGbar": 0
+      },
+      {
+        "n": 3,
+        "mask": 1,
+        "pG": 1,
+        "pGbar": 4,
+        "tG": 2,
+        "tGbar": 0
+      },
+      {
+        "n": 3,
+        "mask": 1,
+        "pG": 1,
+        "pGbar": 2,
+        "tG": 0,
+        "tGbar": 0
+      }
+    ]
+  }
+}

@@ -1,0 +1,39 @@
+{
+  "R1": {
+    "grafos": 1096,
+    "permutaciones": 100,
+    "t4_dist_exacta": 204,
+    "t4_dist_pct": 18.61,
+    "mismo_soporte": 324,
+    "var_total_media": 0.46,
+    "control_sincrono": 1096,
+    "regulares": [
+      12,
+      24
+    ],
+    "irregulares": [
+      192,
+      1072
+    ],
+    "modal_igual_sincrono": 186
+  },
+  "R2": {
+    "n": 10,
+    "muestras": 3000,
+    "p": [
+      0.1,
+      0.3,
+      0.5
+    ],
+    "nota": "T4 en distribuci\u00f3n: el complemento mapea G(n,p) a G(n,1-p) biyectivamente y T4 es puntual (teorema): las distribuciones coinciden exactamente"
+  },
+  "R3": {
+    "medida_uniforme_afines_n4": [
+      0,
+      5000
+    ],
+    "S4K_referencia": "96/~30M",
+    "inducidas": "96/528"
+  },
+  "nota": "el invariante pas\u00f3 de objeto (partici\u00f3n/\u00f3rbita) a DISTRIBUCI\u00d3N; T4 pas\u00f3 de igualdad a teorema probabil\u00edstico"
+}

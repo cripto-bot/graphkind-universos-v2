@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>GraphKind — Universes of color refinement</title>
+<style>
+  :root{
+    --ink:#0d0d0d; --muted:#6b6b6b; --line:#e6e6e6; --bg:#ffffff;
+    --soft:#f7f7f5; --accent:#0b6b3a; --accent2:#a33; --blue:#26557a;
+    --gold:#9a7b1f;
+  }
+  @media (prefers-color-scheme: dark){
+    :root{ --ink:#f2f2f0; --muted:#9a9a9a; --line:#2a2a2a; --bg:#0e0e0e;
+           --soft:#171717; --accent:#4fbf87; --accent2:#e08585;
+           --blue:#7fb2e0; --gold:#d9bd6a; }
+  }
+  *{box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{
+    margin:0; background:var(--bg); color:var(--ink);
+    font:17px/1.65 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,
+         Helvetica,Arial,sans-serif; -webkit-font-smoothing:antialiased;
+  }
+  .wrap{max-width:780px;margin:0 auto;padding:0 24px}
+  header{padding:84px 0 44px;border-bottom:1px solid var(--line)}
+  .kicker{font-size:12.5px;letter-spacing:.16em;text-transform:uppercase;
+          color:var(--muted);margin-bottom:22px}
+  h1{font-family:Georgia,"Times New Roman",serif;font-weight:500;
+     font-size:46px;line-height:1.1;letter-spacing:-.015em;margin:0 0 20px}
+  h1 em{font-style:italic}
+  .lede{font-size:20px;color:var(--muted);margin:0 0 30px;max-width:660px}
+  .cta{display:flex;gap:12px;flex-wrap:wrap}
+  .btn{display:inline-block;padding:11px 19px;border:1px solid var(--ink);
+       border-radius:999px;color:var(--ink);text-decoration:none;font-size:15px;
+       transition:transform .12s ease}
+  .btn:hover{transform:translateY(-1px)}
+  .btn.primary{background:var(--ink);color:var(--bg)}
+  .meta{margin-top:28px;font-size:14px;color:var(--muted);
+        display:flex;gap:22px;flex-wrap:wrap}
+  .meta b{color:var(--ink);font-weight:600}
+  section{padding:56px 0;border-bottom:1px solid var(--line)}
+  h2{font-family:Georgia,serif;font-weight:500;font-size:29px;margin:0 0 18px}
+  h3{font-size:15px;letter-spacing:.06em;text-transform:uppercase;
+     color:var(--muted);margin:38px 0 12px;font-weight:600}
+  p{margin:0 0 16px}
+  .formula{background:var(--soft);border:1px solid var(--line);
+           border-radius:16px;padding:28px 26px;margin:26px 0;
+           font-family:ui-monospace,SFMono-Regular,Menlo,monospace;
+           font-size:14.5px;line-height:1.9;overflow-x:auto}
+  .formula .big{font-size:17.5px;line-height:1.7}
+  .formula .muted{color:var(--muted);margin-top:10px}
+  table{width:100%;border-collapse:collapse;font-size:15px;margin:20px 0}
+  th,td{text-align:left;padding:10px;border-bottom:1px solid var(--line);
+        vertical-align:top}
+  th{color:var(--muted);font-weight:500;font-size:12.5px;
+     letter-spacing:.06em;text-transform:uppercase}
+  td.num{font-family:ui-monospace,monospace;white-space:nowrap}
+  figure{margin:32px 0}
+  figcaption{font-size:14px;color:var(--muted);margin-top:12px}
+  .grid{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin:26px 0}
+  .card{border:1px solid var(--line);border-radius:16px;padding:20px}
+  .card .t{font-family:Georgia,serif;font-size:19px;margin-bottom:4px}
+  .card .s{font-size:13.5px;color:var(--muted);min-height:38px}
+  .card .v{font-family:ui-monospace,monospace;font-size:13px;margin-top:12px}
+  .ok{color:var(--accent)} .no{color:var(--accent2)}
+  .pill{display:inline-block;font-size:11.5px;letter-spacing:.06em;
+        text-transform:uppercase;border:1px solid var(--line);
+        border-radius:999px;padding:3px 10px;color:var(--muted)}
+  code{font-family:ui-monospace,monospace;font-size:14px;
+       background:var(--soft);padding:2px 6px;border-radius:6px}
+  pre{background:var(--soft);border:1px solid var(--line);border-radius:14px;
+      padding:18px 20px;overflow-x:auto;font-size:14px;line-height:1.7}
+  .timeline{border-left:2px solid var(--line);margin:24px 0 24px 8px;
+            padding-left:22px}
+  .timeline .ev{position:relative;margin-bottom:18px}
+  .timeline .ev:before{content:"";position:absolute;left:-29px;top:7px;
+    width:11px;height:11px;border-radius:50%;background:var(--accent2)}
+  .timeline .ev.fix:before{background:var(--accent)}
+  .timeline .ev b{display:block}
+  footer{padding:52px 0 88px;font-size:14px;color:var(--muted)}
+  a{color:inherit}
+  @media(max-width:600px){h1{font-size:33px}.grid{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap">
+    <div class="kicker">GraphKind · private preprint · 2026</div>
+    <h1>On the universes of<br><em>color refinement</em></h1>
+    <p class="lede">
+      When does a structural invariant survive a change of observation:
+      the classification of the operators that preserve the color
+      refinement profile under involution — and its proof.
+    </p>
+    <div class="cta">
+      <a class="btn primary" href="paper/PAPER.md">Read the paper</a>
+      <a class="btn" href="paper/PRUEBA-CARACTERIZACION.md">The proof</a>
+      <a class="btn" href="reproduce.sh">Reproduce</a>
+      <a class="btn" href="index.html">ES</a>
+    </div>
+    <div class="meta">
+      <span><b>2,131,019</b> graphs (T4)</span>
+      <span><b>34/34 · 102/102</b> the law</span>
+      <span><b>96</b> exact in n=4</span>
+      <span><b>CI</b> green</span>
+    </div>
+  </div>
+</header>
+
+<section>
+  <div class="wrap">
+    <h2>The problem</h2>
+    <p>
+      The <strong>color refinement</strong> (1-WL) summarizes a graph into a
+      partition of its vertices. Which operations leave that partition
+      intact?
+    </p>
+    <figure>
+      <svg viewBox="0 0 720 240" width="100%" role="img"
+           aria-label="G and its complement share the same partition">
+        <g stroke="var(--line)" stroke-width="2">
+          <!-- G: P4 + aislado -->
+          <line x1="60" y1="90" x2="120" y2="90"/>
+          <line x1="120" y1="90" x2="180" y2="90"/>
+          <line x1="180" y1="90" x2="240" y2="90"/>
+        </g>
+        <g>
+          <circle cx="60" cy="90" r="16" fill="var(--gold)"/>
+          <circle cx="120" cy="90" r="16" fill="var(--blue)"/>
+          <circle cx="180" cy="90" r="16" fill="var(--blue)"/>
+          <circle cx="240" cy="90" r="16" fill="var(--gold)"/>
+          <circle cx="150" cy="180" r="16" fill="var(--accent2)"/>
+        </g>
+        <text x="150" y="222" text-anchor="middle" font-size="15"
+              fill="var(--muted)">G</text>
+        <!-- flecha -->
+        <text x="300" y="98" font-size="26" fill="var(--muted)">⟶</text>
+        <text x="300" y="126" font-size="12.5" fill="var(--muted)"
+              text-anchor="middle">complemento</text>
+        <!-- Gbar: complemento -->
+        <g stroke="var(--line)" stroke-width="2">
+          <line x1="400" y1="90" x2="460" y2="90"/>
+          <line x1="400" y1="90" x2="520" y2="90"/>
+          <line x1="400" y1="90" x2="580" y2="90"/>
+          <line x1="460" y1="90" x2="580" y2="90"/>
+          <line x1="520" y1="90" x2="580" y2="90"/>
+          <line x1="400" y1="90" x2="490" y2="180"/>
+          <line x1="460" y1="90" x2="490" y2="180"/>
+          <line x1="520" y1="90" x2="490" y2="180"/>
+          <line x1="580" y1="90" x2="490" y2="180"/>
+        </g>
+        <g>
+          <circle cx="400" cy="90" r="16" fill="var(--gold)"/>
+          <circle cx="460" cy="90" r="16" fill="var(--blue)"/>
+          <circle cx="520" cy="90" r="16" fill="var(--blue)"/>
+          <circle cx="580" cy="90" r="16" fill="var(--gold)"/>
+          <circle cx="490" cy="180" r="16" fill="var(--accent2)"/>
+        </g>
+        <text x="490" y="222" text-anchor="middle" font-size="15"
+              fill="var(--muted)">Ḡ</text>
+        <text x="660" y="86" font-size="15" fill="var(--accent)"
+              font-family="ui-monospace,monospace">I(G)=I(Ḡ)</text>
+      </svg>
+      <figcaption>
+        T4: the color refinement of a graph and of its complement induce
+        <em>the same partition</em> (same colors = same classes).
+        Discovered by the engine, verified on all graphs of n≤7 and with
+        a written proof.
+      </figcaption>
+    </figure>
+    <p>
+      The next question: if the observer compresses neighborhood counts
+      with a function <code>f</code> and the operation is an involution
+      <code>ι</code>, in which universes <code>(f, ι)</code> does T4
+      still hold?
+    </p>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <h2>The result</h2>
+    <div class="formula">
+      <div class="big">T4(ι, f) VIVE &nbsp;⟺&nbsp; ι ∈ Sₙ·K &nbsp; y &nbsp;
+      (ι cambia el par ⟹ f(1) ≠ f(2))</div>
+      <div class="muted">K = {id, comp_dir, transp, comp_transp} ≅ Z₂×Z₂</div>
+    </div>
+    <figure>
+      <svg viewBox="0 0 720 210" width="100%" role="img"
+           aria-label="The Klein group: the two halves">
+        <g font-size="14" font-family="ui-monospace,monospace">
+          <rect x="20" y="30" width="150" height="64" rx="12"
+                fill="var(--soft)" stroke="var(--line)"/>
+          <text x="95" y="58" text-anchor="middle" fill="var(--ink)">id</text>
+          <text x="95" y="78" text-anchor="middle" fill="var(--muted)"
+                font-size="11.5">swap no · comp no</text>
+          <rect x="190" y="30" width="150" height="64" rx="12"
+                fill="var(--soft)" stroke="var(--line)"/>
+          <text x="265" y="58" text-anchor="middle" fill="var(--ink)">transp</text>
+          <text x="265" y="78" text-anchor="middle" fill="var(--muted)"
+                font-size="11.5">swap yes · comp no</text>
+          <rect x="360" y="30" width="150" height="64" rx="12"
+                fill="var(--soft)" stroke="var(--line)"/>
+          <text x="435" y="58" text-anchor="middle" fill="var(--ink)">comp_dir</text>
+          <text x="435" y="78" text-anchor="middle" fill="var(--muted)"
+                font-size="11.5">swap no · comp yes</text>
+          <rect x="530" y="30" width="170" height="64" rx="12"
+                fill="var(--soft)" stroke="var(--line)"/>
+          <text x="615" y="58" text-anchor="middle" fill="var(--ink)">comp_transp</text>
+          <text x="615" y="78" text-anchor="middle" fill="var(--muted)"
+                font-size="11.5">swap yes · comp yes</text>
+        </g>
+        <text x="180" y="140" text-anchor="middle" font-size="13"
+              fill="var(--accent)">hold for every f</text>
+        <line x1="20" y1="118" x2="340" y2="118" stroke="var(--accent)"
+              stroke-width="2"/>
+        <text x="530" y="140" text-anchor="middle" font-size="13"
+              fill="var(--blue)">hold ⟺ f(1) ≠ f(2)</text>
+        <line x1="360" y1="118" x2="700" y2="118" stroke="var(--blue)"
+              stroke-width="2"/>
+        <text x="360" y="180" font-size="13.5" fill="var(--muted)">
+          Uniformity binds the two halves: outside K, everything dies
+          (even if it preserves the pair).
+        </text>
+      </svg>
+      <figcaption>
+        The Klein group: two halves, two conditions. The operation must be
+        global (relabel × K); if it changes the connected pair, the
+        compression must distinguish 1 from 2.
+      </figcaption>
+    </figure>
+    <h3>The particular case: the count law</h3>
+    <div class="formula">T4 VIVE &nbsp;⟺&nbsp; f(1) ≠ f(2)</div>
+    <p>
+      In the complement, a vertex with <strong>1</strong> neighbor in a
+      class gets <code>|c|−1</code> (which may be
+      <strong>2</strong>): if <code>f</code> collapses 1 and 2, the
+      duality dies. What <code>f</code> does with 3, 4, 5… is irrelevant.
+    </p>
+    <table>
+      <tr><th>result</th><th>verification</th></tr>
+      <tr><td>The law <code>f(1)≠f(2)</code></td>
+          <td class="num">34/34 · 102/102</td></tr>
+      <tr><td>Characterization, n=4 exhaustive</td>
+          <td class="num">96 exact (24·4), zero outside</td></tr>
+      <tr><td>T4 under the k-FWL hierarchy (≡ (k+1)-WL)</td>
+          <td class="num">51/51 en k=1,2,3</td></tr>
+      <tr><td>Observer cascade (n≤7, 781,875 pairs)</td>
+          <td class="num">26 → 0 (k=1 → k=2)</td></tr>
+      <tr><td>Real data</td>
+          <td class="num">molecules 100/100 · CST 94/94</td></tr>
+    </table>
+    <figure>
+      <svg viewBox="0 0 720 260" width="100%" role="img"
+           aria-label="Observer cascade">
+        <line x1="80" y1="210" x2="690" y2="210" stroke="var(--line)"/>
+        <line x1="80" y1="20" x2="80" y2="210" stroke="var(--line)"/>
+        <text x="60" y="40" text-anchor="end" font-size="12"
+              fill="var(--muted)">26</text>
+        <text x="60" y="214" text-anchor="end" font-size="12"
+              fill="var(--muted)">0</text>
+        <text x="120" y="232" font-size="13" fill="var(--muted)">k = 1</text>
+        <text x="380" y="232" font-size="13" fill="var(--muted)">k = 2</text>
+        <text x="630" y="232" font-size="13" fill="var(--muted)">k = 3</text>
+        <polyline points="120,40 380,205 640,205"
+                  fill="none" stroke="var(--accent)" stroke-width="3"/>
+        <circle cx="120" cy="40" r="7" fill="var(--accent2)"/>
+        <circle cx="380" cy="205" r="7" fill="var(--accent)"/>
+        <circle cx="640" cy="205" r="7" fill="var(--accent)"/>
+        <text x="140" y="34" font-size="14" fill="var(--ink)">
+          26 1-WL-equivalent pairs</text>
+        <text x="400" y="198" font-size="14" fill="var(--ink)">
+          0: 2-WL resolves them all</text>
+        <text x="420" y="60" font-size="13" fill="var(--muted)">
+          C6 vs 2·C3: k*=2</text>
+        <text x="420" y="80" font-size="13" fill="var(--muted)">
+          Rook vs Shrikhande: k*=3</text>
+      </svg>
+      <figcaption>
+        The cascade: apparent randomness (unseparated pairs) drops to
+        zero as the observer rises. In n≤7, k*=2; the canonical pairs
+        need k=2 and k=3.
+      </figcaption>
+    </figure>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <h2>The type change</h2>
+    <p>
+      Changing the <em>type</em> of the invariant, T4 changes mathematical
+      category — and each row is a different kind of theorem:
+    </p>
+    <div class="grid">
+      <div class="card">
+        <div class="t">Standard</div>
+        <div class="s">invariant: partition · equality</div>
+        <div class="v ok">T4 holds (proved)</div>
+      </div>
+      <div class="card">
+        <div class="t">Deterministic Z₃</div>
+        <div class="s">invariant: orbit · periods</div>
+        <div class="v no">T4 dies (max 52.4%)</div>
+      </div>
+      <div class="card">
+        <div class="t">Random (process)</div>
+        <div class="s">invariant: distribution · async WL</div>
+        <div class="v no">T4 dies (18.6%)</div>
+      </div>
+      <div class="card">
+        <div class="t">Random (object)</div>
+        <div class="s">G(n,p) vs G(n,1−p)</div>
+        <div class="v ok">T4 holds (almost surely)</div>
+      </div>
+      <div class="card">
+        <div class="t">k-FWL hierarchy</div>
+        <div class="s">stronger observers</div>
+        <div class="v ok">T4_k 51/51</div>
+      </div>
+      <div class="card">
+        <div class="t">Random involutions</div>
+        <div class="s">invariant: ensemble measure</div>
+        <div class="v">threshold = measure</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <h2>How it was found</h2>
+    <p>
+      The engine <strong>proposed and verified T4</strong> (blind
+      conjecture bank, 68/68), massive verification sustained it and a
+      written proof closed the standard case. Then the lab
+      parameterized the universe and let <strong>the data choose the
+      law</strong>: two human hypotheses were refuted before reaching
+      the characterization.
+    </p>
+    <p>
+      An <strong>autonomous construction search</strong> found the best
+      valid witness (<code>cycle</code>, 99.63%) — better than the human
+      construction. And the errors were recorded:
+    </p>
+    <div class="timeline">
+      <div class="ev fix"><b>1. Multiset of sizes</b>
+        weak invariant (C6 and 2·C3 share it) → colors.</div>
+      <div class="ev fix"><b>2. Comparing colors across graphs</b>
+        they never match → compare partitions.</div>
+      <div class="ev fix"><b>3. Indices in the initial coloring</b>
+        trivialized everything → degrees + adjacencies.</div>
+      <div class="ev fix"><b>4. Separated multisets</b>
+        weak k-WL → correlated pairs (= k-FWL).</div>
+      <div class="ev fix"><b>5. The wrongly built Shrikhande</b>
+        it was the Rook twice → caught by <code>is_isomorphic</code>.</div>
+    </div>
+    <p>
+      Five own bugs caught by controls, none announced before verifying.
+      <strong>The method is part of the result.</strong>
+    </p>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <h2>Reproducibility</h2>
+    <p>
+      The whole paper reproduces with one command. Every verification
+      carries an <strong>assert</strong> with the exact number: if
+      anything does not match, it fails.
+    </p>
+    <pre>git clone https://github.com/cripto-bot/graphkind-universos
+cd graphkind-universos
+python3 -m venv .venv &amp;&amp; .venv/bin/pip install -r requirements.txt
+bash reproduce.sh            # V1–V9 (~10-15 min)
+bash reproduce.sh --rapido   # V1, V3, V5, V8 (~3 min)</pre>
+    <p>
+      <span class="pill">status</span>
+      <strong>(⇐) proved</strong> · <strong>(⇒) verified</strong>
+      (n≤4 exhaustive, n=5 targeted, real data) ·
+      ∀n argument and external review: <em>open, declared</em>.
+    </p>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    GraphKind · private preprint — © 2026 Juri (cripto-bot).
+    Do not distribute without authorization. This document claims no
+    priority over open problems: it reports a verified characterization
+    in a bounded domain, with its limits declared.
+  </div>
+</footer>
+
+</body>
+</html>

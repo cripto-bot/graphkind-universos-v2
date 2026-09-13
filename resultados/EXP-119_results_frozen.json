@@ -1,0 +1,19 @@
+{
+  "corpus": 1251,
+  "pares_totales": 781875,
+  "cascada": {
+    "k1": 26,
+    "k2": 0,
+    "k3": 0
+  },
+  "porcentajes": {
+    "k1": 0.0033,
+    "k2": 0.0,
+    "k3": 0.0
+  },
+  "pendiente_b": null,
+  "reduccion_por_nivel": null,
+  "rook_shrikhande_k4": "inabordable (32^4 tuplas): limite declarado",
+  "restantes_k3": [],
+  "nota": "cascada jer\u00e1rquica: solo se testean los pares no separados por el nivel anterior; n<=7 (atlas completo)"
+}

@@ -1,0 +1,46 @@
+{
+  "universo": "COUNT",
+  "conteo": {
+    "f": "COUNT",
+    "f1": 1,
+    "f2": 2,
+    "distingue_1_2": true
+  },
+  "involuciones": [
+    {
+      "nombre": "comp",
+      "clase": "dual",
+      "t4": true
+    },
+    {
+      "nombre": "comp_parcial",
+      "clase": "local",
+      "t4": false
+    },
+    {
+      "nombre": "flip_v0",
+      "clase": "local",
+      "t4": false
+    },
+    {
+      "nombre": "swap01",
+      "clase": "trivial",
+      "t4": true
+    },
+    {
+      "nombre": "reverse",
+      "clase": "trivial",
+      "t4": true
+    },
+    {
+      "nombre": "comp_rev",
+      "clase": "dual",
+      "t4": true
+    }
+  ],
+  "ley": "T4 <=> trivial o (dual y f(1)!=f(2))",
+  "evidencia": {
+    "n_max": 6,
+    "fuente": "EXP-102/103/104/105"
+  }
+}

@@ -1,0 +1,296 @@
+{
+  "tabla": {
+    "id x T-M": {
+      "T4": "VIVE",
+      "violaciones": 0,
+      "compatible": true,
+      "n": 6,
+      "testigo": null
+    },
+    "id x T+M mod2": {
+      "T4": "VIVE",
+      "violaciones": 0,
+      "compatible": true,
+      "n": 6,
+      "testigo": null
+    },
+    "mod2 x T-M": {
+      "T4": "VIVE",
+      "violaciones": 0,
+      "compatible": false,
+      "n": 6,
+      "testigo": null
+    },
+    "mod2 x T+M mod2": {
+      "T4": "VIVE",
+      "violaciones": 0,
+      "compatible": true,
+      "n": 6,
+      "testigo": null
+    },
+    "mod3 x T-M": {
+      "T4": "VIVE",
+      "violaciones": 0,
+      "compatible": false,
+      "n": 6,
+      "testigo": null
+    },
+    "mod3 x T+M mod2": {
+      "T4": "VIVE",
+      "violaciones": 0,
+      "compatible": false,
+      "n": 6,
+      "testigo": null
+    },
+    "mod4 x T-M": {
+      "T4": "VIVE",
+      "violaciones": 0,
+      "compatible": false,
+      "n": 6,
+      "testigo": null
+    },
+    "mod4 x T+M mod2": {
+      "T4": "VIVE",
+      "violaciones": 0,
+      "compatible": true,
+      "n": 6,
+      "testigo": null
+    },
+    "mod5 x T-M": {
+      "T4": "VIVE",
+      "violaciones": 0,
+      "compatible": true,
+      "n": 6,
+      "testigo": null
+    },
+    "mod5 x T+M mod2": {
+      "T4": "VIVE",
+      "violaciones": 0,
+      "compatible": true,
+      "n": 6,
+      "testigo": null
+    },
+    "umbral1 x T-M": {
+      "T4": "MUERE",
+      "violaciones": 1080,
+      "compatible": false,
+      "n": 6,
+      "testigo": {
+        "n": 6,
+        "mask": 657
+      }
+    },
+    "umbral1 x T+M mod2": {
+      "T4": "MUERE",
+      "violaciones": 1080,
+      "compatible": false,
+      "n": 6,
+      "testigo": {
+        "n": 6,
+        "mask": 657
+      }
+    },
+    "umbral2 x T-M": {
+      "T4": "VIVE",
+      "violaciones": 0,
+      "compatible": false,
+      "n": 6,
+      "testigo": null
+    },
+    "umbral2 x T+M mod2": {
+      "T4": "VIVE",
+      "violaciones": 0,
+      "compatible": false,
+      "n": 6,
+      "testigo": null
+    },
+    "umbral3 x T-M": {
+      "T4": "MUERE",
+      "violaciones": 720,
+      "compatible": false,
+      "n": 6,
+      "testigo": {
+        "n": 6,
+        "mask": 692
+      }
+    },
+    "umbral3 x T+M mod2": {
+      "T4": "MUERE",
+      "violaciones": 720,
+      "compatible": false,
+      "n": 6,
+      "testigo": {
+        "n": 6,
+        "mask": 692
+      }
+    },
+    "umbral4 x T-M": {
+      "T4": "MUERE",
+      "violaciones": 1080,
+      "compatible": false,
+      "n": 6,
+      "testigo": {
+        "n": 6,
+        "mask": 657
+      }
+    },
+    "umbral4 x T+M mod2": {
+      "T4": "MUERE",
+      "violaciones": 1080,
+      "compatible": false,
+      "n": 6,
+      "testigo": {
+        "n": 6,
+        "mask": 657
+      }
+    },
+    "trunc1 x T-M": {
+      "T4": "MUERE",
+      "violaciones": 1080,
+      "compatible": false,
+      "n": 6,
+      "testigo": {
+        "n": 6,
+        "mask": 657
+      }
+    },
+    "trunc1 x T+M mod2": {
+      "T4": "MUERE",
+      "violaciones": 1080,
+      "compatible": false,
+      "n": 6,
+      "testigo": {
+        "n": 6,
+        "mask": 657
+      }
+    },
+    "trunc2 x T-M": {
+      "T4": "VIVE",
+      "violaciones": 0,
+      "compatible": false,
+      "n": 6,
+      "testigo": null
+    },
+    "trunc2 x T+M mod2": {
+      "T4": "VIVE",
+      "violaciones": 0,
+      "compatible": false,
+      "n": 6,
+      "testigo": null
+    },
+    "trunc3 x T-M": {
+      "T4": "VIVE",
+      "violaciones": 0,
+      "compatible": false,
+      "n": 6,
+      "testigo": null
+    },
+    "trunc3 x T+M mod2": {
+      "T4": "VIVE",
+      "violaciones": 0,
+      "compatible": false,
+      "n": 6,
+      "testigo": null
+    },
+    "log2 x T-M": {
+      "T4": "VIVE",
+      "violaciones": 0,
+      "compatible": false,
+      "n": 6,
+      "testigo": null
+    },
+    "log2 x T+M mod2": {
+      "T4": "VIVE",
+      "violaciones": 0,
+      "compatible": false,
+      "n": 6,
+      "testigo": null
+    },
+    "cuadrado x T-M": {
+      "T4": "VIVE",
+      "violaciones": 0,
+      "compatible": true,
+      "n": 6,
+      "testigo": null
+    },
+    "cuadrado x T+M mod2": {
+      "T4": "VIVE",
+      "violaciones": 0,
+      "compatible": true,
+      "n": 6,
+      "testigo": null
+    },
+    "cubo x T-M": {
+      "T4": "VIVE",
+      "violaciones": 0,
+      "compatible": true,
+      "n": 6,
+      "testigo": null
+    },
+    "cubo x T+M mod2": {
+      "T4": "VIVE",
+      "violaciones": 0,
+      "compatible": true,
+      "n": 6,
+      "testigo": null
+    },
+    "raiz x T-M": {
+      "T4": "MUERE",
+      "violaciones": 1080,
+      "compatible": false,
+      "n": 6,
+      "testigo": {
+        "n": 6,
+        "mask": 657
+      }
+    },
+    "raiz x T+M mod2": {
+      "T4": "MUERE",
+      "violaciones": 1080,
+      "compatible": false,
+      "n": 6,
+      "testigo": {
+        "n": 6,
+        "mask": 657
+      }
+    },
+    "const1 x T-M": {
+      "T4": "MUERE",
+      "violaciones": 1080,
+      "compatible": false,
+      "n": 6,
+      "testigo": {
+        "n": 6,
+        "mask": 657
+      }
+    },
+    "const1 x T+M mod2": {
+      "T4": "MUERE",
+      "violaciones": 1080,
+      "compatible": false,
+      "n": 6,
+      "testigo": {
+        "n": 6,
+        "mask": 657
+      }
+    }
+  },
+  "ley_refinada_refutada": "T4 <=> compatibilidad: FALSA (False)",
+  "ley_emergida": "T4 VIVE <=> f(1) != f(2) (distinguir el conteo 1 del conteo 2 es la informacion critica)",
+  "ley_emergida_verificada": true,
+  "transiciones": {
+    "umbral1 x T-M": 6,
+    "umbral1 x T+M mod2": 6,
+    "umbral3 x T-M": 6,
+    "umbral3 x T+M mod2": 6,
+    "umbral4 x T-M": 6,
+    "umbral4 x T+M mod2": 6,
+    "trunc1 x T-M": 6,
+    "trunc1 x T+M mod2": 6,
+    "raiz x T-M": 6,
+    "raiz x T+M mod2": 6,
+    "const1 x T-M": 6,
+    "const1 x T+M mod2": 6
+  },
+  "nota": "barrido de 17 f x 2 involuciones; exhaustivo n<=6; la compatibilidad medida sobre multisets (2 clases, 0..5)"
+}

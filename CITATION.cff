@@ -1,0 +1,29 @@
+cff-version: 1.2.0
+message: "If you use this work, please cite it as below."
+title: "GraphKind — Universes v2: T4 and the universe arc (multilayer, hypergraphs, arity dual)"
+abstract: >-
+  We classify the operators under which the color refinement (1-WL)
+  profile of a graph is invariant, inside parametric observation
+  universes (f, iota). T4 (complement-invariance) was proposed and
+  verified by the engine (the conjecture mechanism was human-built),
+  checked on 2,131,019 exhaustive graphs and proved in writing. The data selected the count law f(1) != f(2) and further
+  probing produced the characterization S_n.K, with the forward
+  direction proved and the converse verified. Changing the type of the
+  invariant (partition -> orbit -> distribution -> observer) T4 dies in
+  a deterministic Z3 universe, dies under process randomness, survives
+  under object randomness, and is inherited by the k-FWL hierarchy (equivalent to (k+1)-WL).
+authors:
+  - family-names: "Argaña Silguero"
+    given-names: "Josué"
+    alias: "cripto-bot"
+    website: "https://github.com/cripto-bot"
+date-released: "2026-09-13"
+version: "2.0.0"
+license: LicenseRef-Proprietary
+repository-code: "https://github.com/cripto-bot/graphkind-universos"
+keywords:
+  - color refinement
+  - Weisfeiler-Leman
+  - graph invariants
+  - complement
+  - emergent laws

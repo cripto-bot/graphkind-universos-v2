@@ -1,0 +1,117 @@
+{
+  "involuciones_n5": 6528,
+  "uniformes_S5K": 104,
+  "no_uniformes": 6424,
+  "testigos_hallados": 6424,
+  "sin_testigo": 0,
+  "formas": {
+    "otro|n3": 2304,
+    "otro|n4": 1744,
+    "otro|n5": 2376
+  },
+  "correspondencia_firma_forma": {
+    "(9, 1)": {
+      "('otro', 3)": 6,
+      "('otro', 4)": 6,
+      "('otro', 5)": 8
+    },
+    "(8, 2)": {
+      "('otro', 3)": 48,
+      "('otro', 4)": 30,
+      "('otro', 5)": 12
+    },
+    "(7, 3)": {
+      "('otro', 3)": 168,
+      "('otro', 4)": 64,
+      "('otro', 5)": 8
+    },
+    "(6, 4)": {
+      "('otro', 3)": 336,
+      "('otro', 4)": 82,
+      "('otro', 5)": 2
+    },
+    "(5, 5)": {
+      "('otro', 4)": 84,
+      "('otro', 3)": 420
+    },
+    "(4, 6)": {
+      "('otro', 4)": 82,
+      "('otro', 3)": 336,
+      "('otro', 5)": 2
+    },
+    "(3, 7)": {
+      "('otro', 4)": 64,
+      "('otro', 5)": 8,
+      "('otro', 3)": 168
+    },
+    "(2, 8)": {
+      "('otro', 5)": 12,
+      "('otro', 4)": 30,
+      "('otro', 3)": 48
+    },
+    "(1, 9)": {
+      "('otro', 5)": 8,
+      "('otro', 4)": 6,
+      "('otro', 3)": 6
+    },
+    "(6, 1)": {
+      "('otro', 3)": 18,
+      "('otro', 5)": 86,
+      "('otro', 4)": 36
+    },
+    "(5, 2)": {
+      "('otro', 3)": 90,
+      "('otro', 5)": 174,
+      "('otro', 4)": 156
+    },
+    "(4, 3)": {
+      "('otro', 3)": 180,
+      "('otro', 5)": 232,
+      "('otro', 4)": 288
+    },
+    "(3, 4)": {
+      "('otro', 5)": 232,
+      "('otro', 3)": 180,
+      "('otro', 4)": 288
+    },
+    "(2, 5)": {
+      "('otro', 5)": 174,
+      "('otro', 3)": 90,
+      "('otro', 4)": 156
+    },
+    "(1, 6)": {
+      "('otro', 5)": 86,
+      "('otro', 3)": 18,
+      "('otro', 4)": 36
+    },
+    "(5, 1)": {
+      "('otro', 3)": 12,
+      "('otro', 5)": 144,
+      "('otro', 4)": 24
+    },
+    "(4, 2)": {
+      "('otro', 3)": 48,
+      "('otro', 5)": 318,
+      "('otro', 4)": 84
+    },
+    "(3, 3)": {
+      "('otro', 5)": 408,
+      "('otro', 3)": 72,
+      "('otro', 4)": 120
+    },
+    "(2, 4)": {
+      "('otro', 5)": 318,
+      "('otro', 3)": 48,
+      "('otro', 4)": 84
+    },
+    "(1, 5)": {
+      "('otro', 5)": 144,
+      "('otro', 3)": 12,
+      "('otro', 4)": 24
+    }
+  },
+  "generaliza_1": 6366,
+  "generaliza_2": 6424,
+  "uniformes_viven_200": 104,
+  "nota": "el testigo minimo y su forma EMERGEN del motor: la correspondencia firma->forma es la construccion; la generalizacion con aislados es el esqueleto del argumento para todo n"
+}

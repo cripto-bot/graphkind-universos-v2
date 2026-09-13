@@ -1,0 +1,48 @@
+{
+  "clasificacion": {
+    "comp": {
+      "clase": "dual",
+      "bien_definida": true,
+      "inyectiva": true,
+      "g_identidad": false
+    },
+    "comp_parcial": {
+      "clase": "local",
+      "bien_definida": false,
+      "inyectiva": false,
+      "g_identidad": false
+    },
+    "flip_v0": {
+      "clase": "local",
+      "bien_definida": false,
+      "inyectiva": false,
+      "g_identidad": false
+    },
+    "swap01": {
+      "clase": "trivial",
+      "bien_definida": true,
+      "inyectiva": true,
+      "g_identidad": true
+    },
+    "reverse": {
+      "clase": "trivial",
+      "bien_definida": true,
+      "inyectiva": true,
+      "g_identidad": true
+    },
+    "comp_rev": {
+      "clase": "dual",
+      "bien_definida": true,
+      "inyectiva": true,
+      "g_identidad": false
+    }
+  },
+  "ley": "T4 <=> trivial o (dual y f(1)!=f(2))",
+  "ley_verificada": {
+    "ok": 102,
+    "casos": 102,
+    "fallos": []
+  },
+  "atlas": "/home/juri/graphlang-natural/EXPERIMENTS/EXP-105-105-blindaje-de-la-ley-dual-global-formal-ve/atlas",
+  "nota": "dual global: matching de clases + g bien definida e inyectiva; trivial: g=id; local: no existe"
+}
