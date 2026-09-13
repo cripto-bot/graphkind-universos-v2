@@ -1,0 +1,154 @@
+{
+  "programa": "EXP-167",
+  "resultados": {
+    "uniforme": {
+      "k3_n3": {
+        "objetos": 2,
+        "t4_vive": 2,
+        "colisiones": 0
+      },
+      "k3_n4": {
+        "objetos": 5,
+        "t4_vive": 5,
+        "colisiones": 0
+      },
+      "k3_n5": {
+        "objetos": 34,
+        "t4_vive": 34,
+        "colisiones": 0
+      },
+      "k4_n4": {
+        "objetos": 2,
+        "t4_vive": 2,
+        "colisiones": 0
+      },
+      "k4_n5": {
+        "objetos": 6,
+        "t4_vive": 6,
+        "colisiones": 0
+      },
+      "k4_n6": {
+        "objetos": 156,
+        "t4_vive": 156,
+        "colisiones": 4
+      },
+      "k5_n5": {
+        "objetos": 2,
+        "t4_vive": 2,
+        "colisiones": 0
+      },
+      "k5_n6": {
+        "objetos": 7,
+        "t4_vive": 7,
+        "colisiones": 0
+      }
+    },
+    "mezclado": {
+      "n3": {
+        "total|canonica": {
+          "objetos": 8,
+          "vive": 8,
+          "testigo": null
+        },
+        "total|ordenada": {
+          "objetos": 8,
+          "vive": 8,
+          "testigo": null
+        },
+        "aridad2|canonica": {
+          "objetos": 8,
+          "vive": 8,
+          "testigo": null
+        },
+        "aridad2|ordenada": {
+          "objetos": 8,
+          "vive": 8,
+          "testigo": null
+        },
+        "aridad3|canonica": {
+          "objetos": 8,
+          "vive": 8,
+          "testigo": null
+        },
+        "aridad3|ordenada": {
+          "objetos": 8,
+          "vive": 8,
+          "testigo": null
+        }
+      },
+      "n4": {
+        "total|canonica": {
+          "objetos": 55,
+          "vive": 55,
+          "testigo": null
+        },
+        "total|ordenada": {
+          "objetos": 55,
+          "vive": 55,
+          "testigo": null
+        },
+        "aridad2|canonica": {
+          "objetos": 55,
+          "vive": 55,
+          "testigo": null
+        },
+        "aridad2|ordenada": {
+          "objetos": 55,
+          "vive": 55,
+          "testigo": null
+        },
+        "aridad3|canonica": {
+          "objetos": 55,
+          "vive": 55,
+          "testigo": null
+        },
+        "aridad3|ordenada": {
+          "objetos": 55,
+          "vive": 55,
+          "testigo": null
+        }
+      },
+      "n5": {
+        "total|canonica": {
+          "objetos": 1038,
+          "vive": 1038,
+          "testigo": null
+        },
+        "total|ordenada": {
+          "objetos": 1038,
+          "vive": 1038,
+          "testigo": null
+        },
+        "aridad2|canonica": {
+          "objetos": 1038,
+          "vive": 1038,
+          "testigo": null
+        },
+        "aridad2|ordenada": {
+          "objetos": 1038,
+          "vive": 1038,
+          "testigo": null
+        },
+        "aridad3|canonica": {
+          "objetos": 1038,
+          "vive": 1038,
+          "testigo": null
+        },
+        "aridad3|ordenada": {
+          "objetos": 1038,
+          "vive": 1038,
+          "testigo": null
+        }
+      }
+    }
+  },
+  "predicciones": {
+    "k4_vive": true,
+    "k5_vive": true,
+    "total_vive": true,
+    "aridad_muere_canonica": false,
+    "aridad_vive_ordenada": true
+  },
+  "cierre": "C (mixto)",
+  "hardware": "serial; wall 434.4s"
+}

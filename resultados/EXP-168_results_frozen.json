@@ -1,0 +1,117 @@
+{
+  "programa": "EXP-168",
+  "agregados": {
+    "dirigida_n6": {
+      "casos": 20000,
+      "fusion": 6560,
+      "reparo": 6560,
+      "fallas_t4c": 0,
+      "fallas_t4o": 0,
+      "testigo": null
+    },
+    "dirigida_n7": {
+      "casos": 20000,
+      "fusion": 5225,
+      "reparo": 5225,
+      "fallas_t4c": 0,
+      "fallas_t4o": 0,
+      "testigo": null
+    },
+    "dirigida_n8": {
+      "casos": 20000,
+      "fusion": 10036,
+      "reparo": 10036,
+      "fallas_t4c": 0,
+      "fallas_t4o": 0,
+      "testigo": null
+    },
+    "amplia_n6": {
+      "casos": 100000,
+      "fusion": 6892,
+      "reparo": 6772,
+      "fallas_t4c": 0,
+      "fallas_t4o": 0,
+      "testigo": null
+    },
+    "amplia_n7": {
+      "casos": 50000,
+      "fusion": 2205,
+      "reparo": 2203,
+      "fallas_t4c": 0,
+      "fallas_t4o": 0,
+      "testigo": null
+    },
+    "amplia_n8": {
+      "casos": 30000,
+      "fusion": 975,
+      "reparo": 975,
+      "fallas_t4c": 0,
+      "fallas_t4o": 0,
+      "testigo": null
+    },
+    "control_neg_n6": {
+      "casos": 5000,
+      "fusion": 0,
+      "reparo": 0,
+      "fallas_t4c": 0,
+      "fallas_t4o": 0,
+      "testigo": null
+    },
+    "control_neg_n7": {
+      "casos": 5000,
+      "fusion": 0,
+      "reparo": 0,
+      "fallas_t4c": 0,
+      "fallas_t4o": 0,
+      "testigo": null
+    },
+    "control_neg_n8": {
+      "casos": 5000,
+      "fusion": 0,
+      "reparo": 0,
+      "fallas_t4c": 0,
+      "fallas_t4o": 0,
+      "testigo": null
+    },
+    "control_total_n6": {
+      "casos": 2000,
+      "fusion": 0,
+      "reparo": 0,
+      "fallas_t4c": 0,
+      "fallas_t4o": 0,
+      "testigo": null
+    },
+    "control_total_n7": {
+      "casos": 2000,
+      "fusion": 0,
+      "reparo": 0,
+      "fallas_t4c": 0,
+      "fallas_t4o": 0,
+      "testigo": null
+    },
+    "control_total_n8": {
+      "casos": 2000,
+      "fusion": 0,
+      "reparo": 0,
+      "fallas_t4c": 0,
+      "fallas_t4o": 0,
+      "testigo": null
+    }
+  },
+  "fallas_t4c": {
+    "dirigida_n6": 0,
+    "dirigida_n7": 0,
+    "dirigida_n8": 0,
+    "amplia_n6": 0,
+    "amplia_n7": 0,
+    "amplia_n8": 0,
+    "control_neg_n6": 0,
+    "control_neg_n7": 0,
+    "control_neg_n8": 0,
+    "control_total_n6": 0,
+    "control_total_n7": 0,
+    "control_total_n8": 0
+  },
+  "cierre": "B (sin testigo en el espacio buscado: reparo robusto)",
+  "hardware": "Pool(22) chunks=200; wall 67.3s"
+}

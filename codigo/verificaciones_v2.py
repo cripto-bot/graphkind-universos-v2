@@ -1,0 +1,137 @@
+#!/usr/bin/env python3
+"""Verificaciones v2 — el arco de universos (multicapa, hipergrafos, dual).
+
+    python codigo/verificaciones_v2.py
+
+V13 multicapa: total vive; POR CAPA muere en la canónica (coherencia).
+V14 hipergrafos 3-uniformes: T4 vive (n<=5 exhaustivo + muestra n=6).
+V15 dual por aridad: partición garantizada + ahorro (n=4 exhaustivo).
+V16 aridades mezcladas: por aridad VIVE (el refinamiento repara).
+"""
+
+import random
+import sys
+from itertools import combinations
+from pathlib import Path
+
+sys.path.insert(0, str(Path(__file__).resolve().parent))
+from multicapa import (refinar_conjunto, complemento_total,  # noqa: E402
+                       complemento_capa, complemento_canales, t4)
+from hipergrafo import (t4_k_uniforme, t4_mezclado,  # noqa: E402
+                        refine_dual_mezclado, refinar_mezclado,
+                        complemento_k_uniforme)
+
+
+def _grafos(n):
+    """Todos los grafos etiquetados de n vértices (lista de aristas)."""
+    pares = list(combinations(range(n), 2))
+    out = []
+    for mask in range(1 << len(pares)):
+        out.append([pares[i] for i in range(len(pares)) if (mask >> i) & 1])
+    return out
+
+
+def V13_multicapa():
+    """Ley de canales: total vive; por-capa muere (canónica); ordenada vive."""
+    total = per_capa_falla = ord_vive = canales_vive = objetos = 0
+    for n in (3, 4):
+        gs = _grafos(n)
+        for E1 in gs:
+            for E2 in gs:
+                capas = [E1, E2]
+                objetos += 1
+                if t4(n, capas, complemento_total(n, capas),
+                      "canonica")["particion_igual"]:
+                    total += 1
+                for ell in (0, 1):
+                    if not t4(n, capas, complemento_capa(n, capas, ell),
+                              "canonica")["particion_igual"]:
+                        per_capa_falla += 1
+                    if t4(n, capas, complemento_capa(n, capas, ell),
+                          "ordenada")["particion_igual"]:
+                        ord_vive += 1
+                if t4(n, capas, complemento_canales(capas, [1, 0]),
+                      "canonica")["particion_igual"]:
+                    canales_vive += 1
+    assert total == objetos, (total, objetos)
+    assert per_capa_falla > 0, "la ley de canales no se reproduce"
+    assert ord_vive == 2 * objetos, ord_vive
+    assert canales_vive == objetos, canales_vive
+    print(f"V13 multicapa: total {total}/{objetos} vive | por-capa "
+          f"canónica falla {per_capa_falla} | por-capa ordenada "
+          f"{ord_vive}/{2*objetos} | canales {canales_vive}/{objetos}: OK")
+
+
+def V14_hipergrafos():
+    """3-uniformes: T4 vive (exhaustivo n<=5 + muestra n=6)."""
+    vivos = objetos = 0
+    for n in (3, 4, 5):
+        for mask in range(1 << len(list(combinations(range(n), 3)))):
+            trios = [t for i, t in enumerate(combinations(range(n), 3))
+                     if (mask >> i) & 1]
+            objetos += 1
+            vivos += int(t4_k_uniforme(n, 3, trios))
+    rng = random.Random(7)
+    tri6 = list(combinations(range(6), 3))
+    muestra = 0
+    for _ in range(5000):
+        H = [t for t in tri6 if rng.random() < 0.5]
+        muestra += 1
+        vivos += int(t4_k_uniforme(6, 3, H))
+    assert vivos == objetos + muestra, (vivos, objetos + muestra)
+    print(f"V14 hipergrafos 3-uniformes: {vivos}/{objetos+muestra} "
+          f"(n<=5 exhaustivo + muestra n=6): OK")
+
+
+def V15_dual_aridad():
+    """Dual por aridad: partición garantizada + ahorro (n=4 exhaustivo)."""
+    todos2 = list(combinations(range(4), 2))
+    todos3 = list(combinations(range(4), 3))
+    ok = objetos = a_orig = a_dual = 0
+    for m2 in range(1 << len(todos2)):
+        e2 = [todos2[i] for i in range(len(todos2)) if (m2 >> i) & 1]
+        for m3 in range(1 << len(todos3)):
+            e3 = [todos3[i] for i in range(len(todos3)) if (m3 >> i) & 1]
+            objetos += 1
+            p_orig, _ = refinar_mezclado(4, e2, e3, "canonica")
+            p_dual, lados = refine_dual_mezclado(4, e2, e3, "canonica")
+            ok += int(p_orig == p_dual)
+            c2 = complemento_k_uniforme(4, 2, e2)
+            c3 = complemento_k_uniforme(4, 3, e3)
+            a_orig += len(e2) + len(e3)
+            a_dual += ((len(c2) if lados[0] == "e2bar" else len(e2))
+                       + (len(c3) if lados[1] == "e3bar" else len(e3)))
+    assert ok == objetos, (ok, objetos)
+    assert a_dual <= a_orig, (a_dual, a_orig)
+    print(f"V15 dual por aridad: partición {ok}/{objetos} | aristas "
+          f"{a_orig} -> {a_dual} (ahorro {100*(1-a_dual/a_orig):.1f}%): OK")
+
+
+def V16_mezclado():
+    """Aridades mezcladas: por aridad VIVE (el refinamiento repara)."""
+    todos2 = list(combinations(range(4), 2))
+    todos3 = list(combinations(range(4), 3))
+    total = aridad = objetos = 0
+    for m2 in range(1 << len(todos2)):
+        e2 = [todos2[i] for i in range(len(todos2)) if (m2 >> i) & 1]
+        for m3 in range(1 << len(todos3)):
+            e3 = [todos3[i] for i in range(len(todos3)) if (m3 >> i) & 1]
+            objetos += 1
+            total += int(t4_mezclado(4, e2, e3, "total", "canonica"))
+            aridad += int(t4_mezclado(4, e2, e3, "aridad2", "canonica"))
+    assert total == objetos and aridad == objetos, (total, aridad, objetos)
+    print(f"V16 aridades mezcladas (n=4 exhaustivo): total {total}/{objetos} "
+          f"| por aridad {aridad}/{objetos} VIVE (reparo): OK")
+
+
+def main():
+    print("== VERIFICACIONES v2 (arco de universos) ==")
+    V13_multicapa()
+    V14_hipergrafos()
+    V15_dual_aridad()
+    V16_mezclado()
+    print("\nTODAS LAS VERIFICACIONES v2 OK")
+
+
+if __name__ == "__main__":
+    main()

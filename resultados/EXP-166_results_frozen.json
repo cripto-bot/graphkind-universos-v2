@@ -1,0 +1,32 @@
+{
+  "programa": "EXP-166",
+  "prediccion": "T4 vive (complemento dual global; resta de multisets con total fijo, inyectiva)",
+  "resultados": {
+    "3": {
+      "objetos": 2,
+      "t4_vive": 2,
+      "colisiones": 0,
+      "clases": 2
+    },
+    "4": {
+      "objetos": 5,
+      "t4_vive": 5,
+      "colisiones": 0,
+      "clases": 5
+    },
+    "5": {
+      "objetos": 34,
+      "t4_vive": 34,
+      "colisiones": 0,
+      "clases": 34
+    },
+    "6": {
+      "objetos": 1790,
+      "t4_vive": 1790,
+      "colisiones": 60,
+      "clases": 1745
+    }
+  },
+  "n_min": 6,
+  "hardware": "serial; wall 44.4s"
+}

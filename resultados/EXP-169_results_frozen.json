@@ -1,0 +1,15 @@
+{
+  "programa": "EXP-169",
+  "validacion": {
+    "casos": 60000,
+    "particion_igual": 60000,
+    "aristas_original": 1749801,
+    "aristas_dual_total": 1570281,
+    "aristas_dual_aridad": 1498382,
+    "ahorro_total_%": 10.26,
+    "ahorro_aridad_%": 14.37,
+    "extra_vs_total_%": 4.11
+  },
+  "cierre": "A (asimilada: particion 100% + ahorro >= total)",
+  "hardware": "Pool(22) chunks=200; wall 9.3s"
+}

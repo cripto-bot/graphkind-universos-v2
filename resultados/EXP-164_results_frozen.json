@@ -1,0 +1,71 @@
+{
+  "programa": "EXP-164",
+  "corpus": {
+    "1": 1,
+    "2": 2,
+    "3": 4,
+    "4": 11
+  },
+  "resultados": {
+    "L1": {
+      "iso_clases": 18,
+      "firmas_k1": 18,
+      "k*": 1
+    },
+    "L2": {
+      "iso_clases": 123,
+      "firmas": {
+        "1": 123,
+        "2": 123,
+        "3": 123,
+        "4": 123
+      },
+      "k*": 1,
+      "monotonia": true,
+      "wall_s": 16.0
+    },
+    "L3": {
+      "iso_clases": 1349,
+      "firmas": {
+        "1": 1349,
+        "2": 1349,
+        "3": 1349,
+        "4": 1349
+      },
+      "k*": 1,
+      "monotonia": true,
+      "wall_s": 159.4
+    },
+    "L4": {
+      "iso_clases": 14751,
+      "firmas": {
+        "1": 14751,
+        "2": 14751,
+        "3": 14751
+      },
+      "k*": 1,
+      "monotonia": true,
+      "wall_s": 133.5
+    },
+    "L5": {
+      "iso_clases": 161621,
+      "firmas": {
+        "1": 161621,
+        "2": 161621,
+        "3": 161621
+      },
+      "k*": 1,
+      "monotonia": true,
+      "wall_s": 1545.6
+    }
+  },
+  "escalera": {
+    "2": 1,
+    "3": 1,
+    "4": 1,
+    "5": 1
+  },
+  "cierre": "B (saturacion en 2/3)",
+  "nota": "k* = min k con #firmas == #iso; techo k*<=n declarado; serial",
+  "hardware": "serial; wall 1855s"
+}

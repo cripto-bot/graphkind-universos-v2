@@ -1,0 +1,163 @@
+{
+  "programa": "EXP-165",
+  "fila_tipado": {
+    "1": {
+      "objetos": 0,
+      "WL": {
+        "colisiones": 0,
+        "clases": 0
+      },
+      "KW2": {
+        "colisiones": 0,
+        "clases": 0
+      },
+      "KW3": {
+        "colisiones": 0,
+        "clases": 0
+      },
+      "IR1p": {
+        "colisiones": 0,
+        "clases": 0
+      },
+      "t4_vive": 0
+    },
+    "2": {
+      "objetos": 2,
+      "WL": {
+        "colisiones": 0,
+        "clases": 2
+      },
+      "KW2": {
+        "colisiones": 0,
+        "clases": 2
+      },
+      "KW3": {
+        "colisiones": 0,
+        "clases": 2
+      },
+      "IR1p": {
+        "colisiones": 0,
+        "clases": 2
+      },
+      "t4_vive": 2
+    },
+    "3": {
+      "objetos": 12,
+      "WL": {
+        "colisiones": 0,
+        "clases": 12
+      },
+      "KW2": {
+        "colisiones": 0,
+        "clases": 12
+      },
+      "KW3": {
+        "colisiones": 0,
+        "clases": 12
+      },
+      "IR1p": {
+        "colisiones": 0,
+        "clases": 12
+      },
+      "t4_vive": 12
+    },
+    "4": {
+      "objetos": 68,
+      "WL": {
+        "colisiones": 0,
+        "clases": 68
+      },
+      "KW2": {
+        "colisiones": 0,
+        "clases": 68
+      },
+      "KW3": {
+        "colisiones": 0,
+        "clases": 68
+      },
+      "IR1p": {
+        "colisiones": 0,
+        "clases": 68
+      },
+      "t4_vive": 68
+    },
+    "5": {
+      "objetos": 476,
+      "WL": {
+        "colisiones": 0,
+        "clases": 476
+      },
+      "KW2": {
+        "colisiones": 0,
+        "clases": 476
+      },
+      "KW3": {
+        "colisiones": 0,
+        "clases": 476
+      },
+      "IR1p": {
+        "colisiones": 0,
+        "clases": 476
+      },
+      "t4_vive": 476
+    },
+    "6": {
+      "objetos": 4784,
+      "WL": {
+        "colisiones": 12,
+        "clases": 4772
+      },
+      "KW2": {
+        "colisiones": 12,
+        "clases": 4772
+      },
+      "KW3": {
+        "colisiones": 0,
+        "clases": 4784
+      },
+      "IR1p": {
+        "colisiones": 0,
+        "clases": 4784
+      },
+      "t4_vive": 4784
+    }
+  },
+  "n_min_tipado": {
+    "WL": 6,
+    "KW2": 6,
+    "KW3": null,
+    "IR1p": null
+  },
+  "matriz": {
+    "estandar": {
+      "T4": "vive",
+      "front": "WL/KW2 3900 n_min6; KW3/KF2/KF3/IR1p/IR2p 0 (SG-03)"
+    },
+    "multicapa_L2": {
+      "T4": "vive",
+      "front": "k*=1 (EXP-164)"
+    },
+    "tipado": {
+      "T4": "ver",
+      "front": {
+        "WL": 6,
+        "KW2": 6,
+        "KW3": null,
+        "IR1p": null
+      }
+    },
+    "dirigido": {
+      "T4": "vive 94/94 (EXP-109)",
+      "front": "N/A"
+    },
+    "Z3": {
+      "T4": "muere max 52.4% (EXP-116)",
+      "front": "N/A"
+    },
+    "R1": {
+      "T4": "muere 18.6% (EXP-117)",
+      "front": "N/A"
+    }
+  },
+  "hardware": "Pool(22) chunks=100; wall 76.1s"
+}

@@ -1,0 +1,239 @@
+{
+  "programa": "EXP-162",
+  "corpus": {
+    "1": 1,
+    "2": 2,
+    "3": 4,
+    "4": 11,
+    "5": 34
+  },
+  "L2_objetos": 1298,
+  "t4_L2": {
+    "ordenada|total": {
+      "objetos": 1298,
+      "vive_part": 1298,
+      "vive_perfil": 1298
+    },
+    "ordenada|capa_0": {
+      "objetos": 1298,
+      "vive_part": 1298,
+      "vive_perfil": 1298
+    },
+    "ordenada|capa_1": {
+      "objetos": 1298,
+      "vive_part": 1298,
+      "vive_perfil": 1298
+    },
+    "ordenada|canales_10": {
+      "objetos": 1298,
+      "vive_part": 1298,
+      "vive_perfil": 1298
+    },
+    "ordenada|canales_10_total": {
+      "objetos": 1298,
+      "vive_part": 1298,
+      "vive_perfil": 1298
+    },
+    "canonica|total": {
+      "objetos": 1298,
+      "vive_part": 1298,
+      "vive_perfil": 1298
+    },
+    "canonica|capa_0": {
+      "objetos": 1298,
+      "vive_part": 1208,
+      "vive_perfil": 1208
+    },
+    "canonica|capa_1": {
+      "objetos": 1298,
+      "vive_part": 1208,
+      "vive_perfil": 1208
+    },
+    "canonica|canales_10": {
+      "objetos": 1298,
+      "vive_part": 1298,
+      "vive_perfil": 1298
+    },
+    "canonica|canales_10_total": {
+      "objetos": 1298,
+      "vive_part": 1298,
+      "vive_perfil": 1298
+    }
+  },
+  "senal_L2": true,
+  "L3": {
+    "objetos": 1404,
+    "t4": {
+      "ordenada|total": {
+        "objetos": 1404,
+        "vive_part": 1404,
+        "vive_perfil": 1404
+      },
+      "ordenada|capa_0": {
+        "objetos": 1404,
+        "vive_part": 1404,
+        "vive_perfil": 1404
+      },
+      "ordenada|capa_1": {
+        "objetos": 1404,
+        "vive_part": 1404,
+        "vive_perfil": 1404
+      },
+      "ordenada|capa_2": {
+        "objetos": 1404,
+        "vive_part": 1404,
+        "vive_perfil": 1404
+      },
+      "ordenada|canales_021": {
+        "objetos": 1404,
+        "vive_part": 1404,
+        "vive_perfil": 1404
+      },
+      "ordenada|canales_021_total": {
+        "objetos": 1404,
+        "vive_part": 1404,
+        "vive_perfil": 1404
+      },
+      "ordenada|canales_102": {
+        "objetos": 1404,
+        "vive_part": 1404,
+        "vive_perfil": 1404
+      },
+      "ordenada|canales_102_total": {
+        "objetos": 1404,
+        "vive_part": 1404,
+        "vive_perfil": 1404
+      },
+      "ordenada|canales_120": {
+        "objetos": 1404,
+        "vive_part": 1404,
+        "vive_perfil": 1404
+      },
+      "ordenada|canales_120_total": {
+        "objetos": 1404,
+        "vive_part": 1404,
+        "vive_perfil": 1404
+      },
+      "ordenada|canales_201": {
+        "objetos": 1404,
+        "vive_part": 1404,
+        "vive_perfil": 1404
+      },
+      "ordenada|canales_201_total": {
+        "objetos": 1404,
+        "vive_part": 1404,
+        "vive_perfil": 1404
+      },
+      "ordenada|canales_210": {
+        "objetos": 1404,
+        "vive_part": 1404,
+        "vive_perfil": 1404
+      },
+      "ordenada|canales_210_total": {
+        "objetos": 1404,
+        "vive_part": 1404,
+        "vive_perfil": 1404
+      },
+      "canonica|total": {
+        "objetos": 1404,
+        "vive_part": 1404,
+        "vive_perfil": 1404
+      },
+      "canonica|capa_0": {
+        "objetos": 1404,
+        "vive_part": 1300,
+        "vive_perfil": 1300
+      },
+      "canonica|capa_1": {
+        "objetos": 1404,
+        "vive_part": 1300,
+        "vive_perfil": 1300
+      },
+      "canonica|capa_2": {
+        "objetos": 1404,
+        "vive_part": 1300,
+        "vive_perfil": 1300
+      },
+      "canonica|canales_021": {
+        "objetos": 1404,
+        "vive_part": 1404,
+        "vive_perfil": 1404
+      },
+      "canonica|canales_021_total": {
+        "objetos": 1404,
+        "vive_part": 1404,
+        "vive_perfil": 1404
+      },
+      "canonica|canales_102": {
+        "objetos": 1404,
+        "vive_part": 1404,
+        "vive_perfil": 1404
+      },
+      "canonica|canales_102_total": {
+        "objetos": 1404,
+        "vive_part": 1404,
+        "vive_perfil": 1404
+      },
+      "canonica|canales_120": {
+        "objetos": 1404,
+        "vive_part": 1404,
+        "vive_perfil": 1404
+      },
+      "canonica|canales_120_total": {
+        "objetos": 1404,
+        "vive_part": 1404,
+        "vive_perfil": 1404
+      },
+      "canonica|canales_201": {
+        "objetos": 1404,
+        "vive_part": 1404,
+        "vive_perfil": 1404
+      },
+      "canonica|canales_201_total": {
+        "objetos": 1404,
+        "vive_part": 1404,
+        "vive_perfil": 1404
+      },
+      "canonica|canales_210": {
+        "objetos": 1404,
+        "vive_part": 1404,
+        "vive_perfil": 1404
+      },
+      "canonica|canales_210_total": {
+        "objetos": 1404,
+        "vive_part": 1404,
+        "vive_perfil": 1404
+      }
+    }
+  },
+  "k_estrella_multicapa": {
+    "k=1": {
+      "pares": 674976,
+      "no_separados": 110
+    },
+    "k=2": {
+      "pares": 674976,
+      "no_separados": 0
+    },
+    "k=3": {
+      "pares": 674976,
+      "no_separados": 0
+    }
+  },
+  "single_layer": {
+    "k=1": {
+      "pares": 623,
+      "no_separados": 0
+    },
+    "k=2": {
+      "pares": 623,
+      "no_separados": 0
+    },
+    "k=3": {
+      "pares": 623,
+      "no_separados": 0
+    }
+  },
+  "nota": "serial declarado (corpus chico); capas etiquetadas; variante canonica primaria",
+  "hardware": "serial; wall 49.6s"
+}
