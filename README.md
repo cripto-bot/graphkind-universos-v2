@@ -289,16 +289,40 @@ certificates are the corrections.
 
 ---
 
+## 7c. The universe arc (v2, EXP-162 → 169)
+
+The v2 adds the **universe arc** (multilayer, matrix, hypergraphs,
+arities, dual), with its freezes in `resultados/` and **V13–V16** in
+`codigo/verificaciones_v2.py`:
+
+| # | verification | assert |
+|---|---|---|
+| V13 | multilayer: total holds, **per-layer dies** in the canonical variant, channels hold | 4160/4160 · failures > 0 · 8320/8320 |
+| V14 | 3-uniform hypergraphs: T4 holds | 6042/6042 (n≤5 + n=6 sample) |
+| V15 | per-arity dual: partition + saving | 1024/1024 · 5120→3392 edges |
+| V16 | mixed arities: per-arity **holds** (repair) | 1024/1024 |
+
+**Results**: (1) **multilayer** — the coherence law: total holds
+(1298/1298, 1404/1404), per-layer dies only in the canonical variant
+(6.9%/7.4%); the preserving group is exactly the uniform one; the `k*`
+ladder is flat (corrects EXP-162's `k*=2`); (⇐) proved, (⇒) open.
+(2) **matrix** — the frontier moves with the observer, not with typing.
+(3) **hypergraphs** — prediction registered and correct (1831/1831).
+(4) **arities** — the ladder holds; the per-arity transplant **fails**
+(the law is of channels). (5) **per-arity dual** — assimilated: partition
+100%, saving 14.37% vs 10.26%.
+
 ## 8. Repository structure
 
 ```
-paper/PAPER.md                   the paper (bilingual abstract, method, results)
+paper/PAPER.md                   the paper (bilingual abstract, method, results, §12 v2 arc)
 paper/TEOREMA-UNIVERSOS.md       the full cycle EXP-099→119
 paper/PRUEBA-CARACTERIZACION.md  the (⇐) proof and the status of (⇒)
 codigo/universos.py              the law inside the engine (t4_garantizado, oracle)
 codigo/wl.py                     symmetric WL + correlated k-FWL (≡ (k+1)-WL)
 codigo/verificaciones.py         V1–V12 with asserts of the exact numbers
-resultados/*.json                original freezes of each experiment
+resultados/*.json                original freezes (EXP-102..169)
+resultados/atlas/*.json          the atlas: 15 universes (EXP-105)
 assets/*.svg                     figures
 index.html · index.en.html       presentation pages (ES/EN)
 ```

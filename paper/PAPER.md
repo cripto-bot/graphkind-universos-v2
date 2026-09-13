@@ -43,7 +43,11 @@ construcciones** halló el mejor testigo válido (`ciclo`, 99.63%) — un
 **control negativo** cazó y retiró una "prueba" que medía la iota
 extendida (otra operación). Todos los resultados son reproducibles con
 38 workers; los límites (∀n de (⇒) abierto, n≤6–7, definiciones propias,
-revisión externa pendiente) se declaran explícitamente.
+revisión externa pendiente) se declaran explícitamente. La **v2** agrega
+el arco de universos (§12): la ley multicapa (coherencia de canales), el
+grupo preservante, la escalera k\*, la matriz universo×observador, la
+predicción en hipergrafos, el fallo del transplante por aridad y el dual
+asimilado.
 
 **Abstract (English)**. We present GraphKind, a structural discovery engine
 based on iterated neighborhood refinement (1-WL) with no prior taxonomy,
@@ -392,6 +396,60 @@ límites a la vista y todo reproducible. La pregunta abierta que deja:
 observación**? El atlas es el mapa; los próximos ejes, el territorio.
 
 ---
+
+## 12. El arco de universos (v2, EXP-162 → 169)
+
+La v2 agrega el **arco de universos** del laboratorio, con el mismo
+protocolo (predicción/freeze antes de medir, controles, correcciones
+registradas). Cada resultado tiene su freeze en `resultados/` y su
+verificación ejecutable en `codigo/verificaciones_v2.py` (V13–V16).
+
+**12.1 Multicapa: la ley de coherencia (EXP-162/163/164).** En un grafo
+multicapa `(V, E_1..E_L)` con refinamiento conjunto (variantes
+**canónica** = canales como conjunto, y **ordenada**): T4 vive con el
+complemento **total** (1298/1298 en L=2; 1404/1404 en L=3) y **muere con
+el complemento por capa** (6.9% y 7.4% de fallas) — **solo en la
+canónica**; la ordenada es el control (todo vive). Ley: *el complemento
+tiene que actuar uniformemente sobre las capas*. El **grupo preservante**
+es exactamente el subgrupo uniforme `U = {∅, todas} × S_L` en la canónica
+(L=2: 4/4; L=3: 12/12, cierre de grupo ✓) y **todo el grupo** en la
+ordenada. La **escalera k\*(L)** es plana (`k*=1` para L=2..5, dos
+corpus), lo que **corrige** el `k*=2` de EXP-162 (era el `k=1`
+degenerado). La (⇐) de la ley está **probada** (misma biyección
+`M ↦ T−M` por capa); la (⇒) queda abierta.
+
+**12.2 Matriz universo × observador (EXP-165).** Con dos métricas por
+celda (T4 y frontera de completitud), reusando los freezes: la frontera
+**se mueve con el observador** (WL/KW2 fallan en n=6; KW3/IR1p no) y **no
+se mueve con el tipado** (fila nueva n≤6, 5 342 clases, mismo `n_min`).
+De la pareja (universo, observador), la mitad que pesa es el observador.
+
+**12.3 Hipergrafos 3-uniformes (EXP-166): el mapa es predictivo.** Se
+declaró un universo nunca visitado, se **predijo** T4 con la ley (el
+complemento es dual global: resta de multiséts con total fijo) y se midió:
+**1831/1831** (n≤5 exhaustivo + muestra n=6). La frontera medida coincide
+con la de grafos (`n_min=6`).
+
+**12.4 Aridad k y aridades mezcladas (EXP-167).** La **escalera de
+aridad** vive (k=4: 156/156; k=5: 7/7). Pero el **transplante de la ley
+de canales falla**: en aridades mezcladas {2,3}, el complemento **total**
+vive (100%) y el **por aridad también** (1038/1038, ambas variantes) —
+la diferencia es la **estructura del mensaje** (en multicapa las capas
+comparten tipo; en mezclado los mensajes por aridad difieren y el
+refinamiento repara). La ley es **de canales**, no de toda descomposición.
+
+**12.5 El reparo y su asimilación (EXP-168/169).** Búsqueda **dirigida**
+(construcción canónica, n=6,7,8, controles negativo y total): **261 000
+casos, 21 821 fusiones dirigidas, todas reparadas, 0 testigos** → reparo
+robusto (B). Consecuencia: el dual **por aridad** entra al motor
+(`refine_dual_mezclado`): validación 60 000 casos, **partición 100%**,
+ahorro **14.37%** (vs 10.26% del dual total). Ciclo completo: anomalía →
+conjetura → testigo → capacidad.
+
+**12.6 Verificaciones v2.** V13 (multicapa: total vive, por-capa muere en
+la canónica, canales viven), V14 (hipergrafos: T4 vive), V15 (dual:
+partición + ahorro), V16 (aridades mezcladas: por aridad vive). Todas
+ejecutables con `python codigo/verificaciones_v2.py`.
 
 ## Referencias (selección)
 

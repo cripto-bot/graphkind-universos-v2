@@ -293,16 +293,43 @@ certificados son las correcciones.
 
 ---
 
+## 7c. El arco de universos (v2, EXP-162 → 169)
+
+La v2 agrega el **arco de universos** (multicapa, matriz, hipergrafos,
+aridades, dual), con sus freezes en `resultados/` y **V13–V16** en
+`codigo/verificaciones_v2.py`:
+
+| # | verificación | assert |
+|---|---|---|
+| V13 | multicapa: total vive, **por-capa muere** en la canónica, canales viven | 4160/4160 · falla > 0 · 8320/8320 |
+| V14 | hipergrafos 3-uniformes: T4 vive | 6042/6042 (n≤5 + muestra n=6) |
+| V15 | dual por aridad: partición + ahorro | 1024/1024 · 5120→3392 aristas |
+| V16 | aridades mezcladas: por aridad **vive** (reparo) | 1024/1024 |
+
+**Los resultados**: (1) **multicapa** — la ley de coherencia: total vive
+(1298/1298, 1404/1404), por-capa muere solo en la canónica (6.9%/7.4%);
+el grupo preservante es exactamente el uniforme; la escalera `k*` es
+plana (corrige el `k*=2` de EXP-162); (⇐) probada, (⇒) abierta.
+(2) **matriz** — la frontera se mueve con el observador, no con el
+tipado. (3) **hipergrafos** — predicción registrada y acertada
+(1831/1831). (4) **aridades** — la escalera vive; el transplante por
+aridad **falla** (la ley es de canales). (5) **dual por aridad** —
+asimilado: partición 100%, ahorro 14.37% vs 10.26%.
+
 ## 8. Estructura del repositorio
 
 ```
-paper/PAPER.md                   el paper (abstract bilingüe, método, resultados)
+paper/PAPER.md                   el paper (abstract bilingüe, método, resultados, §12 arco v2)
 paper/TEOREMA-UNIVERSOS.md       el ciclo completo EXP-099→119
 paper/PRUEBA-CARACTERIZACION.md  la prueba (⇐) y el estado de (⇒)
 codigo/universos.py              la ley en el motor (t4_garantizado, oráculo)
 codigo/wl.py                     WL simétrico + k-FWL correlacionada (≡ (k+1)-WL)
 codigo/verificaciones.py         V1–V12 con asserts de los números exactos
-resultados/*.json                freezes originales de cada experimento
+codigo/verificaciones_v2.py      V13–V16 (arco de universos)
+codigo/multicapa.py              refinamiento conjunto + tres dualidades (v2)
+codigo/hipergrafo.py             k-uniforme + aridades mezcladas + dual (v2)
+resultados/*.json                freezes originales (EXP-102..169)
+resultados/atlas/*.json          los 15 universos del atlas (EXP-105)
 assets/*.svg                     figuras
 index.html · index.en.html       páginas de presentación (ES/EN)
 ```
