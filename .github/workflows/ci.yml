@@ -15,7 +15,7 @@ jobs:
         env:
           N_JOBS: "2"
         run: python codigo/verificaciones.py --rapido
-      - name: "v2: V13 (multicapa), V14 (hipergrafos), V15 (dual), V16 (aridades)"
+      - name: "v2: V13-V18 (universos + Santo Grial)"
         run: python codigo/verificaciones_v2.py
 
   completo:
@@ -33,5 +33,5 @@ jobs:
         env:
           N_JOBS: "2"
         run: python codigo/verificaciones.py
-      - name: V13-V16 (arco de universos)
+      - name: V13-V18 (universo + Santo Grial)
         run: python codigo/verificaciones_v2.py
