@@ -2593,7 +2593,7 @@ z
    </g>
   </g>
   <g id="text_11">
-   <!-- T4 ronda a ronda: en G y Ḡ las clases coinciden en cada nivel (los colores se mantienen) -->
+   <!-- T4 ronda a ronda: la PARTICIÓN de clases coincide en G y Ḡ en cada nivel; las etiquetas de color pueden diferir (son hashes arbitrarios) -->
    <g transform="translate(190.516602 20.011984) scale(0.125 -0.125)">
     <defs>
      <path id="DejaVuSans-37" d="M -19 4666 

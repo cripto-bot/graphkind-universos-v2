@@ -558,7 +558,7 @@ z
    </g>
   </g>
   <g id="text_3">
-   <!-- T4: la misma partición del color refinement en G y Ḡ (mismos colores = mismas clases) -->
+   <!-- T4: la misma PARTICIÓN del color refinement en G y Ḡ (la partición coincide; las etiquetas de color pueden diferir) -->
    <g style="fill: #0d0d0d" transform="translate(49.401367 17.707984) scale(0.125 -0.125)">
     <defs>
      <path id="DejaVuSans-37" d="M -19 4666 
