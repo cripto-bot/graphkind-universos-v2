@@ -574,7 +574,7 @@ capa dirigida usó `geng -d 3` (separado) y falló; re-corrida con `-d3`
 licencia **CC-BY-4.0**.
 
 **Código**: `https://github.com/cripto-bot/graphkind-universos-v2` ·
-v1 (paper de T4): `https://github.com/cripto-bot/graphkind-universos`.
+v1 (paper de T4): repositorio privado, disponible a pedido.
 
 **Reproducir**: `bash reproduce.sh` — verificaciones V1–V19 con asserts
 de los números exactos; CI en cada push.

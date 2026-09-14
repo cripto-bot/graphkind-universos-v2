@@ -3,7 +3,7 @@
 </p>
 
 <p align="center">
-  <a href="https://github.com/cripto-bot/graphkind-universos/actions"><img src="https://github.com/cripto-bot/graphkind-universos/actions/workflows/ci.yml/badge.svg" alt="CI"></a>
+  <a href="https://github.com/cripto-bot/graphkind-universos-v2/actions"><img src="https://github.com/cripto-bot/graphkind-universos-v2/actions/workflows/ci.yml/badge.svg" alt="CI"></a>
   <img src="https://img.shields.io/badge/status-private%20preprint-0b6b3a" alt="private preprint">
   <img src="https://img.shields.io/badge/verification-V1%E2%80%93V12%20asserts-26557a" alt="verifications">
   <img src="https://img.shields.io/badge/proof-(%E2%87%90)%20proved%20%C2%B7%20(%E2%87%92)%20verified-9a7b1f" alt="proof status">
@@ -233,8 +233,8 @@ the human construction (97.8%). No valid recipe reaches 100%.
 ## 7. Reproduce
 
 ```bash
-git clone https://github.com/cripto-bot/graphkind-universos
-cd graphkind-universos
+git clone https://github.com/cripto-bot/graphkind-universos-v2
+cd graphkind-universos-v2
 python3 -m venv .venv && .venv/bin/pip install -r requirements.txt
 bash reproduce.sh            # V1–V12 (~10-15 min)
 bash reproduce.sh --rapido   # V1, V3, V5, V8, V10, V11 (~3 min)

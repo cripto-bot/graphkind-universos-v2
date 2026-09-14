@@ -23,7 +23,7 @@ version: "2.0.0"
 doi: 10.5281/zenodo.22747350
 url: "https://doi.org/10.5281/zenodo.22747350"
 license: CC-BY-4.0
-repository-code: "https://github.com/cripto-bot/graphkind-universos"
+repository-code: "https://github.com/cripto-bot/graphkind-universos-v2"
 keywords:
   - color refinement
   - Weisfeiler-Leman
