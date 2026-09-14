@@ -10,7 +10,7 @@
 </p>
 
 <p align="center">
-  <a href="README.es.md">Español</a> · <a href="index.html">Page (ES)</a> · <a href="index.en.html">Page (EN)</a> · <a href="paper/PAPER.md">Paper</a> · <a href="paper/LITERATURA.md">Literature</a> · <a href="paper/PRUEBA-CARACTERIZACION.md">Proof</a> · <a href="reproduce.sh">Reproduce</a>
+  <a href="README.es.md">Español</a> · <a href="index.html">Page (ES)</a> · <a href="index.en.html">Page (EN)</a> · <a href="paper/PAPER.md">Paper</a> · <a href="https://huggingface.co/spaces/Jose-dev/graphlab-discoveries-demo">Demo</a> · <a href="paper/LITERATURA.md">Literature</a> · <a href="paper/PRUEBA-CARACTERIZACION.md">Proof</a> · <a href="reproduce.sh">Reproduce</a>
 </p>
 
 ---
