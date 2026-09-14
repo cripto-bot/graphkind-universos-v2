@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 460" width="760" height="460">
+  <rect width="760" height="460" rx="16" fill="#ffffff"/>
+  <rect x="0.5" y="0.5" width="759" height="459" rx="15.5" fill="none" stroke="#e6e6e6"/>
+  <text x="36" y="46" font-family="Georgia,serif" font-size="22" fill="#0d0d0d">Multilayer T4 — the coherence law</text>
+  <text x="36" y="84" font-family="ui-monospace,monospace" font-size="16" fill="#0d0d0d" text-anchor="start">c<tspan baseline-shift="sub">t+1</tspan>(v) = H( c_t(v) | ⨆<tspan baseline-shift="sub">ℓ</tspan> { c_t(w) : w ∈ N_ℓ(v) } )</text>
+  <text x="36" y="108" font-family="-apple-system,sans-serif" font-size="13" fill="#6b6b6b" text-anchor="start">joint refinement — canonical: multiset over channels · ordered: tuple</text>
+  <rect x="36" y="140" width="224" height="150" rx="12" fill="none" stroke="#e6e6e6"/>
+  <text x="50" y="166" font-family="-apple-system,sans-serif" font-size="14" fill="#0d0d0d" text-anchor="start">TOTAL complement</text>
+  <text x="50" y="190" font-family="ui-monospace,monospace" font-size="12" fill="#6b6b6b" text-anchor="start">E_ℓ → E_ℓ^c  ∀ℓ</text>
+  <text x="50" y="222" font-family="-apple-system,sans-serif" font-size="16" fill="#0b6b3a" text-anchor="start">T4 lives</text>
+  <text x="50" y="248" font-family="ui-monospace,monospace" font-size="13" fill="#0b6b3a" text-anchor="start">1298/1298  (L=2)</text>
+  <text x="50" y="268" font-family="ui-monospace,monospace" font-size="13" fill="#0b6b3a" text-anchor="start">1404/1404  (L=3)</text>
+  <rect x="278" y="140" width="224" height="150" rx="12" fill="none" stroke="#e6e6e6"/>
+  <text x="292" y="166" font-family="-apple-system,sans-serif" font-size="14" fill="#0d0d0d" text-anchor="start">PER-LAYER complement</text>
+  <text x="292" y="190" font-family="ui-monospace,monospace" font-size="12" fill="#6b6b6b" text-anchor="start">E_ℓ → E_ℓ^c  (one ℓ)</text>
+  <text x="292" y="222" font-family="-apple-system,sans-serif" font-size="16" fill="#a33" text-anchor="start">T4 dies (canonical)</text>
+  <text x="292" y="248" font-family="ui-monospace,monospace" font-size="13" fill="#a33" text-anchor="start">90/1298  = 6.9%</text>
+  <text x="292" y="268" font-family="ui-monospace,monospace" font-size="13" fill="#a33" text-anchor="start">104/1404 = 7.4%</text>
+  <rect x="520" y="140" width="224" height="150" rx="12" fill="none" stroke="#e6e6e6"/>
+  <text x="534" y="166" font-family="-apple-system,sans-serif" font-size="14" fill="#0d0d0d" text-anchor="start">CHANNEL permutation</text>
+  <text x="534" y="190" font-family="ui-monospace,monospace" font-size="12" fill="#6b6b6b" text-anchor="start">π ∈ S_L</text>
+  <text x="534" y="222" font-family="-apple-system,sans-serif" font-size="16" fill="#0b6b3a" text-anchor="start">T4 lives</text>
+  <text x="534" y="248" font-family="ui-monospace,monospace" font-size="13" fill="#0b6b3a" text-anchor="start">partition blind</text>
+  <text x="534" y="268" font-family="ui-monospace,monospace" font-size="13" fill="#0b6b3a" text-anchor="start">to channel order</text>
+  <text x="36" y="342" font-family="ui-monospace,monospace" font-size="17" fill="#0b6b3a" text-anchor="start">T4(ι) lives  ⟺  ι acts uniformly on the channels</text>
+  <text x="36" y="372" font-family="-apple-system,sans-serif" font-size="13" fill="#6b6b6b" text-anchor="start">canonical preserving group: exactly U = {∅, all} × S_L  →  4/4 (L=2), 12/12 (L=3), group closure ✓</text>
+  <text x="36" y="396" font-family="-apple-system,sans-serif" font-size="13" fill="#6b6b6b" text-anchor="start">ordered variant: the whole group preserves (tuple equality is coordinate-wise) — the group is relative to the observation</text>
+  <text x="36" y="428" font-family="ui-monospace,monospace" font-size="13" fill="#6b6b6b" text-anchor="start">(⇐) proved: the same bijection M_ℓ ↦ T_ℓ − M_ℓ per layer · (⇒) open</text>
+</svg>

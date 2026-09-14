@@ -308,6 +308,18 @@ aridades, dual), con sus freezes en `resultados/` y **V13–V16** en
 | V17 | cociente por complemento (precio de T4) | 52 grafos · 24 pares (SG-01 n≤8: 6 168) |
 | V18 | IR: IR_1 no separa Rook/Shri, IR_2 sí | i\*=2 |
 
+
+<p align="center">
+  <img src="assets/multicapa-ley.svg" width="760" alt="Ley multicapa">
+  <br><em>La ley de coherencia multicapa (EXP-162/163): total vive, por-capa muere en la canónica.</em>
+</p>
+
+
+<p align="center">
+  <img src="assets/escalera-kstar.svg" width="760" alt="Escalera k*">
+  <br><em>La escalera k\*(L) es plana y corrige el k\*=2 de EXP-162.</em>
+</p>
+
 **Los resultados**: (1) **multicapa** — la ley de coherencia: total vive
 (1298/1298, 1404/1404), por-capa muere solo en la canónica (6.9%/7.4%);
 el grupo preservante es exactamente el uniforme; la escalera `k*` es
@@ -317,6 +329,24 @@ tipado. (3) **hipergrafos** — predicción registrada y acertada
 (1831/1831). (4) **aridades** — la escalera vive; el transplante por
 aridad **falla** (la ley es de canales). (5) **dual por aridad** —
 asimilado: partición 100%, ahorro 14.37% vs 10.26%.
+
+
+<p align="center">
+  <img src="assets/matriz-universo-observador.svg" width="860" alt="Matriz">
+  <br><em>La frontera se mueve con el observador, no con el tipado.</em>
+</p>
+
+
+<p align="center">
+  <img src="assets/hipergrafos-aridades.svg" width="820" alt="Hipergrafos">
+  <br><em>Predicción acertada (1831/1831) y el transplante por aridad que falla.</em>
+</p>
+
+
+<p align="center">
+  <img src="assets/dual-aridad.svg" width="760" alt="Dual">
+  <br><em>Dual por aridad: ahorro 14.37% con partición garantizada.</em>
+</p>
 
 ## 7d. El Santo Grial (SG-01→03)
 
@@ -330,6 +360,12 @@ asimilado: partición 100%, ahorro 14.37% vs 10.26%.
   Rook/Shrikhande (IR_1 no, IR_2 sí). El retículo IR↔k-WL: en n≤9 los
   completos colapsan (equivalencia vacua); anclas A/B, C no observado.
   Freezes: `SG-02`, `SG-03`.
+
+<p align="center">
+  <img src="assets/santo-grial.svg" width="820" alt="Santo Grial">
+  <br><em>Completitud, el precio de T4 y i\*.</em>
+</p>
+
 - **La prueba multicapa** viaja en `paper/PRUEBA-MULTICAPA.md` ((⇐)
   probada, (⇒) abierta) y los **patrones transversales** + el
   `DECISION_LOG` (D-001→D-017) en `paper/DECISION_LOG.md`.

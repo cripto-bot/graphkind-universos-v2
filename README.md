@@ -304,6 +304,18 @@ arities, dual), with its freezes in `resultados/` and **V13–V16** in
 | V17 | complement quotient (T4's price) | 52 graphs · 24 pairs (SG-01 n≤8: 6,168) |
 | V18 | IR: IR_1 does not separate Rook/Shri, IR_2 does | i\*=2 |
 
+
+<p align="center">
+  <img src="assets/multicapa-ley.svg" width="760" alt="Multilayer law">
+  <br><em>The multilayer coherence law (EXP-162/163): total holds, per-layer dies in the canonical variant.</em>
+</p>
+
+
+<p align="center">
+  <img src="assets/escalera-kstar.svg" width="760" alt="k* ladder">
+  <br><em>The k\*(L) ladder is flat and corrects EXP-162's k\*=2.</em>
+</p>
+
 **Results**: (1) **multilayer** — the coherence law: total holds
 (1298/1298, 1404/1404), per-layer dies only in the canonical variant
 (6.9%/7.4%); the preserving group is exactly the uniform one; the `k*`
@@ -313,6 +325,24 @@ ladder is flat (corrects EXP-162's `k*=2`); (⇐) proved, (⇒) open.
 (4) **arities** — the ladder holds; the per-arity transplant **fails**
 (the law is of channels). (5) **per-arity dual** — assimilated: partition
 100%, saving 14.37% vs 10.26%.
+
+
+<p align="center">
+  <img src="assets/matriz-universo-observador.svg" width="860" alt="Matrix">
+  <br><em>The frontier moves with the observer, not with typing.</em>
+</p>
+
+
+<p align="center">
+  <img src="assets/hipergrafos-aridades.svg" width="820" alt="Hypergraphs">
+  <br><em>Prediction correct (1831/1831) and the arity transplant that fails.</em>
+</p>
+
+
+<p align="center">
+  <img src="assets/dual-aridad.svg" width="760" alt="Dual">
+  <br><em>Per-arity dual: 14.37% saving with guaranteed partition.</em>
+</p>
 
 ## 7d. The Holy Grail (SG-01→03)
 
@@ -326,6 +356,12 @@ ladder is flat (corrects EXP-162's `k*=2`); (⇐) proved, (⇒) open.
   Rook/Shrikhande (IR_1 no, IR_2 yes). The IR↔k-WL lattice: at n≤9 the
   complete ones collapse (vacuous equivalence); anchors A/B, C not
   observed. Freezes: `SG-02`, `SG-03`.
+
+<p align="center">
+  <img src="assets/santo-grial.svg" width="820" alt="Holy Grail">
+  <br><em>Completeness, T4's price and i\*.</em>
+</p>
+
 - **The multilayer proof** ships in `paper/PRUEBA-MULTICAPA.md` ((⇐)
   proved, (⇒) open) and the **transversal patterns** + `DECISION_LOG`
   (D-001→D-017) in `paper/DECISION_LOG.md`.

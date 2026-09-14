@@ -420,11 +420,29 @@ corpus), lo que **corrige** el `k*=2` de EXP-162 (era el `k=1`
 degenerado). La (⇐) de la ley está **probada** (misma biyección
 `M ↦ T−M` por capa); la (⇒) queda abierta.
 
+
+<p align="center">
+  <img src="assets/multicapa-ley.svg" width="760" alt="Ley multicapa">
+  <br><em>La ley de coherencia: el refinamiento conjunto, las tres dualidades y el grupo preservante.</em>
+</p>
+
+
+<p align="center">
+  <img src="assets/escalera-kstar.svg" width="760" alt="Escalera k*(L)">
+  <br><em>La escalera k\*(L) es plana (k\*=1 para L=2..5): corrige el k\*=2 de EXP-162 (k=1 degenerado).</em>
+</p>
+
 **12.2 Matriz universo × observador (EXP-165).** Con dos métricas por
 celda (T4 y frontera de completitud), reusando los freezes: la frontera
 **se mueve con el observador** (WL/KW2 fallan en n=6; KW3/IR1p no) y **no
 se mueve con el tipado** (fila nueva n≤6, 5 342 clases, mismo `n_min`).
 De la pareja (universo, observador), la mitad que pesa es el observador.
+
+
+<p align="center">
+  <img src="assets/matriz-universo-observador.svg" width="860" alt="Matriz universo x observador">
+  <br><em>La frontera se mueve con el observador (columnas), no con el tipado (filas).</em>
+</p>
 
 **12.3 Hipergrafos 3-uniformes (EXP-166): el mapa es predictivo.** Se
 declaró un universo nunca visitado, se **predijo** T4 con la ley (el
@@ -440,6 +458,12 @@ la diferencia es la **estructura del mensaje** (en multicapa las capas
 comparten tipo; en mezclado los mensajes por aridad difieren y el
 refinamiento repara). La ley es **de canales**, no de toda descomposición.
 
+
+<p align="center">
+  <img src="assets/hipergrafos-aridades.svg" width="820" alt="Hipergrafos y aridades">
+  <br><em>La predicción acierta (1831/1831); el transplante por aridad falla: el refinamiento repara.</em>
+</p>
+
 **12.5 El reparo y su asimilación (EXP-168/169).** Búsqueda **dirigida**
 (construcción canónica, n=6,7,8, controles negativo y total): **261 000
 casos, 21 821 fusiones dirigidas, todas reparadas, 0 testigos** → reparo
@@ -447,6 +471,12 @@ robusto (B). Consecuencia: el dual **por aridad** entra al motor
 (`refine_dual_mezclado`): validación 60 000 casos, **partición 100%**,
 ahorro **14.37%** (vs 10.26% del dual total). Ciclo completo: anomalía →
 conjetura → testigo → capacidad.
+
+
+<p align="center">
+  <img src="assets/dual-aridad.svg" width="760" alt="Dual por aridad">
+  <br><em>El dual por aridad: partición 100% y ahorro 14.37% (vs 10.26% del total).</em>
+</p>
 
 **12.6 Verificaciones v2.** V13 (multicapa: total vive, por-capa muere en
 la canónica, canales viven), V14 (hipergrafos: T4 vive), V15 (dual:
@@ -483,6 +513,12 @@ equivalencia vacua) y que `WL = 2-WL`; la evidencia discriminante son
 las anclas (C6/2C3, Rook/Shrikhande, Petersen/C5). Cierre: **A** en
 anclas, **B** (IR_2 > 3-WL) y **C no observado**. La verificación v2
 (V18) ejecuta las anclas.
+
+
+<p align="center">
+  <img src="assets/santo-grial.svg" width="820" alt="Santo Grial">
+  <br><em>Completitud en la clase, el precio de T4 (6 168 pares) y la individualización mínima i\*.</em>
+</p>
 
 **13.4 El método: los patrones transversales.** Ocho patrones sostienen
 todo el laboratorio: (1) **el dato decide** (k\*, r\*, umbrales por
