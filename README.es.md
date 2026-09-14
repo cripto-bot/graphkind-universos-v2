@@ -4,7 +4,7 @@
 
 <p align="center">
   <a href="https://github.com/cripto-bot/graphkind-universos-v2/actions"><img src="https://github.com/cripto-bot/graphkind-universos-v2/actions/workflows/ci.yml/badge.svg" alt="CI"></a>
-  <img src="https://img.shields.io/badge/estado-preprint%20privado-0b6b3a" alt="preprint privado">
+  <img src="https://img.shields.io/badge/estado-preprint-0b6b3a" alt="preprint">
   <img src="https://img.shields.io/badge/verificaci%C3%B3n-V1%E2%80%93V12%20asserts-26557a" alt="verificaciones">
   <img src="https://img.shields.io/badge/prueba-(%E2%87%90)%20probada%20%C2%B7%20(%E2%87%92)%20verificada-9a7b1f" alt="estado de la prueba">
 </p>
