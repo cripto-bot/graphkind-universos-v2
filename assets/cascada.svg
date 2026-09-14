@@ -12,8 +12,8 @@
   <circle cx="120" cy="45" r="7" fill="#a33"/>
   <circle cx="380" cy="210" r="7" fill="#0b6b3a"/>
   <circle cx="640" cy="210" r="7" fill="#0b6b3a"/>
-  <text x="140" y="38" font-size="14" fill="#0d0d0d" font-family="-apple-system,sans-serif">26 1-WL-equivalent pairs</text>
-  <text x="400" y="203" font-size="14" fill="#0d0d0d" font-family="-apple-system,sans-serif">0: 2-WL resolves them all</text>
-  <text x="420" y="70" font-size="13" fill="#6b6b6b" font-family="-apple-system,sans-serif">C6 vs 2·C3: k*=2</text>
-  <text x="420" y="90" font-size="13" fill="#6b6b6b" font-family="-apple-system,sans-serif">Rook vs Shrikhande: k*=3</text>
+  <text x="140" y="38" font-size="14" fill="#0d0d0d" font-family="DejaVu Sans, sans-serif">26 1-WL-equivalent pairs</text>
+  <text x="400" y="203" font-size="14" fill="#0d0d0d" font-family="DejaVu Sans, sans-serif">0: 2-WL resolves them all</text>
+  <text x="420" y="70" font-size="13" fill="#6b6b6b" font-family="DejaVu Sans, sans-serif">C6 vs 2·C3: k*=2</text>
+  <text x="420" y="90" font-size="13" fill="#6b6b6b" font-family="DejaVu Sans, sans-serif">Rook vs Shrikhande: k*=3</text>
 </svg>

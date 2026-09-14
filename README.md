@@ -473,6 +473,18 @@ kinds → laws → theorems → universes.
 Full map: [`paper/MAPA-DEL-LABORATORIO.md`](paper/MAPA-DEL-LABORATORIO.md).
 
 
+## 12. The engine: how it works and its measured power
+
+<p align="center">
+  <img src="assets/motor-como-funciona.svg" width="100%" alt="How it works: iterative 1-WL refinement on a real 8-node example">
+  <br><em>The engine pipeline: data → graph → label₀ → round → STOP → kinds; the example shows rounds 3 → 5 → 5 → 5 up to the stable partition.</em>
+</p>
+
+<p align="center">
+  <img src="assets/motor-potencia.svg" width="100%" alt="The engine's power, in real numbers">
+  <br><em>Measured power: parity with Morgan (AUC 0.9608 vs 0.9541), compression 3.00× (molecules) and 187.5× (code), <code>refine_dual</code> 10.3×, dual-normalization saving 40.5%, universe oracle 87/87, engine tests 104/104, T4 bank 2.13M.</em>
+</p>
+
 <p align="center">
   <sub>© 2026 Juri (cripto-bot) · private preprint · do not distribute without authorization.<br>
   This document claims no priority over open problems: it reports a verified characterization in a bounded domain.<br>

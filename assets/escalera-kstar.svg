@@ -1,28 +1,28 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 380" width="760" height="380">
   <rect width="760" height="380" rx="16" fill="#ffffff"/>
   <rect x="0.5" y="0.5" width="759" height="379" rx="15.5" fill="none" stroke="#e6e6e6"/>
-  <text x="36" y="46" font-family="Georgia,serif" font-size="22" fill="#0d0d0d">The k*(L) ladder is flat</text>
-  <text x="36" y="84" font-family="ui-monospace,monospace" font-size="15" fill="#0d0d0d" text-anchor="start">k*(L) = min{ k : #classes(F_k) = #classes(iso) }</text>
+  <text x="36" y="46" font-family="DejaVu Serif, Georgia, serif" font-size="22" fill="#0d0d0d">The k*(L) ladder is flat</text>
+  <text x="36" y="84" font-family="DejaVu Sans, sans-serif" font-size="15" fill="#0d0d0d" text-anchor="start">k*(L) = min{ k : #classes(F_k) = #classes(iso) }</text>
   <line x1="90" y1="290" x2="700" y2="290" stroke="#e6e6e6"/>
   <line x1="90" y1="110" x2="90" y2="290" stroke="#e6e6e6"/>
-  <text x="130" y="312" font-family="-apple-system,sans-serif" font-size="14" fill="#6b6b6b" text-anchor="middle">L = 1</text>
+  <text x="130" y="312" font-family="DejaVu Sans, sans-serif" font-size="14" fill="#6b6b6b" text-anchor="middle">L = 1</text>
   <circle cx="130" cy="270" r="8" fill="#0b6b3a"/>
-  <text x="130" y="250" font-family="ui-monospace,monospace" font-size="14" fill="#0b6b3a" text-anchor="middle">1</text>
-  <text x="265" y="312" font-family="-apple-system,sans-serif" font-size="14" fill="#6b6b6b" text-anchor="middle">L = 2</text>
+  <text x="130" y="250" font-family="DejaVu Sans, sans-serif" font-size="14" fill="#0b6b3a" text-anchor="middle">1</text>
+  <text x="265" y="312" font-family="DejaVu Sans, sans-serif" font-size="14" fill="#6b6b6b" text-anchor="middle">L = 2</text>
   <circle cx="265" cy="270" r="8" fill="#0b6b3a"/>
-  <text x="265" y="250" font-family="ui-monospace,monospace" font-size="14" fill="#0b6b3a" text-anchor="middle">1</text>
-  <text x="400" y="312" font-family="-apple-system,sans-serif" font-size="14" fill="#6b6b6b" text-anchor="middle">L = 3</text>
+  <text x="265" y="250" font-family="DejaVu Sans, sans-serif" font-size="14" fill="#0b6b3a" text-anchor="middle">1</text>
+  <text x="400" y="312" font-family="DejaVu Sans, sans-serif" font-size="14" fill="#6b6b6b" text-anchor="middle">L = 3</text>
   <circle cx="400" cy="270" r="8" fill="#0b6b3a"/>
-  <text x="400" y="250" font-family="ui-monospace,monospace" font-size="14" fill="#0b6b3a" text-anchor="middle">1</text>
-  <text x="535" y="312" font-family="-apple-system,sans-serif" font-size="14" fill="#6b6b6b" text-anchor="middle">L = 4</text>
+  <text x="400" y="250" font-family="DejaVu Sans, sans-serif" font-size="14" fill="#0b6b3a" text-anchor="middle">1</text>
+  <text x="535" y="312" font-family="DejaVu Sans, sans-serif" font-size="14" fill="#6b6b6b" text-anchor="middle">L = 4</text>
   <circle cx="535" cy="270" r="8" fill="#0b6b3a"/>
-  <text x="535" y="250" font-family="ui-monospace,monospace" font-size="14" fill="#0b6b3a" text-anchor="middle">1</text>
-  <text x="670" y="312" font-family="-apple-system,sans-serif" font-size="14" fill="#6b6b6b" text-anchor="middle">L = 5</text>
+  <text x="535" y="250" font-family="DejaVu Sans, sans-serif" font-size="14" fill="#0b6b3a" text-anchor="middle">1</text>
+  <text x="670" y="312" font-family="DejaVu Sans, sans-serif" font-size="14" fill="#6b6b6b" text-anchor="middle">L = 5</text>
   <circle cx="670" cy="270" r="8" fill="#0b6b3a"/>
-  <text x="670" y="250" font-family="ui-monospace,monospace" font-size="14" fill="#0b6b3a" text-anchor="middle">1</text>
+  <text x="670" y="250" font-family="DejaVu Sans, sans-serif" font-size="14" fill="#0b6b3a" text-anchor="middle">1</text>
   <line x1="90" y1="230" x2="700" y2="230" stroke="#a33" stroke-dasharray="6 6"/>
-  <text x="100" y="224" font-family="ui-monospace,monospace" font-size="13" fill="#a33" text-anchor="start">k* = 2</text>
-  <text x="100" y="132" font-family="-apple-system,sans-serif" font-size="12" fill="#6b6b6b" text-anchor="start">corpora: representatives n≤4 (123 / 1 349 / 14 751 / 161 621 classes)</text>
-  <text x="100" y="150" font-family="-apple-system,sans-serif" font-size="12" fill="#6b6b6b" text-anchor="start">full labelings n≤3 (20 / 120 / 816 / 5 984) — both flat</text>
-  <text x="36" y="352" font-family="ui-monospace,monospace" font-size="12" fill="#a33" text-anchor="start">correction (EXP-164): EXP-162's k*=2 was the degenerate k=1 (initial colors, no refinement)</text>
+  <text x="100" y="224" font-family="DejaVu Sans, sans-serif" font-size="13" fill="#a33" text-anchor="start">k* = 2</text>
+  <text x="100" y="132" font-family="DejaVu Sans, sans-serif" font-size="12" fill="#6b6b6b" text-anchor="start">corpora: representatives n≤4 (123 / 1 349 / 14 751 / 161 621 classes)</text>
+  <text x="100" y="150" font-family="DejaVu Sans, sans-serif" font-size="12" fill="#6b6b6b" text-anchor="start">full labelings n≤3 (20 / 120 / 816 / 5 984) — both flat</text>
+  <text x="36" y="352" font-family="DejaVu Sans, sans-serif" font-size="12" fill="#a33" text-anchor="start">correction (EXP-164): EXP-162's k*=2 was the degenerate k=1 (initial colors, no refinement)</text>
 </svg>

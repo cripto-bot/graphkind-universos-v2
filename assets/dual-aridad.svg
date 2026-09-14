@@ -1,19 +1,19 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 380" width="760" height="380">
   <rect width="760" height="380" rx="16" fill="#ffffff"/>
   <rect x="0.5" y="0.5" width="759" height="379" rx="15.5" fill="none" stroke="#e6e6e6"/>
-  <text x="36" y="46" font-family="Georgia,serif" font-size="22" fill="#0d0d0d">Per-arity dual: the law becomes capability</text>
-  <text x="36" y="84" font-family="ui-monospace,monospace" font-size="14" fill="#0d0d0d" text-anchor="start">choose per arity:  E_a  or  E_a^c  (the smaller)   ⟹   partition preserved</text>
+  <text x="36" y="46" font-family="DejaVu Serif, Georgia, serif" font-size="22" fill="#0d0d0d">Per-arity dual: the law becomes capability</text>
+  <text x="36" y="84" font-family="DejaVu Sans, sans-serif" font-size="14" fill="#0d0d0d" text-anchor="start">choose per arity:  E_a  or  E_a^c  (the smaller)   ⟹   partition preserved</text>
   <rect x="200" y="140" width="460" height="26" rx="6" fill="#a33" opacity="0.85"/>
-  <text x="36" y="159" font-family="-apple-system,sans-serif" font-size="14" fill="#0d0d0d" text-anchor="start">original</text>
-  <text x="670.0" y="159" font-family="ui-monospace,monospace" font-size="13" fill="#a33" text-anchor="start">1 749 801</text>
-  <text x="36" y="182" font-family="-apple-system,sans-serif" font-size="12" fill="#6b6b6b" text-anchor="start">100%</text>
+  <text x="36" y="159" font-family="DejaVu Sans, sans-serif" font-size="14" fill="#0d0d0d" text-anchor="start">original</text>
+  <text x="670.0" y="159" font-family="DejaVu Sans, sans-serif" font-size="13" fill="#a33" text-anchor="start">1 749 801</text>
+  <text x="36" y="182" font-family="DejaVu Sans, sans-serif" font-size="12" fill="#6b6b6b" text-anchor="start">100%</text>
   <rect x="200" y="204" width="413" height="26" rx="6" fill="#9a7b1f" opacity="0.85"/>
-  <text x="36" y="223" font-family="-apple-system,sans-serif" font-size="14" fill="#0d0d0d" text-anchor="start">total dual</text>
-  <text x="622.8065191413195" y="223" font-family="ui-monospace,monospace" font-size="13" fill="#9a7b1f" text-anchor="start">1 570 281</text>
-  <text x="36" y="246" font-family="-apple-system,sans-serif" font-size="12" fill="#6b6b6b" text-anchor="start">saving 10.26%</text>
+  <text x="36" y="223" font-family="DejaVu Sans, sans-serif" font-size="14" fill="#0d0d0d" text-anchor="start">total dual</text>
+  <text x="622.8065191413195" y="223" font-family="DejaVu Sans, sans-serif" font-size="13" fill="#9a7b1f" text-anchor="start">1 570 281</text>
+  <text x="36" y="246" font-family="DejaVu Sans, sans-serif" font-size="12" fill="#6b6b6b" text-anchor="start">saving 10.26%</text>
   <rect x="200" y="268" width="394" height="26" rx="6" fill="#0b6b3a" opacity="0.85"/>
-  <text x="36" y="287" font-family="-apple-system,sans-serif" font-size="14" fill="#0d0d0d" text-anchor="start">per-arity dual</text>
-  <text x="603.9052040774923" y="287" font-family="ui-monospace,monospace" font-size="13" fill="#0b6b3a" text-anchor="start">1 498 382</text>
-  <text x="36" y="310" font-family="-apple-system,sans-serif" font-size="12" fill="#6b6b6b" text-anchor="start">saving 14.37%</text>
-  <text x="36" y="348" font-family="ui-monospace,monospace" font-size="13" fill="#0b6b3a" text-anchor="start">validation: 60 000 cases · partition 100% · extra saving vs total: +4.11%</text>
+  <text x="36" y="287" font-family="DejaVu Sans, sans-serif" font-size="14" fill="#0d0d0d" text-anchor="start">per-arity dual</text>
+  <text x="603.9052040774923" y="287" font-family="DejaVu Sans, sans-serif" font-size="13" fill="#0b6b3a" text-anchor="start">1 498 382</text>
+  <text x="36" y="310" font-family="DejaVu Sans, sans-serif" font-size="12" fill="#6b6b6b" text-anchor="start">saving 14.37%</text>
+  <text x="36" y="348" font-family="DejaVu Sans, sans-serif" font-size="13" fill="#0b6b3a" text-anchor="start">validation: 60 000 cases · partition 100% · extra saving vs total: +4.11%</text>
 </svg>

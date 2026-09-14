@@ -6,32 +6,32 @@
     <rect x="30" y="70" width="150" height="86" rx="10" fill="#f7f7f5" stroke="#e6e6e6"/>
     <text x="105" y="100" text-anchor="middle" fill="#0d0d0d" font-size="13.5">Blind conjecture</text>
     <text x="105" y="118" text-anchor="middle" fill="#0d0d0d" font-size="13.5">bank</text>
-    <text x="105" y="142" text-anchor="middle" fill="#0b6b3a" font-family="ui-monospace,monospace">T4: 68/68</text>
+    <text x="105" y="142" text-anchor="middle" fill="#0b6b3a" font-family="DejaVu Sans, sans-serif">T4: 68/68</text>
 
     <rect x="205" y="70" width="150" height="86" rx="10" fill="#f7f7f5" stroke="#e6e6e6"/>
     <text x="280" y="100" text-anchor="middle" fill="#0d0d0d" font-size="13.5">Massive</text>
     <text x="280" y="118" text-anchor="middle" fill="#0d0d0d" font-size="13.5">verification</text>
-    <text x="280" y="142" text-anchor="middle" fill="#0b6b3a" font-family="ui-monospace,monospace">2,131,019</text>
+    <text x="280" y="142" text-anchor="middle" fill="#0b6b3a" font-family="DejaVu Sans, sans-serif">2,131,019</text>
 
     <rect x="380" y="70" width="150" height="86" rx="10" fill="#f7f7f5" stroke="#e6e6e6"/>
     <text x="455" y="100" text-anchor="middle" fill="#0d0d0d" font-size="13.5">Written</text>
     <text x="455" y="118" text-anchor="middle" fill="#0d0d0d" font-size="13.5">proof</text>
-    <text x="455" y="142" text-anchor="middle" fill="#0b6b3a" font-family="ui-monospace,monospace">EXP-086</text>
+    <text x="455" y="142" text-anchor="middle" fill="#0b6b3a" font-family="DejaVu Sans, sans-serif">EXP-086</text>
 
     <rect x="555" y="70" width="150" height="86" rx="10" fill="#f7f7f5" stroke="#e6e6e6"/>
     <text x="630" y="100" text-anchor="middle" fill="#0d0d0d" font-size="13.5">Count axis</text>
     <text x="630" y="118" text-anchor="middle" fill="#0d0d0d" font-size="13.5">17 f × 2 ι</text>
-    <text x="630" y="142" text-anchor="middle" fill="#0b6b3a" font-family="ui-monospace,monospace">34/34</text>
+    <text x="630" y="142" text-anchor="middle" fill="#0b6b3a" font-family="DejaVu Sans, sans-serif">34/34</text>
 
     <rect x="730" y="70" width="105" height="86" rx="10" fill="#f7f7f5" stroke="#e6e6e6"/>
     <text x="782" y="100" text-anchor="middle" fill="#0d0d0d" font-size="13.5">Law</text>
     <text x="782" y="118" text-anchor="middle" fill="#0d0d0d" font-size="13.5">f(1)≠f(2)</text>
-    <text x="782" y="142" text-anchor="middle" fill="#0b6b3a" font-family="ui-monospace,monospace">102/102</text>
+    <text x="782" y="142" text-anchor="middle" fill="#0b6b3a" font-family="DejaVu Sans, sans-serif">102/102</text>
 
     <rect x="855" y="70" width="105" height="86" rx="10" fill="#0b6b3a" stroke="#0b6b3a"/>
     <text x="907" y="100" text-anchor="middle" fill="#ffffff" font-size="13.5">Character.</text>
     <text x="907" y="118" text-anchor="middle" fill="#ffffff" font-size="13.5">Sₙ·K</text>
-    <text x="907" y="142" text-anchor="middle" fill="#c8e8d6" font-family="ui-monospace,monospace">96 exact</text>
+    <text x="907" y="142" text-anchor="middle" fill="#c8e8d6" font-family="DejaVu Sans, sans-serif">96 exact</text>
 
     <g stroke="#c9c9c9" stroke-width="2" marker-end="url(#a2)">
       <line x1="180" y1="113" x2="203" y2="113"/><line x1="355" y1="113" x2="378" y2="113"/>
@@ -39,6 +39,6 @@
       <line x1="835" y1="113" x2="853" y2="113"/>
     </g>
     <defs><marker id="a2" markerWidth="8" markerHeight="8" refX="6" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8 z" fill="#c9c9c9"/></marker></defs>
-    <text x="490" y="200" text-anchor="middle" fill="#6b6b6b" font-size="12.5">then: universes (Z₃ · random · k-WL) — where T4 survives, where it dies, and the type of theorem it becomes</text>
+    <text x="490" y="200" text-anchor="middle" fill="#6b6b6b" font-size="12.5">then: universes (Z₃ · random · k-FWL) — where T4 survives, where it dies, and the type of theorem it becomes</text>
   </g>
 </svg>

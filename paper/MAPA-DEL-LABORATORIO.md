@@ -111,7 +111,7 @@ sobre su propio invariante?
 
 | hito | número |
 |---|---|
-| Descubrimiento autónomo (corpus ciego) | **68/68** |
+| Conjetura del motor (corpus ciego) | **68/68** |
 | Cámara de contraejemplos | **3 045/3 045** |
 | Adversario masivo (8 generadores) | **19 407/19 407** |
 | Exhaustivo n≤7 | **2 131 019/2 131 019 = 100.0000%** |

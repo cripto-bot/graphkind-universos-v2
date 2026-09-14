@@ -1,8 +1,8 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 330" width="1200" height="330">
   <rect width="1200" height="330" rx="18" fill="#ffffff"/>
   <rect x="0.5" y="0.5" width="1199" height="329" rx="17.5" fill="none" stroke="#e6e6e6"/>
-  <text x="70" y="96" font-family="Georgia, serif" font-size="30" fill="#6b6b6b" letter-spacing="6">GRAPHKIND · PRIVATE PREPRINT · 2026</text>
-  <text x="70" y="176" font-family="Georgia, serif" font-size="54" fill="#0d0d0d">On the universes of <tspan font-style="italic">color refinement</tspan></text>
-  <text x="70" y="222" font-family="-apple-system, Segoe UI, Helvetica, Arial, sans-serif" font-size="21" fill="#6b6b6b">When a structural invariant survives a change of observation.</text>
-  <text x="70" y="286" font-family="ui-monospace, Menlo, monospace" font-size="19" fill="#0b6b3a">T4(ι, f) holds  ⟺  ι ∈ Sₙ·K  and  (ι changes the pair ⟹ f(1) ≠ f(2))</text>
+  <text x="70" y="96" font-family="DejaVu Serif, Georgia, serif" font-size="30" fill="#6b6b6b" letter-spacing="6">GRAPHKIND · PRIVATE PREPRINT · 2026</text>
+  <text x="70" y="176" font-family="DejaVu Serif, Georgia, serif" font-size="54" fill="#0d0d0d">On the universes of <tspan font-style="italic">color refinement</tspan></text>
+  <text x="70" y="222" font-family="DejaVu Sans, sans-serif" font-size="21" fill="#6b6b6b">When a structural invariant survives a change of observation.</text>
+  <text x="70" y="286" font-family="DejaVu Sans, sans-serif" font-size="19" fill="#0b6b3a">T4(ι, f) holds  ⟺  ι ∈ Sₙ·K  and  (ι changes the pair ⟹ f(1) ≠ f(2))</text>
 </svg>

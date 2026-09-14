@@ -254,5 +254,4 @@ documentan en los READMEs, no se borran.
 (el algoritmo), `DOCUMENTAL-UNIVERSOS.md` (la narración),
 `naturalkinds/universos.py` (la ley en el motor).
 
-**Regla de hardware**: 38 workers (joblib), CPU verificada
-~3000–3800%; `SEED=7`.
+**Regla de hardware**: Pool(22), CPU verificada 1200–2200%; `SEED=7`.

@@ -42,7 +42,7 @@ exactas, cero fuera) y dirigida en n=5, y una **búsqueda autónoma de
 construcciones** halló el mejor testigo válido (`ciclo`, 99.63%) — un
 **control negativo** cazó y retiró una "prueba" que medía la iota
 extendida (otra operación). Todos los resultados son reproducibles con
-38 workers; los límites (∀n de (⇒) abierto, n≤6–7, definiciones propias,
+Pool(22); los límites (∀n de (⇒) abierto, n≤6–7, definiciones propias,
 revisión externa pendiente) se declaran explícitamente. La **v2** agrega
 el arco de universos (§12): la ley multicapa (coherencia de canales), el
 grupo preservante, la escalera k\*, la matriz universo×observador, la
@@ -99,8 +99,8 @@ distinguen estructura real de fabricación.
    real (§4).
 2. Un protocolo de laboratorio: selector de representaciones, controles
    multi-réplica, re-auditoría e identificación post-freeze (§4).
-3. **T4**: descubierto autónomamente, verificado masivamente, con prueba
-   escrita y capacidad medida (§5).
+3. **T4**: propuesto y verificado por el motor (mecanismo humano),
+   verificado masivamente, con prueba escrita y capacidad medida (§5).
 4. **La ley de universos**: una condición puntual (`f(1)≠f(2)`) que la
    tabla eligió; clasificación trivial/dual/local; atlas (§6).
 
@@ -204,7 +204,7 @@ sistema no fabrica categorías.**
 
 ## 5. Resultados II: T4, de conjetura a teorema candidato
 
-### 5.1 Descubrimiento autónomo
+### 5.1 La conjetura del motor y su verificación
 
 El sistema, en un corpus ciego de 10 familias, propuso conjeturas sobre
 transformaciones y halló: `I(Ḡ)=I(G)` en 68/68. Cámaras posteriores:

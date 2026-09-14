@@ -481,6 +481,18 @@ tipos de resultado: kinds → leyes → teoremas → universos.
 Mapa completo: [`paper/MAPA-DEL-LABORATORIO.md`](paper/MAPA-DEL-LABORATORIO.md).
 
 
+## 12. El motor: cómo funciona y su potencia medida
+
+<p align="center">
+  <img src="assets/motor-como-funciona.svg" width="100%" alt="Cómo funciona: refinamiento iterativo 1-WL sobre un ejemplo real de 8 nodos">
+  <br><em>El pipeline del motor: dato → grafo → label₀ → round → STOP → kinds; el ejemplo muestra las rondas 3 → 5 → 5 → 5 hasta la partición estable.</em>
+</p>
+
+<p align="center">
+  <img src="assets/motor-potencia.svg" width="100%" alt="La potencia del motor, en números reales">
+  <br><em>La potencia medida: paridad con Morgan (AUC 0.9608 vs 0.9541), compresión 3.00× (moléculas) y 187.5× (código), <code>refine_dual</code> 10.3×, ahorro por normalización dual 40.5%, oráculo de universos 87/87, tests del motor 104/104, banco T4 2.13M.</em>
+</p>
+
 <p align="center">
   <sub>© 2026 Juri (cripto-bot) · preprint privado · no distribuir sin autorización.<br>
   Este documento no reclama prioridad sobre problemas abiertos: reporta una caracterización verificada en un dominio acotado.<br>

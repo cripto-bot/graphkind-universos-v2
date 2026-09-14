@@ -1,28 +1,28 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 820 430" width="820" height="430">
   <rect width="820" height="430" rx="16" fill="#ffffff"/>
   <rect x="0.5" y="0.5" width="819" height="429" rx="15.5" fill="none" stroke="#e6e6e6"/>
-  <text x="36" y="46" font-family="Georgia,serif" font-size="22" fill="#0d0d0d">The Holy Grail: completeness, its price, and i*</text>
-  <text x="36" y="84" font-family="ui-monospace,monospace" font-size="14" fill="#0d0d0d" text-anchor="start">F3 = {1-WL, 2-WL, 3-WL}   ·   C_n(I) = collisions / pairs</text>
+  <text x="36" y="46" font-family="DejaVu Serif, Georgia, serif" font-size="22" fill="#0d0d0d">The Holy Grail: completeness, its price, and i*</text>
+  <text x="36" y="84" font-family="DejaVu Sans, sans-serif" font-size="14" fill="#0d0d0d" text-anchor="start">F3 = {1-WL, 2-WL, 3-WL}   ·   C_n(I) = collisions / pairs</text>
   <rect x="36" y="110" width="240" height="150" rx="12" fill="none" stroke="#e6e6e6"/>
-  <text x="52" y="138" font-family="-apple-system,sans-serif" font-size="13" fill="#6b6b6b" text-anchor="start">COMPLETENESS (n≤8)</text>
-  <text x="52" y="168" font-family="ui-monospace,monospace" font-size="22" fill="#0b6b3a" text-anchor="start">C_8 = 0</text>
-  <text x="52" y="194" font-family="ui-monospace,monospace" font-size="13" fill="#0d0d0d" text-anchor="start">76 205 685 pairs</text>
-  <text x="52" y="222" font-family="-apple-system,sans-serif" font-size="12" fill="#6b6b6b" text-anchor="start">leave-one-out: 3-WL</text>
-  <text x="52" y="240" font-family="-apple-system,sans-serif" font-size="12" fill="#6b6b6b" text-anchor="start">does the work (350 without it)</text>
+  <text x="52" y="138" font-family="DejaVu Sans, sans-serif" font-size="13" fill="#6b6b6b" text-anchor="start">COMPLETENESS (n≤8)</text>
+  <text x="52" y="168" font-family="DejaVu Sans, sans-serif" font-size="22" fill="#0b6b3a" text-anchor="start">C_8 = 0</text>
+  <text x="52" y="194" font-family="DejaVu Sans, sans-serif" font-size="13" fill="#0d0d0d" text-anchor="start">76 205 685 pairs</text>
+  <text x="52" y="222" font-family="DejaVu Sans, sans-serif" font-size="12" fill="#6b6b6b" text-anchor="start">leave-one-out: 3-WL</text>
+  <text x="52" y="240" font-family="DejaVu Sans, sans-serif" font-size="12" fill="#6b6b6b" text-anchor="start">does the work (350 without it)</text>
   <rect x="290" y="110" width="240" height="150" rx="12" fill="none" stroke="#e6e6e6"/>
-  <text x="306" y="138" font-family="-apple-system,sans-serif" font-size="13" fill="#6b6b6b" text-anchor="start">T4's PRICE</text>
-  <text x="306" y="168" font-family="ui-monospace,monospace" font-size="22" fill="#a33" text-anchor="start">6 168 pairs</text>
-  <text x="306" y="194" font-family="-apple-system,sans-serif" font-size="12" fill="#6b6b6b" text-anchor="start">the quotient G ~ Ḡ merges them</text>
-  <text x="306" y="216" font-family="-apple-system,sans-serif" font-size="12" fill="#6b6b6b" text-anchor="start">10 self-complementary (n≤8)</text>
-  <text x="306" y="238" font-family="-apple-system,sans-serif" font-size="12" fill="#6b6b6b" text-anchor="start">v2 n≤5 analogue: 24 pairs</text>
+  <text x="306" y="138" font-family="DejaVu Sans, sans-serif" font-size="13" fill="#6b6b6b" text-anchor="start">T4's PRICE</text>
+  <text x="306" y="168" font-family="DejaVu Sans, sans-serif" font-size="22" fill="#a33" text-anchor="start">6 168 pairs</text>
+  <text x="306" y="194" font-family="DejaVu Sans, sans-serif" font-size="12" fill="#6b6b6b" text-anchor="start">the quotient G ~ Ḡ merges them</text>
+  <text x="306" y="216" font-family="DejaVu Sans, sans-serif" font-size="12" fill="#6b6b6b" text-anchor="start">10 self-complementary (n≤8)</text>
+  <text x="306" y="238" font-family="DejaVu Sans, sans-serif" font-size="12" fill="#6b6b6b" text-anchor="start">v2 n≤5 analogue: 24 pairs</text>
   <rect x="544" y="110" width="240" height="150" rx="12" fill="none" stroke="#e6e6e6"/>
-  <text x="560" y="138" font-family="-apple-system,sans-serif" font-size="13" fill="#6b6b6b" text-anchor="start">INDIVIDUALIZATION</text>
-  <text x="560" y="168" font-family="ui-monospace,monospace" font-size="22" fill="#0b6b3a" text-anchor="start">i* = 1</text>
-  <text x="560" y="194" font-family="-apple-system,sans-serif" font-size="12" fill="#6b6b6b" text-anchor="start">13 597 graphs (n≤8)</text>
-  <text x="560" y="222" font-family="ui-monospace,monospace" font-size="13" fill="#0d0d0d" text-anchor="start">i* = 2  at Rook/Shri</text>
-  <text x="560" y="244" font-family="-apple-system,sans-serif" font-size="12" fill="#6b6b6b" text-anchor="start">IR_1 ✗   IR_2 ✓</text>
-  <text x="36" y="300" font-family="-apple-system,sans-serif" font-size="14" fill="#0d0d0d" text-anchor="start">the complete invariant is NOT complement-invariant — that is exactly the information T4 describes</text>
-  <text x="36" y="336" font-family="ui-monospace,monospace" font-size="13" fill="#6b6b6b" text-anchor="start">i*(G) = min{ k : the pointed signature of G is unique in its class }</text>
-  <text x="36" y="368" font-family="-apple-system,sans-serif" font-size="13" fill="#6b6b6b" text-anchor="start">lattice (n≤9): all complete invariants collapse (vacuous equivalence); WL = 2-WL;</text>
-  <text x="36" y="388" font-family="-apple-system,sans-serif" font-size="13" fill="#6b6b6b" text-anchor="start">anchors: IR_1 fails where 3-WL fails, IR_2 separates where 3-FWL/4-WL separates (C not observed)</text>
+  <text x="560" y="138" font-family="DejaVu Sans, sans-serif" font-size="13" fill="#6b6b6b" text-anchor="start">INDIVIDUALIZATION</text>
+  <text x="560" y="168" font-family="DejaVu Sans, sans-serif" font-size="22" fill="#0b6b3a" text-anchor="start">i* = 1</text>
+  <text x="560" y="194" font-family="DejaVu Sans, sans-serif" font-size="12" fill="#6b6b6b" text-anchor="start">13 597 graphs (n≤8)</text>
+  <text x="560" y="222" font-family="DejaVu Sans, sans-serif" font-size="13" fill="#0d0d0d" text-anchor="start">i* = 2  at Rook/Shri</text>
+  <text x="560" y="244" font-family="DejaVu Sans, sans-serif" font-size="12" fill="#6b6b6b" text-anchor="start">IR_1 ✗   IR_2 ✓</text>
+  <text x="36" y="300" font-family="DejaVu Sans, sans-serif" font-size="14" fill="#0d0d0d" text-anchor="start">the complete invariant is NOT complement-invariant — that is exactly the information T4 describes</text>
+  <text x="36" y="336" font-family="DejaVu Sans, sans-serif" font-size="13" fill="#6b6b6b" text-anchor="start">i*(G) = min{ k : the pointed signature of G is unique in its class }</text>
+  <text x="36" y="368" font-family="DejaVu Sans, sans-serif" font-size="13" fill="#6b6b6b" text-anchor="start">lattice (n≤9): all complete invariants collapse (vacuous equivalence); WL = 2-WL;</text>
+  <text x="36" y="388" font-family="DejaVu Sans, sans-serif" font-size="13" fill="#6b6b6b" text-anchor="start">anchors: IR_1 fails where 3-WL fails, IR_2 separates where 3-FWL/4-WL separates (C not observed)</text>
 </svg>

@@ -16,15 +16,15 @@ def _head(w, h, titulo):
             f'  <rect width="{w}" height="{h}" rx="16" fill="{BG}"/>\n'
             f'  <rect x="0.5" y="0.5" width="{w-1}" height="{h-1}" rx="15.5" '
             f'fill="none" stroke="{BORDE}"/>\n'
-            f'  <text x="36" y="46" font-family="Georgia,serif" font-size="22" '
+            f'  <text x="36" y="46" font-family="DejaVu Serif, Georgia, serif" font-size="22" '
             f'fill="{TXT}">{titulo}</text>\n')
 
 def _mono(x, y, s, fill=VERDE, size=15, anchor="start"):
-    return (f'  <text x="{x}" y="{y}" font-family="ui-monospace,monospace" '
+    return (f'  <text x="{x}" y="{y}" font-family="DejaVu Sans, sans-serif" '
             f'font-size="{size}" fill="{fill}" text-anchor="{anchor}">{s}</text>\n')
 
 def _sans(x, y, s, fill=MUT, size=13, anchor="start"):
-    return (f'  <text x="{x}" y="{y}" font-family="-apple-system,sans-serif" '
+    return (f'  <text x="{x}" y="{y}" font-family="DejaVu Sans, sans-serif" '
             f'font-size="{size}" fill="{fill}" text-anchor="{anchor}">{s}</text>\n')
 
 def _fin(w, h):
@@ -33,7 +33,7 @@ def _fin(w, h):
 # 1. La ley multicapa
 def fig_multicapa():
     s = _head(760, 460, "Multilayer T4 — the coherence law")
-    s += _mono(36, 84, "c<tspan baseline-shift=\"sub\">t+1</tspan>(v) = H( c_t(v) | ⨆<tspan baseline-shift=\"sub\">ℓ</tspan> { c_t(w) : w ∈ N_ℓ(v) } )", TXT, 16)
+    s += _mono(36, 84, "c<tspan baseline-shift=\"sub\">t+1</tspan>(v) = H( c_t(v) | ⊔<tspan baseline-shift=\"sub\">ℓ</tspan> { c_t(w) : w ∈ N_ℓ(v) } )", TXT, 16)
     s += _sans(36, 108, "joint refinement — canonical: multiset over channels · ordered: tuple")
     # paneles
     x0, y0, w, h = 36, 140, 224, 150
@@ -54,7 +54,7 @@ def fig_multicapa():
     # ley
     s += _mono(36, 342, "T4(ι) lives  ⟺  ι acts uniformly on the channels", VERDE, 17)
     s += _sans(36, 372, "canonical preserving group: exactly U = {∅, all} × S_L  →  4/4 (L=2), 12/12 (L=3), group closure ✓", MUT, 13)
-    s += _sans(36, 396, "ordered variant: the whole group preserves (tuple equality is coordinate-wise) — the group is relative to the observation", MUT, 13)
+    s += _sans(36, 396, "ordered variant: the whole group preserves — the group is relative to the observation", MUT, 13)
     s += _mono(36, 428, "(⇐) proved: the same bijection M_ℓ ↦ T_ℓ − M_ℓ per layer · (⇒) open", MUT, 13)
     return s + _fin(760, 460)
 

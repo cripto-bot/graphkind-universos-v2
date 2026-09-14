@@ -16,8 +16,9 @@ authors:
   - family-names: "Argaña Silguero"
     given-names: "Josué"
     alias: "cripto-bot"
+    orcid: "https://orcid.org/0009-0009-1983-4711"
     website: "https://github.com/cripto-bot"
-date-released: "2026-09-13"
+date-released: "2026-09-14"
 version: "2.0.0"
 license: LicenseRef-Proprietary
 repository-code: "https://github.com/cripto-bot/graphkind-universos"
