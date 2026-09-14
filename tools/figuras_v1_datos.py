@@ -7,6 +7,7 @@ color son hashes arbitrarios y PUEDEN diferir entre G y Ḡ. Genera:
   assets/t4-evolucion.svg
 """
 import hashlib
+import json
 from collections import Counter
 from pathlib import Path
 
@@ -130,9 +131,30 @@ def fig_t4_evolucion(destino):
                  if len(nx.shortest_path(G, 0, v)) - 1 == li]
         for v, xy in zip(sorted(hijos), xs):
             pos[v] = xy
-    fig, axes = plt.subplots(2, 4, figsize=(13, 6.2))
-    for fila, (a, nombre) in enumerate(((adj, "G (árbol binario)"),
-                                        (adjc, "Ḡ (complemento)"))):
+    trayectorias = {}
+    for clave, a in (("G", adj), ("Gbar", adjc)):
+        trayectorias[clave] = [len(set(clases_wl_ronda(n, a, k)))
+                               for k in range(4)]
+    assert trayectorias["G"] == [3, 4, 4, 4], trayectorias
+    assert trayectorias["Gbar"] == [3, 4, 4, 4], trayectorias
+    freeze = OUT.parent / "resultados" / "t4-arbol-trayectoria.json"
+    freeze.parent.mkdir(exist_ok=True)
+    freeze.write_text(json.dumps({
+        "figura": "assets/t4-evolucion.svg",
+        "grafo": "árbol binario balanceado (2,3), n=15",
+        "rondas": [0, 1, 2, 3],
+        "G": trayectorias["G"],
+        "Gbar": trayectorias["Gbar"],
+        "assert": "G y Ḡ coinciden por ronda (T4)",
+    }, ensure_ascii=False, indent=2) + "\n")
+    fig = plt.figure(figsize=(13.6, 6.2))
+    gs = fig.add_gridspec(2, 5, width_ratios=[1, 1, 1, 1, 0.62])
+    axes = [[fig.add_subplot(gs[fila, k]) for k in range(4)]
+            for fila in range(2)]
+    paneles = [fig.add_subplot(gs[fila, 4]) for fila in range(2)]
+    for fila, (a, nombre, clave) in enumerate(
+            ((adj, "G (árbol binario)", "G"),
+             (adjc, "Ḡ (complemento)", "Gbar"))):
         Ga = nx.Graph()
         Ga.add_nodes_from(range(n))
         for u in range(n):
@@ -153,6 +175,16 @@ def fig_t4_evolucion(destino):
             if k == 0:
                 ax.text(-4.2, 1.5, nombre, rotation=90, va="center",
                         ha="center", fontsize=11.5, color="#0d0d0d")
+        axp = paneles[fila]
+        tabla = ("ronda   0  1  2  3\nclases  "
+                 + "  ".join(str(x) for x in trayectorias[clave]))
+        axp.text(0.5, 0.5, tabla, transform=axp.transAxes, ha="center",
+                 va="center", family="monospace", fontsize=10.5,
+                 linespacing=1.7,
+                 bbox=dict(boxstyle="round,pad=0.55", facecolor="#f7f7f7",
+                           edgecolor="#cccccc"))
+        axp.set_title("trayectoria (motor)", fontsize=10.5)
+        axp.axis("off")
     fig.suptitle("T4 ronda a ronda: la PARTICIÓN de clases coincide en G y "
                  "Ḡ en cada nivel (las etiquetas de color pueden diferir)",
                  fontsize=12)

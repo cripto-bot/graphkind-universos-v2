@@ -1,0 +1,23 @@
+{
+  "figura": "assets/t4-evolucion.svg",
+  "grafo": "árbol binario balanceado (2,3), n=15",
+  "rondas": [
+    0,
+    1,
+    2,
+    3
+  ],
+  "G": [
+    3,
+    4,
+    4,
+    4
+  ],
+  "Gbar": [
+    3,
+    4,
+    4,
+    4
+  ],
+  "assert": "G y Ḡ coinciden por ronda (T4)"
+}
