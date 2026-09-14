@@ -20,6 +20,8 @@ from multicapa import (refinar_conjunto, complemento_total,  # noqa: E402
 from hipergrafo import (t4_k_uniforme, t4_mezclado,  # noqa: E402
                         refine_dual_mezclado, refinar_mezclado,
                         complemento_k_uniforme)
+from individualizacion import IR_k  # noqa: E402
+from wl import separados, build_adj  # noqa: E402
 
 
 def _grafos(n):
@@ -124,12 +126,86 @@ def V16_mezclado():
           f"| por aridad {aridad}/{objetos} VIVE (reparo): OK")
 
 
+def _grafos_unicos(n):
+    """Grafos no isomorfos de n vértices (canónica por fuerza bruta)."""
+    from itertools import permutations
+    pares = list(combinations(range(n), 2))
+    vistos = {}
+    for mask in range(1 << len(pares)):
+        E = [pares[i] for i in range(len(pares)) if (mask >> i) & 1]
+        es = tuple(sorted(tuple(sorted(e)) for e in E))
+        mejor = None
+        for p in permutations(range(n)):
+            k = tuple(sorted(tuple(sorted((p[a], p[b]))) for a, b in es))
+            if mejor is None or k < mejor:
+                mejor = k
+        if mejor not in vistos:
+            vistos[mejor] = E
+    return list(vistos.values())
+
+
+def V17_cociente_complemento():
+    """T4 tiene precio: el invariante completo identifica G con su
+    complemento; el cociente fusiona (N - autocomplementarios)/2 pares.
+
+    (SG-01: en n<=8 son 6 168 pares; acá se ejecuta el análogo n<=5.)"""
+    import networkx as nx
+    from wl import wl_sym
+    N = identificados = autocomp = 0
+    for n in (1, 2, 3, 4, 5):
+        for E in _grafos_unicos(n):
+            N += 1
+            adj = build_adj(n, sum(1 << i for i, e in enumerate(
+                combinations(range(n), 2)) if list(e) in
+                [sorted(x) for x in E]))
+            g = nx.Graph()
+            g.add_nodes_from(range(n))
+            g.add_edges_from(E)
+            gc = nx.complement(g)
+            # clave = perfil WL (complemento-invariante por T4)
+            if wl_sym(n, adj, lambda k: k) == wl_sym(
+                    n, build_adj(n, sum(1 << i for i, e in enumerate(
+                        combinations(range(n), 2))
+                        if list(e) in [sorted(x) for x in gc.edges])),
+                    lambda k: k):
+                identificados += 1
+            if nx.is_isomorphic(g, gc):
+                autocomp += 1
+    assert identificados == N, (identificados, N)
+    assert (N - autocomp) % 2 == 0
+    print(f"V17 cociente por complemento (n<=5): {N} grafos | "
+          f"identificados {identificados} | autocomplementarios {autocomp} "
+          f"| pares fusionados {(N-autocomp)//2} (SG-01 n<=8: 6 168): OK")
+
+
+def V18_ir_anclas():
+    """IR_1 NO separa Rook/Shrikhande; IR_2 SÍ (SG-02/03)."""
+    import networkx as nx
+    rook = nx.cartesian_product(nx.complete_graph(4), nx.complete_graph(4))
+    shri = nx.Graph()
+    for i in range(4):
+        for j in range(4):
+            for di, dj in [(1, 0), (3, 0), (0, 1), (0, 3), (1, 1), (3, 3)]:
+                shri.add_edge((i, j), ((i + di) % 4, (j + dj) % 4))
+    def datos(g):
+        g = nx.convert_node_labels_to_integers(g)
+        return g.number_of_nodes(), sorted(tuple(sorted(e)) for e in g.edges)
+    n1, E1 = datos(rook)
+    n2, E2 = datos(shri)
+    assert IR_k(n1, E1, 1, "peor") == IR_k(n2, E2, 1, "peor")
+    assert IR_k(n1, E1, 2, "peor") != IR_k(n2, E2, 2, "peor")
+    print("V18 IR: IR_1 no separa Rook/Shrikhande; IR_2 SÍ "
+          "(i*=2): OK")
+
+
 def main():
     print("== VERIFICACIONES v2 (arco de universos) ==")
     V13_multicapa()
     V14_hipergrafos()
     V15_dual_aridad()
     V16_mezclado()
+    V17_cociente_complemento()
+    V18_ir_anclas()
     print("\nTODAS LAS VERIFICACIONES v2 OK")
 
 

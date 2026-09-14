@@ -47,7 +47,9 @@ revisión externa pendiente) se declaran explícitamente. La **v2** agrega
 el arco de universos (§12): la ley multicapa (coherencia de canales), el
 grupo preservante, la escalera k\*, la matriz universo×observador, la
 predicción en hipergrafos, el fallo del transplante por aridad y el dual
-asimilado.
+asimilado; y el **Santo Grial** (§13): la completitud en la clase, su
+**precio** (6 168 pares del cociente por complemento), la individualización
+y el retículo IR↔k-WL.
 
 **Abstract (English)**. We present GraphKind, a structural discovery engine
 based on iterated neighborhood refinement (1-WL) with no prior taxonomy,
@@ -450,6 +452,51 @@ conjetura → testigo → capacidad.
 la canónica, canales viven), V14 (hipergrafos: T4 vive), V15 (dual:
 partición + ahorro), V16 (aridades mezcladas: por aridad vive). Todas
 ejecutables con `python codigo/verificaciones_v2.py`.
+
+## 13. El Santo Grial: completitud, su precio y los patrones (SG-01→03)
+
+**13.1 La familia mínima completa en la clase (SG-01).** Sobre **todos**
+los grafos no isomorfos n≤7 (geng) → freeze → n=8 (12 346 grafos;
+**76 205 685 pares**), la familia mínima que alcanza la completitud es
+**F3 = {WL, 2-WL, 3-WL}** con **C_8 = 0** (desenlace **A**). El
+leave-one-out muestra que **k-WL 3 hace el trabajo** (quitarlo deja 350
+colisiones); el control de relabeling (50/50) descarta fuga. No es un
+invariante completo universal: a **n=16 Rook/Shrikhande** colisiona
+F1–F6 y solo la familia total lo separa — la completitud es **de la
+clase**, con la frontera medida.
+
+**13.2 El precio de T4 (SG-01).** El invariante completo **no es
+complemento-invariante**: el cociente `G ~ Ḡ` fusiona exactamente
+**6 168 pares** (con 10 autocomplementarios en n≤8). Esa es la
+información que T4 describe, **cuantificada**: la complemento-invarianza
+cuesta esos pares. La verificación v2 (V17) ejecuta el análogo n≤5: 52
+grafos, 4 autocomplementarios, **24 pares fusionados**.
+
+**13.3 Individualización y el retículo IR↔k-WL (SG-02/03).** La
+individualización mínima es **i\*=1** para los 13 597 grafos de n≤8
+(ninguno necesita 0: WL nunca es único en la clase; ninguno necesita 2).
+En la frontera, Rook/Shrikhande exige **i\*=2**: `IR_1` **no** los separa
+(y falla donde falla 3-WL), `IR_2` **sí** (se comporta como 3-FWL ≡
+4-WL). El retículo sobre n≤9 (274 668 grafos) muestra que **todos los
+invariantes completos colapsan** (partición discreta idéntica:
+equivalencia vacua) y que `WL = 2-WL`; la evidencia discriminante son
+las anclas (C6/2C3, Rook/Shrikhande, Petersen/C5). Cierre: **A** en
+anclas, **B** (IR_2 > 3-WL) y **C no observado**. La verificación v2
+(V18) ejecuta las anclas.
+
+**13.4 El método: los patrones transversales.** Ocho patrones sostienen
+todo el laboratorio: (1) **el dato decide** (k\*, r\*, umbrales por
+validación interna); (2) **congelar antes de interpretar**; (3) **control
+negativo obligatorio** (sin control, un número no se reporta); (4)
+**atribución A/B/C/D** (A laboratorio, B motor, C en `naturalkinds/`, D
+validado a ciegas); (5) **emerger ≠ barrer** (CV, no sweeps); (6) **las
+correcciones se registran, no se borran** (D-001→D-017); (7) **el
+negativo vale** (refutaciones documentadas); (8) **versionado exacto del
+motor** (`MOTOR.json`). El `DECISION_LOG.md` completo viaja en
+`paper/DECISION_LOG.md`.
+
+**Pendiente declarado**: la (⇒) ∀L de `PRUEBA-MULTICAPA.md` y la
+frontera exacta n=10→16 del universo estándar (SG-04, en curso).
 
 ## Referencias (selección)
 

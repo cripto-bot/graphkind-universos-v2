@@ -301,6 +301,8 @@ arities, dual), with its freezes in `resultados/` and **V13–V16** in
 | V14 | 3-uniform hypergraphs: T4 holds | 6042/6042 (n≤5 + n=6 sample) |
 | V15 | per-arity dual: partition + saving | 1024/1024 · 5120→3392 edges |
 | V16 | mixed arities: per-arity **holds** (repair) | 1024/1024 |
+| V17 | complement quotient (T4's price) | 52 graphs · 24 pairs (SG-01 n≤8: 6,168) |
+| V18 | IR: IR_1 does not separate Rook/Shri, IR_2 does | i\*=2 |
 
 **Results**: (1) **multilayer** — the coherence law: total holds
 (1298/1298, 1404/1404), per-layer dies only in the canonical variant
@@ -312,6 +314,22 @@ ladder is flat (corrects EXP-162's `k*=2`); (⇐) proved, (⇒) open.
 (the law is of channels). (5) **per-arity dual** — assimilated: partition
 100%, saving 14.37% vs 10.26%.
 
+## 7d. The Holy Grail (SG-01→03)
+
+- **Completeness in the class**: the minimal family is **{WL, 2-WL,
+  3-WL}** with **C_8 = 0** over **76,205,685 pairs** (n≤8); leave-one-out:
+  k-WL 3 does the work; the n=16 frontier (Rook/Shri) is separated only by
+  the full family. Freeze: `resultados/SG-01_results_frozen.json`.
+- **The price of T4**: the complete invariant is **not**
+  complement-invariant; the quotient `G~Ḡ` merges **6,168 pairs**.
+- **Individualization**: **i\*=1** at n≤8 (13,597 graphs); **i\*=2** at
+  Rook/Shrikhande (IR_1 no, IR_2 yes). The IR↔k-WL lattice: at n≤9 the
+  complete ones collapse (vacuous equivalence); anchors A/B, C not
+  observed. Freezes: `SG-02`, `SG-03`.
+- **The multilayer proof** ships in `paper/PRUEBA-MULTICAPA.md` ((⇐)
+  proved, (⇒) open) and the **transversal patterns** + `DECISION_LOG`
+  (D-001→D-017) in `paper/DECISION_LOG.md`.
+
 ## 8. Repository structure
 
 ```
@@ -321,7 +339,9 @@ paper/PRUEBA-CARACTERIZACION.md  the (⇐) proof and the status of (⇒)
 codigo/universos.py              the law inside the engine (t4_garantizado, oracle)
 codigo/wl.py                     symmetric WL + correlated k-FWL (≡ (k+1)-WL)
 codigo/verificaciones.py         V1–V12 with asserts of the exact numbers
-resultados/*.json                original freezes (EXP-102..169)
+paper/PRUEBA-MULTICAPA.md        (⇐) proved, (⇒) open (EXP-162)
+paper/DECISION_LOG.md            laboratory decisions D-001→D-017
+resultados/*.json                original freezes (EXP-102..169 + SG-01/02/03)
 resultados/atlas/*.json          the atlas: 15 universes (EXP-105)
 assets/*.svg                     figures
 index.html · index.en.html       presentation pages (ES/EN)

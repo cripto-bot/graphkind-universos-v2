@@ -305,6 +305,8 @@ aridades, dual), con sus freezes en `resultados/` y **V13–V16** en
 | V14 | hipergrafos 3-uniformes: T4 vive | 6042/6042 (n≤5 + muestra n=6) |
 | V15 | dual por aridad: partición + ahorro | 1024/1024 · 5120→3392 aristas |
 | V16 | aridades mezcladas: por aridad **vive** (reparo) | 1024/1024 |
+| V17 | cociente por complemento (precio de T4) | 52 grafos · 24 pares (SG-01 n≤8: 6 168) |
+| V18 | IR: IR_1 no separa Rook/Shri, IR_2 sí | i\*=2 |
 
 **Los resultados**: (1) **multicapa** — la ley de coherencia: total vive
 (1298/1298, 1404/1404), por-capa muere solo en la canónica (6.9%/7.4%);
@@ -315,6 +317,22 @@ tipado. (3) **hipergrafos** — predicción registrada y acertada
 (1831/1831). (4) **aridades** — la escalera vive; el transplante por
 aridad **falla** (la ley es de canales). (5) **dual por aridad** —
 asimilado: partición 100%, ahorro 14.37% vs 10.26%.
+
+## 7d. El Santo Grial (SG-01→03)
+
+- **Completitud en la clase**: la familia mínima es **{WL, 2-WL, 3-WL}**
+  con **C_8 = 0** en **76 205 685 pares** (n≤8); leave-one-out: k-WL 3
+  hace el trabajo; la frontera n=16 (Rook/Shri) la separa solo la familia
+  total. Freeze: `resultados/SG-01_results_frozen.json`.
+- **El precio de T4**: el invariante completo **no** es
+  complemento-invariante; el cociente `G~Ḡ` fusiona **6 168 pares**.
+- **Individualización**: **i\*=1** en n≤8 (13 597 grafos); **i\*=2** en
+  Rook/Shrikhande (IR_1 no, IR_2 sí). El retículo IR↔k-WL: en n≤9 los
+  completos colapsan (equivalencia vacua); anclas A/B, C no observado.
+  Freezes: `SG-02`, `SG-03`.
+- **La prueba multicapa** viaja en `paper/PRUEBA-MULTICAPA.md` ((⇐)
+  probada, (⇒) abierta) y los **patrones transversales** + el
+  `DECISION_LOG` (D-001→D-017) en `paper/DECISION_LOG.md`.
 
 ## 8. Estructura del repositorio
 
@@ -328,7 +346,10 @@ codigo/verificaciones.py         V1–V12 con asserts de los números exactos
 codigo/verificaciones_v2.py      V13–V16 (arco de universos)
 codigo/multicapa.py              refinamiento conjunto + tres dualidades (v2)
 codigo/hipergrafo.py             k-uniforme + aridades mezcladas + dual (v2)
-resultados/*.json                freezes originales (EXP-102..169)
+codigo/individualizacion.py      IR_k (peor/multiset) — SG-02/03 (v2)
+paper/PRUEBA-MULTICAPA.md        (⇐) probada, (⇒) abierta (EXP-162)
+paper/DECISION_LOG.md            decisiones D-001→D-017 del laboratorio
+resultados/*.json                freezes originales (EXP-102..169 + SG-01/02/03)
 resultados/atlas/*.json          los 15 universos del atlas (EXP-105)
 assets/*.svg                     figuras
 index.html · index.en.html       páginas de presentación (ES/EN)

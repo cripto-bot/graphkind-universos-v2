@@ -1,0 +1,94 @@
+{
+  "programa": "SG-01",
+  "familia_elegida": "F3",
+  "test": {
+    "colisiones": 0,
+    "pares": 76205685,
+    "C_8": 0.0
+  },
+  "baseline_F7": 0,
+  "shuffle": 0,
+  "leave_one_out": {
+    "C1": {
+      "colisiones_sin": 0,
+      "necesario": false
+    },
+    "C2": {
+      "colisiones_sin": 0,
+      "necesario": false
+    },
+    "C3": {
+      "colisiones_sin": 350,
+      "necesario": true
+    }
+  },
+  "cociente_complemento": {
+    "colisiones_originales": 0,
+    "colisiones_cociente": 6168,
+    "identificados": 10
+  },
+  "pares_conocidos": {
+    "C6/2C3": {
+      "F1": true,
+      "F2": true,
+      "F3": false,
+      "F4": false,
+      "F5": false,
+      "F6": false,
+      "F7": false
+    },
+    "Rook/Shri (n=16)": {
+      "F1": true,
+      "F2": true,
+      "F3": true,
+      "F4": true,
+      "F5": true,
+      "F6": true,
+      "F7": false
+    }
+  },
+  "control_relabeling": {
+    "ok": 50,
+    "muestra": 50
+  },
+  "desenlace": "A (completo en n<=8)",
+  "curva_C_n": {
+    "2": {
+      "colisiones": 0,
+      "pares": 1,
+      "C_n": 0.0
+    },
+    "3": {
+      "colisiones": 0,
+      "pares": 6,
+      "C_n": 0.0
+    },
+    "4": {
+      "colisiones": 0,
+      "pares": 55,
+      "C_n": 0.0
+    },
+    "5": {
+      "colisiones": 0,
+      "pares": 561,
+      "C_n": 0.0
+    },
+    "6": {
+      "colisiones": 0,
+      "pares": 12090,
+      "C_n": 0.0
+    },
+    "7": {
+      "colisiones": 0,
+      "pares": 544446,
+      "C_n": 0.0
+    },
+    "8": {
+      "colisiones": 0,
+      "pares": 76205685,
+      "C_n": 0.0
+    }
+  },
+  "nota": "sin reajuste post-freeze; familia m\u00ednima por costo; controles obligatorios",
+  "hardware": "Pool(22), chunks=20, OMP=1"
+}
