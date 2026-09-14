@@ -303,6 +303,7 @@ arities, dual), with its freezes in `resultados/` and **V13–V16** in
 | V16 | mixed arities: per-arity **holds** (repair) | 1024/1024 |
 | V17 | complement quotient (T4's price) | 52 graphs · 24 pairs (SG-01 n≤8: 6,168) |
 | V18 | IR: IR_1 does not separate Rook/Shri, IR_2 does | i\*=2 |
+| V19 | SG-04 certificate: n=10 exhaustive, no failures | 12,005,168 · 0 collisions |
 
 
 <p align="center">
@@ -384,6 +385,17 @@ ladder is flat (corrects EXP-162's `k*=2`); (⇐) proved, (⇒) open.
   proved, (⇒) open) and the **transversal patterns** + `DECISION_LOG`
   (D-001→D-017) in `paper/DECISION_LOG.md`.
 
+## 7e. SG-04: the door (n=10 exhaustive)
+
+- **0 collisions** over **12,005,168** exhaustive n=10 graphs (KW3/IR1p,
+  11.1 h) → the first incompleteness is **not at n=10**.
+- Directed: 9 regular combos n=11–15 (cap 5,000) + 10 Cayley/Paley/Q4
+  pairs → **0 failures**.
+- The first known failure remains at **n=16** (Rook/Shri): separated by
+  **elementary descriptors** (SNFL, AUT, CICLOS, LOCAL, HOM2) + KF3/IR2p.
+  Freeze: `resultados/SG-04_results_frozen.json` (certificate V19).
+- Registered correction: `geng -d 3` (separated) fails; it is `-d3`.
+
 ## 8. Repository structure
 
 ```
@@ -395,7 +407,7 @@ codigo/wl.py                     symmetric WL + correlated k-FWL (≡ (k+1)-WL)
 codigo/verificaciones.py         V1–V12 with asserts of the exact numbers
 paper/PRUEBA-MULTICAPA.md        (⇐) proved, (⇒) open (EXP-162)
 paper/DECISION_LOG.md            laboratory decisions D-001→D-017
-resultados/*.json                original freezes (EXP-102..169 + SG-01/02/03)
+resultados/*.json                original freezes (EXP-102..169 + SG-01..04)
 resultados/atlas/*.json          the atlas: 15 universes (EXP-105)
 assets/*.svg                     figures
 index.html · index.en.html       presentation pages (ES/EN)

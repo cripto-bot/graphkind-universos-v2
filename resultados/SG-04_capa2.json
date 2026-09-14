@@ -1,0 +1,200 @@
+[
+  {
+    "familia": "reg n=11 k=4",
+    "grafos": 266,
+    "mecanismo": "KW3",
+    "pares": 0
+  },
+  {
+    "familia": "reg n=11 k=4",
+    "grafos": 266,
+    "mecanismo": "IR1p",
+    "pares": 0
+  },
+  {
+    "familia": "reg n=12 k=3",
+    "grafos": 94,
+    "mecanismo": "KW3",
+    "pares": 0
+  },
+  {
+    "familia": "reg n=12 k=3",
+    "grafos": 94,
+    "mecanismo": "IR1p",
+    "pares": 0
+  },
+  {
+    "familia": "reg n=12 k=4",
+    "grafos": 1547,
+    "mecanismo": "KW3",
+    "pares": 0
+  },
+  {
+    "familia": "reg n=12 k=4",
+    "grafos": 1547,
+    "mecanismo": "IR1p",
+    "pares": 0
+  },
+  {
+    "familia": "reg n=12 k=5",
+    "grafos": 5000,
+    "mecanismo": "KW3",
+    "pares": 0
+  },
+  {
+    "familia": "reg n=12 k=5",
+    "grafos": 5000,
+    "mecanismo": "IR1p",
+    "pares": 0
+  },
+  {
+    "familia": "reg n=13 k=4",
+    "grafos": 5000,
+    "mecanismo": "KW3",
+    "pares": 0
+  },
+  {
+    "familia": "reg n=13 k=4",
+    "grafos": 5000,
+    "mecanismo": "IR1p",
+    "pares": 0
+  },
+  {
+    "familia": "reg n=14 k=3",
+    "grafos": 540,
+    "mecanismo": "KW3",
+    "pares": 0
+  },
+  {
+    "familia": "reg n=14 k=3",
+    "grafos": 540,
+    "mecanismo": "IR1p",
+    "pares": 0
+  },
+  {
+    "familia": "reg n=14 k=4",
+    "grafos": 5000,
+    "mecanismo": "KW3",
+    "pares": 0
+  },
+  {
+    "familia": "reg n=14 k=4",
+    "grafos": 5000,
+    "mecanismo": "IR1p",
+    "pares": 0
+  },
+  {
+    "familia": "reg n=14 k=5",
+    "grafos": 5000,
+    "mecanismo": "KW3",
+    "pares": 0
+  },
+  {
+    "familia": "reg n=14 k=5",
+    "grafos": 5000,
+    "mecanismo": "IR1p",
+    "pares": 0
+  },
+  {
+    "familia": "reg n=15 k=4",
+    "grafos": 5000,
+    "mecanismo": "KW3",
+    "pares": 0
+  },
+  {
+    "familia": "reg n=15 k=4",
+    "grafos": 5000,
+    "mecanismo": "IR1p",
+    "pares": 0
+  },
+  {
+    "familia": "C13+{1,5}|C17+{1,4}",
+    "grafos": 2,
+    "mecanismo": "separados",
+    "separados": {
+      "KW3": true,
+      "IR1p": true
+    }
+  },
+  {
+    "familia": "C13+{1,5}|Paley13",
+    "grafos": 2,
+    "mecanismo": "separados",
+    "separados": {
+      "KW3": true,
+      "IR1p": true
+    }
+  },
+  {
+    "familia": "C13+{1,5}|Paley17",
+    "grafos": 2,
+    "mecanismo": "separados",
+    "separados": {
+      "KW3": true,
+      "IR1p": true
+    }
+  },
+  {
+    "familia": "C13+{1,5}|Q4",
+    "grafos": 2,
+    "mecanismo": "separados",
+    "separados": {
+      "KW3": true,
+      "IR1p": true
+    }
+  },
+  {
+    "familia": "C17+{1,4}|Paley13",
+    "grafos": 2,
+    "mecanismo": "separados",
+    "separados": {
+      "KW3": true,
+      "IR1p": true
+    }
+  },
+  {
+    "familia": "C17+{1,4}|Paley17",
+    "grafos": 2,
+    "mecanismo": "separados",
+    "separados": {
+      "KW3": true,
+      "IR1p": true
+    }
+  },
+  {
+    "familia": "C17+{1,4}|Q4",
+    "grafos": 2,
+    "mecanismo": "separados",
+    "separados": {
+      "KW3": true,
+      "IR1p": true
+    }
+  },
+  {
+    "familia": "Paley13|Paley17",
+    "grafos": 2,
+    "mecanismo": "separados",
+    "separados": {
+      "KW3": true,
+      "IR1p": true
+    }
+  },
+  {
+    "familia": "Paley13|Q4",
+    "grafos": 2,
+    "mecanismo": "separados",
+    "separados": {
+      "KW3": true,
+      "IR1p": true
+    }
+  },
+  {
+    "familia": "Paley17|Q4",
+    "grafos": 2,
+    "mecanismo": "separados",
+    "separados": {
+      "KW3": true,
+      "IR1p": true
+    }
+  }
+]

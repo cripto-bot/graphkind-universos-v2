@@ -49,6 +49,10 @@ def fig_frontera():
     sg3 = _cargar("SG-03_results_frozen.json")["test"]
     sg1 = _cargar("SG-01_results_frozen.json")
     e119 = _cargar("EXP-119_results_frozen.json")
+    sg4 = _cargar("SG-04_results_frozen.json")
+    c1 = sg4["capa1_n10"]
+    assert c1["grafos"] == 12005168 and c1["KW3"]["pares"] == 0 \
+        and c1["IR1p"]["pares"] == 0, c1
     wl_n = {int(n): v for n, v in sg3["fallas_por_n"]["WL"].items()}
     assert wl_n == {9: 3900}, wl_n
     assert sg3["n_min"]["WL"] == 6 and sg3["n_min"]["KW3"] is None
@@ -61,12 +65,16 @@ def fig_frontera():
     col = [4, 22, 350, 3900]
     ax.plot(ns, col, "-o", color=ROJO, lw=2.2, ms=7,
             label=r"WL $=$ KW2 (the base observer)")
-    ax.plot(ns, [0.45] * len(ns), "s", color=VERDE, ms=8,
+    ns0 = [6, 7, 8, 9, 10]
+    ax.plot(ns0, [0.45] * len(ns0), "s", color=VERDE, ms=8,
             label=r"KW3, KF2, KF3, IR$_1$, IR$_2$: 0 collisions")
+    ax.annotate("$n=10$ exhaustive: 0 / 12 005 168 (SG-04)",
+                xy=(7.35, 0.78), fontsize=8.5, color=VERDE)
     ax.axhspan(0.30, 0.65, color=VERDE, alpha=0.08)
     ax.set_yscale("log")
     ax.set_ylim(0.25, 3e4)
-    ax.set_xticks(ns)
+    ax.set_xticks(ns0)
+    ax.set_xlim(5.7, 10.35)
     ax.set_xlabel(r"$n$")
     ax.set_ylabel(r"collisions $C_n$ (log)")
     ax.set_title(r"Frontier curves $C_n(I)$: what each observer loses",

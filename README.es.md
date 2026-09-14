@@ -307,6 +307,7 @@ aridades, dual), con sus freezes en `resultados/` y **V13–V16** en
 | V16 | aridades mezcladas: por aridad **vive** (reparo) | 1024/1024 |
 | V17 | cociente por complemento (precio de T4) | 52 grafos · 24 pares (SG-01 n≤8: 6 168) |
 | V18 | IR: IR_1 no separa Rook/Shri, IR_2 sí | i\*=2 |
+| V19 | certificado SG-04: n=10 exhaustivo sin fallas | 12 005 168 · 0 colisiones |
 
 
 <p align="center">
@@ -388,6 +389,17 @@ asimilado: partición 100%, ahorro 14.37% vs 10.26%.
   probada, (⇒) abierta) y los **patrones transversales** + el
   `DECISION_LOG` (D-001→D-017) en `paper/DECISION_LOG.md`.
 
+## 7e. SG-04: la puerta (n=10 exhaustivo)
+
+- **0 colisiones** en **12 005 168** grafos n=10 exhaustivos (KW3/IR1p,
+  11.1 h) → la primera incompletitud **no está en n=10**.
+- Dirigido: 9 combos regulares n=11–15 (tope 5 000) + 10 pares
+  Cayley/Paley/Q4 → **0 fallas**.
+- La primera falla conocida sigue en **n=16** (Rook/Shri): la separan
+  **descriptores elementales** (SNFL, AUT, CICLOS, LOCAL, HOM2) + KF3/
+  IR2p. Freeze: `resultados/SG-04_results_frozen.json` (certificado V19).
+- Corrección registrada: `geng -d 3` (separado) falla; es `-d3`.
+
 ## 8. Estructura del repositorio
 
 ```
@@ -403,7 +415,7 @@ codigo/hipergrafo.py             k-uniforme + aridades mezcladas + dual (v2)
 codigo/individualizacion.py      IR_k (peor/multiset) — SG-02/03 (v2)
 paper/PRUEBA-MULTICAPA.md        (⇐) probada, (⇒) abierta (EXP-162)
 paper/DECISION_LOG.md            decisiones D-001→D-017 del laboratorio
-resultados/*.json                freezes originales (EXP-102..169 + SG-01/02/03)
+resultados/*.json                freezes originales (EXP-102..169 + SG-01..04)
 resultados/atlas/*.json          los 15 universos del atlas (EXP-105)
 assets/*.svg                     figuras
 index.html · index.en.html       páginas de presentación (ES/EN)

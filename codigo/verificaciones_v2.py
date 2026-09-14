@@ -9,12 +9,18 @@ V15 dual por aridad: partición garantizada + ahorro (n=4 exhaustivo).
 V16 aridades mezcladas: por aridad VIVE (el refinamiento repara).
 """
 
+import json
 import random
 import sys
 from itertools import combinations
 from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
+RES = Path(__file__).resolve().parent.parent / "resultados"
+
+
+def _cargar(nombre):
+    return json.loads((RES / nombre).read_text())
 from multicapa import (refinar_conjunto, complemento_total,  # noqa: E402
                        complemento_capa, complemento_canales, t4)
 from hipergrafo import (t4_k_uniforme, t4_mezclado,  # noqa: E402
@@ -198,6 +204,21 @@ def V18_ir_anclas():
           "(i*=2): OK")
 
 
+def V19_sg04_certificado():
+    """Certificado del freeze de SG-04: n=10 exhaustivo sin fallas."""
+    d = _cargar("SG-04_results_frozen.json")
+    c1 = d["capa1_n10"]
+    assert c1["grafos"] == 12005168, c1
+    assert c1["KW3"]["pares"] == 0 and c1["IR1p"]["pares"] == 0, c1
+    sep = d["capa3_n16"]["separadores"]
+    for k in ("SNFL", "AUT", "CICLOS", "LOCAL", "HOM2", "KF3", "IR2p"):
+        assert sep[k], (k, sep)
+    for k in ("SPEC_A", "SEIDEL", "KF2", "IR1p"):
+        assert not sep[k], (k, sep)
+    print(f"V19 SG-04: n=10 exhaustivo {c1['grafos']} grafos, 0 colisiones "
+          f"(KW3/IR1p) | n=16: separadores elementales + KF3/IR2p: OK")
+
+
 def main():
     print("== VERIFICACIONES v2 (arco de universos) ==")
     V13_multicapa()
@@ -206,6 +227,7 @@ def main():
     V16_mezclado()
     V17_cociente_complemento()
     V18_ir_anclas()
+    V19_sg04_certificado()
     print("\nTODAS LAS VERIFICACIONES v2 OK")
 
 

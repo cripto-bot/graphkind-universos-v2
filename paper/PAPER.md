@@ -552,6 +552,20 @@ motor** (`MOTOR.json`). El `DECISION_LOG.md` completo viaja en
 **Pendiente declarado**: la (⇒) ∀L de `PRUEBA-MULTICAPA.md` y la
 frontera exacta n=10→16 del universo estándar (SG-04, en curso).
 
+## 14. SG-04: la puerta — n=10 exhaustivo sin fallas
+
+El barrido exhaustivo de **12 005 168** grafos n=10 (11.1 h, 22 workers)
+da **0 colisiones** para KW3 e IR1p: la primera incompletitud **no está
+en n=10**. El corpus dirigido (9 combos regulares n=11–15 con tope
+5 000 + 10 pares Cayley/Paley/Q4) tampoco falla. La primera falla
+conocida sigue en **n=16** (Rook/Shrikhande) y su huella muestra que la
+separan **descriptores elementales** (SNFL, AUT, CICLOS, LOCAL, HOM2)
+además de KF3/IR2p: la información que 3-WL no ve es estructura
+local/cíclica. La frontera exacta entre n=11 y n=16 queda abierta
+(exhaustivo inabordable). Corrección registrada: la primera corrida de la
+capa dirigida usó `geng -d 3` (separado) y falló; re-corrida con `-d3`
+(7:42). Verificación v2: V19 (certificado del freeze).
+
 ## Referencias (selección)
 
 - Weisfeiler, Leman (1968). *A reduction of a graph to a canonical form…*
