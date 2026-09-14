@@ -494,7 +494,7 @@ Mapa completo: [`paper/MAPA-DEL-LABORATORIO.md`](paper/MAPA-DEL-LABORATORIO.md).
 </p>
 
 <p align="center">
-  <sub>© 2026 Juri (cripto-bot) · preprint privado · no distribuir sin autorización.<br>
+  <sub>© 2026 Juri (cripto-bot) · preprint · licencia <a href="LICENSE">CC-BY-4.0</a> (atribución requerida).<br>
   Este documento no reclama prioridad sobre problemas abiertos: reporta una caracterización verificada en un dominio acotado.<br>
   Citar como: ver <a href="CITATION.cff">CITATION.cff</a>.</sub>
 </p>

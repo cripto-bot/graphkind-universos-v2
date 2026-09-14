@@ -20,7 +20,7 @@ authors:
     website: "https://github.com/cripto-bot"
 date-released: "2026-09-14"
 version: "2.0.0"
-license: LicenseRef-Proprietary
+license: CC-BY-4.0
 repository-code: "https://github.com/cripto-bot/graphkind-universos"
 keywords:
   - color refinement

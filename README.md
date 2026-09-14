@@ -486,7 +486,7 @@ Full map: [`paper/MAPA-DEL-LABORATORIO.md`](paper/MAPA-DEL-LABORATORIO.md).
 </p>
 
 <p align="center">
-  <sub>© 2026 Juri (cripto-bot) · private preprint · do not distribute without authorization.<br>
+  <sub>© 2026 Juri (cripto-bot) · preprint · <a href="LICENSE">CC-BY-4.0</a> license (attribution required).<br>
   This document claims no priority over open problems: it reports a verified characterization in a bounded domain.<br>
   Cite as: see <a href="CITATION.cff">CITATION.cff</a>.</sub>
 </p>
