@@ -344,12 +344,30 @@ ladder is flat (corrects EXP-162's `k*=2`); (⇐) proved, (⇒) open.
   <br><em>Per-arity dual: 14.37% saving with guaranteed partition.</em>
 </p>
 
+
+<p align="center">
+  <img src="assets/trayectoria-refinamiento.svg" width="840" alt="Trajectory">
+  <br><em>The refinement trajectory: T4 and the multilayer divergence.</em>
+</p>
+
+
+<p align="center">
+  <img src="assets/aridades.svg" width="840" alt="Arities">
+  <br><em>The arity ladder and the failing transplant.</em>
+</p>
+
 ## 7d. The Holy Grail (SG-01→03)
 
 - **Completeness in the class**: the minimal family is **{WL, 2-WL,
   3-WL}** with **C_8 = 0** over **76,205,685 pairs** (n≤8); leave-one-out:
   k-WL 3 does the work; the n=16 frontier (Rook/Shri) is separated only by
   the full family. Freeze: `resultados/SG-01_results_frozen.json`.
+
+<p align="center">
+  <img src="assets/frontera-Cn.svg" width="760" alt="Frontier C_n">
+  <br><em>The frontier curves per observer (SG-01/03, EXP-119).</em>
+</p>
+
 - **The price of T4**: the complete invariant is **not**
   complement-invariant; the quotient `G~Ḡ` merges **6,168 pairs**.
 - **Individualization**: **i\*=1** at n≤8 (13,597 graphs); **i\*=2** at

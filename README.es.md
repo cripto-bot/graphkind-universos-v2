@@ -348,12 +348,30 @@ asimilado: partición 100%, ahorro 14.37% vs 10.26%.
   <br><em>Dual por aridad: ahorro 14.37% con partición garantizada.</em>
 </p>
 
+
+<p align="center">
+  <img src="assets/trayectoria-refinamiento.svg" width="840" alt="Trayectoria">
+  <br><em>La trayectoria del refinamiento: T4 y la divergencia multicapa.</em>
+</p>
+
+
+<p align="center">
+  <img src="assets/aridades.svg" width="840" alt="Aridades">
+  <br><em>La escalera de aridad y el transplante que falla.</em>
+</p>
+
 ## 7d. El Santo Grial (SG-01→03)
 
 - **Completitud en la clase**: la familia mínima es **{WL, 2-WL, 3-WL}**
   con **C_8 = 0** en **76 205 685 pares** (n≤8); leave-one-out: k-WL 3
   hace el trabajo; la frontera n=16 (Rook/Shri) la separa solo la familia
   total. Freeze: `resultados/SG-01_results_frozen.json`.
+
+<p align="center">
+  <img src="assets/frontera-Cn.svg" width="760" alt="Frontera C_n">
+  <br><em>Las curvas de frontera por observador (SG-01/03, EXP-119).</em>
+</p>
+
 - **El precio de T4**: el invariante completo **no** es
   complemento-invariante; el cociente `G~Ḡ` fusiona **6 168 pares**.
 - **Individualización**: **i\*=1** en n≤8 (13 597 grafos); **i\*=2** en

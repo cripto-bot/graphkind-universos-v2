@@ -432,6 +432,12 @@ degenerado). La (⇐) de la ley está **probada** (misma biyección
   <br><em>La escalera k\*(L) es plana (k\*=1 para L=2..5): corrige el k\*=2 de EXP-162 (k=1 degenerado).</em>
 </p>
 
+
+<p align="center">
+  <img src="assets/trayectoria-refinamiento.svg" width="840" alt="Trayectoria del refinamiento">
+  <br><em>La trayectoria del refinamiento: G y Ḡ idénticos ronda a ronda (T4) y la divergencia multicapa al complementar una capa (canónica).</em>
+</p>
+
 **12.2 Matriz universo × observador (EXP-165).** Con dos métricas por
 celda (T4 y frontera de completitud), reusando los freezes: la frontera
 **se mueve con el observador** (WL/KW2 fallan en n=6; KW3/IR1p no) y **no
@@ -464,6 +470,12 @@ refinamiento repara). La ley es **de canales**, no de toda descomposición.
   <br><em>La predicción acierta (1831/1831); el transplante por aridad falla: el refinamiento repara.</em>
 </p>
 
+
+<p align="center">
+  <img src="assets/aridades.svg" width="840" alt="Escalera de aridad y transplante">
+  <br><em>La escalera de aridad (T4 vive) y el transplante que falla: en aridades mezcladas el complemento por aridad también vive (el refinamiento repara; 261 000 casos, 0 testigos). Números de EXP-167/168/169.</em>
+</p>
+
 **12.5 El reparo y su asimilación (EXP-168/169).** Búsqueda **dirigida**
 (construcción canónica, n=6,7,8, controles negativo y total): **261 000
 casos, 21 821 fusiones dirigidas, todas reparadas, 0 testigos** → reparo
@@ -494,6 +506,12 @@ colisiones); el control de relabeling (50/50) descarta fuga. No es un
 invariante completo universal: a **n=16 Rook/Shrikhande** colisiona
 F1–F6 y solo la familia total lo separa — la completitud es **de la
 clase**, con la frontera medida.
+
+
+<p align="center">
+  <img src="assets/frontera-Cn.svg" width="760" alt="Curvas de frontera C_n">
+  <br><em>Las curvas de frontera C_n(I): lo que pierde cada observador (WL/KW2 fallan desde n=6; los completos, 0 colisiones en la clase; leave-one-out: 350 sin 3-WL). Números de SG-01/SG-03 y EXP-119.</em>
+</p>
 
 **13.2 El precio de T4 (SG-01).** El invariante completo **no es
 complemento-invariante**: el cociente `G ~ Ḡ` fusiona exactamente
