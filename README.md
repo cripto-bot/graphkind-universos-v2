@@ -10,7 +10,7 @@
 </p>
 
 <p align="center">
-  <a href="README.es.md">Español</a> · <a href="index.html">Page (ES)</a> · <a href="index.en.html">Page (EN)</a> · <a href="paper/PAPER.md">Paper</a> · <a href="paper/PRUEBA-CARACTERIZACION.md">Proof</a> · <a href="reproduce.sh">Reproduce</a>
+  <a href="README.es.md">Español</a> · <a href="index.html">Page (ES)</a> · <a href="index.en.html">Page (EN)</a> · <a href="paper/PAPER.md">Paper</a> · <a href="paper/LITERATURA.md">Literature</a> · <a href="paper/PRUEBA-CARACTERIZACION.md">Proof</a> · <a href="reproduce.sh">Reproduce</a>
 </p>
 
 ---
@@ -407,6 +407,7 @@ codigo/wl.py                     symmetric WL + correlated k-FWL (≡ (k+1)-WL)
 codigo/verificaciones.py         V1–V12 with asserts of the exact numbers
 paper/PRUEBA-MULTICAPA.md        (⇐) proved, (⇒) open (EXP-162)
 paper/DECISION_LOG.md            laboratory decisions D-001→D-017
+paper/LITERATURA.md              the map, not the answer (review + position)
 resultados/*.json                original freezes (EXP-102..169 + SG-01..04)
 resultados/atlas/*.json          the atlas: 15 universes (EXP-105)
 assets/*.svg                     figures

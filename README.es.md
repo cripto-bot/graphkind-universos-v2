@@ -10,7 +10,7 @@
 </p>
 
 <p align="center">
-  <a href="README.md">English</a> · <a href="index.html">Página (ES)</a> · <a href="index.en.html">Page (EN)</a> · <a href="paper/PAPER.md">Paper</a> · <a href="paper/PRUEBA-CARACTERIZACION.md">Prueba</a> · <a href="reproduce.sh">Reproducir</a>
+  <a href="README.md">English</a> · <a href="index.html">Página (ES)</a> · <a href="index.en.html">Page (EN)</a> · <a href="paper/PAPER.md">Paper</a> · <a href="paper/LITERATURA.md">Literatura</a> · <a href="paper/PRUEBA-CARACTERIZACION.md">Prueba</a> · <a href="reproduce.sh">Reproducir</a>
 </p>
 
 ---
@@ -415,6 +415,7 @@ codigo/hipergrafo.py             k-uniforme + aridades mezcladas + dual (v2)
 codigo/individualizacion.py      IR_k (peor/multiset) — SG-02/03 (v2)
 paper/PRUEBA-MULTICAPA.md        (⇐) probada, (⇒) abierta (EXP-162)
 paper/DECISION_LOG.md            decisiones D-001→D-017 del laboratorio
+paper/LITERATURA.md              el mapa y no la respuesta (revisión + posición)
 resultados/*.json                freezes originales (EXP-102..169 + SG-01..04)
 resultados/atlas/*.json          los 15 universos del atlas (EXP-105)
 assets/*.svg                     figuras
