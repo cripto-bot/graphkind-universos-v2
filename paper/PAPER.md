@@ -566,6 +566,19 @@ local/cíclica. La frontera exacta entre n=11 y n=16 queda abierta
 capa dirigida usó `geng -d 3` (separado) y falló; re-corrida con `-d3`
 (7:42). Verificación v2: V19 (certificado del freeze).
 
+## 15. Disponibilidad de datos y código
+
+**Datos y código**: Zenodo — concept DOI
+[10.5281/zenodo.22747350](https://doi.org/10.5281/zenodo.22747350)
+(v2.0.0: [10.5281/zenodo.22747351](https://doi.org/10.5281/zenodo.22747351)),
+licencia **CC-BY-4.0**.
+
+**Código**: `https://github.com/cripto-bot/graphkind-universos-v2` ·
+v1 (paper de T4): `https://github.com/cripto-bot/graphkind-universos`.
+
+**Reproducir**: `bash reproduce.sh` — verificaciones V1–V19 con asserts
+de los números exactos; CI en cada push.
+
 ## Referencias (selección)
 
 - Weisfeiler, Leman (1968). *A reduction of a graph to a canonical form…*

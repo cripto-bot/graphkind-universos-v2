@@ -488,5 +488,6 @@ Full map: [`paper/MAPA-DEL-LABORATORIO.md`](paper/MAPA-DEL-LABORATORIO.md).
 <p align="center">
   <sub>© 2026 Juri (cripto-bot) · preprint · <a href="LICENSE">CC-BY-4.0</a> license (attribution required).<br>
   This document claims no priority over open problems: it reports a verified characterization in a bounded domain.<br>
-  Cite as: see <a href="CITATION.cff">CITATION.cff</a>.</sub>
+  Cite as: Argaña Silguero, J. (2026). <em>GraphKind — Universes v2</em> [software and data]. Zenodo.
+  <a href="https://doi.org/10.5281/zenodo.22747350">10.5281/zenodo.22747350</a> (concept DOI; v2.0.0: <a href="https://doi.org/10.5281/zenodo.22747351">10.5281/zenodo.22747351</a>) · see <a href="CITATION.cff">CITATION.cff</a>.</sub>
 </p>
