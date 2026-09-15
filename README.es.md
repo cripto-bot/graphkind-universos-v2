@@ -10,7 +10,7 @@
 </p>
 
 <p align="center">
-  <a href="README.md">English</a> · <a href="https://cripto-bot.github.io/graphkind-universos-v2/">Página (ES)</a> · <a href="https://cripto-bot.github.io/graphkind-universos-v2/index.en.html">Page (EN)</a> · <a href="paper/PAPER.md">Paper</a> · <a href="https://huggingface.co/spaces/Jose-dev/graphlab-discoveries-demo">Demo</a> · <a href="paper/LITERATURA.md">Literatura</a> · <a href="paper/PRUEBA-CARACTERIZACION.md">Prueba</a> · <a href="reproduce.sh">Reproducir</a>
+  <a href="README.md">English</a> · <a href="https://cripto-bot.github.io/graphkind-universos-v2/">Página (ES)</a> · <a href="https://cripto-bot.github.io/graphkind-universos-v2/index.en.html">Page (EN)</a> · <a href="paper/PAPER.md">Paper</a> · <a href="paper/graphkind-v2.pdf">PDF</a> · <a href="https://huggingface.co/spaces/Jose-dev/graphlab-discoveries-demo">Demo</a> · <a href="paper/LITERATURA.md">Literatura</a> · <a href="paper/PRUEBA-CARACTERIZACION.md">Prueba</a> · <a href="reproduce.sh">Reproducir</a>
 </p>
 
 ---
@@ -404,6 +404,7 @@ asimilado: partición 100%, ahorro 14.37% vs 10.26%.
 
 ```
 paper/PAPER.md                   el paper (abstract bilingüe, método, resultados, §12 arco v2)
+paper/graphkind-v2.pdf           el paper en PDF (A4, 15 páginas, figuras)
 paper/TEOREMA-UNIVERSOS.md       el ciclo completo EXP-099→119
 paper/PRUEBA-CARACTERIZACION.md  la prueba (⇐) y el estado de (⇒)
 codigo/universos.py              la ley en el motor (t4_garantizado, oráculo)

@@ -10,7 +10,7 @@
 </p>
 
 <p align="center">
-  <a href="README.es.md">Español</a> · <a href="https://cripto-bot.github.io/graphkind-universos-v2/">Page (ES)</a> · <a href="https://cripto-bot.github.io/graphkind-universos-v2/index.en.html">Page (EN)</a> · <a href="paper/PAPER.md">Paper</a> · <a href="https://huggingface.co/spaces/Jose-dev/graphlab-discoveries-demo">Demo</a> · <a href="paper/LITERATURA.md">Literature</a> · <a href="paper/PRUEBA-CARACTERIZACION.md">Proof</a> · <a href="reproduce.sh">Reproduce</a>
+  <a href="README.es.md">Español</a> · <a href="https://cripto-bot.github.io/graphkind-universos-v2/">Page (ES)</a> · <a href="https://cripto-bot.github.io/graphkind-universos-v2/index.en.html">Page (EN)</a> · <a href="paper/PAPER.md">Paper</a> · <a href="paper/graphkind-v2.pdf">PDF</a> · <a href="https://huggingface.co/spaces/Jose-dev/graphlab-discoveries-demo">Demo</a> · <a href="paper/LITERATURA.md">Literature</a> · <a href="paper/PRUEBA-CARACTERIZACION.md">Proof</a> · <a href="reproduce.sh">Reproduce</a>
 </p>
 
 ---
@@ -400,6 +400,7 @@ ladder is flat (corrects EXP-162's `k*=2`); (⇐) proved, (⇒) open.
 
 ```
 paper/PAPER.md                   the paper (bilingual abstract, method, results, §12 v2 arc)
+paper/graphkind-v2.pdf           the paper as PDF (A4, 15 pages, figures)
 paper/TEOREMA-UNIVERSOS.md       the full cycle EXP-099→119
 paper/PRUEBA-CARACTERIZACION.md  the (⇐) proof and the status of (⇒)
 codigo/universos.py              the law inside the engine (t4_garantizado, oracle)
