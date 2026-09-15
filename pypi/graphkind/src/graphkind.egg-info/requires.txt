@@ -1,0 +1,6 @@
+
+[test]
+pytest>=7
+
+[verify]
+numpy>=1.24

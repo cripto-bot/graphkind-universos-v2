@@ -1,0 +1,56 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "graphkind"
+version = "0.1.1"
+description = "GraphKind structural discovery engine: color refinement (1-WL), k-FWL, observation universes (T4 law), multilayer channel coherence, hypergraph arity dual and individualization (IR). Zero dependencies."
+readme = "README.md"
+license = { text = "CC-BY-4.0" }
+authors = [
+  { name = "Josué Argaña Silguero" },
+]
+maintainers = [
+  { name = "Josué Argaña Silguero", email = "Jose-dev@users.noreply.huggingface.co" },
+]
+requires-python = ">=3.9"
+keywords = [
+  "color-refinement",
+  "weisfeiler-leman",
+  "graph-isomorphism",
+  "structural-invariants",
+  "k-FWL",
+  "observation-universes",
+  "hypergraphs",
+  "multilayer",
+  "individualization",
+]
+classifiers = [
+  "Development Status :: 4 - Beta",
+  "Intended Audience :: Science/Research",
+  "Programming Language :: Python :: 3",
+  "Topic :: Scientific/Engineering :: Mathematics",
+]
+
+[project.urls]
+Homepage = "https://cripto-bot.github.io/graphkind-universos-v2/"
+Repository = "https://github.com/cripto-bot/graphkind-universos-v2"
+Paper = "https://doi.org/10.5281/zenodo.22747350"
+Demo = "https://huggingface.co/spaces/Jose-dev/graphlab-discoveries-demo"
+Dataset = "https://huggingface.co/datasets/Jose-dev/graphkind-universos"
+Kernel = "https://pypi.org/project/graphkind-wl/"
+
+[project.optional-dependencies]
+verify = ["numpy>=1.24"]
+test = ["pytest>=7"]
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+pythonpath = ["src"]
+testpaths = ["tests"]
+markers = [
+  "slow: runs the full V1-V19 verification suites (minutes)",
+]

@@ -1,0 +1,17 @@
+LICENSE
+README.md
+pyproject.toml
+src/graphkind/__init__.py
+src/graphkind/hipergrafo.py
+src/graphkind/individualizacion.py
+src/graphkind/multicapa.py
+src/graphkind/universos.py
+src/graphkind/verificaciones.py
+src/graphkind/verificaciones_v2.py
+src/graphkind/wl.py
+src/graphkind.egg-info/PKG-INFO
+src/graphkind.egg-info/SOURCES.txt
+src/graphkind.egg-info/dependency_links.txt
+src/graphkind.egg-info/requires.txt
+src/graphkind.egg-info/top_level.txt
+tests/test_graphkind.py

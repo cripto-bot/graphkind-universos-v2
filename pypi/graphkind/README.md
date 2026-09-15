@@ -1,0 +1,111 @@
+# graphkind
+
+**GraphKind** — motor de descubrimiento estructural sobre *universos de
+observación*: color refinement (1-WL), k-FWL, la ley de T4, la coherencia
+de canales multicapa, el dual por aridad en hipergrafos y la
+individualización (IR). **Cero dependencias** (numpy solo para las suites
+de verificación).
+
+- **Paper / datos**: DOI [10.5281/zenodo.22747350](https://doi.org/10.5281/zenodo.22747350) (CC-BY-4.0)
+- **Demo interactivo**: [GraphKind — el mapa y no la respuesta](https://huggingface.co/spaces/Jose-dev/graphlab-discoveries-demo)
+- **Repositorio**: [cripto-bot/graphkind-universos-v2](https://github.com/cripto-bot/graphkind-universos-v2)
+- **Kernel mínimo**: [`graphkind-wl`](https://pypi.org/project/graphkind-wl/)
+
+## Instalar
+
+```bash
+pip install graphkind
+```
+
+## Quickstart
+
+```python
+from graphkind.wl import adj_from_edges, separa, t4
+from graphkind import universos
+
+c6  = adj_from_edges(6, [(i, (i + 1) % 6) for i in range(6)])
+dos = adj_from_edges(6, [(0, 1), (1, 2), (2, 0), (3, 4), (4, 5), (5, 3)])
+
+separa(c6, dos, 1)   # False  — 1-WL colisiona
+separa(c6, dos, 2)   # True   — 2-FWL (≡ 3-WL) separa
+t4(c6)               # True   — la partición sobrevive al complemento
+
+universos.t4_garantizado(1, 2, "dual")   # True  — la ley de T4
+universos.t4_garantizado(1, 1, "dual")   # False — f colapsa 1 y 2
+```
+
+### La ley (universos)
+
+> `T4(ι, f) vive ⟺ ι ∈ Sₙ·K` y, cuando `ι` cambia el par, `f(1) ≠ f(2)`
+
+donde la clase de `ι` se mide (`trivial` / `dual` / `local`) y el oráculo
+predice sin enumerar:
+
+```python
+from graphkind import universos
+from graphkind.wl import adj_from_edges, complement
+
+adj = adj_from_edges(6, [(i, (i + 1) % 6) for i in range(6)])
+universos.oraculo(6, adj, lambda n, a: complement(n, a),
+                  f=lambda k: k, f1=1, f2=2)
+# {'clase': 'dual', 'f1': 1, 'f2': 2, 't4_predicho': True}
+```
+
+### Multicapa (ley de canales)
+
+```python
+from graphkind import multicapa
+
+capas = [E1, E2]
+multicapa.t4(n, capas, multicapa.complemento_total(n, capas))
+# {'perfil_igual': True, 'particion_igual': True}   (el complemento total es uniforme)
+```
+
+### Hipergrafos (dual por aridad)
+
+```python
+from graphkind import hipergrafo
+
+hipergrafo.t4_k_uniforme(n, 3, aristas)          # T4_k en k-uniforme
+hipergrafo.refine_dual_mezclado(n, e2, e3)       # elige el lado ralo por aridad
+```
+
+### Individualización
+
+```python
+from graphkind import individualizacion
+
+individualizacion.IR_k(16, rook_edges, 1, "peor")   # IR₁ no separa Rook/Shrikhande
+individualizacion.IR_k(16, rook_edges, 2, "peor")   # IR₂ sí (i* = 2)
+```
+
+## Módulos
+
+| módulo | contenido |
+|---|---|
+| `graphkind.wl` | 1-WL, k-FWL (≡ (k+1)-WL), separación, perfil, partición, T4 |
+| `graphkind.universos` | clasificación de involuciones (trivial/dual/local) y el oráculo de la ley |
+| `graphkind.multicapa` | refinamiento conjunto; complemento total / por capa / de canales |
+| `graphkind.hipergrafo` | k-uniforme y aridades mezcladas; dual por aridad |
+| `graphkind.individualizacion` | IR_k en modos `peor` y `multiset` |
+| `graphkind.verificaciones` | suites V1–V12 (requieren numpy) |
+| `graphkind.verificaciones_v2` | suites V13–V19 (requieren numpy) |
+
+## Tests
+
+```bash
+pip install "graphkind[test]"
+pytest -m "not slow"        # anclas y leyes (~10 s)
+```
+
+Las suites completas V1–V19 viven en el repositorio (necesitan sus datos
+congelados): `pytest -m slow` con `GRAPHKIND_REPO=1`.
+
+## Cita
+
+> Argaña Silguero, J. (2026). *GraphKind — Universes v2: T4 and the
+> universe arc*. Zenodo. https://doi.org/10.5281/zenodo.22747350
+
+## Licencia
+
+CC-BY-4.0.
