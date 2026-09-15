@@ -4,11 +4,14 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "graphkind-wl"
-version = "0.1.0"
+version = "0.1.1"
 description = "Color refinement (1-WL) and correlated k-FWL (equiv. (k+1)-WL) over bitmask adjacency: partitions, separation tests and T4 (complement invariance). From the GraphKind laboratory."
 readme = "README.md"
 license = { text = "CC-BY-4.0" }
 authors = [
+  { name = "Josué Argaña Silguero" },
+]
+maintainers = [
   { name = "Josué Argaña Silguero", email = "Jose-dev@users.noreply.huggingface.co" },
 ]
 requires-python = ">=3.9"

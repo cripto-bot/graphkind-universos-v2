@@ -1,8 +1,9 @@
 Metadata-Version: 2.4
 Name: graphkind-wl
-Version: 0.1.0
+Version: 0.1.1
 Summary: Color refinement (1-WL) and correlated k-FWL (equiv. (k+1)-WL) over bitmask adjacency: partitions, separation tests and T4 (complement invariance). From the GraphKind laboratory.
-Author-email: Josué Argaña Silguero <Jose-dev@users.noreply.huggingface.co>
+Author: Josué Argaña Silguero
+Maintainer-email: Josué Argaña Silguero <Jose-dev@users.noreply.huggingface.co>
 License: CC-BY-4.0
 Project-URL: Homepage, https://cripto-bot.github.io/graphkind-universos-v2/
 Project-URL: Repository, https://github.com/cripto-bot/graphkind-universos-v2
