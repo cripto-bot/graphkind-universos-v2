@@ -1,0 +1,16 @@
+LICENSE
+README.md
+pyproject.toml
+src/graphkind_harness/__init__.py
+src/graphkind_harness/_fast.py
+src/graphkind_harness/bench.py
+src/graphkind_harness/cli.py
+src/graphkind_harness/corpus.py
+src/graphkind_harness/observers.py
+src/graphkind_harness.egg-info/PKG-INFO
+src/graphkind_harness.egg-info/SOURCES.txt
+src/graphkind_harness.egg-info/dependency_links.txt
+src/graphkind_harness.egg-info/entry_points.txt
+src/graphkind_harness.egg-info/requires.txt
+src/graphkind_harness.egg-info/top_level.txt
+tests/test_harness.py

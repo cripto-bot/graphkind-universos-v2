@@ -1,0 +1,57 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "graphkind-harness"
+version = "0.1.0"
+description = "Benchmark harness for structural invariants: collisions and frontiers over non-isomorphic corpora, T4 across universes (standard, multilayer, hypergraph), anchors table and controls (relabeling, negative). Built on the GraphKind engine."
+readme = "README.md"
+license = { text = "CC-BY-4.0" }
+authors = [
+  { name = "Josué Argaña Silguero" },
+]
+maintainers = [
+  { name = "Josué Argaña Silguero", email = "Jose-dev@users.noreply.huggingface.co" },
+]
+requires-python = ">=3.9"
+dependencies = ["graphkind>=0.1.1", "numpy>=1.24"]
+keywords = [
+  "graph-isomorphism",
+  "color-refinement",
+  "weisfeiler-leman",
+  "benchmark",
+  "structural-invariants",
+  "reproducibility",
+]
+classifiers = [
+  "Development Status :: 4 - Beta",
+  "Intended Audience :: Science/Research",
+  "Programming Language :: Python :: 3",
+  "Topic :: Scientific/Engineering :: Mathematics",
+]
+
+[project.scripts]
+graphkind-harness = "graphkind_harness.cli:main"
+
+[project.urls]
+Homepage = "https://cripto-bot.github.io/graphkind-universos-v2/"
+Repository = "https://github.com/cripto-bot/graphkind-universos-v2"
+Paper = "https://doi.org/10.5281/zenodo.22747350"
+Demo = "https://huggingface.co/spaces/Jose-dev/graphlab-discoveries-demo"
+Engine = "https://pypi.org/project/graphkind/"
+Kernel = "https://pypi.org/project/graphkind-wl/"
+
+[project.optional-dependencies]
+test = ["pytest>=7"]
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+pythonpath = ["src"]
+testpaths = ["tests"]
+markers = [
+  "slow: comparison against the reference engine on n=16",
+  "geng: needs the nauty-geng binary",
+]

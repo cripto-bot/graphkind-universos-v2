@@ -1,0 +1,2 @@
+[console_scripts]
+graphkind-harness = graphkind_harness.cli:main
