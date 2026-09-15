@@ -1,0 +1,47 @@
+name: Publicar en PyPI
+
+on:
+  release:
+    types: [published]
+  push:
+    tags: ["pypi-v*"]
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Instalar build y pytest
+        run: pip install build pytest
+      - name: Tests del kernel
+        run: python -m pytest -q
+        working-directory: pypi/graphkind-wl
+      - name: Construir sdist y wheel
+        run: python -m build
+        working-directory: pypi/graphkind-wl
+      - name: twine check
+        run: |
+          pip install twine
+          python -m twine check pypi/graphkind-wl/dist/*
+      - uses: actions/upload-artifact@v4
+        with:
+          name: dist
+          path: pypi/graphkind-wl/dist
+
+  publish:
+    needs: build
+    runs-on: ubuntu-latest
+    environment: pypi
+    permissions:
+      id-token: write
+    steps:
+      - uses: actions/download-artifact@v4
+        with:
+          name: dist
+          path: dist
+      - name: Publicar (Trusted Publishing, sin token)
+        uses: pypa/gh-action-pypi-publish@release/v1

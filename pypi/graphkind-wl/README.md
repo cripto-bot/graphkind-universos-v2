@@ -1,0 +1,73 @@
+# graphkind-wl
+
+Color refinement (**1-WL**) and correlated **k-FWL** (equivalent to
+`(k+1)`-WL) over adjacency bitmasks: partitions, separation tests and
+**T4** (complement invariance). The kernel of the
+[GraphKind laboratory](https://cripto-bot.github.io/graphkind-universos-v2/).
+
+- Paper / data / code: **DOI [10.5281/zenodo.22747350](https://doi.org/10.5281/zenodo.22747350)** (CC-BY-4.0)
+- Interactive demo: [GraphKind — el mapa y no la respuesta](https://huggingface.co/spaces/Jose-dev/graphlab-discoveries-demo)
+- Repository: [cripto-bot/graphkind-universos-v2](https://github.com/cripto-bot/graphkind-universos-v2)
+
+## Install
+
+```bash
+pip install graphkind-wl
+```
+
+No dependencies (standard library only). Python ≥ 3.9.
+
+## Quickstart
+
+```python
+from graphkind_wl import adj_from_edges, separa, t4, wl1_colors, perfil
+
+# C6 and two triangles: the classic 1-WL collision
+c6  = adj_from_edges(6, [(i, (i + 1) % 6) for i in range(6)])
+dos = adj_from_edges(6, [(0, 1), (1, 2), (2, 0), (3, 4), (4, 5), (5, 3)])
+
+separa(c6, dos, 1)   # False  (1-WL collides)
+separa(c6, dos, 2)   # True   (2-FWL = 3-WL separates)
+
+perfil(wl1_colors(6, c6))   # (6,)  — one class
+t4(c6)                      # True  — the partition survives complement
+```
+
+## The anchors (from the frozen results)
+
+| pair | 1-WL | k=2 (3-WL) | k=3 (4-WL) |
+|---|---|---|---|
+| `C6` vs `2·C3` | collides | **separates** | separates |
+| Petersen vs pentagonal prism | collides | **separates** | separates |
+| Rook vs Shrikhande (SRG(16,6,2,2)) | collides | collides | **separates** |
+
+The last row is the boundary: the standard 3-WL does **not** separate the
+cospectral pair; the correlated 3-FWL (≡ 4-WL) does. All three rows are
+asserted in `tests/test_kernel.py` against the laboratory's freezes.
+
+## API
+
+| function | what it does |
+|---|---|
+| `adj_from_edges(n, edges)` | adjacency bitmasks from an edge list |
+| `edges_from_adj(adj)` | edge list from bitmasks |
+| `complement(n, adj)` | simple complement (no loops) |
+| `wl1_colors(n, adj, rounds=None)` | 1-WL colors per vertex |
+| `kfwl_colors(n, adj, k, rounds=None)` | k-FWL colors per k-tuple (`k>=2`) |
+| `separa(adj1, adj2, k)` | does the observer separate the pair? (union test) |
+| `particion(colors)` | canonical partition (class index by first appearance) |
+| `perfil(colors)` | multiset of class sizes (the WL profile) |
+| `t4(adj)` | is the 1-WL partition complement-invariant? (theorem T4) |
+
+## What is T4
+
+The partition induced by color refinement is invariant under complement:
+`G` and `Ḡ` reach the **same partition** at every round — the *color
+labels* are arbitrary hashes and may differ. The theorem was proposed and
+verified by the GraphKind engine, with a written proof; its price (6 168
+fused pairs at n≤8) and its incompatibility with completeness are measured
+in the paper.
+
+## License
+
+CC-BY-4.0 — cite the DOI above.

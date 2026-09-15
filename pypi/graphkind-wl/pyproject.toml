@@ -1,0 +1,46 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "graphkind-wl"
+version = "0.1.0"
+description = "Color refinement (1-WL) and correlated k-FWL (equiv. (k+1)-WL) over bitmask adjacency: partitions, separation tests and T4 (complement invariance). From the GraphKind laboratory."
+readme = "README.md"
+license = { text = "CC-BY-4.0" }
+authors = [
+  { name = "Josué Argaña Silguero", email = "Jose-dev@users.noreply.huggingface.co" },
+]
+requires-python = ">=3.9"
+keywords = [
+  "color-refinement",
+  "weisfeiler-leman",
+  "graph-isomorphism",
+  "k-FWL",
+  "structural-invariants",
+  "graph-kinds",
+]
+classifiers = [
+  "Development Status :: 4 - Beta",
+  "Intended Audience :: Science/Research",
+  "License :: OSI Approved :: Creative Commons Attribution 4.0",
+  "Programming Language :: Python :: 3",
+  "Topic :: Scientific/Engineering :: Mathematics",
+]
+
+[project.urls]
+Homepage = "https://cripto-bot.github.io/graphkind-universos-v2/"
+Repository = "https://github.com/cripto-bot/graphkind-universos-v2"
+Paper = "https://doi.org/10.5281/zenodo.22747350"
+Demo = "https://huggingface.co/spaces/Jose-dev/graphlab-discoveries-demo"
+Dataset = "https://huggingface.co/datasets/Jose-dev/graphkind-universos"
+
+[project.optional-dependencies]
+test = ["pytest>=7"]
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+pythonpath = ["src"]
+testpaths = ["tests"]
