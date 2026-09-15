@@ -42,8 +42,12 @@ def _vecinos(n: int, k: int):
             np.stack(i2, axis=1), np.stack(i3, axis=1))
 
 
-def kfwl_fast(n: int, adj, k: int, max_rounds: int | None = None):
-    """Colores k-FWL (ids internados) por tupla, vectorizado. k >= 2."""
+def kfwl_fast(n: int, adj, k: int, max_rounds: int | None = None,
+              info: bool = False):
+    """Colores k-FWL (hashes globales) por tupla, vectorizado. k >= 2.
+
+    Con `info=True` devuelve `(colors, rondas_usadas)`.
+    """
     if k < 2:
         raise ValueError("kfwl_fast requiere k >= 2")
     t, et, i2, i3 = _vecinos(n, k)
@@ -70,7 +74,9 @@ def kfwl_fast(n: int, adj, k: int, max_rounds: int | None = None):
 
     tope = max_rounds or (n + 2)
     prev = None
-    for _ in range(tope):
+    usadas = 0
+    for r in range(tope):
+        usadas = r + 1
         ca = col[i2]
         cb = col[i3]
         h = (et + K1) & MASK
@@ -89,7 +95,7 @@ def kfwl_fast(n: int, adj, k: int, max_rounds: int | None = None):
         if part == prev:
             break
         prev = part
-    return col
+    return (col, usadas) if info else col
 
 
 def firma_kfwl(n: int, adj, k: int):
@@ -99,5 +105,5 @@ def firma_kfwl(n: int, adj, k: int):
 
 def particion_kfwl(n: int, adj, k: int):
     """Partición canónica de las k-tuplas (ids por primera aparición)."""
-    from graphkind.wl import particion
+    from .wl import particion
     return particion(kfwl_fast(n, adj, k).tolist())

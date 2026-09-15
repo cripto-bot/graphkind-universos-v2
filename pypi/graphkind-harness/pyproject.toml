@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "graphkind-harness"
-version = "0.1.0"
+version = "0.1.1"
 description = "Benchmark harness for structural invariants: collisions and frontiers over non-isomorphic corpora, T4 across universes (standard, multilayer, hypergraph), anchors table and controls (relabeling, negative). Built on the GraphKind engine."
 readme = "README.md"
 license = { text = "CC-BY-4.0" }
@@ -15,7 +15,7 @@ maintainers = [
   { name = "Josué Argaña Silguero", email = "Jose-dev@users.noreply.huggingface.co" },
 ]
 requires-python = ">=3.9"
-dependencies = ["graphkind>=0.1.1", "numpy>=1.24"]
+dependencies = ["graphkind>=0.2.0", "numpy>=1.24"]
 keywords = [
   "graph-isomorphism",
   "color-refinement",

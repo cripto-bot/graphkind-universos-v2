@@ -13,6 +13,9 @@ import shutil
 import subprocess
 from pathlib import Path
 
+from graphkind.graph6 import from_graph6, to_graph6  # noqa: F401 (reexport)
+from graphkind.wl import edges_from_adj
+
 GENG_CANDIDATES = ("geng", "nauty-geng", "/usr/bin/nauty-geng",
                    "/usr/bin/geng")
 
@@ -24,32 +27,6 @@ def geng_bin() -> str | None:
         if p:
             return p
     return None
-
-
-def from_graph6(s: str) -> list[int]:
-    """graph6 -> bitmasks de adyacencia (formato simple, n <= 62)."""
-    data = [ord(c) - 63 for c in s.strip()]
-    if not data:
-        raise ValueError("graph6 vacío")
-    n = data[0]
-    bits = []
-    for x in data[1:]:
-        for i in range(5, -1, -1):
-            bits.append((x >> i) & 1)
-    adj = [0] * n
-    k = 0
-    for j in range(1, n):
-        for i in range(j):
-            if k < len(bits) and bits[k]:
-                adj[i] |= 1 << j
-                adj[j] |= 1 << i
-            k += 1
-    return adj
-
-
-def edges_from_adj(adj) -> list[tuple[int, int]]:
-    return [(u, v) for u in range(len(adj)) for v in range(u + 1, len(adj))
-            if (adj[u] >> v) & 1]
 
 
 def corpus_geng(n_max: int, n_min: int = 1) -> list[tuple[int, list]]:
@@ -64,7 +41,8 @@ def corpus_geng(n_max: int, n_min: int = 1) -> list[tuple[int, list]]:
                              text=True, timeout=600)
         for line in res.stdout.splitlines():
             if line.strip():
-                out.append((n, edges_from_adj(from_graph6(line))))
+                n2, E = from_graph6(line)
+                out.append((n2, E))
     return out
 
 
@@ -144,8 +122,7 @@ def corpus_file(path: str):
         if not line or line.startswith("#"):
             continue
         if line[0].isalpha() and not line[0].isdigit():
-            adj = from_graph6(line)
-            out.append((len(adj), edges_from_adj(adj)))
+            out.append(from_graph6(line))
         else:
             nums = [int(x) for x in line.split()]
             n, vals = nums[0], nums[1:]

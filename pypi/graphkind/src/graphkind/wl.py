@@ -72,7 +72,7 @@ def transp(n, adj):
     return out
 
 
-def wl_k_colors(n, adj, k, rounds=None):
+def wl_k_colors(n, adj, k, rounds=None, info=False):
     """k-FWL (folklore, correlacionada; ≡ (k+1)-WL): colores de k-tuplas.
 
     La actualización usa pares de posiciones (i,j) con el MISMO w; por la
@@ -95,7 +95,10 @@ def wl_k_colors(n, adj, k, rounds=None):
 
     colors = {t: init(t) for t in tuplas}
     prev = None
-    for _ in range(rounds):
+    usadas = 0
+    tope = rounds if rounds is not None else (n + 2)
+    for r in range(tope):
+        usadas = r + 1
         new = {}
         for t in tuplas:
             vecinos = []
@@ -113,7 +116,7 @@ def wl_k_colors(n, adj, k, rounds=None):
         if firma == prev:
             break
         prev = firma
-    return colors
+    return (colors, usadas) if info else colors
 
 
 def wl_k_union(adj1, adj2, k):
@@ -216,13 +219,19 @@ def _wl1_raw(n, adj, rounds):
     return colors
 
 
-def wl1_colors(n, adj, rounds=None):
-    """1-WL (color refinement) por vértice; converge (tope n+2) o `rounds`."""
+def wl1_colors(n, adj, rounds=None, info=False):
+    """1-WL (color refinement) por vértice; converge (tope n+2) o `rounds`.
+
+    Con `info=True` devuelve `(colors, rondas_usadas)` (aditivo).
+    """
     if rounds is not None:
-        return _wl1_raw(n, adj, rounds)
+        col = _wl1_raw(n, adj, rounds)
+        return (col, rounds) if info else col
     colors = [h(f"g|{adj[v].bit_count()}") for v in range(n)]
     prev = None
-    for _ in range(n + 2):
+    usadas = 0
+    for r in range(n + 2):
+        usadas = r + 1
         new = []
         for v in range(n):
             cnt = Counter()
@@ -237,14 +246,17 @@ def wl1_colors(n, adj, rounds=None):
         if part == prev:
             break
         prev = part
-    return colors
+    return (colors, usadas) if info else colors
 
 
-def kfwl_colors(n, adj, k, rounds=None):
-    """k-FWL (correlacionada; ≡ (k+1)-WL). Requiere k >= 2."""
+def kfwl_colors(n, adj, k, rounds=None, info=False):
+    """k-FWL (correlacionada; ≡ (k+1)-WL). Requiere k >= 2.
+
+    Con `info=True` devuelve `(colors, rondas_usadas)` (aditivo).
+    """
     if k < 2:
         raise ValueError("kfwl requiere k >= 2 (usa wl1_colors para k = 1)")
-    return wl_k_colors(n, adj, k, rounds=rounds)
+    return wl_k_colors(n, adj, k, rounds=rounds, info=info)
 
 
 def firma(colors):

@@ -17,6 +17,32 @@ de verificación).
 pip install graphkind
 ```
 
+## El instrumento
+
+```python
+from graphkind import GraphKind
+
+gk = GraphKind(observer="wl")     # wl | kw2 | kw3 | ir1 | ir2
+fp = gk.transform(graph)          # (n, edges) | graph6 | networkx | bitmasks
+
+fp.signature      # la huella estructural (comparable/hasheable)
+fp.kinds          # id de clase por vértice
+fp.partition      # partición canónica
+fp.profile        # multiset de tamaños de clase
+fp.rounds         # rondas de refinamiento usadas
+fp.observer       # "wl"
+fp.as_dict()      # serializable
+
+gk.signature(G1) == gk.signature(G2)   # ¿mismo kind?
+gk.separa(G1, G2)                      # atajo
+gk.t4(G)                               # ¿la partición sobrevive al complemento?
+gk.oraculo(...)                        # ley de T4 en un universo (f, iota)
+```
+
+La firma es **determinista** (entre procesos) e **invariante bajo
+relabeling**. La clase es una fachada sobre el motor: no cambia ningún
+resultado del paper.
+
 ## Quickstart
 
 ```python

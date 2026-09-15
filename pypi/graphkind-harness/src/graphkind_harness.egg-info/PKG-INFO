@@ -1,6 +1,6 @@
 Metadata-Version: 2.4
 Name: graphkind-harness
-Version: 0.1.0
+Version: 0.1.1
 Summary: Benchmark harness for structural invariants: collisions and frontiers over non-isomorphic corpora, T4 across universes (standard, multilayer, hypergraph), anchors table and controls (relabeling, negative). Built on the GraphKind engine.
 Author: Josué Argaña Silguero
 Maintainer-email: Josué Argaña Silguero <Jose-dev@users.noreply.huggingface.co>
@@ -19,7 +19,7 @@ Classifier: Topic :: Scientific/Engineering :: Mathematics
 Requires-Python: >=3.9
 Description-Content-Type: text/markdown
 License-File: LICENSE
-Requires-Dist: graphkind>=0.1.1
+Requires-Dist: graphkind>=0.2.0
 Requires-Dist: numpy>=1.24
 Provides-Extra: test
 Requires-Dist: pytest>=7; extra == "test"

@@ -81,7 +81,7 @@ def t4_estandar(grafos, k=None):
         if k is None:
             ok = wl.t4(adj)
         else:
-            from ._fast import particion_kfwl
+            from graphkind.fast import particion_kfwl
             ok = particion_kfwl(n, adj, k) == particion_kfwl(n, adjc, k)
         viven += 1 if ok else 0
     return {"casos": len(grafos), "viven": viven,

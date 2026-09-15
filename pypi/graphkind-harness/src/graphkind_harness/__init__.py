@@ -17,7 +17,7 @@ Uso por CLI::
 
 from . import bench, corpus, observers  # noqa: F401
 
-__version__ = "0.1.0"
+__version__ = "0.1.1"
 DOI = "10.5281/zenodo.22747350"
 
 __all__ = ["DOI", "__version__", "bench", "corpus", "observers"]

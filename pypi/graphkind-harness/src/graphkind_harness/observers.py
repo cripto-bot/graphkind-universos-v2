@@ -9,7 +9,7 @@ from __future__ import annotations
 
 from graphkind import individualizacion, wl
 
-from ._fast import firma_kfwl
+from graphkind.fast import firma_kfwl
 
 
 def _adj(n, E):

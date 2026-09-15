@@ -1,4 +1,7 @@
 
+[fast]
+numpy>=1.24
+
 [test]
 pytest>=7
 

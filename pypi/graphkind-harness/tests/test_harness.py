@@ -41,9 +41,9 @@ def test_graph6_roundtrip():
         return s
 
     for E in N4:
-        adj = corpus.from_graph6(enc(4, E))
-        assert sorted(corpus.edges_from_adj(adj)) == sorted(
-            tuple(sorted(e)) for e in E)
+        n2, E2 = corpus.from_graph6(enc(4, E))
+        assert n2 == 4
+        assert sorted(E2) == sorted(tuple(sorted(e)) for e in E)
 
 
 def test_control_negativo_y_kw3():
@@ -104,7 +104,7 @@ def test_corpus_geng_n4():
 def test_kfwl_fast_coincide_con_motor_pares_chicos():
     """La partición del k-FWL rápido coincide con la del motor (pares chicos)."""
     from graphkind import wl
-    from graphkind_harness._fast import firma_kfwl
+    from graphkind.fast import firma_kfwl
 
     for nombre, _, E1, E2 in corpus.pares_canonicos():
         n = len(E1)
@@ -121,7 +121,7 @@ def test_kfwl_fast_coincide_con_motor_pares_chicos():
 def test_kfwl_fast_coincide_con_motor_n16():
     """Caso n=16 (lento con el motor de referencia)."""
     from graphkind import wl
-    from graphkind_harness._fast import firma_kfwl
+    from graphkind.fast import firma_kfwl
 
     for nombre, _, E1, E2 in corpus.pares_canonicos():
         if len(E1) != 16:
