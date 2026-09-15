@@ -1,0 +1,11 @@
+LICENSE
+README.md
+pyproject.toml
+src/graphkind_wl/__init__.py
+src/graphkind_wl/kernel.py
+src/graphkind_wl.egg-info/PKG-INFO
+src/graphkind_wl.egg-info/SOURCES.txt
+src/graphkind_wl.egg-info/dependency_links.txt
+src/graphkind_wl.egg-info/requires.txt
+src/graphkind_wl.egg-info/top_level.txt
+tests/test_kernel.py
