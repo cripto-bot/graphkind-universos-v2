@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://cripto-bot.github.io/graphkind-universos-v2/sitemap.xml

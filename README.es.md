@@ -10,7 +10,7 @@
 </p>
 
 <p align="center">
-  <a href="README.md">English</a> · <a href="index.html">Página (ES)</a> · <a href="index.en.html">Page (EN)</a> · <a href="paper/PAPER.md">Paper</a> · <a href="https://huggingface.co/spaces/Jose-dev/graphlab-discoveries-demo">Demo</a> · <a href="paper/LITERATURA.md">Literatura</a> · <a href="paper/PRUEBA-CARACTERIZACION.md">Prueba</a> · <a href="reproduce.sh">Reproducir</a>
+  <a href="README.md">English</a> · <a href="https://cripto-bot.github.io/graphkind-universos-v2/">Página (ES)</a> · <a href="https://cripto-bot.github.io/graphkind-universos-v2/index.en.html">Page (EN)</a> · <a href="paper/PAPER.md">Paper</a> · <a href="https://huggingface.co/spaces/Jose-dev/graphlab-discoveries-demo">Demo</a> · <a href="paper/LITERATURA.md">Literatura</a> · <a href="paper/PRUEBA-CARACTERIZACION.md">Prueba</a> · <a href="reproduce.sh">Reproducir</a>
 </p>
 
 ---
