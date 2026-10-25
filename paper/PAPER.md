@@ -406,10 +406,12 @@ grupo `Sₙ·K` se mantiene. Detalle, pre-registro y reproducción:
 `paper/LIMITES-DIGRAFOS.md`, `paper/LIMITES-DIGRAFOS-SPEC.md`,
 `codigo/conjetura_snk.py`, `resultados/CONJETURA-SNK_results_frozen.json`.
 
-Instancia real: en el grafo de composición de kinds de la gramática Lean
-de openai/math, `umbral2` rompe la dualidad en OpenAI y no en Mathlib
-(roles WL 11 vs 10; ARI −0,04). Ver
-`graphkind-harness/showcases/openai-math-radar/universos-openai/GRAMATICA-UNIVERSOS.md`.
+Instancia en openai/math: en el grafo de composición de kinds (top60),
+`umbral2` falla en OpenAI y no en Mathlib, pero un null de grados da
+85%/42% de fallas: la instancia es **genérica**, no específica del
+corpus. El contraejemplo lógico es el mask 21; la gramática solo lo
+exhibe. Regla práctica: `id`/`mod2` para digrafos; no `f(0)=f(1)`. Ver
+`graphkind-harness/showcases/openai-math-radar/universos-openai/SPEC-DESCUBRIMIENTO.md`.
 
 ---
 

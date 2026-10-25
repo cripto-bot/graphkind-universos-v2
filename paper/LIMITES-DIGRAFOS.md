@@ -81,18 +81,18 @@ una variante simétrica (o arreglar `wl_labels` para usar in/out).
   (Kiefer–de Mel; flip lemma KSS), no de este test. Este test solo dice
   qué predicciones fallan.
 
-## Instancia en datos reales (openai/math)
+## Instancia en datos reales (openai/math) — genérica
 
-El grafo de **composición de kinds** de la gramática Lean de OpenAI
-(top60 de `lean_ir_merge.json`) realiza el contraejemplo: con `umbral2`
-(`f(0)=f(1)=0`, `f(2)=1`), `comp_dir`/`comp_transp` **fallan**; en
-Mathlib viven. Además, los roles WL de kinds difieren (OpenAI 11 vs
-Mathlib 10; ARI sobre los 13 kinds comunes **−0,04**). `transp` vive con
-toda f en ambas gramáticas: la dirección de composición es invisible a
-la partición WL. Ver
-`graphkind-harness/showcases/openai-math-radar/universos-openai/{gramatica_universos.py,GRAMATICA-UNIVERSOS.md,gramatica_universos.json}`.
-Es una **instancia** del límite de digrafos, no un teorema sobre todo el
-corpus (top60, 13 kinds).
+El grafo de composición de kinds (top60) exhibe la falla de `umbral2` en
+OpenAI (`comp_dir`/`comp_transp` fallan) y no en Mathlib. **Pero el null
+de grados (300 rewirings dirigidos) da 85% de fallas en OpenAI y 42% en
+Mathlib**: la instancia es **genérica**, no específica del corpus. El
+contraejemplo lógico es el mask 21, n=4; la gramática solo lo exhibe. Los
+roles (11 vs 10) y el ARI −0,04 (null −0,036 ± 0,012, z −0,33) son
+**descriptivos**, no una anomalía. `transp` vive con toda f (rediscovery
+del teorema Sₙ·K). Regla práctica: `f=id`/`mod2` para digrafos; **no**
+`umbral2`/f(0)=f(1). Ver
+`graphkind-harness/showcases/openai-math-radar/universos-openai/{GRAMATICA-UNIVERSOS.md,candidatos_universos.json,SPEC-DESCUBRIMIENTO.md}`.
 
 ## Límites
 
