@@ -17,6 +17,8 @@ jobs:
         run: python codigo/verificaciones.py --rapido
       - name: "v2: V13-V18 (universos + Santo Grial)"
         run: python codigo/verificaciones_v2.py
+      - name: "EXP-086p sanity: particiones n<=6"
+        run: python codigo/verificaciones_particiones.py --nmax 6 --nproc 2 --out /tmp/exp086_particiones.json
 
   completo:
     name: Verificaciones (completo, manual)
@@ -35,3 +37,7 @@ jobs:
         run: python codigo/verificaciones.py
       - name: V13-V18 (universo + Santo Grial)
         run: python codigo/verificaciones_v2.py
+      - name: "EXP-086p: 2.131.019 particiones (n<=7, doble)"
+        env:
+          NPROC: "2"
+        run: python codigo/verificaciones_particiones.py --nmax 7 --doble --nproc 2 --out /tmp/exp086_particiones.json

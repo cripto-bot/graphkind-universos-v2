@@ -216,6 +216,14 @@ complemento-invarianza, el cociente `G ~ Ḡ` **fusiona 6 168 pares** en
 n≤8 (con 10 grafos autocomplementarios). Esa es la información que T4
 describe, cuantificada: la simetría se paga con pares indistinguibles.
 
+La clausura por complemento no es un hecho aislado: Kiefer & de Mel
+[SODA 2026, Lemma 4.5] la prueban para los *long-refinement graphs* y la
+usan para transferir la clasificación de grado bajo a grado alto;
+Kiefer, Schweitzer & Selman [ICALP 2015] usan un *flip* local por par de
+clases C². Ninguno de los dos da la caracterización `Sₙ·K` ni la ley
+`f(1)≠f(2)`: el flip es una normalización local dependiente del coloreo,
+no una involución uniforme global.
+
 Y hay una **tensión estructural**: un invariante completo **no puede** ser
 complemento-invariante. Las dos propiedades son incompatibles por
 construcción: si `I` es completo y `I(G) = I(Ḡ)` para todo `G`, entonces
@@ -329,6 +337,8 @@ duraderos que las respuestas: redirigen la pregunta.
 - Dvořák, Z. (2010). *On recognizing graphs by numbers of homomorphisms.* J. Graph Theory.
 - Dell, H., Arvind, V., Larsson, J.-E. (2018). *Locality and the complexity of the Weisfeiler–Leman algorithm.*
 - Grohe, M. (2017). *Descriptive Complexity, Canonisation, and Definable Graph Structure Theory.* Cambridge.
+- Kiefer, S., de Mel, T. D. (2026). *A classification of long-refinement graphs for colour refinement.* SODA 2026, 388–407.
+- Kiefer, S., Schweitzer, P., Selman, E. (2015). *Graphs identified by logics with counting.* ICALP 2015.
 - Xu, K., Hu, W., Leskovec, J., Jegelka, S. (2019). *How powerful are graph neural networks?* ICLR.
 - Morris, C. et al. (2019). *Weisfeiler and Leman go neural: higher-order graph neural networks.* AAAI.
 - Godsil, C., Royle, G. (2001). *Algebraic Graph Theory.* Springer.

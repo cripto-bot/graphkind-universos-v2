@@ -1,0 +1,51 @@
+{
+  "bad": 0,
+  "definicion": "CR_1(G)==CR_1(complemento(G)) como particiones de V; 1-WL sim\u00e9trico propio, f=id; exhaustivo",
+  "esperado": 2131019,
+  "exp": "EXP-086p",
+  "nmax": 7,
+  "nproc": 22,
+  "por_n": {
+    "1": {
+      "bad": 0,
+      "primer_bad": -1,
+      "total": 1
+    },
+    "2": {
+      "bad": 0,
+      "primer_bad": -1,
+      "total": 2
+    },
+    "3": {
+      "bad": 0,
+      "primer_bad": -1,
+      "total": 8
+    },
+    "4": {
+      "bad": 0,
+      "primer_bad": -1,
+      "total": 64
+    },
+    "5": {
+      "bad": 0,
+      "primer_bad": -1,
+      "total": 1024
+    },
+    "6": {
+      "bad": 0,
+      "primer_bad": -1,
+      "total": 32768
+    },
+    "7": {
+      "bad": 0,
+      "primer_bad": -1,
+      "total": 2097152
+    }
+  },
+  "sanity": "ok",
+  "sha256": "cdb16f5c0b52c405056101ed48ff9c82d799b457f10b988c532921dc87e1844a",
+  "sha256_segunda": "cdb16f5c0b52c405056101ed48ff9c82d799b457f10b988c532921dc87e1844a",
+  "total": 2131019,
+  "wall_s": 35.694,
+  "wall_s_segunda": 36.054
+}

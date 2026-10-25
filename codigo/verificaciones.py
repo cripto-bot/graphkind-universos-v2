@@ -193,6 +193,15 @@ def V3_T4k():
             g.setdefault(c, set()).add(t)
         return frozenset(frozenset(s) for s in g.values())
 
+    # Sanity (2026-10-25): k=1 debe refinar, no devolver la partición por
+    # grado. n=5, mask 28: grado [4,1]; 1-WL [1,2,2].
+    adj_s = build_adj(5, 28)
+    deg = {}
+    for v in range(5):
+        deg.setdefault(adj_s[v].bit_count(), set()).add(v)
+    assert particion(5, adj_s, 1) != frozenset(
+        frozenset(s) for s in deg.values()), "k=1 no refina (bug)"
+
     reps = []
     for n in (2, 3, 4, 5):
         for g in nx.graph_atlas_g():
@@ -485,7 +494,8 @@ def V11_convergencia():
 
 def V12_clasificacion_universal():
     """La clase (trivial/dual/local) no depende del grafo (n=4)."""
-    from universos import clasificar_involucion
+    from universos import (clasificar_involucion, t4_garantizado,
+                           t4_garantizado_f)
 
     n = 4
     iotas = {"comp": lambda nn, a: comp_adj(nn, a),
@@ -501,6 +511,21 @@ def V12_clasificacion_universal():
             filas[(iname, fn)] = vistos.pop()
     assert filas[("comp", "id")] == "dual", filas
     assert filas[("comp_parcial", "id")] == "local", filas
+
+    # Semántica del oráculo (2026-10-25): False es una predicción, no un
+    # error; una clase desconocida es un error de programación.
+    assert t4_garantizado(1, 2, "dual") is True
+    assert t4_garantizado(1, 1, "dual") is False
+    assert t4_garantizado(1, 1, "trivial") is True
+    assert t4_garantizado(0, 1, "local") is False
+    assert t4_garantizado_f(lambda k: k % 2, "dual") is True
+    try:
+        t4_garantizado(1, 2, "otra")
+    except ValueError:
+        pass
+    else:
+        raise AssertionError("clase desconocida no lanzó ValueError")
+
     print(f"V12 clasificación universal (n=4, constancia por grafo): "
           f"{filas}: OK")
 

@@ -6,12 +6,22 @@ re-validado en EXP-107):
     LEY:  T4(ι, f) VIVE  ⟺  ι es TRIVIAL  ∨  (ι es DUAL ∧ f(1) ≠ f(2))
 
 donde:
-  - f: N→N  comprime los conteos de vecinos por color en el refinamiento;
+  - f: N→N  comprime los conteos de vecinos por color en el refinamiento.
+    No comprime grados ni colores iniciales: el color inicial usa el
+    grado crudo; en cada ronda, para cada color vecino c, el conteo k
+    se reemplaza por f(k). La ley solo mira f(1) y f(2); lo que f haga
+    con 3, 4, 5… es irrelevante.
   - ι: una involución G→G (complemento, relabel, …);
-  - TRIVIAL: g = identidad (relabels: el conteo no cambia);
+  - TRIVIAL: g = identidad (relabels: el conteo no cambia); vive con
+    toda f;
   - DUAL: existen σ y g (inyectiva, g≠id) que transportan los conteos
-    de la vecindad (el complemento);
-  - LOCAL: no existe tal (σ, g) (cambios locales de aristas).
+    de la vecindad (el complemento); vive ⟺ f(1) ≠ f(2);
+  - LOCAL: no existe tal (σ, g) (cambios locales de aristas); no vive
+    para ninguna f.
+
+NOTA: `clasificar_involucion` usa WL out-only; el teorema usa WL
+simétrico (in/out). `transp` es dual con WL simétrico y local con
+out-only. La ley es relativa a (universo, variante de WL, ι, f).
 
 PODER:
   1. PREDECIR sin enumerar: dado un universo (f, ι) nuevo, el oráculo
@@ -27,6 +37,16 @@ PODER:
 def t4_garantizado(f1, f2, clase: str) -> bool:
     """La ley pura: ¿el universo admite T4 según su clase y f(1), f(2)?
 
+    `f1` y `f2` son los valores f(1) y f(2) de la compresión de conteos
+    (no grados). `clase` es la salida de `clasificar_involucion`:
+    "trivial" | "dual" | "local".
+
+    Devuelve una PREDICCIÓN de T4, no un estado de error:
+      - "trivial": True (los relabels viven con toda f);
+      - "dual": True si f(1) != f(2); False si f colapsa 1 y 2;
+      - "local": False SIEMPRE (ninguna f la salva).
+    Una clase desconocida es un error de programación: ValueError.
+
     >>> t4_garantizado(1, 2, "dual")       # f distingue 1 de 2
     True
     >>> t4_garantizado(1, 1, "dual")       # colapsa 1 y 2
@@ -35,12 +55,29 @@ def t4_garantizado(f1, f2, clase: str) -> bool:
     True
     >>> t4_garantizado(0, 1, "local")      # ninguna f la salva
     False
+    >>> t4_garantizado(1, 2, "otra")
+    Traceback (most recent call last):
+        ...
+    ValueError: clase desconocida: 'otra'
     """
     if clase == "trivial":
         return True
     if clase == "dual":
         return f1 != f2
-    return False  # local
+    if clase == "local":
+        return False
+    raise ValueError(f"clase desconocida: {clase!r}")
+
+
+def t4_garantizado_f(f, clase: str) -> bool:
+    """Igual que `t4_garantizado`, pero recibe la función f completa.
+
+    >>> t4_garantizado_f(lambda k: k % 2, "dual")
+    True
+    >>> t4_garantizado_f(lambda k: 1, "dual")
+    False
+    """
+    return t4_garantizado(f(1), f(2), clase)
 
 
 def _clases(labels):
