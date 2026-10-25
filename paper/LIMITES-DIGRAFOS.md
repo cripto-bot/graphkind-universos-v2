@@ -81,6 +81,19 @@ una variante simétrica (o arreglar `wl_labels` para usar in/out).
   (Kiefer–de Mel; flip lemma KSS), no de este test. Este test solo dice
   qué predicciones fallan.
 
+## Instancia en datos reales (openai/math)
+
+El grafo de **composición de kinds** de la gramática Lean de OpenAI
+(top60 de `lean_ir_merge.json`) realiza el contraejemplo: con `umbral2`
+(`f(0)=f(1)=0`, `f(2)=1`), `comp_dir`/`comp_transp` **fallan**; en
+Mathlib viven. Además, los roles WL de kinds difieren (OpenAI 11 vs
+Mathlib 10; ARI sobre los 13 kinds comunes **−0,04**). `transp` vive con
+toda f en ambas gramáticas: la dirección de composición es invisible a
+la partición WL. Ver
+`graphkind-harness/showcases/openai-math-radar/universos-openai/{gramatica_universos.py,GRAMATICA-UNIVERSOS.md,gramatica_universos.json}`.
+Es una **instancia** del límite de digrafos, no un teorema sobre todo el
+corpus (top60, 13 kinds).
+
 ## Límites
 
 - A: n≤6 no dirigidos; B: n=4 digrafos (los 110 sin testigo no son
