@@ -27,7 +27,7 @@ humano), lo verificó en **2 131 019 grafos exhaustivos** (n≤7, 100.0000%)
 más 19 407 adversariales, y se
 produjo una **prueba escrita** (inyectividad de la resta de multiséts de
 vecindades). Parametrizando el universo, **los datos — no los autores —
-eligieron la ley del conteo** `T4 ⟺ f(1) ≠ f(2)` (34/34 y 102/102), y
+eligieron la ley del conteo** `T4 ⟺ f(1) ≠ f(2)` (34/34 y 102/102, para el complemento **no dirigido**), y
 el sondeo posterior produjo una **caracterización**:
 
 $$
@@ -37,6 +37,10 @@ T4(\iota, f)\ \text{vive} \iff \iota \in S_n \cdot K
 \qquad
 K = \{\mathrm{id},\ \mathrm{comp\_dir},\ \mathrm{transp},\ \mathrm{comp\_transp}\} \cong \mathbb{Z}_2 \times \mathbb{Z}_2 .
 $$
+
+La ley `f(1)≠f(2)` está acotada al **complemento no dirigido**; en
+digrafos el conteo es un par `(in,out)` y la condición **no es
+suficiente** (`umbral2`, n=4; §9, `paper/LIMITES-DIGRAFOS.md`).
 
 La **dirección directa está probada** (mecanismo de conteos); la
 **recíproca está verificada** exhaustiva en n=4 (96 supervivientes
@@ -56,8 +60,8 @@ cazados por controles y quedan documentados, no borrados.
 1. **T4, propuesto y verificado por el motor**: `CR_k(G) = CR_k(Ḡ)` como
    particiones (no solo multiséts de tamaños iguales) — con prueba
    escrita.
-2. **La ley del conteo** `f(1) ≠ f(2)`, **elegida por los datos** tras
-   refutar dos hipótesis humanas.
+2. **La ley del conteo** `f(1) ≠ f(2)` (complemento no dirigido),
+   **elegida por los datos** tras refutar dos hipótesis humanas.
 3. **La caracterización** `Sₙ·K` con (⇐) probada y (⇒) verificada; la
    pieza faltante — la **uniformidad** — identificada por falsación.
 4. **El cambio de tipo**: T4 a través de universos deterministas,
@@ -121,6 +125,11 @@ En el universo estándar con una involución que cambia el par conectado:
 $$
 T4\ \text{vive} \iff f(1) \neq f(2).
 $$
+
+> **Alcance (2026-10-25).** Esta ley es para el **complemento no
+> dirigido**. En digrafos el conteo es un par `(in,out)`;
+> `f(1)≠f(2)` es necesaria pero **no suficiente** (`umbral2`, n=4; ver
+> §9 y `paper/LIMITES-DIGRAFOS.md`).
 
 **Mecanismo.** En el complemento, un vértice con **1** vecino de una
 clase pasa a `|c|−1` (que puede ser **2**): si `f` colapsa 1 y 2, la
@@ -234,8 +243,8 @@ al 100%.
 git clone https://github.com/cripto-bot/graphkind-universos-v2
 cd graphkind-universos-v2
 python3 -m venv .venv && .venv/bin/pip install -r requirements.txt
-bash reproduce.sh            # V1–V12 (~10-15 min)
-bash reproduce.sh --rapido   # V1, V3, V5, V8, V10, V11 (~3 min)
+bash reproduce.sh            # V1–V12 + EXP-086p n≤7 (~12-17 min)
+bash reproduce.sh --rapido   # V1, V3, V5, V8, V10, V11 + EXP-086p n≤6 (~3-4 min)
 ```
 
 Cada verificación de este repo lleva un **assert** con el número exacto:
@@ -251,6 +260,7 @@ en este repo.
 | # | verificación | assert |
 |---|---|---|
 | V1 | la ley `f(1)≠f(2)` (17 f × 2 involuciones, n≤6) | 34/34 |
+| V1b | 2 131 019 exhaustivos, comparación de **particiones** (EXP-086p) | 2 131 019/2 131 019 |
 | V2 | caracterización n=4 exhaustivo | 96 y 48 |
 | V3 | T4_k complemento-invarianza (k-FWL) | 51/51 |
 | V4 | cascada del observador n≤7 | 26 → 0 |
@@ -400,6 +410,41 @@ asimilado: partición 100%, ahorro 14.37% vs 10.26%.
   IR2p. Freeze: `resultados/SG-04_results_frozen.json` (certificado V19).
 - Corrección registrada: `geng -d 3` (separado) falla; es `-d3`.
 
+## 7f. Auditoría independiente (2026-10-25)
+
+Una revisión señaló tres cosas: el claim de 2 131 019 era por perfiles; la
+semántica de `f`/`False` en `t4_garantizado` no era clara; y la
+caracterización `Sₙ·K` es lo único potencialmente nuevo (C1 ya se conoce).
+
+1. **Certificado de particiones (EXP-086p).** `codigo/verificaciones_particiones.py`
+   repite la enumeración exhaustiva n≤7 comparando **particiones**, no
+   perfiles de tamaños: **2 131 019/2 131 019, 0 mismatches**, doble corrida
+   sha256 `cdb16f5c…`, 35,7 s por corrida con 22 procesos (1 830% CPU);
+   72 s la doble. Freeze:
+   `resultados/EXP-086_particiones_frozen.json`. El V1 original compara el
+   perfil (más débil); el k=1 de V3 era vacuo porque
+   `wl_k_colors(..., k=1)` no refinaba. Ambos se corrigen acá: `wl.py`
+   devuelve 1-WL simétrico para k=1 y V3 tiene un sanity de regresión. El
+   teorema no cambia.
+2. **Semántica del oráculo.** `f` comprime **conteos de vecinos por color**,
+   no grados; `t4_garantizado(f1, f2, clase)` recibe `f1=f(1)`, `f2=f(2)` y
+   devuelve una **predicción**: `trivial` → True; `dual` → `f1≠f2`;
+   `local` → False siempre. Una clase desconocida ahora lanza `ValueError`
+   (antes devolvía False en silencio), y se agrega `t4_garantizado_f(f, clase)`.
+   `clasificar_involucion` usa WL out-only; el teorema usa WL simétrico, así
+   que la ley es relativa a `(universo, variante de WL, ι, f)`.
+3. **Revisión externa.** `paper/REVIEWER-BRIEF-SnK.md` fija la
+   caracterización exacta, el estatus (C2 y C3(⇒) abiertos), el prior art más
+   cercano (Kiefer & de Mel, Lemma 4.5; flip lemma de Kiefer–Schweitzer–Selman)
+   y las preguntas que un reviewer debe responder. El flip lemma es una
+   **normalización local por par de clases**, no una involución uniforme
+   global; no implica `Sₙ·K`. La caracterización sigue sin confirmación
+   externa.
+
+El registro detallado está en `paper/AUDITORIA-2026-10-25.md`.
+
+---
+
 ## 8. Estructura del repositorio
 
 ```
@@ -410,14 +455,22 @@ paper/PRUEBA-CARACTERIZACION.md  la prueba (⇐) y el estado de (⇒)
 codigo/universos.py              la ley en el motor (t4_garantizado, oráculo)
 codigo/wl.py                     WL simétrico + k-FWL correlacionada (≡ (k+1)-WL)
 codigo/verificaciones.py         V1–V12 con asserts de los números exactos
+codigo/verificaciones_particiones.py  EXP-086p: 2 131 019 particiones (no perfiles)
+codigo/conjetura_snk.py          contraejemplo digrafos: 145 f, grupo K, controles
 codigo/verificaciones_v2.py      V13–V16 (arco de universos)
 codigo/multicapa.py              refinamiento conjunto + tres dualidades (v2)
 codigo/hipergrafo.py             k-uniforme + aridades mezcladas + dual (v2)
 codigo/individualizacion.py      IR_k (peor/multiset) — SG-02/03 (v2)
+paper/LIMITES-DIGRAFOS.md        límite de digrafos + contraejemplo (umbral2, n=4)
+paper/LIMITES-DIGRAFOS-SPEC.md   pre-registro del test de digrafos
+paper/REVIEWER-BRIEF-SnK.md      brief para revisión externa de Sₙ·K
+paper/AUDITORIA-2026-10-25.md    auditoría: particiones, oráculo, revisión
 paper/PRUEBA-MULTICAPA.md        (⇐) probada, (⇒) abierta (EXP-162)
 paper/DECISION_LOG.md            decisiones D-001→D-017 del laboratorio
 paper/LITERATURA.md              el mapa y no la respuesta (revisión + posición)
 resultados/*.json                freezes originales (EXP-102..169 + SG-01..04)
+resultados/EXP-086_particiones_frozen.json  certificado de particiones (EXP-086p)
+resultados/CONJETURA-SNK_results_frozen.json  freeze del contraejemplo de digrafos
 resultados/atlas/*.json          los 15 universos del atlas (EXP-105)
 assets/*.svg                     figuras
 index.html · index.en.html       páginas de presentación (ES/EN)
@@ -428,9 +481,19 @@ index.html · index.en.html       páginas de presentación (ES/EN)
 ## 9. Límites y problemas abiertos
 
 - **(⇒) para todo n: abierto.** Verificado en n≤4 exhaustivo, n=5
-  dirigido y datos reales; el argumento ∀n es el paso restante.
-- **Suficiencia de `f(1)≠f(2)` para `f` arbitraria**: verificada en los
-  catálogos; prueba general abierta.
+  dirigido y datos reales; el argumento ∀n es el paso restante. Brief para
+  reviewer: `paper/REVIEWER-BRIEF-SnK.md`.
+- **Suficiencia de `f(1)≠f(2)` para `f` arbitraria**: verificado en los
+  catálogos para el complemento no dirigido; prueba general abierta. En
+  digrafos **no es suficiente**: `umbral2`/`comp_dir`, n=4, mask 21
+  (ver abajo).
+- **Certificado de particiones**: el claim de 2 131 019 se reproduce ahora
+  con particiones, no perfiles (EXP-086p, §7f); el V1 original es por
+  perfil.
+- **Digrafos (2026-10-25)**: la ley del conteo está acotada al
+  complemento no dirigido. En digrafos `f(1)≠f(2)` es necesaria pero no
+  suficiente (`umbral2`, n=4, mask 21); la condición exacta es abierta.
+  Ver `paper/LIMITES-DIGRAFOS.md`.
 - **El espacio afín completo n≥5** es inabordable (involuciones de S₂₀);
   el espacio probado es el inducido + afín aleatorio.
 - **T4**: prueba escrita, **revisión externa pendiente**; formalización

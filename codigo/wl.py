@@ -72,13 +72,56 @@ def transp(n, adj):
     return out
 
 
+def _wl1_colors(n, adj, rounds=None):
+    """1-WL simétrico: colores por vértice (para el caso k=1 de k-FWL).
+
+    El update de k-FWL recorre pares de posiciones (i,j); para k=1 ese
+    conjunto es vacío y el refinement no ocurriría. Este caso especial
+    implementa el 1-WL del teorema (in/out por color).
+    """
+    if rounds is None:
+        rounds = n + 2
+    in_adj = transp(n, adj)
+    colors = [h(f"g|{adj[v].bit_count()}|{in_adj[v].bit_count()}")
+              for v in range(n)]
+    prev = None
+    for _ in range(rounds):
+        new = []
+        for v in range(n):
+            cnt = Counter()
+            m = adj[v]
+            while m:
+                u = (m & -m).bit_length() - 1
+                m &= m - 1
+                cnt[colors[u]] += 1
+            ci = Counter()
+            m = in_adj[v]
+            while m:
+                u = (m & -m).bit_length() - 1
+                m &= m - 1
+                ci[colors[u]] += 1
+            keys = set(cnt) | set(ci)
+            prof = tuple(sorted((c, ci.get(c, 0), cnt.get(c, 0))
+                                for c in keys))
+            new.append(h(f"{colors[v]}|{prof}"))
+        colors = new
+        firma = tuple(sorted(Counter(colors).values()))
+        if firma == prev:
+            break
+        prev = firma
+    return {(v,): colors[v] for v in range(n)}
+
+
 def wl_k_colors(n, adj, k, rounds=None):
     """k-FWL (folklore, correlacionada; ≡ (k+1)-WL): colores de k-tuplas.
 
     La actualización usa pares de posiciones (i,j) con el MISMO w; por la
     equivalencia conocida es tan fuerte como (k+1)-WL. La variante estándar
     ("k-WL", multiséts separados) es más débil y NO separa Rook de
-    Shrikhande en k=3 (ver EXP-159 del laboratorio)."""
+    Shrikhande en k=3 (ver EXP-159 del laboratorio). Para k=1 devuelve el
+    1-WL simétrico (in/out), no la partición por grado."""
+    if k == 1:
+        return _wl1_colors(n, adj, rounds)
     if rounds is None:
         rounds = n + 2
     tuplas = list(product(range(n), repeat=k))

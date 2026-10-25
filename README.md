@@ -27,7 +27,7 @@ exhaustive graphs** (n≤7, 100.0000%) plus
 19,407 adversarial ones, and a **written proof** was produced
 (injectivity of the neighborhood-multiset subtraction). Parameterizing
 the universe, the data — not the authors — selected the **count law**
-`T4 ⟺ f(1) ≠ f(2)` (34/34 and 102/102), and further probing produced a
+`T4 ⟺ f(1) ≠ f(2)` (34/34 and 102/102, for the **undirected** complement), and further probing produced a
 **characterization**:
 
 $$
@@ -37,6 +37,10 @@ T4(\iota, f)\ \text{holds} \iff \iota \in S_n \cdot K
 \qquad
 K = \{\mathrm{id},\ \mathrm{comp\_dir},\ \mathrm{transp},\ \mathrm{comp\_transp}\} \cong \mathbb{Z}_2 \times \mathbb{Z}_2 .
 $$
+
+The count law `f(1)≠f(2)` is scoped to the **undirected complement**; on
+digraphs the count is a pair `(in,out)` and the condition is **not
+sufficient** (`umbral2`, n=4; §9, `paper/LIMITES-DIGRAFOS.md`).
 
 The **forward direction is proved** (count mechanism); the **converse is
 verified** exhaustively in n=4 (96 exact survivors, zero outside),
@@ -55,8 +59,8 @@ caught by controls and are documented, not deleted.
 
 1. **T4, proposed and verified by the engine**: `CR_k(G) = CR_k(Ḡ)` as partitions
    (not merely equal multisets of class sizes) — with a written proof.
-2. **The count law** `f(1) ≠ f(2)`, **selected by the data** after two
-   human hypotheses were refuted by the table.
+2. **The count law** `f(1) ≠ f(2)` (undirected complement), **selected
+   by the data** after two human hypotheses were refuted by the table.
 3. **The characterization** `Sₙ·K` with (⇐) proved and (⇒) verified;
    the missing piece — **uniformity** — identified by falsification.
 4. **The type change**: T4 across deterministic, dynamic, probabilistic
@@ -124,6 +128,11 @@ pair:
 $$
 T4\ \text{holds} \iff f(1) \neq f(2).
 $$
+
+> **Scope (2026-10-25).** This law is for the **undirected complement**.
+> On digraphs the count is a pair `(in,out)`; `f(1)≠f(2)` is necessary
+> but **not sufficient** (`umbral2`, n=4; see §9 and
+> `paper/LIMITES-DIGRAFOS.md`).
 
 **Mechanism.** In the complement, a vertex with **1** neighbor in a class
 gets `|c|−1` (which may be **2**): if `f` collapses 1 and 2, the duality
@@ -236,8 +245,8 @@ the human construction (97.8%). No valid recipe reaches 100%.
 git clone https://github.com/cripto-bot/graphkind-universos-v2
 cd graphkind-universos-v2
 python3 -m venv .venv && .venv/bin/pip install -r requirements.txt
-bash reproduce.sh            # V1–V12 (~10-15 min)
-bash reproduce.sh --rapido   # V1, V3, V5, V8, V10, V11 (~3 min)
+bash reproduce.sh            # V1–V12 + EXP-086p n≤7 (~12-17 min)
+bash reproduce.sh --rapido   # V1, V3, V5, V8, V10, V11 + EXP-086p n≤6 (~3-4 min)
 ```
 
 Every verification carries an **assert** with the exact number from the
@@ -247,6 +256,7 @@ every push and the full suite on demand.
 | # | verification | assert |
 |---|---|---|
 | V1 | the law `f(1)≠f(2)` (17 f × 2 involutions, n≤6) | 34/34 |
+| V1b | 2,131,019 exhaustive, **partition** comparison (EXP-086p) | 2,131,019/2,131,019 |
 | V2 | characterization n=4 exhaustive | 96 and 48 |
 | V3 | T4_k complement-invariance (k-FWL) | 51/51 |
 | V4 | observer cascade n≤7 | 26 → 0 |
@@ -396,6 +406,41 @@ ladder is flat (corrects EXP-162's `k*=2`); (⇐) proved, (⇒) open.
   Freeze: `resultados/SG-04_results_frozen.json` (certificate V19).
 - Registered correction: `geng -d 3` (separated) fails; it is `-d3`.
 
+## 7f. Independent audit (2026-10-25)
+
+A review flagged three things: the 2,131,019 claim was profile-based, the
+`f`/`False` semantics of `t4_garantizado` were unclear, and the `Sₙ·K`
+characterization is the only potentially new piece (C1 is known).
+
+1. **Partition certificate (EXP-086p).** `codigo/verificaciones_particiones.py`
+   reruns the exhaustive n≤7 enumeration comparing **partitions**, not
+   class-size profiles: **2,131,019/2,131,019, 0 mismatches**, double-run
+   sha256 `cdb16f5c…`, 35.7 s per run with 22 processes (1,830% CPU); 72 s
+   for the double run. Freeze:
+   `resultados/EXP-086_particiones_frozen.json`. The original V1 compares
+   the profile (weaker); V3's `k=1` was vacuous because
+   `wl_k_colors(..., k=1)` did not refine. Both are fixed here: `wl.py`
+   now returns symmetric 1-WL for `k=1`, and V3 has a regression sanity.
+   The theorem is unchanged.
+2. **Oracle semantics.** `f` compresses **neighbor counts per color**, not
+   degrees; `t4_garantizado(f1, f2, clase)` receives `f1=f(1)`, `f2=f(2)`
+   and returns a **prediction**: `trivial` → True; `dual` → `f1≠f2`;
+   `local` → False always. An unknown class now raises `ValueError` (it
+   used to return a silent False), and `t4_garantizado_f(f, clase)` is
+   provided. `clasificar_involucion` uses out-only WL; the theorem uses
+   symmetric WL, so the law is relative to `(universe, WL variant, ι, f)`.
+3. **External review.** `paper/REVIEWER-BRIEF-SnK.md` states the exact
+   characterization, the status (C2 and C3(⇒) open), the closest prior art
+   (Kiefer & de Mel, Lemma 4.5; Kiefer–Schweitzer–Selman flip lemma) and
+   the questions a reviewer must answer. The flip lemma is a **local
+   per-class-pair normalization**, not a global uniform involution; it does
+   not imply `Sₙ·K`. The characterization remains unconfirmed by external
+   review.
+
+The detailed record is in `paper/AUDITORIA-2026-10-25.md`.
+
+---
+
 ## 8. Repository structure
 
 ```
@@ -406,10 +451,18 @@ paper/PRUEBA-CARACTERIZACION.md  the (⇐) proof and the status of (⇒)
 codigo/universos.py              the law inside the engine (t4_garantizado, oracle)
 codigo/wl.py                     symmetric WL + correlated k-FWL (≡ (k+1)-WL)
 codigo/verificaciones.py         V1–V12 with asserts of the exact numbers
+codigo/verificaciones_particiones.py  EXP-086p: 2,131,019 partitions (not profiles)
+codigo/conjetura_snk.py          digraph counterexample: 145 f, K group, controls
+paper/LIMITES-DIGRAFOS.md        digraph limit + counterexample (umbral2, n=4)
+paper/LIMITES-DIGRAFOS-SPEC.md   pre-registration for the digraph test
+paper/REVIEWER-BRIEF-SnK.md      reviewer brief for the Sₙ·K characterization
+paper/AUDITORIA-2026-10-25.md    audit: partition certificate, oracle, review
 paper/PRUEBA-MULTICAPA.md        (⇐) proved, (⇒) open (EXP-162)
 paper/DECISION_LOG.md            laboratory decisions D-001→D-017
 paper/LITERATURA.md              the map, not the answer (review + position)
 resultados/*.json                original freezes (EXP-102..169 + SG-01..04)
+resultados/EXP-086_particiones_frozen.json  partition certificate (EXP-086p)
+resultados/CONJETURA-SNK_results_frozen.json  digraph counterexample freeze
 resultados/atlas/*.json          the atlas: 15 universes (EXP-105)
 assets/*.svg                     figures
 index.html · index.en.html       presentation pages (ES/EN)
@@ -420,9 +473,19 @@ index.html · index.en.html       presentation pages (ES/EN)
 ## 9. Limits and open problems
 
 - **(⇒) for all n: open.** Verified in n≤4 exhaustive, n=5 targeted,
-  and real data; the ∀n argument is the remaining step.
+  and real data; the ∀n argument is the remaining step. Reviewer brief:
+  `paper/REVIEWER-BRIEF-SnK.md`.
 - **Sufficiency of `f(1)≠f(2)` for arbitrary `f`**: verified in the
-  catalogs; general proof open.
+  catalogs for the undirected complement; general proof open. On
+  digraphs it is **not sufficient**: `umbral2`/`comp_dir`, n=4, mask 21
+  (see below).
+- **Partition certificate**: the 2,131,019 claim is now reproduced with
+  partitions, not profiles (EXP-086p, §7f); the original V1 is
+  profile-based.
+- **Digraphs (2026-10-25)**: the count law is scoped to the undirected
+  complement. On digraphs `f(1)≠f(2)` is necessary but not sufficient
+  (`umbral2`, n=4, mask 21); the exact condition is open. See
+  `paper/LIMITES-DIGRAFOS.md`.
 - **The full affine space n≥5** is intractable (involutions of S₂₀); the
   tested space is the induced one plus random affine.
 - **T4**: written proof, **external review pending**; Lean formalization
