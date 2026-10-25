@@ -27,7 +27,7 @@ exhaustive graphs** (n≤7, 100.0000%) plus
 19,407 adversarial ones, and a **written proof** was produced
 (injectivity of the neighborhood-multiset subtraction). Parameterizing
 the universe, the data — not the authors — selected the **count law**
-`T4 ⟺ f(1) ≠ f(2)` (34/34 and 102/102), and further probing produced a
+`T4 ⟺ f(1) ≠ f(2)` (34/34 and 102/102, for the **undirected** complement), and further probing produced a
 **characterization**:
 
 $$
@@ -37,6 +37,10 @@ T4(\iota, f)\ \text{holds} \iff \iota \in S_n \cdot K
 \qquad
 K = \{\mathrm{id},\ \mathrm{comp\_dir},\ \mathrm{transp},\ \mathrm{comp\_transp}\} \cong \mathbb{Z}_2 \times \mathbb{Z}_2 .
 $$
+
+The count law `f(1)≠f(2)` is scoped to the **undirected complement**; on
+digraphs the count is a pair `(in,out)` and the condition is **not
+sufficient** (`umbral2`, n=4; §9, `paper/LIMITES-DIGRAFOS.md`).
 
 The **forward direction is proved** (count mechanism); the **converse is
 verified** exhaustively in n=4 (96 exact survivors, zero outside),
@@ -55,8 +59,8 @@ caught by controls and are documented, not deleted.
 
 1. **T4, proposed and verified by the engine**: `CR_k(G) = CR_k(Ḡ)` as partitions
    (not merely equal multisets of class sizes) — with a written proof.
-2. **The count law** `f(1) ≠ f(2)`, **selected by the data** after two
-   human hypotheses were refuted by the table.
+2. **The count law** `f(1) ≠ f(2)` (undirected complement), **selected
+   by the data** after two human hypotheses were refuted by the table.
 3. **The characterization** `Sₙ·K` with (⇐) proved and (⇒) verified;
    the missing piece — **uniformity** — identified by falsification.
 4. **The type change**: T4 across deterministic, dynamic, probabilistic
@@ -124,6 +128,11 @@ pair:
 $$
 T4\ \text{holds} \iff f(1) \neq f(2).
 $$
+
+> **Scope (2026-10-25).** This law is for the **undirected complement**.
+> On digraphs the count is a pair `(in,out)`; `f(1)≠f(2)` is necessary
+> but **not sufficient** (`umbral2`, n=4; see §9 and
+> `paper/LIMITES-DIGRAFOS.md`).
 
 **Mechanism.** In the complement, a vertex with **1** neighbor in a class
 gets `|c|−1` (which may be **2**): if `f` collapses 1 and 2, the duality
@@ -443,6 +452,9 @@ codigo/universos.py              the law inside the engine (t4_garantizado, orac
 codigo/wl.py                     symmetric WL + correlated k-FWL (≡ (k+1)-WL)
 codigo/verificaciones.py         V1–V12 with asserts of the exact numbers
 codigo/verificaciones_particiones.py  EXP-086p: 2,131,019 partitions (not profiles)
+codigo/conjetura_snk.py          digraph counterexample: 145 f, K group, controls
+paper/LIMITES-DIGRAFOS.md        digraph limit + counterexample (umbral2, n=4)
+paper/LIMITES-DIGRAFOS-SPEC.md   pre-registration for the digraph test
 paper/REVIEWER-BRIEF-SnK.md      reviewer brief for the Sₙ·K characterization
 paper/AUDITORIA-2026-10-25.md    audit: partition certificate, oracle, review
 paper/PRUEBA-MULTICAPA.md        (⇐) proved, (⇒) open (EXP-162)
@@ -450,6 +462,7 @@ paper/DECISION_LOG.md            laboratory decisions D-001→D-017
 paper/LITERATURA.md              the map, not the answer (review + position)
 resultados/*.json                original freezes (EXP-102..169 + SG-01..04)
 resultados/EXP-086_particiones_frozen.json  partition certificate (EXP-086p)
+resultados/CONJETURA-SNK_results_frozen.json  digraph counterexample freeze
 resultados/atlas/*.json          the atlas: 15 universes (EXP-105)
 assets/*.svg                     figures
 index.html · index.en.html       presentation pages (ES/EN)
@@ -463,10 +476,16 @@ index.html · index.en.html       presentation pages (ES/EN)
   and real data; the ∀n argument is the remaining step. Reviewer brief:
   `paper/REVIEWER-BRIEF-SnK.md`.
 - **Sufficiency of `f(1)≠f(2)` for arbitrary `f`**: verified in the
-  catalogs; general proof open.
+  catalogs for the undirected complement; general proof open. On
+  digraphs it is **not sufficient**: `umbral2`/`comp_dir`, n=4, mask 21
+  (see below).
 - **Partition certificate**: the 2,131,019 claim is now reproduced with
   partitions, not profiles (EXP-086p, §7f); the original V1 is
   profile-based.
+- **Digraphs (2026-10-25)**: the count law is scoped to the undirected
+  complement. On digraphs `f(1)≠f(2)` is necessary but not sufficient
+  (`umbral2`, n=4, mask 21); the exact condition is open. See
+  `paper/LIMITES-DIGRAFOS.md`.
 - **The full affine space n≥5** is intractable (involutions of S₂₀); the
   tested space is the induced one plus random affine.
 - **T4**: written proof, **external review pending**; Lean formalization

@@ -27,7 +27,8 @@ grafos exhaustivos (n≤7) y 19 407 adversariales, con **prueba** escrita
 Más aún: parametrizando el *universo de observación* (la función que
 comprime los conteos de vecinos y la involución que actúa), encontramos
 una **ley emergente**: `T4 vive ⟺ la involución es trivial, o es dual
-global y el conteo distingue 1 de 2`. La ley fue **elegida por la tabla,
+global y el conteo distingue 1 de 2` (para el complemento **no dirigido**;
+en digrafos, ver §8.1). La ley fue **elegida por la tabla,
 no por el humano** (dos hipótesis humanas fueron refutadas por los datos)
 y se verifica en 102/102 casos. Clasificamos las involuciones en tres
 clases exhaustivas (trivial / dual global / local) y publicamos un
@@ -64,9 +65,11 @@ verified on 2 131 019 exhaustive graphs plus 19 407 adversarial ones,
 with a written
 proof), and yields an **emergent law** over observation universes:
 `T4 holds ⟺ the involution is trivial, or dual-global with a count that
-distinguishes 1 from 2` (102/102 verified; the law was selected by the
+distinguishes 1 from 2` (102/102 verified for the undirected complement;
+the digraph count condition is open, §8.1; the law was selected by the
 data, not by us). A second cycle refined this into a **characterization**
-`T4(ι,f) holds ⟺ ι ∈ Sₙ·K and (ι changes the pair ⟹ f(1)≠f(2))`: the
+`T4(ι,f) holds ⟺ ι ∈ Sₙ·K and (ι changes the pair ⟹ f(1)≠f(2))`
+(for the undirected complement; digraphs: §8.1): the
 human disjunction "preserves the pair ∨ distinguishes 1 from 2" was
 **falsified in both directions**, uniformity being the missing piece;
 (⇐) is **proved**, (⇒) **verified** exhaustively in n≤4 and targeted in
@@ -269,17 +272,21 @@ Dos hipótesis humanas fueron **refutadas por los datos**:
 
 Con la definición formal — `ι` es **dual global** si existen `σ:V→V` y
 `g:N→N` con `|N_{ι(G)}(v)∩σ(c)| = g(|N_G(σ(v))∩c|, |c|, n, 1[σ(v)∈c])`,
-`g` inyectiva — las involuciones se parten en **tres clases**:
+`g` inyectiva — las involuciones se parten en **tres clases** (dual global con dos subcasos de conteo):
 
 | clase | ejemplos | T4 |
 |---|---|---|
 | **trivial** (g=id) | swap, reverse | vive siempre |
-| **dual global** | complemento, complemento∘reverse | ⟺ `f(1)≠f(2)` |
+| **dual global (no dirigido)** | complemento | ⟺ `f(1)≠f(2)` |
+| **dual global (digrafo)** | comp_dir, comp_dir∘reverse | grupo ✓; `f(1)≠f(2)` **no suficiente** (§8.1) |
 | **local** | complemento parcial, flip de vértice | **imposible** (ninguna f) |
 
-> **Ley de las leyes**: una involución admite T4 ⟺ induce una
-> transformación **global** de la vecindad; y cuando lo hace, la
-> condición es **siempre** `f(1)≠f(2)`. Verificada **102/102**.
+> **Ley de las leyes (complemento no dirigido)**: una involución admite
+> T4 ⟺ induce una transformación **global** de la vecindad; y cuando lo
+> hace, la condición es **siempre** `f(1)≠f(2)`. Verificada **102/102**
+> en no dirigidos. En digrafos el conteo es (in,out): el grupo `Sₙ·K`
+> se mantiene, pero `f(1)≠f(2)` no alcanza (`umbral2`, n=4, §8.1); la
+> condición exacta es abierta.
 
 ### 6.4 El explorador y el atlas
 
@@ -310,9 +317,16 @@ T4(ι, f) vive ⟺ ι ∈ Sₙ·K   y   (ι cambia el par ⟹ f(1) ≠ f(2))
 K = {id, comp_dir, transp, comp_transp} ≅ Z₂×Z₂
 ```
 
+> **Alcance (2026-10-25).** La equivalencia `f(1)≠f(2)` y la prueba de
+> `c` se refieren al complemento **no dirigido**. En digrafos el conteo
+> es un par (in,out): `f(1)≠f(2)` es necesaria pero no suficiente
+> (`umbral2`, `comp_dir`, n=4; §8.1). La parte de grupo `Sₙ·K` se
+> mantiene; la condición exacta de f para digrafos es abierta.
+
 - **(⇐) probada**: σ (relabel) y s (swap in/out) viven con toda `f`;
-  c (complemento uniforme) vive ⟺ `f(1)≠f(2)` (mecanismo de conteos,
-  contraejemplo n=6).
+  c (complemento uniforme) vive ⟺ `f(1)≠f(2)` **en no dirigidos**
+  (mecanismo de conteos, contraejemplo n=6); en digrafos rige la nota
+  de alcance de arriba.
 - **(⇒) verificada**: n=4 exhaustivo (**96 = 24·4 exactas, cero
   fuera**); n=5 dirigido (7680/8160 con testigo; las 480 sin testigo
   son uniformes); afín aleatoria n=4 (10000/10000 con testigo); real
@@ -354,9 +368,9 @@ K = {id, comp_dir, transp, comp_transp} ≅ Z₂×Z₂
 
 - **T4**: prueba escrita, **pendiente de revisión externa/bibliográfica**
   y de formalización asistida (Lean no disponible en el entorno).
-- **La ley de universos**: verificada 102/102 en n≤6; candidata a
-  teorema (el mecanismo está esbozado; la prueba general es trabajo
-  externo).
+- **La ley de universos**: verificada 102/102 en n≤6 (complemento no
+  dirigido); candidata a teorema (el mecanismo está esbozado; la prueba
+  general es trabajo externo). En digrafos, ver §8.1.
 - **La caracterización Sₙ·K**: (⇐) probada; (⇒) verificada en n≤4
   exhaustivo, n=5 dirigido y real; **∀n abierto**; receta universal
   100% **no hallada** (mejor válida: `ciclo` 99.63%); la "prueba" por
@@ -368,6 +382,29 @@ K = {id, comp_dir, transp, comp_transp} ≅ Z₂×Z₂
   abierto (más ejes: estructura base, CR no estándar).
 - **Datos**: ChEMBL (CC-BY 4.0), CodeSearchNet, UniProt, Pfam —
   citados; muestras fijas por seed.
+
+### 8.1 Digrafos: la ley de conteo no se transfiere
+
+La ley `f(1)≠f(2)` se verificó en 145 f sobre el complemento **no
+dirigido** (75/75 con f1≠f2; 70/70 con f1=f2 y testigo). En digrafos el
+conteo es un par (in,out): `f(1)≠f(2)` es **necesaria pero no
+suficiente**. Contraejemplo (`umbral2`, f=(0,0,1,1,1,1,1), `comp_dir`,
+n=4, mask 21):
+
+```
+G:        0->{1,3}, 1->{2}, 2->{}, 3->{}
+comp_dir: 0->{2},   1->{0,3}, 2->{0,1,3}, 3->{0,1,2}
+
+partición G    = [[0],[1],[2],[3]]   perfil (1,1,1,1)
+partición comp = [[0],[1],[2,3]]     perfil (1,1,2)
+```
+
+La causa es la colisión `f(0)=f(1)=0`. La condición exacta para digrafos
+(¿f inyectiva en {0,1,2}? ¿en todos los conteos?) queda **abierta**; el
+claim de este paper se acota al complemento no dirigido. La parte de
+grupo `Sₙ·K` se mantiene. Detalle, pre-registro y reproducción:
+`paper/LIMITES-DIGRAFOS.md`, `paper/LIMITES-DIGRAFOS-SPEC.md`,
+`codigo/conjetura_snk.py`, `resultados/CONJETURA-SNK_results_frozen.json`.
 
 ---
 

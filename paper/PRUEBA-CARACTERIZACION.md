@@ -1,6 +1,13 @@
 # La caracterización Sₙ·K — prueba estructural y estado
 
 > Fabrica: GraphKind · 2026-09-10 · EXP-110/111
+>
+> **Alcance (2026-10-25).** El enunciado y la prueba de abajo valen para el
+> complemento **no dirigido** y para σ/s (relabel/swap). En digrafos el
+> conteo es un par (in,out); `f(1)≠f(2)` es necesaria pero no suficiente
+> (`umbral2`, `comp_dir`, n=4 mask 21; ver `paper/LIMITES-DIGRAFOS.md`).
+> La parte de grupo `Sₙ·K` se mantiene; la condición exacta de f para
+> digrafos es abierta.
 
 ## El enunciado
 
@@ -9,7 +16,9 @@ Con WL simétrico (cuenta `in` y `out` por color, grados crudos):
     T4(ι, f) vive ⟺ ι ∈ Sₙ·K  y  (ι cambia el par ⟹ f(1) ≠ f(2))
     K = {id, comp_dir, transp, comp_transp} ≅ Z₂×Z₂
 
-donde "vive" = la partición WL se preserva para todo digrafo.
+donde "vive" = la partición WL se preserva para todo grafo no
+dirigido (y para σ/s en digrafos); el caso comp_dir/comp_transp en
+digrafos tiene el límite de la nota de alcance.
 
 ## (⇐) Lo que está demostrado
 
@@ -23,11 +32,13 @@ Sea ι = σ∘s∘c con σ∈Sₙ, s∈{0,1} (swap global in/out), c∈{0,1}
    (in_D, out_D) → (out_D, in_D); el perfil se transforma por el swap
    (f(a),f(b)) → (f(b),f(a)), que es una biyección de perfiles. La
    partición se preserva. Vale para toda f.
-3. **c (complemento uniforme)**: para cada clase D, el conteo de
-   vecinos se transforma m → |D| − m (o |D|−1−m en la clase propia, sin
-   self-loops): una biyección de conteos. La partición se preserva
-   **siempre que f distinga 1 de 2** — condición mínima verificada
-   (con f(1)=f(2) el contraejemplo existe: EXP-102, n=6).
+3. **c (complemento uniforme, no dirigido)**: para cada clase D, el
+   conteo de vecinos se transforma m → |D| − m (o |D|−1−m en la clase
+   propia, sin self-loops): una biyección de conteos. La partición se
+   preserva **siempre que f distinga 1 de 2** — condición mínima
+   verificada en no dirigidos (con f(1)=f(2) el contraejemplo existe:
+   EXP-102, n=6). En digrafos el conteo es (in,out) y la condición no
+   alcanza; ver la nota de alcance.
 
 Por lo tanto Sₙ·K ⊆ supervivientes. La suficiencia de `f(1)≠f(2)` para
 **toda** f (no solo las del catálogo) queda como parte del teorema

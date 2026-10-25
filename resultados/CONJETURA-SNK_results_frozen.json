@@ -1,0 +1,9499 @@
+{
+  "A": [
+    {
+      "f1": 1,
+      "f2": 2,
+      "fails": 0,
+      "first": null,
+      "label": "id",
+      "ok": true,
+      "pred": true
+    },
+    {
+      "f1": 1,
+      "f2": 1,
+      "fails": 1080,
+      "first": [
+        6,
+        657
+      ],
+      "label": "const1",
+      "ok": true,
+      "pred": false
+    },
+    {
+      "f1": 1,
+      "f2": 1,
+      "fails": 1080,
+      "first": [
+        6,
+        657
+      ],
+      "label": "umbral1",
+      "ok": true,
+      "pred": false
+    },
+    {
+      "f1": 0,
+      "f2": 1,
+      "fails": 0,
+      "first": null,
+      "label": "umbral2",
+      "ok": true,
+      "pred": true
+    },
+    {
+      "f1": 0,
+      "f2": 0,
+      "fails": 720,
+      "first": [
+        6,
+        692
+      ],
+      "label": "umbral3",
+      "ok": true,
+      "pred": false
+    },
+    {
+      "f1": 0,
+      "f2": 0,
+      "fails": 1080,
+      "first": [
+        6,
+        657
+      ],
+      "label": "umbral4",
+      "ok": true,
+      "pred": false
+    },
+    {
+      "f1": 1,
+      "f2": 0,
+      "fails": 0,
+      "first": null,
+      "label": "mod2",
+      "ok": true,
+      "pred": true
+    },
+    {
+      "f1": 1,
+      "f2": 2,
+      "fails": 0,
+      "first": null,
+      "label": "mod3",
+      "ok": true,
+      "pred": true
+    },
+    {
+      "f1": 1,
+      "f2": 2,
+      "fails": 0,
+      "first": null,
+      "label": "mod4",
+      "ok": true,
+      "pred": true
+    },
+    {
+      "f1": 1,
+      "f2": 2,
+      "fails": 0,
+      "first": null,
+      "label": "mod5",
+      "ok": true,
+      "pred": true
+    },
+    {
+      "f1": 1,
+      "f2": 1,
+      "fails": 1080,
+      "first": [
+        6,
+        657
+      ],
+      "label": "trunc1",
+      "ok": true,
+      "pred": false
+    },
+    {
+      "f1": 1,
+      "f2": 2,
+      "fails": 0,
+      "first": null,
+      "label": "trunc2",
+      "ok": true,
+      "pred": true
+    },
+    {
+      "f1": 1,
+      "f2": 2,
+      "fails": 0,
+      "first": null,
+      "label": "trunc3",
+      "ok": true,
+      "pred": true
+    },
+    {
+      "f1": 1,
+      "f2": 2,
+      "fails": 0,
+      "first": null,
+      "label": "log2",
+      "ok": true,
+      "pred": true
+    },
+    {
+      "f1": 1,
+      "f2": 4,
+      "fails": 0,
+      "first": null,
+      "label": "cuadrado",
+      "ok": true,
+      "pred": true
+    },
+    {
+      "f1": 1,
+      "f2": 8,
+      "fails": 0,
+      "first": null,
+      "label": "cubo",
+      "ok": true,
+      "pred": true
+    },
+    {
+      "f1": 1,
+      "f2": 1,
+      "fails": 1080,
+      "first": [
+        6,
+        657
+      ],
+      "label": "raiz",
+      "ok": true,
+      "pred": false
+    },
+    {
+      "f1": 2,
+      "f2": 2,
+      "fails": 1080,
+      "first": [
+        6,
+        657
+      ],
+      "label": "rand_eq_0",
+      "ok": true,
+      "pred": false
+    },
+    {
+      "f1": 2,
+      "f2": 2,
+      "fails": 720,
+      "first": [
+        6,
+        692
+      ],
+      "label": "rand_eq_1",
+      "ok": true,
+      "pred": false
+    },
+    {
+      "f1": 3,
+      "f2": 3,
+      "fails": 720,
+      "first": [
+        6,
+        692
+      ],
+      "label": "rand_eq_2",
+      "ok": true,
+      "pred": false
+    },
+    {
+      "f1": 2,
+      "f2": 2,
+      "fails": 720,
+      "first": [
+        6,
+        692
+      ],
+      "label": "rand_eq_3",
+      "ok": true,
+      "pred": false
+    },
+    {
+      "f1": 2,
+      "f2": 2,
+      "fails": 720,
+      "first": [
+        6,
+        692
+      ],
+      "label": "rand_eq_4",
+      "ok": true,
+      "pred": false
+    },
+    {
+      "f1": 3,
+      "f2": 3,
+      "fails": 720,
+      "first": [
+        6,
+        692
+      ],
+      "label": "rand_eq_5",
+      "ok": true,
+      "pred": false
+    },
+    {
+      "f1": 0,
+      "f2": 0,
+      "fails": 720,
+      "first": [
+        6,
+        692
+      ],
+      "label": "rand_eq_6",
+      "ok": true,
+      "pred": false
+    },
+    {
+      "f1": 3,
+      "f2": 3,
+      "fails": 1080,
+      "first": [
+        6,
+        657
+      ],
+      "label": "rand_eq_7",
+      "ok": true,
+      "pred": false
+    },
+    {
+      "f1": 3,
+      "f2": 3,
+      "fails": 720,
+      "first": [
+        6,
+        692
+      ],
+      "label": "rand_eq_8",
+      "ok": true,
+      "pred": false
+    },
+    {
+      "f1": 2,
+      "f2": 2,
+      "fails": 720,
+      "first": [
+        6,
+        692
+      ],
+      "label": "rand_eq_9",
+      "ok": true,
+      "pred": false
+    },
+    {
+      "f1": 1,
+      "f2": 1,
+      "fails": 1080,
+      "first": [
+        6,
+        657
+      ],
+      "label": "rand_eq_10",
+      "ok": true,
+      "pred": false
+    },
+    {
+      "f1": 0,
+      "f2": 0,
+      "fails": 720,
+      "first": [
+        6,
+        692
+      ],
+      "label": "rand_eq_11",
+      "ok": true,
+      "pred": false
+    },
+    {
+      "f1": 1,
+      "f2": 1,
+      "fails": 720,
+      "first": [
+        6,
+        692
+      ],
+      "label": "rand_eq_12",
+      "ok": true,
+      "pred": false
+    },
+    {
+      "f1": 2,
+      "f2": 2,
+      "fails": 720,
+      "first": [
+        6,
+        692
+      ],
+      "label": "rand_eq_13",
+      "ok": true,
+      "pred": false
+    },
+    {
+      "f1": 0,
+      "f2": 0,
+      "fails": 720,
+      "first": [
+        6,
+        692
+      ],
+      "label": "rand_eq_14",
+      "ok": true,
+      "pred": false
+    },
+    {
+      "f1": 0,
+      "f2": 0,
+      "fails": 1080,
+      "first": [
+        6,
+        657
+      ],
+      "label": "rand_eq_15",
+      "ok": true,
+      "pred": false
+    },
+    {
+      "f1": 3,
+      "f2": 3,
+      "fails": 720,
+      "first": [
+        6,
+        692
+      ],
+      "label": "rand_eq_16",
+      "ok": true,
+      "pred": false
+    },
+    {
+      "f1": 1,
+      "f2": 1,
+      "fails": 720,
+      "first": [
+        6,
+        692
+      ],
+      "label": "rand_eq_17",
+      "ok": true,
+      "pred": false
+    },
+    {
+      "f1": 1,
+      "f2": 1,
+      "fails": 720,
+      "first": [
+        6,
+        692
+      ],
+      "label": "rand_eq_18",
+      "ok": true,
+      "pred": false
+    },
+    {
+      "f1": 3,
+      "f2": 3,
+      "fails": 1080,
+      "first": [
+        6,
+        657
+      ],
+      "label": "rand_eq_19",
+      "ok": true,
+      "pred": false
+    },
+    {
+      "f1": 0,
+      "f2": 0,
+      "fails": 1080,
+      "first": [
+        6,
+        657
+      ],
+      "label": "rand_eq_20",
+      "ok": true,
+      "pred": false
+    },
+    {
+      "f1": 1,
+      "f2": 1,
+      "fails": 720,
+      "first": [
+        6,
+        692
+      ],
+      "label": "rand_eq_21",
+      "ok": true,
+      "pred": false
+    },
+    {
+      "f1": 1,
+      "f2": 1,
+      "fails": 720,
+      "first": [
+        6,
+        692
+      ],
+      "label": "rand_eq_22",
+      "ok": true,
+      "pred": false
+    },
+    {
+      "f1": 0,
+      "f2": 0,
+      "fails": 1080,
+      "first": [
+        6,
+        657
+      ],
+      "label": "rand_eq_23",
+      "ok": true,
+      "pred": false
+    },
+    {
+      "f1": 3,
+      "f2": 3,
+      "fails": 720,
+      "first": [
+        6,
+        692
+      ],
+      "label": "rand_eq_24",
+      "ok": true,
+      "pred": false
+    },
+    {
+      "f1": 0,
+      "f2": 0,
+      "fails": 720,
+      "first": [
+        6,
+        692
+      ],
+      "label": "rand_eq_25",
+      "ok": true,
+      "pred": false
+    },
+    {
+      "f1": 1,
+      "f2": 1,
+      "fails": 1080,
+      "first": [
+        6,
+        657
+      ],
+      "label": "rand_eq_26",
+      "ok": true,
+      "pred": false
+    },
+    {
+      "f1": 3,
+      "f2": 3,
+      "fails": 720,
+      "first": [
+        6,
+        692
+      ],
+      "label": "rand_eq_27",
+      "ok": true,
+      "pred": false
+    },
+    {
+      "f1": 0,
+      "f2": 0,
+      "fails": 720,
+      "first": [
+        6,
+        692
+      ],
+      "label": "rand_eq_28",
+      "ok": true,
+      "pred": false
+    },
+    {
+      "f1": 0,
+      "f2": 0,
+      "fails": 720,
+      "first": [
+        6,
+        692
+      ],
+      "label": "rand_eq_29",
+      "ok": true,
+      "pred": false
+    },
+    {
+      "f1": 1,
+      "f2": 1,
+      "fails": 720,
+      "first": [
+        6,
+        692
+      ],
+      "label": "rand_eq_30",
+      "ok": true,
+      "pred": false
+    },
+    {
+      "f1": 3,
+      "f2": 3,
+      "fails": 720,
+      "first": [
+        6,
+        692
+      ],
+      "label": "rand_eq_31",
+      "ok": true,
+      "pred": false
+    },
+    {
+      "f1": 3,
+      "f2": 3,
+      "fails": 720,
+      "first": [
+        6,
+        692
+      ],
+      "label": "rand_eq_32",
+      "ok": true,
+      "pred": false
+    },
+    {
+      "f1": 1,
+      "f2": 1,
+      "fails": 1080,
+      "first": [
+        6,
+        657
+      ],
+      "label": "rand_eq_33",
+      "ok": true,
+      "pred": false
+    },
+    {
+      "f1": 0,
+      "f2": 0,
+      "fails": 1080,
+      "first": [
+        6,
+        657
+      ],
+      "label": "rand_eq_34",
+      "ok": true,
+      "pred": false
+    },
+    {
+      "f1": 1,
+      "f2": 1,
+      "fails": 720,
+      "first": [
+        6,
+        692
+      ],
+      "label": "rand_eq_35",
+      "ok": true,
+      "pred": false
+    },
+    {
+      "f1": 0,
+      "f2": 0,
+      "fails": 720,
+      "first": [
+        6,
+        692
+      ],
+      "label": "rand_eq_36",
+      "ok": true,
+      "pred": false
+    },
+    {
+      "f1": 0,
+      "f2": 0,
+      "fails": 720,
+      "first": [
+        6,
+        692
+      ],
+      "label": "rand_eq_37",
+      "ok": true,
+      "pred": false
+    },
+    {
+      "f1": 3,
+      "f2": 3,
+      "fails": 720,
+      "first": [
+        6,
+        692
+      ],
+      "label": "rand_eq_38",
+      "ok": true,
+      "pred": false
+    },
+    {
+      "f1": 0,
+      "f2": 0,
+      "fails": 720,
+      "first": [
+        6,
+        692
+      ],
+      "label": "rand_eq_39",
+      "ok": true,
+      "pred": false
+    },
+    {
+      "f1": 3,
+      "f2": 3,
+      "fails": 720,
+      "first": [
+        6,
+        692
+      ],
+      "label": "rand_eq_40",
+      "ok": true,
+      "pred": false
+    },
+    {
+      "f1": 2,
+      "f2": 2,
+      "fails": 720,
+      "first": [
+        6,
+        692
+      ],
+      "label": "rand_eq_41",
+      "ok": true,
+      "pred": false
+    },
+    {
+      "f1": 1,
+      "f2": 1,
+      "fails": 720,
+      "first": [
+        6,
+        692
+      ],
+      "label": "rand_eq_42",
+      "ok": true,
+      "pred": false
+    },
+    {
+      "f1": 1,
+      "f2": 1,
+      "fails": 720,
+      "first": [
+        6,
+        692
+      ],
+      "label": "rand_eq_43",
+      "ok": true,
+      "pred": false
+    },
+    {
+      "f1": 1,
+      "f2": 1,
+      "fails": 720,
+      "first": [
+        6,
+        692
+      ],
+      "label": "rand_eq_44",
+      "ok": true,
+      "pred": false
+    },
+    {
+      "f1": 2,
+      "f2": 2,
+      "fails": 720,
+      "first": [
+        6,
+        692
+      ],
+      "label": "rand_eq_45",
+      "ok": true,
+      "pred": false
+    },
+    {
+      "f1": 1,
+      "f2": 1,
+      "fails": 720,
+      "first": [
+        6,
+        692
+      ],
+      "label": "rand_eq_46",
+      "ok": true,
+      "pred": false
+    },
+    {
+      "f1": 3,
+      "f2": 3,
+      "fails": 720,
+      "first": [
+        6,
+        692
+      ],
+      "label": "rand_eq_47",
+      "ok": true,
+      "pred": false
+    },
+    {
+      "f1": 1,
+      "f2": 1,
+      "fails": 1080,
+      "first": [
+        6,
+        657
+      ],
+      "label": "rand_eq_48",
+      "ok": true,
+      "pred": false
+    },
+    {
+      "f1": 0,
+      "f2": 0,
+      "fails": 720,
+      "first": [
+        6,
+        692
+      ],
+      "label": "rand_eq_49",
+      "ok": true,
+      "pred": false
+    },
+    {
+      "f1": 2,
+      "f2": 2,
+      "fails": 720,
+      "first": [
+        6,
+        692
+      ],
+      "label": "rand_eq_50",
+      "ok": true,
+      "pred": false
+    },
+    {
+      "f1": 1,
+      "f2": 1,
+      "fails": 720,
+      "first": [
+        6,
+        692
+      ],
+      "label": "rand_eq_51",
+      "ok": true,
+      "pred": false
+    },
+    {
+      "f1": 0,
+      "f2": 0,
+      "fails": 1080,
+      "first": [
+        6,
+        657
+      ],
+      "label": "rand_eq_52",
+      "ok": true,
+      "pred": false
+    },
+    {
+      "f1": 1,
+      "f2": 1,
+      "fails": 720,
+      "first": [
+        6,
+        692
+      ],
+      "label": "rand_eq_53",
+      "ok": true,
+      "pred": false
+    },
+    {
+      "f1": 2,
+      "f2": 2,
+      "fails": 720,
+      "first": [
+        6,
+        692
+      ],
+      "label": "rand_eq_54",
+      "ok": true,
+      "pred": false
+    },
+    {
+      "f1": 2,
+      "f2": 2,
+      "fails": 720,
+      "first": [
+        6,
+        692
+      ],
+      "label": "rand_eq_55",
+      "ok": true,
+      "pred": false
+    },
+    {
+      "f1": 1,
+      "f2": 1,
+      "fails": 720,
+      "first": [
+        6,
+        692
+      ],
+      "label": "rand_eq_56",
+      "ok": true,
+      "pred": false
+    },
+    {
+      "f1": 0,
+      "f2": 0,
+      "fails": 720,
+      "first": [
+        6,
+        692
+      ],
+      "label": "rand_eq_57",
+      "ok": true,
+      "pred": false
+    },
+    {
+      "f1": 2,
+      "f2": 2,
+      "fails": 720,
+      "first": [
+        6,
+        692
+      ],
+      "label": "rand_eq_58",
+      "ok": true,
+      "pred": false
+    },
+    {
+      "f1": 3,
+      "f2": 3,
+      "fails": 720,
+      "first": [
+        6,
+        692
+      ],
+      "label": "rand_eq_59",
+      "ok": true,
+      "pred": false
+    },
+    {
+      "f1": 0,
+      "f2": 0,
+      "fails": 720,
+      "first": [
+        6,
+        692
+      ],
+      "label": "rand_eq_60",
+      "ok": true,
+      "pred": false
+    },
+    {
+      "f1": 0,
+      "f2": 0,
+      "fails": 720,
+      "first": [
+        6,
+        692
+      ],
+      "label": "rand_eq_61",
+      "ok": true,
+      "pred": false
+    },
+    {
+      "f1": 1,
+      "f2": 1,
+      "fails": 720,
+      "first": [
+        6,
+        692
+      ],
+      "label": "rand_eq_62",
+      "ok": true,
+      "pred": false
+    },
+    {
+      "f1": 1,
+      "f2": 1,
+      "fails": 720,
+      "first": [
+        6,
+        692
+      ],
+      "label": "rand_eq_63",
+      "ok": true,
+      "pred": false
+    },
+    {
+      "f1": 2,
+      "f2": 0,
+      "fails": 0,
+      "first": null,
+      "label": "rand_neq_0",
+      "ok": true,
+      "pred": true
+    },
+    {
+      "f1": 2,
+      "f2": 0,
+      "fails": 0,
+      "first": null,
+      "label": "rand_neq_1",
+      "ok": true,
+      "pred": true
+    },
+    {
+      "f1": 2,
+      "f2": 0,
+      "fails": 0,
+      "first": null,
+      "label": "rand_neq_2",
+      "ok": true,
+      "pred": true
+    },
+    {
+      "f1": 0,
+      "f2": 2,
+      "fails": 0,
+      "first": null,
+      "label": "rand_neq_3",
+      "ok": true,
+      "pred": true
+    },
+    {
+      "f1": 1,
+      "f2": 0,
+      "fails": 0,
+      "first": null,
+      "label": "rand_neq_4",
+      "ok": true,
+      "pred": true
+    },
+    {
+      "f1": 1,
+      "f2": 0,
+      "fails": 0,
+      "first": null,
+      "label": "rand_neq_5",
+      "ok": true,
+      "pred": true
+    },
+    {
+      "f1": 2,
+      "f2": 0,
+      "fails": 0,
+      "first": null,
+      "label": "rand_neq_6",
+      "ok": true,
+      "pred": true
+    },
+    {
+      "f1": 0,
+      "f2": 1,
+      "fails": 0,
+      "first": null,
+      "label": "rand_neq_7",
+      "ok": true,
+      "pred": true
+    },
+    {
+      "f1": 1,
+      "f2": 2,
+      "fails": 0,
+      "first": null,
+      "label": "rand_neq_8",
+      "ok": true,
+      "pred": true
+    },
+    {
+      "f1": 0,
+      "f2": 3,
+      "fails": 0,
+      "first": null,
+      "label": "rand_neq_9",
+      "ok": true,
+      "pred": true
+    },
+    {
+      "f1": 3,
+      "f2": 1,
+      "fails": 0,
+      "first": null,
+      "label": "rand_neq_10",
+      "ok": true,
+      "pred": true
+    },
+    {
+      "f1": 2,
+      "f2": 1,
+      "fails": 0,
+      "first": null,
+      "label": "rand_neq_11",
+      "ok": true,
+      "pred": true
+    },
+    {
+      "f1": 0,
+      "f2": 3,
+      "fails": 0,
+      "first": null,
+      "label": "rand_neq_12",
+      "ok": true,
+      "pred": true
+    },
+    {
+      "f1": 1,
+      "f2": 0,
+      "fails": 0,
+      "first": null,
+      "label": "rand_neq_13",
+      "ok": true,
+      "pred": true
+    },
+    {
+      "f1": 1,
+      "f2": 0,
+      "fails": 0,
+      "first": null,
+      "label": "rand_neq_14",
+      "ok": true,
+      "pred": true
+    },
+    {
+      "f1": 0,
+      "f2": 2,
+      "fails": 0,
+      "first": null,
+      "label": "rand_neq_15",
+      "ok": true,
+      "pred": true
+    },
+    {
+      "f1": 0,
+      "f2": 1,
+      "fails": 0,
+      "first": null,
+      "label": "rand_neq_16",
+      "ok": true,
+      "pred": true
+    },
+    {
+      "f1": 1,
+      "f2": 3,
+      "fails": 0,
+      "first": null,
+      "label": "rand_neq_17",
+      "ok": true,
+      "pred": true
+    },
+    {
+      "f1": 1,
+      "f2": 2,
+      "fails": 0,
+      "first": null,
+      "label": "rand_neq_18",
+      "ok": true,
+      "pred": true
+    },
+    {
+      "f1": 2,
+      "f2": 3,
+      "fails": 0,
+      "first": null,
+      "label": "rand_neq_19",
+      "ok": true,
+      "pred": true
+    },
+    {
+      "f1": 0,
+      "f2": 1,
+      "fails": 0,
+      "first": null,
+      "label": "rand_neq_20",
+      "ok": true,
+      "pred": true
+    },
+    {
+      "f1": 3,
+      "f2": 1,
+      "fails": 0,
+      "first": null,
+      "label": "rand_neq_21",
+      "ok": true,
+      "pred": true
+    },
+    {
+      "f1": 3,
+      "f2": 1,
+      "fails": 0,
+      "first": null,
+      "label": "rand_neq_22",
+      "ok": true,
+      "pred": true
+    },
+    {
+      "f1": 1,
+      "f2": 0,
+      "fails": 0,
+      "first": null,
+      "label": "rand_neq_23",
+      "ok": true,
+      "pred": true
+    },
+    {
+      "f1": 3,
+      "f2": 2,
+      "fails": 0,
+      "first": null,
+      "label": "rand_neq_24",
+      "ok": true,
+      "pred": true
+    },
+    {
+      "f1": 2,
+      "f2": 3,
+      "fails": 0,
+      "first": null,
+      "label": "rand_neq_25",
+      "ok": true,
+      "pred": true
+    },
+    {
+      "f1": 3,
+      "f2": 0,
+      "fails": 0,
+      "first": null,
+      "label": "rand_neq_26",
+      "ok": true,
+      "pred": true
+    },
+    {
+      "f1": 2,
+      "f2": 3,
+      "fails": 0,
+      "first": null,
+      "label": "rand_neq_27",
+      "ok": true,
+      "pred": true
+    },
+    {
+      "f1": 3,
+      "f2": 0,
+      "fails": 0,
+      "first": null,
+      "label": "rand_neq_28",
+      "ok": true,
+      "pred": true
+    },
+    {
+      "f1": 0,
+      "f2": 1,
+      "fails": 0,
+      "first": null,
+      "label": "rand_neq_29",
+      "ok": true,
+      "pred": true
+    },
+    {
+      "f1": 1,
+      "f2": 2,
+      "fails": 0,
+      "first": null,
+      "label": "rand_neq_30",
+      "ok": true,
+      "pred": true
+    },
+    {
+      "f1": 0,
+      "f2": 1,
+      "fails": 0,
+      "first": null,
+      "label": "rand_neq_31",
+      "ok": true,
+      "pred": true
+    },
+    {
+      "f1": 3,
+      "f2": 1,
+      "fails": 0,
+      "first": null,
+      "label": "rand_neq_32",
+      "ok": true,
+      "pred": true
+    },
+    {
+      "f1": 2,
+      "f2": 0,
+      "fails": 0,
+      "first": null,
+      "label": "rand_neq_33",
+      "ok": true,
+      "pred": true
+    },
+    {
+      "f1": 0,
+      "f2": 2,
+      "fails": 0,
+      "first": null,
+      "label": "rand_neq_34",
+      "ok": true,
+      "pred": true
+    },
+    {
+      "f1": 0,
+      "f2": 2,
+      "fails": 0,
+      "first": null,
+      "label": "rand_neq_35",
+      "ok": true,
+      "pred": true
+    },
+    {
+      "f1": 2,
+      "f2": 3,
+      "fails": 0,
+      "first": null,
+      "label": "rand_neq_36",
+      "ok": true,
+      "pred": true
+    },
+    {
+      "f1": 1,
+      "f2": 2,
+      "fails": 0,
+      "first": null,
+      "label": "rand_neq_37",
+      "ok": true,
+      "pred": true
+    },
+    {
+      "f1": 0,
+      "f2": 3,
+      "fails": 0,
+      "first": null,
+      "label": "rand_neq_38",
+      "ok": true,
+      "pred": true
+    },
+    {
+      "f1": 1,
+      "f2": 0,
+      "fails": 0,
+      "first": null,
+      "label": "rand_neq_39",
+      "ok": true,
+      "pred": true
+    },
+    {
+      "f1": 3,
+      "f2": 0,
+      "fails": 0,
+      "first": null,
+      "label": "rand_neq_40",
+      "ok": true,
+      "pred": true
+    },
+    {
+      "f1": 1,
+      "f2": 2,
+      "fails": 0,
+      "first": null,
+      "label": "rand_neq_41",
+      "ok": true,
+      "pred": true
+    },
+    {
+      "f1": 1,
+      "f2": 3,
+      "fails": 0,
+      "first": null,
+      "label": "rand_neq_42",
+      "ok": true,
+      "pred": true
+    },
+    {
+      "f1": 0,
+      "f2": 3,
+      "fails": 0,
+      "first": null,
+      "label": "rand_neq_43",
+      "ok": true,
+      "pred": true
+    },
+    {
+      "f1": 3,
+      "f2": 2,
+      "fails": 0,
+      "first": null,
+      "label": "rand_neq_44",
+      "ok": true,
+      "pred": true
+    },
+    {
+      "f1": 0,
+      "f2": 2,
+      "fails": 0,
+      "first": null,
+      "label": "rand_neq_45",
+      "ok": true,
+      "pred": true
+    },
+    {
+      "f1": 0,
+      "f2": 1,
+      "fails": 0,
+      "first": null,
+      "label": "rand_neq_46",
+      "ok": true,
+      "pred": true
+    },
+    {
+      "f1": 0,
+      "f2": 2,
+      "fails": 0,
+      "first": null,
+      "label": "rand_neq_47",
+      "ok": true,
+      "pred": true
+    },
+    {
+      "f1": 0,
+      "f2": 1,
+      "fails": 0,
+      "first": null,
+      "label": "rand_neq_48",
+      "ok": true,
+      "pred": true
+    },
+    {
+      "f1": 1,
+      "f2": 3,
+      "fails": 0,
+      "first": null,
+      "label": "rand_neq_49",
+      "ok": true,
+      "pred": true
+    },
+    {
+      "f1": 0,
+      "f2": 3,
+      "fails": 0,
+      "first": null,
+      "label": "rand_neq_50",
+      "ok": true,
+      "pred": true
+    },
+    {
+      "f1": 3,
+      "f2": 2,
+      "fails": 0,
+      "first": null,
+      "label": "rand_neq_51",
+      "ok": true,
+      "pred": true
+    },
+    {
+      "f1": 2,
+      "f2": 0,
+      "fails": 0,
+      "first": null,
+      "label": "rand_neq_52",
+      "ok": true,
+      "pred": true
+    },
+    {
+      "f1": 2,
+      "f2": 0,
+      "fails": 0,
+      "first": null,
+      "label": "rand_neq_53",
+      "ok": true,
+      "pred": true
+    },
+    {
+      "f1": 0,
+      "f2": 3,
+      "fails": 0,
+      "first": null,
+      "label": "rand_neq_54",
+      "ok": true,
+      "pred": true
+    },
+    {
+      "f1": 1,
+      "f2": 0,
+      "fails": 0,
+      "first": null,
+      "label": "rand_neq_55",
+      "ok": true,
+      "pred": true
+    },
+    {
+      "f1": 1,
+      "f2": 3,
+      "fails": 0,
+      "first": null,
+      "label": "rand_neq_56",
+      "ok": true,
+      "pred": true
+    },
+    {
+      "f1": 2,
+      "f2": 0,
+      "fails": 0,
+      "first": null,
+      "label": "rand_neq_57",
+      "ok": true,
+      "pred": true
+    },
+    {
+      "f1": 1,
+      "f2": 2,
+      "fails": 0,
+      "first": null,
+      "label": "rand_neq_58",
+      "ok": true,
+      "pred": true
+    },
+    {
+      "f1": 1,
+      "f2": 0,
+      "fails": 0,
+      "first": null,
+      "label": "rand_neq_59",
+      "ok": true,
+      "pred": true
+    },
+    {
+      "f1": 2,
+      "f2": 1,
+      "fails": 0,
+      "first": null,
+      "label": "rand_neq_60",
+      "ok": true,
+      "pred": true
+    },
+    {
+      "f1": 0,
+      "f2": 3,
+      "fails": 0,
+      "first": null,
+      "label": "rand_neq_61",
+      "ok": true,
+      "pred": true
+    },
+    {
+      "f1": 0,
+      "f2": 3,
+      "fails": 0,
+      "first": null,
+      "label": "rand_neq_62",
+      "ok": true,
+      "pred": true
+    },
+    {
+      "f1": 0,
+      "f2": 1,
+      "fails": 0,
+      "first": null,
+      "label": "rand_neq_63",
+      "ok": true,
+      "pred": true
+    }
+  ],
+  "A_fails_summary": {
+    "eq_total": 70,
+    "eq_witness": 70,
+    "neq_ok": 75,
+    "neq_total": 75
+  },
+  "A_mismatch": [],
+  "B": [
+    {
+      "f1": 1,
+      "f2": 2,
+      "fails": 0,
+      "first": null,
+      "iota": "id",
+      "label": "id",
+      "ok": true,
+      "pred": true
+    },
+    {
+      "f1": 1,
+      "f2": 2,
+      "fails": 0,
+      "first": null,
+      "iota": "comp_dir",
+      "label": "id",
+      "ok": true,
+      "pred": true
+    },
+    {
+      "f1": 1,
+      "f2": 2,
+      "fails": 0,
+      "first": null,
+      "iota": "transp",
+      "label": "id",
+      "ok": true,
+      "pred": true
+    },
+    {
+      "f1": 1,
+      "f2": 2,
+      "fails": 0,
+      "first": null,
+      "iota": "comp_transp",
+      "label": "id",
+      "ok": true,
+      "pred": true
+    },
+    {
+      "f1": 1,
+      "f2": 1,
+      "fails": 0,
+      "first": null,
+      "iota": "id",
+      "label": "const1",
+      "ok": true,
+      "pred": true
+    },
+    {
+      "f1": 1,
+      "f2": 1,
+      "fails": 336,
+      "first": [
+        21
+      ],
+      "iota": "comp_dir",
+      "label": "const1",
+      "ok": true,
+      "pred": false
+    },
+    {
+      "f1": 1,
+      "f2": 1,
+      "fails": 0,
+      "first": null,
+      "iota": "transp",
+      "label": "const1",
+      "ok": true,
+      "pred": true
+    },
+    {
+      "f1": 1,
+      "f2": 1,
+      "fails": 336,
+      "first": [
+        21
+      ],
+      "iota": "comp_transp",
+      "label": "const1",
+      "ok": true,
+      "pred": false
+    },
+    {
+      "f1": 1,
+      "f2": 1,
+      "fails": 0,
+      "first": null,
+      "iota": "id",
+      "label": "umbral1",
+      "ok": true,
+      "pred": true
+    },
+    {
+      "f1": 1,
+      "f2": 1,
+      "fails": 0,
+      "first": null,
+      "iota": "comp_dir",
+      "label": "umbral1",
+      "ok": false,
+      "pred": false
+    },
+    {
+      "f1": 1,
+      "f2": 1,
+      "fails": 0,
+      "first": null,
+      "iota": "transp",
+      "label": "umbral1",
+      "ok": true,
+      "pred": true
+    },
+    {
+      "f1": 1,
+      "f2": 1,
+      "fails": 0,
+      "first": null,
+      "iota": "comp_transp",
+      "label": "umbral1",
+      "ok": false,
+      "pred": false
+    },
+    {
+      "f1": 0,
+      "f2": 1,
+      "fails": 0,
+      "first": null,
+      "iota": "id",
+      "label": "umbral2",
+      "ok": true,
+      "pred": true
+    },
+    {
+      "f1": 0,
+      "f2": 1,
+      "fails": 384,
+      "first": [
+        21
+      ],
+      "iota": "comp_dir",
+      "label": "umbral2",
+      "ok": false,
+      "pred": true
+    },
+    {
+      "f1": 0,
+      "f2": 1,
+      "fails": 0,
+      "first": null,
+      "iota": "transp",
+      "label": "umbral2",
+      "ok": true,
+      "pred": true
+    },
+    {
+      "f1": 0,
+      "f2": 1,
+      "fails": 384,
+      "first": [
+        21
+      ],
+      "iota": "comp_transp",
+      "label": "umbral2",
+      "ok": false,
+      "pred": true
+    },
+    {
+      "f1": 0,
+      "f2": 0,
+      "fails": 0,
+      "first": null,
+      "iota": "id",
+      "label": "umbral3",
+      "ok": true,
+      "pred": true
+    },
+    {
+      "f1": 0,
+      "f2": 0,
+      "fails": 336,
+      "first": [
+        21
+      ],
+      "iota": "comp_dir",
+      "label": "umbral3",
+      "ok": true,
+      "pred": false
+    },
+    {
+      "f1": 0,
+      "f2": 0,
+      "fails": 0,
+      "first": null,
+      "iota": "transp",
+      "label": "umbral3",
+      "ok": true,
+      "pred": true
+    },
+    {
+      "f1": 0,
+      "f2": 0,
+      "fails": 336,
+      "first": [
+        21
+      ],
+      "iota": "comp_transp",
+      "label": "umbral3",
+      "ok": true,
+      "pred": false
+    },
+    {
+      "f1": 0,
+      "f2": 0,
+      "fails": 0,
+      "first": null,
+      "iota": "id",
+      "label": "umbral4",
+      "ok": true,
+      "pred": true
+    },
+    {
+      "f1": 0,
+      "f2": 0,
+      "fails": 336,
+      "first": [
+        21
+      ],
+      "iota": "comp_dir",
+      "label": "umbral4",
+      "ok": true,
+      "pred": false
+    },
+    {
+      "f1": 0,
+      "f2": 0,
+      "fails": 0,
+      "first": null,
+      "iota": "transp",
+      "label": "umbral4",
+      "ok": true,
+      "pred": true
+    },
+    {
+      "f1": 0,
+      "f2": 0,
+      "fails": 336,
+      "first": [
+        21
+      ],
+      "iota": "comp_transp",
+      "label": "umbral4",
+      "ok": true,
+      "pred": false
+    },
+    {
+      "f1": 1,
+      "f2": 0,
+      "fails": 0,
+      "first": null,
+      "iota": "id",
+      "label": "mod2",
+      "ok": true,
+      "pred": true
+    },
+    {
+      "f1": 1,
+      "f2": 0,
+      "fails": 0,
+      "first": null,
+      "iota": "comp_dir",
+      "label": "mod2",
+      "ok": true,
+      "pred": true
+    },
+    {
+      "f1": 1,
+      "f2": 0,
+      "fails": 0,
+      "first": null,
+      "iota": "transp",
+      "label": "mod2",
+      "ok": true,
+      "pred": true
+    },
+    {
+      "f1": 1,
+      "f2": 0,
+      "fails": 0,
+      "first": null,
+      "iota": "comp_transp",
+      "label": "mod2",
+      "ok": true,
+      "pred": true
+    },
+    {
+      "f1": 1,
+      "f2": 2,
+      "fails": 0,
+      "first": null,
+      "iota": "id",
+      "label": "mod3",
+      "ok": true,
+      "pred": true
+    },
+    {
+      "f1": 1,
+      "f2": 2,
+      "fails": 0,
+      "first": null,
+      "iota": "comp_dir",
+      "label": "mod3",
+      "ok": true,
+      "pred": true
+    },
+    {
+      "f1": 1,
+      "f2": 2,
+      "fails": 0,
+      "first": null,
+      "iota": "transp",
+      "label": "mod3",
+      "ok": true,
+      "pred": true
+    },
+    {
+      "f1": 1,
+      "f2": 2,
+      "fails": 0,
+      "first": null,
+      "iota": "comp_transp",
+      "label": "mod3",
+      "ok": true,
+      "pred": true
+    },
+    {
+      "f1": 1,
+      "f2": 2,
+      "fails": 0,
+      "first": null,
+      "iota": "id",
+      "label": "mod4",
+      "ok": true,
+      "pred": true
+    },
+    {
+      "f1": 1,
+      "f2": 2,
+      "fails": 0,
+      "first": null,
+      "iota": "comp_dir",
+      "label": "mod4",
+      "ok": true,
+      "pred": true
+    },
+    {
+      "f1": 1,
+      "f2": 2,
+      "fails": 0,
+      "first": null,
+      "iota": "transp",
+      "label": "mod4",
+      "ok": true,
+      "pred": true
+    },
+    {
+      "f1": 1,
+      "f2": 2,
+      "fails": 0,
+      "first": null,
+      "iota": "comp_transp",
+      "label": "mod4",
+      "ok": true,
+      "pred": true
+    },
+    {
+      "f1": 1,
+      "f2": 2,
+      "fails": 0,
+      "first": null,
+      "iota": "id",
+      "label": "mod5",
+      "ok": true,
+      "pred": true
+    },
+    {
+      "f1": 1,
+      "f2": 2,
+      "fails": 0,
+      "first": null,
+      "iota": "comp_dir",
+      "label": "mod5",
+      "ok": true,
+      "pred": true
+    },
+    {
+      "f1": 1,
+      "f2": 2,
+      "fails": 0,
+      "first": null,
+      "iota": "transp",
+      "label": "mod5",
+      "ok": true,
+      "pred": true
+    },
+    {
+      "f1": 1,
+      "f2": 2,
+      "fails": 0,
+      "first": null,
+      "iota": "comp_transp",
+      "label": "mod5",
+      "ok": true,
+      "pred": true
+    },
+    {
+      "f1": 1,
+      "f2": 1,
+      "fails": 0,
+      "first": null,
+      "iota": "id",
+      "label": "trunc1",
+      "ok": true,
+      "pred": true
+    },
+    {
+      "f1": 1,
+      "f2": 1,
+      "fails": 0,
+      "first": null,
+      "iota": "comp_dir",
+      "label": "trunc1",
+      "ok": false,
+      "pred": false
+    },
+    {
+      "f1": 1,
+      "f2": 1,
+      "fails": 0,
+      "first": null,
+      "iota": "transp",
+      "label": "trunc1",
+      "ok": true,
+      "pred": true
+    },
+    {
+      "f1": 1,
+      "f2": 1,
+      "fails": 0,
+      "first": null,
+      "iota": "comp_transp",
+      "label": "trunc1",
+      "ok": false,
+      "pred": false
+    },
+    {
+      "f1": 1,
+      "f2": 2,
+      "fails": 0,
+      "first": null,
+      "iota": "id",
+      "label": "trunc2",
+      "ok": true,
+      "pred": true
+    },
+    {
+      "f1": 1,
+      "f2": 2,
+      "fails": 0,
+      "first": null,
+      "iota": "comp_dir",
+      "label": "trunc2",
+      "ok": true,
+      "pred": true
+    },
+    {
+      "f1": 1,
+      "f2": 2,
+      "fails": 0,
+      "first": null,
+      "iota": "transp",
+      "label": "trunc2",
+      "ok": true,
+      "pred": true
+    },
+    {
+      "f1": 1,
+      "f2": 2,
+      "fails": 0,
+      "first": null,
+      "iota": "comp_transp",
+      "label": "trunc2",
+      "ok": true,
+      "pred": true
+    },
+    {
+      "f1": 1,
+      "f2": 2,
+      "fails": 0,
+      "first": null,
+      "iota": "id",
+      "label": "trunc3",
+      "ok": true,
+      "pred": true
+    },
+    {
+      "f1": 1,
+      "f2": 2,
+      "fails": 0,
+      "first": null,
+      "iota": "comp_dir",
+      "label": "trunc3",
+      "ok": true,
+      "pred": true
+    },
+    {
+      "f1": 1,
+      "f2": 2,
+      "fails": 0,
+      "first": null,
+      "iota": "transp",
+      "label": "trunc3",
+      "ok": true,
+      "pred": true
+    },
+    {
+      "f1": 1,
+      "f2": 2,
+      "fails": 0,
+      "first": null,
+      "iota": "comp_transp",
+      "label": "trunc3",
+      "ok": true,
+      "pred": true
+    },
+    {
+      "f1": 1,
+      "f2": 2,
+      "fails": 0,
+      "first": null,
+      "iota": "id",
+      "label": "log2",
+      "ok": true,
+      "pred": true
+    },
+    {
+      "f1": 1,
+      "f2": 2,
+      "fails": 0,
+      "first": null,
+      "iota": "comp_dir",
+      "label": "log2",
+      "ok": true,
+      "pred": true
+    },
+    {
+      "f1": 1,
+      "f2": 2,
+      "fails": 0,
+      "first": null,
+      "iota": "transp",
+      "label": "log2",
+      "ok": true,
+      "pred": true
+    },
+    {
+      "f1": 1,
+      "f2": 2,
+      "fails": 0,
+      "first": null,
+      "iota": "comp_transp",
+      "label": "log2",
+      "ok": true,
+      "pred": true
+    },
+    {
+      "f1": 1,
+      "f2": 4,
+      "fails": 0,
+      "first": null,
+      "iota": "id",
+      "label": "cuadrado",
+      "ok": true,
+      "pred": true
+    },
+    {
+      "f1": 1,
+      "f2": 4,
+      "fails": 0,
+      "first": null,
+      "iota": "comp_dir",
+      "label": "cuadrado",
+      "ok": true,
+      "pred": true
+    },
+    {
+      "f1": 1,
+      "f2": 4,
+      "fails": 0,
+      "first": null,
+      "iota": "transp",
+      "label": "cuadrado",
+      "ok": true,
+      "pred": true
+    },
+    {
+      "f1": 1,
+      "f2": 4,
+      "fails": 0,
+      "first": null,
+      "iota": "comp_transp",
+      "label": "cuadrado",
+      "ok": true,
+      "pred": true
+    },
+    {
+      "f1": 1,
+      "f2": 8,
+      "fails": 0,
+      "first": null,
+      "iota": "id",
+      "label": "cubo",
+      "ok": true,
+      "pred": true
+    },
+    {
+      "f1": 1,
+      "f2": 8,
+      "fails": 0,
+      "first": null,
+      "iota": "comp_dir",
+      "label": "cubo",
+      "ok": true,
+      "pred": true
+    },
+    {
+      "f1": 1,
+      "f2": 8,
+      "fails": 0,
+      "first": null,
+      "iota": "transp",
+      "label": "cubo",
+      "ok": true,
+      "pred": true
+    },
+    {
+      "f1": 1,
+      "f2": 8,
+      "fails": 0,
+      "first": null,
+      "iota": "comp_transp",
+      "label": "cubo",
+      "ok": true,
+      "pred": true
+    },
+    {
+      "f1": 1,
+      "f2": 1,
+      "fails": 0,
+      "first": null,
+      "iota": "id",
+      "label": "raiz",
+      "ok": true,
+      "pred": true
+    },
+    {
+      "f1": 1,
+      "f2": 1,
+      "fails": 0,
+      "first": null,
+      "iota": "comp_dir",
+      "label": "raiz",
+      "ok": false,
+      "pred": false
+    },
+    {
+      "f1": 1,
+      "f2": 1,
+      "fails": 0,
+      "first": null,
+      "iota": "transp",
+      "label": "raiz",
+      "ok": true,
+      "pred": true
+    },
+    {
+      "f1": 1,
+      "f2": 1,
+      "fails": 0,
+      "first": null,
+      "iota": "comp_transp",
+      "label": "raiz",
+      "ok": false,
+      "pred": false
+    },
+    {
+      "f1": 2,
+      "f2": 2,
+      "fails": 0,
+      "first": null,
+      "iota": "id",
+      "label": "rand_eq_0",
+      "ok": true,
+      "pred": true
+    },
+    {
+      "f1": 2,
+      "f2": 2,
+      "fails": 0,
+      "first": null,
+      "iota": "comp_dir",
+      "label": "rand_eq_0",
+      "ok": false,
+      "pred": false
+    },
+    {
+      "f1": 2,
+      "f2": 2,
+      "fails": 0,
+      "first": null,
+      "iota": "transp",
+      "label": "rand_eq_0",
+      "ok": true,
+      "pred": true
+    },
+    {
+      "f1": 2,
+      "f2": 2,
+      "fails": 0,
+      "first": null,
+      "iota": "comp_transp",
+      "label": "rand_eq_0",
+      "ok": false,
+      "pred": false
+    },
+    {
+      "f1": 2,
+      "f2": 2,
+      "fails": 0,
+      "first": null,
+      "iota": "id",
+      "label": "rand_eq_1",
+      "ok": true,
+      "pred": true
+    },
+    {
+      "f1": 2,
+      "f2": 2,
+      "fails": 0,
+      "first": null,
+      "iota": "comp_dir",
+      "label": "rand_eq_1",
+      "ok": false,
+      "pred": false
+    },
+    {
+      "f1": 2,
+      "f2": 2,
+      "fails": 0,
+      "first": null,
+      "iota": "transp",
+      "label": "rand_eq_1",
+      "ok": true,
+      "pred": true
+    },
+    {
+      "f1": 2,
+      "f2": 2,
+      "fails": 0,
+      "first": null,
+      "iota": "comp_transp",
+      "label": "rand_eq_1",
+      "ok": false,
+      "pred": false
+    },
+    {
+      "f1": 3,
+      "f2": 3,
+      "fails": 0,
+      "first": null,
+      "iota": "id",
+      "label": "rand_eq_2",
+      "ok": true,
+      "pred": true
+    },
+    {
+      "f1": 3,
+      "f2": 3,
+      "fails": 0,
+      "first": null,
+      "iota": "comp_dir",
+      "label": "rand_eq_2",
+      "ok": false,
+      "pred": false
+    },
+    {
+      "f1": 3,
+      "f2": 3,
+      "fails": 0,
+      "first": null,
+      "iota": "transp",
+      "label": "rand_eq_2",
+      "ok": true,
+      "pred": true
+    },
+    {
+      "f1": 3,
+      "f2": 3,
+      "fails": 0,
+      "first": null,
+      "iota": "comp_transp",
+      "label": "rand_eq_2",
+      "ok": false,
+      "pred": false
+    },
+    {
+      "f1": 2,
+      "f2": 2,
+      "fails": 0,
+      "first": null,
+      "iota": "id",
+      "label": "rand_eq_3",
+      "ok": true,
+      "pred": true
+    },
+    {
+      "f1": 2,
+      "f2": 2,
+      "fails": 0,
+      "first": null,
+      "iota": "comp_dir",
+      "label": "rand_eq_3",
+      "ok": false,
+      "pred": false
+    },
+    {
+      "f1": 2,
+      "f2": 2,
+      "fails": 0,
+      "first": null,
+      "iota": "transp",
+      "label": "rand_eq_3",
+      "ok": true,
+      "pred": true
+    },
+    {
+      "f1": 2,
+      "f2": 2,
+      "fails": 0,
+      "first": null,
+      "iota": "comp_transp",
+      "label": "rand_eq_3",
+      "ok": false,
+      "pred": false
+    },
+    {
+      "f1": 2,
+      "f2": 2,
+      "fails": 0,
+      "first": null,
+      "iota": "id",
+      "label": "rand_eq_4",
+      "ok": true,
+      "pred": true
+    },
+    {
+      "f1": 2,
+      "f2": 2,
+      "fails": 0,
+      "first": null,
+      "iota": "comp_dir",
+      "label": "rand_eq_4",
+      "ok": false,
+      "pred": false
+    },
+    {
+      "f1": 2,
+      "f2": 2,
+      "fails": 0,
+      "first": null,
+      "iota": "transp",
+      "label": "rand_eq_4",
+      "ok": true,
+      "pred": true
+    },
+    {
+      "f1": 2,
+      "f2": 2,
+      "fails": 0,
+      "first": null,
+      "iota": "comp_transp",
+      "label": "rand_eq_4",
+      "ok": false,
+      "pred": false
+    },
+    {
+      "f1": 3,
+      "f2": 3,
+      "fails": 0,
+      "first": null,
+      "iota": "id",
+      "label": "rand_eq_5",
+      "ok": true,
+      "pred": true
+    },
+    {
+      "f1": 3,
+      "f2": 3,
+      "fails": 0,
+      "first": null,
+      "iota": "comp_dir",
+      "label": "rand_eq_5",
+      "ok": false,
+      "pred": false
+    },
+    {
+      "f1": 3,
+      "f2": 3,
+      "fails": 0,
+      "first": null,
+      "iota": "transp",
+      "label": "rand_eq_5",
+      "ok": true,
+      "pred": true
+    },
+    {
+      "f1": 3,
+      "f2": 3,
+      "fails": 0,
+      "first": null,
+      "iota": "comp_transp",
+      "label": "rand_eq_5",
+      "ok": false,
+      "pred": false
+    },
+    {
+      "f1": 0,
+      "f2": 0,
+      "fails": 0,
+      "first": null,
+      "iota": "id",
+      "label": "rand_eq_6",
+      "ok": true,
+      "pred": true
+    },
+    {
+      "f1": 0,
+      "f2": 0,
+      "fails": 0,
+      "first": null,
+      "iota": "comp_dir",
+      "label": "rand_eq_6",
+      "ok": false,
+      "pred": false
+    },
+    {
+      "f1": 0,
+      "f2": 0,
+      "fails": 0,
+      "first": null,
+      "iota": "transp",
+      "label": "rand_eq_6",
+      "ok": true,
+      "pred": true
+    },
+    {
+      "f1": 0,
+      "f2": 0,
+      "fails": 0,
+      "first": null,
+      "iota": "comp_transp",
+      "label": "rand_eq_6",
+      "ok": false,
+      "pred": false
+    },
+    {
+      "f1": 3,
+      "f2": 3,
+      "fails": 0,
+      "first": null,
+      "iota": "id",
+      "label": "rand_eq_7",
+      "ok": true,
+      "pred": true
+    },
+    {
+      "f1": 3,
+      "f2": 3,
+      "fails": 0,
+      "first": null,
+      "iota": "comp_dir",
+      "label": "rand_eq_7",
+      "ok": false,
+      "pred": false
+    },
+    {
+      "f1": 3,
+      "f2": 3,
+      "fails": 0,
+      "first": null,
+      "iota": "transp",
+      "label": "rand_eq_7",
+      "ok": true,
+      "pred": true
+    },
+    {
+      "f1": 3,
+      "f2": 3,
+      "fails": 0,
+      "first": null,
+      "iota": "comp_transp",
+      "label": "rand_eq_7",
+      "ok": false,
+      "pred": false
+    },
+    {
+      "f1": 3,
+      "f2": 3,
+      "fails": 0,
+      "first": null,
+      "iota": "id",
+      "label": "rand_eq_8",
+      "ok": true,
+      "pred": true
+    },
+    {
+      "f1": 3,
+      "f2": 3,
+      "fails": 0,
+      "first": null,
+      "iota": "comp_dir",
+      "label": "rand_eq_8",
+      "ok": false,
+      "pred": false
+    },
+    {
+      "f1": 3,
+      "f2": 3,
+      "fails": 0,
+      "first": null,
+      "iota": "transp",
+      "label": "rand_eq_8",
+      "ok": true,
+      "pred": true
+    },
+    {
+      "f1": 3,
+      "f2": 3,
+      "fails": 0,
+      "first": null,
+      "iota": "comp_transp",
+      "label": "rand_eq_8",
+      "ok": false,
+      "pred": false
+    },
+    {
+      "f1": 2,
+      "f2": 2,
+      "fails": 0,
+      "first": null,
+      "iota": "id",
+      "label": "rand_eq_9",
+      "ok": true,
+      "pred": true
+    },
+    {
+      "f1": 2,
+      "f2": 2,
+      "fails": 0,
+      "first": null,
+      "iota": "comp_dir",
+      "label": "rand_eq_9",
+      "ok": false,
+      "pred": false
+    },
+    {
+      "f1": 2,
+      "f2": 2,
+      "fails": 0,
+      "first": null,
+      "iota": "transp",
+      "label": "rand_eq_9",
+      "ok": true,
+      "pred": true
+    },
+    {
+      "f1": 2,
+      "f2": 2,
+      "fails": 0,
+      "first": null,
+      "iota": "comp_transp",
+      "label": "rand_eq_9",
+      "ok": false,
+      "pred": false
+    },
+    {
+      "f1": 1,
+      "f2": 1,
+      "fails": 0,
+      "first": null,
+      "iota": "id",
+      "label": "rand_eq_10",
+      "ok": true,
+      "pred": true
+    },
+    {
+      "f1": 1,
+      "f2": 1,
+      "fails": 0,
+      "first": null,
+      "iota": "comp_dir",
+      "label": "rand_eq_10",
+      "ok": false,
+      "pred": false
+    },
+    {
+      "f1": 1,
+      "f2": 1,
+      "fails": 0,
+      "first": null,
+      "iota": "transp",
+      "label": "rand_eq_10",
+      "ok": true,
+      "pred": true
+    },
+    {
+      "f1": 1,
+      "f2": 1,
+      "fails": 0,
+      "first": null,
+      "iota": "comp_transp",
+      "label": "rand_eq_10",
+      "ok": false,
+      "pred": false
+    },
+    {
+      "f1": 0,
+      "f2": 0,
+      "fails": 0,
+      "first": null,
+      "iota": "id",
+      "label": "rand_eq_11",
+      "ok": true,
+      "pred": true
+    },
+    {
+      "f1": 0,
+      "f2": 0,
+      "fails": 336,
+      "first": [
+        21
+      ],
+      "iota": "comp_dir",
+      "label": "rand_eq_11",
+      "ok": true,
+      "pred": false
+    },
+    {
+      "f1": 0,
+      "f2": 0,
+      "fails": 0,
+      "first": null,
+      "iota": "transp",
+      "label": "rand_eq_11",
+      "ok": true,
+      "pred": true
+    },
+    {
+      "f1": 0,
+      "f2": 0,
+      "fails": 336,
+      "first": [
+        21
+      ],
+      "iota": "comp_transp",
+      "label": "rand_eq_11",
+      "ok": true,
+      "pred": false
+    },
+    {
+      "f1": 1,
+      "f2": 1,
+      "fails": 0,
+      "first": null,
+      "iota": "id",
+      "label": "rand_eq_12",
+      "ok": true,
+      "pred": true
+    },
+    {
+      "f1": 1,
+      "f2": 1,
+      "fails": 0,
+      "first": null,
+      "iota": "comp_dir",
+      "label": "rand_eq_12",
+      "ok": false,
+      "pred": false
+    },
+    {
+      "f1": 1,
+      "f2": 1,
+      "fails": 0,
+      "first": null,
+      "iota": "transp",
+      "label": "rand_eq_12",
+      "ok": true,
+      "pred": true
+    },
+    {
+      "f1": 1,
+      "f2": 1,
+      "fails": 0,
+      "first": null,
+      "iota": "comp_transp",
+      "label": "rand_eq_12",
+      "ok": false,
+      "pred": false
+    },
+    {
+      "f1": 2,
+      "f2": 2,
+      "fails": 0,
+      "first": null,
+      "iota": "id",
+      "label": "rand_eq_13",
+      "ok": true,
+      "pred": true
+    },
+    {
+      "f1": 2,
+      "f2": 2,
+      "fails": 0,
+      "first": null,
+      "iota": "comp_dir",
+      "label": "rand_eq_13",
+      "ok": false,
+      "pred": false
+    },
+    {
+      "f1": 2,
+      "f2": 2,
+      "fails": 0,
+      "first": null,
+      "iota": "transp",
+      "label": "rand_eq_13",
+      "ok": true,
+      "pred": true
+    },
+    {
+      "f1": 2,
+      "f2": 2,
+      "fails": 0,
+      "first": null,
+      "iota": "comp_transp",
+      "label": "rand_eq_13",
+      "ok": false,
+      "pred": false
+    },
+    {
+      "f1": 0,
+      "f2": 0,
+      "fails": 0,
+      "first": null,
+      "iota": "id",
+      "label": "rand_eq_14",
+      "ok": true,
+      "pred": true
+    },
+    {
+      "f1": 0,
+      "f2": 0,
+      "fails": 0,
+      "first": null,
+      "iota": "comp_dir",
+      "label": "rand_eq_14",
+      "ok": false,
+      "pred": false
+    },
+    {
+      "f1": 0,
+      "f2": 0,
+      "fails": 0,
+      "first": null,
+      "iota": "transp",
+      "label": "rand_eq_14",
+      "ok": true,
+      "pred": true
+    },
+    {
+      "f1": 0,
+      "f2": 0,
+      "fails": 0,
+      "first": null,
+      "iota": "comp_transp",
+      "label": "rand_eq_14",
+      "ok": false,
+      "pred": false
+    },
+    {
+      "f1": 0,
+      "f2": 0,
+      "fails": 0,
+      "first": null,
+      "iota": "id",
+      "label": "rand_eq_15",
+      "ok": true,
+      "pred": true
+    },
+    {
+      "f1": 0,
+      "f2": 0,
+      "fails": 336,
+      "first": [
+        21
+      ],
+      "iota": "comp_dir",
+      "label": "rand_eq_15",
+      "ok": true,
+      "pred": false
+    },
+    {
+      "f1": 0,
+      "f2": 0,
+      "fails": 0,
+      "first": null,
+      "iota": "transp",
+      "label": "rand_eq_15",
+      "ok": true,
+      "pred": true
+    },
+    {
+      "f1": 0,
+      "f2": 0,
+      "fails": 336,
+      "first": [
+        21
+      ],
+      "iota": "comp_transp",
+      "label": "rand_eq_15",
+      "ok": true,
+      "pred": false
+    },
+    {
+      "f1": 3,
+      "f2": 3,
+      "fails": 0,
+      "first": null,
+      "iota": "id",
+      "label": "rand_eq_16",
+      "ok": true,
+      "pred": true
+    },
+    {
+      "f1": 3,
+      "f2": 3,
+      "fails": 0,
+      "first": null,
+      "iota": "comp_dir",
+      "label": "rand_eq_16",
+      "ok": false,
+      "pred": false
+    },
+    {
+      "f1": 3,
+      "f2": 3,
+      "fails": 0,
+      "first": null,
+      "iota": "transp",
+      "label": "rand_eq_16",
+      "ok": true,
+      "pred": true
+    },
+    {
+      "f1": 3,
+      "f2": 3,
+      "fails": 0,
+      "first": null,
+      "iota": "comp_transp",
+      "label": "rand_eq_16",
+      "ok": false,
+      "pred": false
+    },
+    {
+      "f1": 1,
+      "f2": 1,
+      "fails": 0,
+      "first": null,
+      "iota": "id",
+      "label": "rand_eq_17",
+      "ok": true,
+      "pred": true
+    },
+    {
+      "f1": 1,
+      "f2": 1,
+      "fails": 0,
+      "first": null,
+      "iota": "comp_dir",
+      "label": "rand_eq_17",
+      "ok": false,
+      "pred": false
+    },
+    {
+      "f1": 1,
+      "f2": 1,
+      "fails": 0,
+      "first": null,
+      "iota": "transp",
+      "label": "rand_eq_17",
+      "ok": true,
+      "pred": true
+    },
+    {
+      "f1": 1,
+      "f2": 1,
+      "fails": 0,
+      "first": null,
+      "iota": "comp_transp",
+      "label": "rand_eq_17",
+      "ok": false,
+      "pred": false
+    },
+    {
+      "f1": 1,
+      "f2": 1,
+      "fails": 0,
+      "first": null,
+      "iota": "id",
+      "label": "rand_eq_18",
+      "ok": true,
+      "pred": true
+    },
+    {
+      "f1": 1,
+      "f2": 1,
+      "fails": 0,
+      "first": null,
+      "iota": "comp_dir",
+      "label": "rand_eq_18",
+      "ok": false,
+      "pred": false
+    },
+    {
+      "f1": 1,
+      "f2": 1,
+      "fails": 0,
+      "first": null,
+      "iota": "transp",
+      "label": "rand_eq_18",
+      "ok": true,
+      "pred": true
+    },
+    {
+      "f1": 1,
+      "f2": 1,
+      "fails": 0,
+      "first": null,
+      "iota": "comp_transp",
+      "label": "rand_eq_18",
+      "ok": false,
+      "pred": false
+    },
+    {
+      "f1": 3,
+      "f2": 3,
+      "fails": 0,
+      "first": null,
+      "iota": "id",
+      "label": "rand_eq_19",
+      "ok": true,
+      "pred": true
+    },
+    {
+      "f1": 3,
+      "f2": 3,
+      "fails": 0,
+      "first": null,
+      "iota": "comp_dir",
+      "label": "rand_eq_19",
+      "ok": false,
+      "pred": false
+    },
+    {
+      "f1": 3,
+      "f2": 3,
+      "fails": 0,
+      "first": null,
+      "iota": "transp",
+      "label": "rand_eq_19",
+      "ok": true,
+      "pred": true
+    },
+    {
+      "f1": 3,
+      "f2": 3,
+      "fails": 0,
+      "first": null,
+      "iota": "comp_transp",
+      "label": "rand_eq_19",
+      "ok": false,
+      "pred": false
+    },
+    {
+      "f1": 0,
+      "f2": 0,
+      "fails": 0,
+      "first": null,
+      "iota": "id",
+      "label": "rand_eq_20",
+      "ok": true,
+      "pred": true
+    },
+    {
+      "f1": 0,
+      "f2": 0,
+      "fails": 0,
+      "first": null,
+      "iota": "comp_dir",
+      "label": "rand_eq_20",
+      "ok": false,
+      "pred": false
+    },
+    {
+      "f1": 0,
+      "f2": 0,
+      "fails": 0,
+      "first": null,
+      "iota": "transp",
+      "label": "rand_eq_20",
+      "ok": true,
+      "pred": true
+    },
+    {
+      "f1": 0,
+      "f2": 0,
+      "fails": 0,
+      "first": null,
+      "iota": "comp_transp",
+      "label": "rand_eq_20",
+      "ok": false,
+      "pred": false
+    },
+    {
+      "f1": 1,
+      "f2": 1,
+      "fails": 0,
+      "first": null,
+      "iota": "id",
+      "label": "rand_eq_21",
+      "ok": true,
+      "pred": true
+    },
+    {
+      "f1": 1,
+      "f2": 1,
+      "fails": 0,
+      "first": null,
+      "iota": "comp_dir",
+      "label": "rand_eq_21",
+      "ok": false,
+      "pred": false
+    },
+    {
+      "f1": 1,
+      "f2": 1,
+      "fails": 0,
+      "first": null,
+      "iota": "transp",
+      "label": "rand_eq_21",
+      "ok": true,
+      "pred": true
+    },
+    {
+      "f1": 1,
+      "f2": 1,
+      "fails": 0,
+      "first": null,
+      "iota": "comp_transp",
+      "label": "rand_eq_21",
+      "ok": false,
+      "pred": false
+    },
+    {
+      "f1": 1,
+      "f2": 1,
+      "fails": 0,
+      "first": null,
+      "iota": "id",
+      "label": "rand_eq_22",
+      "ok": true,
+      "pred": true
+    },
+    {
+      "f1": 1,
+      "f2": 1,
+      "fails": 336,
+      "first": [
+        21
+      ],
+      "iota": "comp_dir",
+      "label": "rand_eq_22",
+      "ok": true,
+      "pred": false
+    },
+    {
+      "f1": 1,
+      "f2": 1,
+      "fails": 0,
+      "first": null,
+      "iota": "transp",
+      "label": "rand_eq_22",
+      "ok": true,
+      "pred": true
+    },
+    {
+      "f1": 1,
+      "f2": 1,
+      "fails": 336,
+      "first": [
+        21
+      ],
+      "iota": "comp_transp",
+      "label": "rand_eq_22",
+      "ok": true,
+      "pred": false
+    },
+    {
+      "f1": 0,
+      "f2": 0,
+      "fails": 0,
+      "first": null,
+      "iota": "id",
+      "label": "rand_eq_23",
+      "ok": true,
+      "pred": true
+    },
+    {
+      "f1": 0,
+      "f2": 0,
+      "fails": 0,
+      "first": null,
+      "iota": "comp_dir",
+      "label": "rand_eq_23",
+      "ok": false,
+      "pred": false
+    },
+    {
+      "f1": 0,
+      "f2": 0,
+      "fails": 0,
+      "first": null,
+      "iota": "transp",
+      "label": "rand_eq_23",
+      "ok": true,
+      "pred": true
+    },
+    {
+      "f1": 0,
+      "f2": 0,
+      "fails": 0,
+      "first": null,
+      "iota": "comp_transp",
+      "label": "rand_eq_23",
+      "ok": false,
+      "pred": false
+    },
+    {
+      "f1": 3,
+      "f2": 3,
+      "fails": 0,
+      "first": null,
+      "iota": "id",
+      "label": "rand_eq_24",
+      "ok": true,
+      "pred": true
+    },
+    {
+      "f1": 3,
+      "f2": 3,
+      "fails": 0,
+      "first": null,
+      "iota": "comp_dir",
+      "label": "rand_eq_24",
+      "ok": false,
+      "pred": false
+    },
+    {
+      "f1": 3,
+      "f2": 3,
+      "fails": 0,
+      "first": null,
+      "iota": "transp",
+      "label": "rand_eq_24",
+      "ok": true,
+      "pred": true
+    },
+    {
+      "f1": 3,
+      "f2": 3,
+      "fails": 0,
+      "first": null,
+      "iota": "comp_transp",
+      "label": "rand_eq_24",
+      "ok": false,
+      "pred": false
+    },
+    {
+      "f1": 0,
+      "f2": 0,
+      "fails": 0,
+      "first": null,
+      "iota": "id",
+      "label": "rand_eq_25",
+      "ok": true,
+      "pred": true
+    },
+    {
+      "f1": 0,
+      "f2": 0,
+      "fails": 0,
+      "first": null,
+      "iota": "comp_dir",
+      "label": "rand_eq_25",
+      "ok": false,
+      "pred": false
+    },
+    {
+      "f1": 0,
+      "f2": 0,
+      "fails": 0,
+      "first": null,
+      "iota": "transp",
+      "label": "rand_eq_25",
+      "ok": true,
+      "pred": true
+    },
+    {
+      "f1": 0,
+      "f2": 0,
+      "fails": 0,
+      "first": null,
+      "iota": "comp_transp",
+      "label": "rand_eq_25",
+      "ok": false,
+      "pred": false
+    },
+    {
+      "f1": 1,
+      "f2": 1,
+      "fails": 0,
+      "first": null,
+      "iota": "id",
+      "label": "rand_eq_26",
+      "ok": true,
+      "pred": true
+    },
+    {
+      "f1": 1,
+      "f2": 1,
+      "fails": 0,
+      "first": null,
+      "iota": "comp_dir",
+      "label": "rand_eq_26",
+      "ok": false,
+      "pred": false
+    },
+    {
+      "f1": 1,
+      "f2": 1,
+      "fails": 0,
+      "first": null,
+      "iota": "transp",
+      "label": "rand_eq_26",
+      "ok": true,
+      "pred": true
+    },
+    {
+      "f1": 1,
+      "f2": 1,
+      "fails": 0,
+      "first": null,
+      "iota": "comp_transp",
+      "label": "rand_eq_26",
+      "ok": false,
+      "pred": false
+    },
+    {
+      "f1": 3,
+      "f2": 3,
+      "fails": 0,
+      "first": null,
+      "iota": "id",
+      "label": "rand_eq_27",
+      "ok": true,
+      "pred": true
+    },
+    {
+      "f1": 3,
+      "f2": 3,
+      "fails": 0,
+      "first": null,
+      "iota": "comp_dir",
+      "label": "rand_eq_27",
+      "ok": false,
+      "pred": false
+    },
+    {
+      "f1": 3,
+      "f2": 3,
+      "fails": 0,
+      "first": null,
+      "iota": "transp",
+      "label": "rand_eq_27",
+      "ok": true,
+      "pred": true
+    },
+    {
+      "f1": 3,
+      "f2": 3,
+      "fails": 0,
+      "first": null,
+      "iota": "comp_transp",
+      "label": "rand_eq_27",
+      "ok": false,
+      "pred": false
+    },
+    {
+      "f1": 0,
+      "f2": 0,
+      "fails": 0,
+      "first": null,
+      "iota": "id",
+      "label": "rand_eq_28",
+      "ok": true,
+      "pred": true
+    },
+    {
+      "f1": 0,
+      "f2": 0,
+      "fails": 0,
+      "first": null,
+      "iota": "comp_dir",
+      "label": "rand_eq_28",
+      "ok": false,
+      "pred": false
+    },
+    {
+      "f1": 0,
+      "f2": 0,
+      "fails": 0,
+      "first": null,
+      "iota": "transp",
+      "label": "rand_eq_28",
+      "ok": true,
+      "pred": true
+    },
+    {
+      "f1": 0,
+      "f2": 0,
+      "fails": 0,
+      "first": null,
+      "iota": "comp_transp",
+      "label": "rand_eq_28",
+      "ok": false,
+      "pred": false
+    },
+    {
+      "f1": 0,
+      "f2": 0,
+      "fails": 0,
+      "first": null,
+      "iota": "id",
+      "label": "rand_eq_29",
+      "ok": true,
+      "pred": true
+    },
+    {
+      "f1": 0,
+      "f2": 0,
+      "fails": 0,
+      "first": null,
+      "iota": "comp_dir",
+      "label": "rand_eq_29",
+      "ok": false,
+      "pred": false
+    },
+    {
+      "f1": 0,
+      "f2": 0,
+      "fails": 0,
+      "first": null,
+      "iota": "transp",
+      "label": "rand_eq_29",
+      "ok": true,
+      "pred": true
+    },
+    {
+      "f1": 0,
+      "f2": 0,
+      "fails": 0,
+      "first": null,
+      "iota": "comp_transp",
+      "label": "rand_eq_29",
+      "ok": false,
+      "pred": false
+    },
+    {
+      "f1": 1,
+      "f2": 1,
+      "fails": 0,
+      "first": null,
+      "iota": "id",
+      "label": "rand_eq_30",
+      "ok": true,
+      "pred": true
+    },
+    {
+      "f1": 1,
+      "f2": 1,
+      "fails": 336,
+      "first": [
+        21
+      ],
+      "iota": "comp_dir",
+      "label": "rand_eq_30",
+      "ok": true,
+      "pred": false
+    },
+    {
+      "f1": 1,
+      "f2": 1,
+      "fails": 0,
+      "first": null,
+      "iota": "transp",
+      "label": "rand_eq_30",
+      "ok": true,
+      "pred": true
+    },
+    {
+      "f1": 1,
+      "f2": 1,
+      "fails": 336,
+      "first": [
+        21
+      ],
+      "iota": "comp_transp",
+      "label": "rand_eq_30",
+      "ok": true,
+      "pred": false
+    },
+    {
+      "f1": 3,
+      "f2": 3,
+      "fails": 0,
+      "first": null,
+      "iota": "id",
+      "label": "rand_eq_31",
+      "ok": true,
+      "pred": true
+    },
+    {
+      "f1": 3,
+      "f2": 3,
+      "fails": 336,
+      "first": [
+        21
+      ],
+      "iota": "comp_dir",
+      "label": "rand_eq_31",
+      "ok": true,
+      "pred": false
+    },
+    {
+      "f1": 3,
+      "f2": 3,
+      "fails": 0,
+      "first": null,
+      "iota": "transp",
+      "label": "rand_eq_31",
+      "ok": true,
+      "pred": true
+    },
+    {
+      "f1": 3,
+      "f2": 3,
+      "fails": 336,
+      "first": [
+        21
+      ],
+      "iota": "comp_transp",
+      "label": "rand_eq_31",
+      "ok": true,
+      "pred": false
+    },
+    {
+      "f1": 3,
+      "f2": 3,
+      "fails": 0,
+      "first": null,
+      "iota": "id",
+      "label": "rand_eq_32",
+      "ok": true,
+      "pred": true
+    },
+    {
+      "f1": 3,
+      "f2": 3,
+      "fails": 0,
+      "first": null,
+      "iota": "comp_dir",
+      "label": "rand_eq_32",
+      "ok": false,
+      "pred": false
+    },
+    {
+      "f1": 3,
+      "f2": 3,
+      "fails": 0,
+      "first": null,
+      "iota": "transp",
+      "label": "rand_eq_32",
+      "ok": true,
+      "pred": true
+    },
+    {
+      "f1": 3,
+      "f2": 3,
+      "fails": 0,
+      "first": null,
+      "iota": "comp_transp",
+      "label": "rand_eq_32",
+      "ok": false,
+      "pred": false
+    },
+    {
+      "f1": 1,
+      "f2": 1,
+      "fails": 0,
+      "first": null,
+      "iota": "id",
+      "label": "rand_eq_33",
+      "ok": true,
+      "pred": true
+    },
+    {
+      "f1": 1,
+      "f2": 1,
+      "fails": 0,
+      "first": null,
+      "iota": "comp_dir",
+      "label": "rand_eq_33",
+      "ok": false,
+      "pred": false
+    },
+    {
+      "f1": 1,
+      "f2": 1,
+      "fails": 0,
+      "first": null,
+      "iota": "transp",
+      "label": "rand_eq_33",
+      "ok": true,
+      "pred": true
+    },
+    {
+      "f1": 1,
+      "f2": 1,
+      "fails": 0,
+      "first": null,
+      "iota": "comp_transp",
+      "label": "rand_eq_33",
+      "ok": false,
+      "pred": false
+    },
+    {
+      "f1": 0,
+      "f2": 0,
+      "fails": 0,
+      "first": null,
+      "iota": "id",
+      "label": "rand_eq_34",
+      "ok": true,
+      "pred": true
+    },
+    {
+      "f1": 0,
+      "f2": 0,
+      "fails": 0,
+      "first": null,
+      "iota": "comp_dir",
+      "label": "rand_eq_34",
+      "ok": false,
+      "pred": false
+    },
+    {
+      "f1": 0,
+      "f2": 0,
+      "fails": 0,
+      "first": null,
+      "iota": "transp",
+      "label": "rand_eq_34",
+      "ok": true,
+      "pred": true
+    },
+    {
+      "f1": 0,
+      "f2": 0,
+      "fails": 0,
+      "first": null,
+      "iota": "comp_transp",
+      "label": "rand_eq_34",
+      "ok": false,
+      "pred": false
+    },
+    {
+      "f1": 1,
+      "f2": 1,
+      "fails": 0,
+      "first": null,
+      "iota": "id",
+      "label": "rand_eq_35",
+      "ok": true,
+      "pred": true
+    },
+    {
+      "f1": 1,
+      "f2": 1,
+      "fails": 0,
+      "first": null,
+      "iota": "comp_dir",
+      "label": "rand_eq_35",
+      "ok": false,
+      "pred": false
+    },
+    {
+      "f1": 1,
+      "f2": 1,
+      "fails": 0,
+      "first": null,
+      "iota": "transp",
+      "label": "rand_eq_35",
+      "ok": true,
+      "pred": true
+    },
+    {
+      "f1": 1,
+      "f2": 1,
+      "fails": 0,
+      "first": null,
+      "iota": "comp_transp",
+      "label": "rand_eq_35",
+      "ok": false,
+      "pred": false
+    },
+    {
+      "f1": 0,
+      "f2": 0,
+      "fails": 0,
+      "first": null,
+      "iota": "id",
+      "label": "rand_eq_36",
+      "ok": true,
+      "pred": true
+    },
+    {
+      "f1": 0,
+      "f2": 0,
+      "fails": 0,
+      "first": null,
+      "iota": "comp_dir",
+      "label": "rand_eq_36",
+      "ok": false,
+      "pred": false
+    },
+    {
+      "f1": 0,
+      "f2": 0,
+      "fails": 0,
+      "first": null,
+      "iota": "transp",
+      "label": "rand_eq_36",
+      "ok": true,
+      "pred": true
+    },
+    {
+      "f1": 0,
+      "f2": 0,
+      "fails": 0,
+      "first": null,
+      "iota": "comp_transp",
+      "label": "rand_eq_36",
+      "ok": false,
+      "pred": false
+    },
+    {
+      "f1": 0,
+      "f2": 0,
+      "fails": 0,
+      "first": null,
+      "iota": "id",
+      "label": "rand_eq_37",
+      "ok": true,
+      "pred": true
+    },
+    {
+      "f1": 0,
+      "f2": 0,
+      "fails": 0,
+      "first": null,
+      "iota": "comp_dir",
+      "label": "rand_eq_37",
+      "ok": false,
+      "pred": false
+    },
+    {
+      "f1": 0,
+      "f2": 0,
+      "fails": 0,
+      "first": null,
+      "iota": "transp",
+      "label": "rand_eq_37",
+      "ok": true,
+      "pred": true
+    },
+    {
+      "f1": 0,
+      "f2": 0,
+      "fails": 0,
+      "first": null,
+      "iota": "comp_transp",
+      "label": "rand_eq_37",
+      "ok": false,
+      "pred": false
+    },
+    {
+      "f1": 3,
+      "f2": 3,
+      "fails": 0,
+      "first": null,
+      "iota": "id",
+      "label": "rand_eq_38",
+      "ok": true,
+      "pred": true
+    },
+    {
+      "f1": 3,
+      "f2": 3,
+      "fails": 0,
+      "first": null,
+      "iota": "comp_dir",
+      "label": "rand_eq_38",
+      "ok": false,
+      "pred": false
+    },
+    {
+      "f1": 3,
+      "f2": 3,
+      "fails": 0,
+      "first": null,
+      "iota": "transp",
+      "label": "rand_eq_38",
+      "ok": true,
+      "pred": true
+    },
+    {
+      "f1": 3,
+      "f2": 3,
+      "fails": 0,
+      "first": null,
+      "iota": "comp_transp",
+      "label": "rand_eq_38",
+      "ok": false,
+      "pred": false
+    },
+    {
+      "f1": 0,
+      "f2": 0,
+      "fails": 0,
+      "first": null,
+      "iota": "id",
+      "label": "rand_eq_39",
+      "ok": true,
+      "pred": true
+    },
+    {
+      "f1": 0,
+      "f2": 0,
+      "fails": 0,
+      "first": null,
+      "iota": "comp_dir",
+      "label": "rand_eq_39",
+      "ok": false,
+      "pred": false
+    },
+    {
+      "f1": 0,
+      "f2": 0,
+      "fails": 0,
+      "first": null,
+      "iota": "transp",
+      "label": "rand_eq_39",
+      "ok": true,
+      "pred": true
+    },
+    {
+      "f1": 0,
+      "f2": 0,
+      "fails": 0,
+      "first": null,
+      "iota": "comp_transp",
+      "label": "rand_eq_39",
+      "ok": false,
+      "pred": false
+    },
+    {
+      "f1": 3,
+      "f2": 3,
+      "fails": 0,
+      "first": null,
+      "iota": "id",
+      "label": "rand_eq_40",
+      "ok": true,
+      "pred": true
+    },
+    {
+      "f1": 3,
+      "f2": 3,
+      "fails": 0,
+      "first": null,
+      "iota": "comp_dir",
+      "label": "rand_eq_40",
+      "ok": false,
+      "pred": false
+    },
+    {
+      "f1": 3,
+      "f2": 3,
+      "fails": 0,
+      "first": null,
+      "iota": "transp",
+      "label": "rand_eq_40",
+      "ok": true,
+      "pred": true
+    },
+    {
+      "f1": 3,
+      "f2": 3,
+      "fails": 0,
+      "first": null,
+      "iota": "comp_transp",
+      "label": "rand_eq_40",
+      "ok": false,
+      "pred": false
+    },
+    {
+      "f1": 2,
+      "f2": 2,
+      "fails": 0,
+      "first": null,
+      "iota": "id",
+      "label": "rand_eq_41",
+      "ok": true,
+      "pred": true
+    },
+    {
+      "f1": 2,
+      "f2": 2,
+      "fails": 336,
+      "first": [
+        21
+      ],
+      "iota": "comp_dir",
+      "label": "rand_eq_41",
+      "ok": true,
+      "pred": false
+    },
+    {
+      "f1": 2,
+      "f2": 2,
+      "fails": 0,
+      "first": null,
+      "iota": "transp",
+      "label": "rand_eq_41",
+      "ok": true,
+      "pred": true
+    },
+    {
+      "f1": 2,
+      "f2": 2,
+      "fails": 336,
+      "first": [
+        21
+      ],
+      "iota": "comp_transp",
+      "label": "rand_eq_41",
+      "ok": true,
+      "pred": false
+    },
+    {
+      "f1": 1,
+      "f2": 1,
+      "fails": 0,
+      "first": null,
+      "iota": "id",
+      "label": "rand_eq_42",
+      "ok": true,
+      "pred": true
+    },
+    {
+      "f1": 1,
+      "f2": 1,
+      "fails": 0,
+      "first": null,
+      "iota": "comp_dir",
+      "label": "rand_eq_42",
+      "ok": false,
+      "pred": false
+    },
+    {
+      "f1": 1,
+      "f2": 1,
+      "fails": 0,
+      "first": null,
+      "iota": "transp",
+      "label": "rand_eq_42",
+      "ok": true,
+      "pred": true
+    },
+    {
+      "f1": 1,
+      "f2": 1,
+      "fails": 0,
+      "first": null,
+      "iota": "comp_transp",
+      "label": "rand_eq_42",
+      "ok": false,
+      "pred": false
+    },
+    {
+      "f1": 1,
+      "f2": 1,
+      "fails": 0,
+      "first": null,
+      "iota": "id",
+      "label": "rand_eq_43",
+      "ok": true,
+      "pred": true
+    },
+    {
+      "f1": 1,
+      "f2": 1,
+      "fails": 0,
+      "first": null,
+      "iota": "comp_dir",
+      "label": "rand_eq_43",
+      "ok": false,
+      "pred": false
+    },
+    {
+      "f1": 1,
+      "f2": 1,
+      "fails": 0,
+      "first": null,
+      "iota": "transp",
+      "label": "rand_eq_43",
+      "ok": true,
+      "pred": true
+    },
+    {
+      "f1": 1,
+      "f2": 1,
+      "fails": 0,
+      "first": null,
+      "iota": "comp_transp",
+      "label": "rand_eq_43",
+      "ok": false,
+      "pred": false
+    },
+    {
+      "f1": 1,
+      "f2": 1,
+      "fails": 0,
+      "first": null,
+      "iota": "id",
+      "label": "rand_eq_44",
+      "ok": true,
+      "pred": true
+    },
+    {
+      "f1": 1,
+      "f2": 1,
+      "fails": 0,
+      "first": null,
+      "iota": "comp_dir",
+      "label": "rand_eq_44",
+      "ok": false,
+      "pred": false
+    },
+    {
+      "f1": 1,
+      "f2": 1,
+      "fails": 0,
+      "first": null,
+      "iota": "transp",
+      "label": "rand_eq_44",
+      "ok": true,
+      "pred": true
+    },
+    {
+      "f1": 1,
+      "f2": 1,
+      "fails": 0,
+      "first": null,
+      "iota": "comp_transp",
+      "label": "rand_eq_44",
+      "ok": false,
+      "pred": false
+    },
+    {
+      "f1": 2,
+      "f2": 2,
+      "fails": 0,
+      "first": null,
+      "iota": "id",
+      "label": "rand_eq_45",
+      "ok": true,
+      "pred": true
+    },
+    {
+      "f1": 2,
+      "f2": 2,
+      "fails": 336,
+      "first": [
+        21
+      ],
+      "iota": "comp_dir",
+      "label": "rand_eq_45",
+      "ok": true,
+      "pred": false
+    },
+    {
+      "f1": 2,
+      "f2": 2,
+      "fails": 0,
+      "first": null,
+      "iota": "transp",
+      "label": "rand_eq_45",
+      "ok": true,
+      "pred": true
+    },
+    {
+      "f1": 2,
+      "f2": 2,
+      "fails": 336,
+      "first": [
+        21
+      ],
+      "iota": "comp_transp",
+      "label": "rand_eq_45",
+      "ok": true,
+      "pred": false
+    },
+    {
+      "f1": 1,
+      "f2": 1,
+      "fails": 0,
+      "first": null,
+      "iota": "id",
+      "label": "rand_eq_46",
+      "ok": true,
+      "pred": true
+    },
+    {
+      "f1": 1,
+      "f2": 1,
+      "fails": 336,
+      "first": [
+        21
+      ],
+      "iota": "comp_dir",
+      "label": "rand_eq_46",
+      "ok": true,
+      "pred": false
+    },
+    {
+      "f1": 1,
+      "f2": 1,
+      "fails": 0,
+      "first": null,
+      "iota": "transp",
+      "label": "rand_eq_46",
+      "ok": true,
+      "pred": true
+    },
+    {
+      "f1": 1,
+      "f2": 1,
+      "fails": 336,
+      "first": [
+        21
+      ],
+      "iota": "comp_transp",
+      "label": "rand_eq_46",
+      "ok": true,
+      "pred": false
+    },
+    {
+      "f1": 3,
+      "f2": 3,
+      "fails": 0,
+      "first": null,
+      "iota": "id",
+      "label": "rand_eq_47",
+      "ok": true,
+      "pred": true
+    },
+    {
+      "f1": 3,
+      "f2": 3,
+      "fails": 336,
+      "first": [
+        21
+      ],
+      "iota": "comp_dir",
+      "label": "rand_eq_47",
+      "ok": true,
+      "pred": false
+    },
+    {
+      "f1": 3,
+      "f2": 3,
+      "fails": 0,
+      "first": null,
+      "iota": "transp",
+      "label": "rand_eq_47",
+      "ok": true,
+      "pred": true
+    },
+    {
+      "f1": 3,
+      "f2": 3,
+      "fails": 336,
+      "first": [
+        21
+      ],
+      "iota": "comp_transp",
+      "label": "rand_eq_47",
+      "ok": true,
+      "pred": false
+    },
+    {
+      "f1": 1,
+      "f2": 1,
+      "fails": 0,
+      "first": null,
+      "iota": "id",
+      "label": "rand_eq_48",
+      "ok": true,
+      "pred": true
+    },
+    {
+      "f1": 1,
+      "f2": 1,
+      "fails": 0,
+      "first": null,
+      "iota": "comp_dir",
+      "label": "rand_eq_48",
+      "ok": false,
+      "pred": false
+    },
+    {
+      "f1": 1,
+      "f2": 1,
+      "fails": 0,
+      "first": null,
+      "iota": "transp",
+      "label": "rand_eq_48",
+      "ok": true,
+      "pred": true
+    },
+    {
+      "f1": 1,
+      "f2": 1,
+      "fails": 0,
+      "first": null,
+      "iota": "comp_transp",
+      "label": "rand_eq_48",
+      "ok": false,
+      "pred": false
+    },
+    {
+      "f1": 0,
+      "f2": 0,
+      "fails": 0,
+      "first": null,
+      "iota": "id",
+      "label": "rand_eq_49",
+      "ok": true,
+      "pred": true
+    },
+    {
+      "f1": 0,
+      "f2": 0,
+      "fails": 0,
+      "first": null,
+      "iota": "comp_dir",
+      "label": "rand_eq_49",
+      "ok": false,
+      "pred": false
+    },
+    {
+      "f1": 0,
+      "f2": 0,
+      "fails": 0,
+      "first": null,
+      "iota": "transp",
+      "label": "rand_eq_49",
+      "ok": true,
+      "pred": true
+    },
+    {
+      "f1": 0,
+      "f2": 0,
+      "fails": 0,
+      "first": null,
+      "iota": "comp_transp",
+      "label": "rand_eq_49",
+      "ok": false,
+      "pred": false
+    },
+    {
+      "f1": 2,
+      "f2": 2,
+      "fails": 0,
+      "first": null,
+      "iota": "id",
+      "label": "rand_eq_50",
+      "ok": true,
+      "pred": true
+    },
+    {
+      "f1": 2,
+      "f2": 2,
+      "fails": 336,
+      "first": [
+        21
+      ],
+      "iota": "comp_dir",
+      "label": "rand_eq_50",
+      "ok": true,
+      "pred": false
+    },
+    {
+      "f1": 2,
+      "f2": 2,
+      "fails": 0,
+      "first": null,
+      "iota": "transp",
+      "label": "rand_eq_50",
+      "ok": true,
+      "pred": true
+    },
+    {
+      "f1": 2,
+      "f2": 2,
+      "fails": 336,
+      "first": [
+        21
+      ],
+      "iota": "comp_transp",
+      "label": "rand_eq_50",
+      "ok": true,
+      "pred": false
+    },
+    {
+      "f1": 1,
+      "f2": 1,
+      "fails": 0,
+      "first": null,
+      "iota": "id",
+      "label": "rand_eq_51",
+      "ok": true,
+      "pred": true
+    },
+    {
+      "f1": 1,
+      "f2": 1,
+      "fails": 0,
+      "first": null,
+      "iota": "comp_dir",
+      "label": "rand_eq_51",
+      "ok": false,
+      "pred": false
+    },
+    {
+      "f1": 1,
+      "f2": 1,
+      "fails": 0,
+      "first": null,
+      "iota": "transp",
+      "label": "rand_eq_51",
+      "ok": true,
+      "pred": true
+    },
+    {
+      "f1": 1,
+      "f2": 1,
+      "fails": 0,
+      "first": null,
+      "iota": "comp_transp",
+      "label": "rand_eq_51",
+      "ok": false,
+      "pred": false
+    },
+    {
+      "f1": 0,
+      "f2": 0,
+      "fails": 0,
+      "first": null,
+      "iota": "id",
+      "label": "rand_eq_52",
+      "ok": true,
+      "pred": true
+    },
+    {
+      "f1": 0,
+      "f2": 0,
+      "fails": 0,
+      "first": null,
+      "iota": "comp_dir",
+      "label": "rand_eq_52",
+      "ok": false,
+      "pred": false
+    },
+    {
+      "f1": 0,
+      "f2": 0,
+      "fails": 0,
+      "first": null,
+      "iota": "transp",
+      "label": "rand_eq_52",
+      "ok": true,
+      "pred": true
+    },
+    {
+      "f1": 0,
+      "f2": 0,
+      "fails": 0,
+      "first": null,
+      "iota": "comp_transp",
+      "label": "rand_eq_52",
+      "ok": false,
+      "pred": false
+    },
+    {
+      "f1": 1,
+      "f2": 1,
+      "fails": 0,
+      "first": null,
+      "iota": "id",
+      "label": "rand_eq_53",
+      "ok": true,
+      "pred": true
+    },
+    {
+      "f1": 1,
+      "f2": 1,
+      "fails": 336,
+      "first": [
+        21
+      ],
+      "iota": "comp_dir",
+      "label": "rand_eq_53",
+      "ok": true,
+      "pred": false
+    },
+    {
+      "f1": 1,
+      "f2": 1,
+      "fails": 0,
+      "first": null,
+      "iota": "transp",
+      "label": "rand_eq_53",
+      "ok": true,
+      "pred": true
+    },
+    {
+      "f1": 1,
+      "f2": 1,
+      "fails": 336,
+      "first": [
+        21
+      ],
+      "iota": "comp_transp",
+      "label": "rand_eq_53",
+      "ok": true,
+      "pred": false
+    },
+    {
+      "f1": 2,
+      "f2": 2,
+      "fails": 0,
+      "first": null,
+      "iota": "id",
+      "label": "rand_eq_54",
+      "ok": true,
+      "pred": true
+    },
+    {
+      "f1": 2,
+      "f2": 2,
+      "fails": 0,
+      "first": null,
+      "iota": "comp_dir",
+      "label": "rand_eq_54",
+      "ok": false,
+      "pred": false
+    },
+    {
+      "f1": 2,
+      "f2": 2,
+      "fails": 0,
+      "first": null,
+      "iota": "transp",
+      "label": "rand_eq_54",
+      "ok": true,
+      "pred": true
+    },
+    {
+      "f1": 2,
+      "f2": 2,
+      "fails": 0,
+      "first": null,
+      "iota": "comp_transp",
+      "label": "rand_eq_54",
+      "ok": false,
+      "pred": false
+    },
+    {
+      "f1": 2,
+      "f2": 2,
+      "fails": 0,
+      "first": null,
+      "iota": "id",
+      "label": "rand_eq_55",
+      "ok": true,
+      "pred": true
+    },
+    {
+      "f1": 2,
+      "f2": 2,
+      "fails": 336,
+      "first": [
+        21
+      ],
+      "iota": "comp_dir",
+      "label": "rand_eq_55",
+      "ok": true,
+      "pred": false
+    },
+    {
+      "f1": 2,
+      "f2": 2,
+      "fails": 0,
+      "first": null,
+      "iota": "transp",
+      "label": "rand_eq_55",
+      "ok": true,
+      "pred": true
+    },
+    {
+      "f1": 2,
+      "f2": 2,
+      "fails": 336,
+      "first": [
+        21
+      ],
+      "iota": "comp_transp",
+      "label": "rand_eq_55",
+      "ok": true,
+      "pred": false
+    },
+    {
+      "f1": 1,
+      "f2": 1,
+      "fails": 0,
+      "first": null,
+      "iota": "id",
+      "label": "rand_eq_56",
+      "ok": true,
+      "pred": true
+    },
+    {
+      "f1": 1,
+      "f2": 1,
+      "fails": 0,
+      "first": null,
+      "iota": "comp_dir",
+      "label": "rand_eq_56",
+      "ok": false,
+      "pred": false
+    },
+    {
+      "f1": 1,
+      "f2": 1,
+      "fails": 0,
+      "first": null,
+      "iota": "transp",
+      "label": "rand_eq_56",
+      "ok": true,
+      "pred": true
+    },
+    {
+      "f1": 1,
+      "f2": 1,
+      "fails": 0,
+      "first": null,
+      "iota": "comp_transp",
+      "label": "rand_eq_56",
+      "ok": false,
+      "pred": false
+    },
+    {
+      "f1": 0,
+      "f2": 0,
+      "fails": 0,
+      "first": null,
+      "iota": "id",
+      "label": "rand_eq_57",
+      "ok": true,
+      "pred": true
+    },
+    {
+      "f1": 0,
+      "f2": 0,
+      "fails": 0,
+      "first": null,
+      "iota": "comp_dir",
+      "label": "rand_eq_57",
+      "ok": false,
+      "pred": false
+    },
+    {
+      "f1": 0,
+      "f2": 0,
+      "fails": 0,
+      "first": null,
+      "iota": "transp",
+      "label": "rand_eq_57",
+      "ok": true,
+      "pred": true
+    },
+    {
+      "f1": 0,
+      "f2": 0,
+      "fails": 0,
+      "first": null,
+      "iota": "comp_transp",
+      "label": "rand_eq_57",
+      "ok": false,
+      "pred": false
+    },
+    {
+      "f1": 2,
+      "f2": 2,
+      "fails": 0,
+      "first": null,
+      "iota": "id",
+      "label": "rand_eq_58",
+      "ok": true,
+      "pred": true
+    },
+    {
+      "f1": 2,
+      "f2": 2,
+      "fails": 0,
+      "first": null,
+      "iota": "comp_dir",
+      "label": "rand_eq_58",
+      "ok": false,
+      "pred": false
+    },
+    {
+      "f1": 2,
+      "f2": 2,
+      "fails": 0,
+      "first": null,
+      "iota": "transp",
+      "label": "rand_eq_58",
+      "ok": true,
+      "pred": true
+    },
+    {
+      "f1": 2,
+      "f2": 2,
+      "fails": 0,
+      "first": null,
+      "iota": "comp_transp",
+      "label": "rand_eq_58",
+      "ok": false,
+      "pred": false
+    },
+    {
+      "f1": 3,
+      "f2": 3,
+      "fails": 0,
+      "first": null,
+      "iota": "id",
+      "label": "rand_eq_59",
+      "ok": true,
+      "pred": true
+    },
+    {
+      "f1": 3,
+      "f2": 3,
+      "fails": 0,
+      "first": null,
+      "iota": "comp_dir",
+      "label": "rand_eq_59",
+      "ok": false,
+      "pred": false
+    },
+    {
+      "f1": 3,
+      "f2": 3,
+      "fails": 0,
+      "first": null,
+      "iota": "transp",
+      "label": "rand_eq_59",
+      "ok": true,
+      "pred": true
+    },
+    {
+      "f1": 3,
+      "f2": 3,
+      "fails": 0,
+      "first": null,
+      "iota": "comp_transp",
+      "label": "rand_eq_59",
+      "ok": false,
+      "pred": false
+    },
+    {
+      "f1": 0,
+      "f2": 0,
+      "fails": 0,
+      "first": null,
+      "iota": "id",
+      "label": "rand_eq_60",
+      "ok": true,
+      "pred": true
+    },
+    {
+      "f1": 0,
+      "f2": 0,
+      "fails": 0,
+      "first": null,
+      "iota": "comp_dir",
+      "label": "rand_eq_60",
+      "ok": false,
+      "pred": false
+    },
+    {
+      "f1": 0,
+      "f2": 0,
+      "fails": 0,
+      "first": null,
+      "iota": "transp",
+      "label": "rand_eq_60",
+      "ok": true,
+      "pred": true
+    },
+    {
+      "f1": 0,
+      "f2": 0,
+      "fails": 0,
+      "first": null,
+      "iota": "comp_transp",
+      "label": "rand_eq_60",
+      "ok": false,
+      "pred": false
+    },
+    {
+      "f1": 0,
+      "f2": 0,
+      "fails": 0,
+      "first": null,
+      "iota": "id",
+      "label": "rand_eq_61",
+      "ok": true,
+      "pred": true
+    },
+    {
+      "f1": 0,
+      "f2": 0,
+      "fails": 0,
+      "first": null,
+      "iota": "comp_dir",
+      "label": "rand_eq_61",
+      "ok": false,
+      "pred": false
+    },
+    {
+      "f1": 0,
+      "f2": 0,
+      "fails": 0,
+      "first": null,
+      "iota": "transp",
+      "label": "rand_eq_61",
+      "ok": true,
+      "pred": true
+    },
+    {
+      "f1": 0,
+      "f2": 0,
+      "fails": 0,
+      "first": null,
+      "iota": "comp_transp",
+      "label": "rand_eq_61",
+      "ok": false,
+      "pred": false
+    },
+    {
+      "f1": 1,
+      "f2": 1,
+      "fails": 0,
+      "first": null,
+      "iota": "id",
+      "label": "rand_eq_62",
+      "ok": true,
+      "pred": true
+    },
+    {
+      "f1": 1,
+      "f2": 1,
+      "fails": 0,
+      "first": null,
+      "iota": "comp_dir",
+      "label": "rand_eq_62",
+      "ok": false,
+      "pred": false
+    },
+    {
+      "f1": 1,
+      "f2": 1,
+      "fails": 0,
+      "first": null,
+      "iota": "transp",
+      "label": "rand_eq_62",
+      "ok": true,
+      "pred": true
+    },
+    {
+      "f1": 1,
+      "f2": 1,
+      "fails": 0,
+      "first": null,
+      "iota": "comp_transp",
+      "label": "rand_eq_62",
+      "ok": false,
+      "pred": false
+    },
+    {
+      "f1": 1,
+      "f2": 1,
+      "fails": 0,
+      "first": null,
+      "iota": "id",
+      "label": "rand_eq_63",
+      "ok": true,
+      "pred": true
+    },
+    {
+      "f1": 1,
+      "f2": 1,
+      "fails": 0,
+      "first": null,
+      "iota": "comp_dir",
+      "label": "rand_eq_63",
+      "ok": false,
+      "pred": false
+    },
+    {
+      "f1": 1,
+      "f2": 1,
+      "fails": 0,
+      "first": null,
+      "iota": "transp",
+      "label": "rand_eq_63",
+      "ok": true,
+      "pred": true
+    },
+    {
+      "f1": 1,
+      "f2": 1,
+      "fails": 0,
+      "first": null,
+      "iota": "comp_transp",
+      "label": "rand_eq_63",
+      "ok": false,
+      "pred": false
+    },
+    {
+      "f1": 2,
+      "f2": 0,
+      "fails": 0,
+      "first": null,
+      "iota": "id",
+      "label": "rand_neq_0",
+      "ok": true,
+      "pred": true
+    },
+    {
+      "f1": 2,
+      "f2": 0,
+      "fails": 0,
+      "first": null,
+      "iota": "comp_dir",
+      "label": "rand_neq_0",
+      "ok": true,
+      "pred": true
+    },
+    {
+      "f1": 2,
+      "f2": 0,
+      "fails": 0,
+      "first": null,
+      "iota": "transp",
+      "label": "rand_neq_0",
+      "ok": true,
+      "pred": true
+    },
+    {
+      "f1": 2,
+      "f2": 0,
+      "fails": 0,
+      "first": null,
+      "iota": "comp_transp",
+      "label": "rand_neq_0",
+      "ok": true,
+      "pred": true
+    },
+    {
+      "f1": 2,
+      "f2": 0,
+      "fails": 0,
+      "first": null,
+      "iota": "id",
+      "label": "rand_neq_1",
+      "ok": true,
+      "pred": true
+    },
+    {
+      "f1": 2,
+      "f2": 0,
+      "fails": 0,
+      "first": null,
+      "iota": "comp_dir",
+      "label": "rand_neq_1",
+      "ok": true,
+      "pred": true
+    },
+    {
+      "f1": 2,
+      "f2": 0,
+      "fails": 0,
+      "first": null,
+      "iota": "transp",
+      "label": "rand_neq_1",
+      "ok": true,
+      "pred": true
+    },
+    {
+      "f1": 2,
+      "f2": 0,
+      "fails": 0,
+      "first": null,
+      "iota": "comp_transp",
+      "label": "rand_neq_1",
+      "ok": true,
+      "pred": true
+    },
+    {
+      "f1": 2,
+      "f2": 0,
+      "fails": 0,
+      "first": null,
+      "iota": "id",
+      "label": "rand_neq_2",
+      "ok": true,
+      "pred": true
+    },
+    {
+      "f1": 2,
+      "f2": 0,
+      "fails": 0,
+      "first": null,
+      "iota": "comp_dir",
+      "label": "rand_neq_2",
+      "ok": true,
+      "pred": true
+    },
+    {
+      "f1": 2,
+      "f2": 0,
+      "fails": 0,
+      "first": null,
+      "iota": "transp",
+      "label": "rand_neq_2",
+      "ok": true,
+      "pred": true
+    },
+    {
+      "f1": 2,
+      "f2": 0,
+      "fails": 0,
+      "first": null,
+      "iota": "comp_transp",
+      "label": "rand_neq_2",
+      "ok": true,
+      "pred": true
+    },
+    {
+      "f1": 0,
+      "f2": 2,
+      "fails": 0,
+      "first": null,
+      "iota": "id",
+      "label": "rand_neq_3",
+      "ok": true,
+      "pred": true
+    },
+    {
+      "f1": 0,
+      "f2": 2,
+      "fails": 0,
+      "first": null,
+      "iota": "comp_dir",
+      "label": "rand_neq_3",
+      "ok": true,
+      "pred": true
+    },
+    {
+      "f1": 0,
+      "f2": 2,
+      "fails": 0,
+      "first": null,
+      "iota": "transp",
+      "label": "rand_neq_3",
+      "ok": true,
+      "pred": true
+    },
+    {
+      "f1": 0,
+      "f2": 2,
+      "fails": 0,
+      "first": null,
+      "iota": "comp_transp",
+      "label": "rand_neq_3",
+      "ok": true,
+      "pred": true
+    },
+    {
+      "f1": 1,
+      "f2": 0,
+      "fails": 0,
+      "first": null,
+      "iota": "id",
+      "label": "rand_neq_4",
+      "ok": true,
+      "pred": true
+    },
+    {
+      "f1": 1,
+      "f2": 0,
+      "fails": 0,
+      "first": null,
+      "iota": "comp_dir",
+      "label": "rand_neq_4",
+      "ok": true,
+      "pred": true
+    },
+    {
+      "f1": 1,
+      "f2": 0,
+      "fails": 0,
+      "first": null,
+      "iota": "transp",
+      "label": "rand_neq_4",
+      "ok": true,
+      "pred": true
+    },
+    {
+      "f1": 1,
+      "f2": 0,
+      "fails": 0,
+      "first": null,
+      "iota": "comp_transp",
+      "label": "rand_neq_4",
+      "ok": true,
+      "pred": true
+    },
+    {
+      "f1": 1,
+      "f2": 0,
+      "fails": 0,
+      "first": null,
+      "iota": "id",
+      "label": "rand_neq_5",
+      "ok": true,
+      "pred": true
+    },
+    {
+      "f1": 1,
+      "f2": 0,
+      "fails": 0,
+      "first": null,
+      "iota": "comp_dir",
+      "label": "rand_neq_5",
+      "ok": true,
+      "pred": true
+    },
+    {
+      "f1": 1,
+      "f2": 0,
+      "fails": 0,
+      "first": null,
+      "iota": "transp",
+      "label": "rand_neq_5",
+      "ok": true,
+      "pred": true
+    },
+    {
+      "f1": 1,
+      "f2": 0,
+      "fails": 0,
+      "first": null,
+      "iota": "comp_transp",
+      "label": "rand_neq_5",
+      "ok": true,
+      "pred": true
+    },
+    {
+      "f1": 2,
+      "f2": 0,
+      "fails": 0,
+      "first": null,
+      "iota": "id",
+      "label": "rand_neq_6",
+      "ok": true,
+      "pred": true
+    },
+    {
+      "f1": 2,
+      "f2": 0,
+      "fails": 0,
+      "first": null,
+      "iota": "comp_dir",
+      "label": "rand_neq_6",
+      "ok": true,
+      "pred": true
+    },
+    {
+      "f1": 2,
+      "f2": 0,
+      "fails": 0,
+      "first": null,
+      "iota": "transp",
+      "label": "rand_neq_6",
+      "ok": true,
+      "pred": true
+    },
+    {
+      "f1": 2,
+      "f2": 0,
+      "fails": 0,
+      "first": null,
+      "iota": "comp_transp",
+      "label": "rand_neq_6",
+      "ok": true,
+      "pred": true
+    },
+    {
+      "f1": 0,
+      "f2": 1,
+      "fails": 0,
+      "first": null,
+      "iota": "id",
+      "label": "rand_neq_7",
+      "ok": true,
+      "pred": true
+    },
+    {
+      "f1": 0,
+      "f2": 1,
+      "fails": 384,
+      "first": [
+        21
+      ],
+      "iota": "comp_dir",
+      "label": "rand_neq_7",
+      "ok": false,
+      "pred": true
+    },
+    {
+      "f1": 0,
+      "f2": 1,
+      "fails": 0,
+      "first": null,
+      "iota": "transp",
+      "label": "rand_neq_7",
+      "ok": true,
+      "pred": true
+    },
+    {
+      "f1": 0,
+      "f2": 1,
+      "fails": 384,
+      "first": [
+        21
+      ],
+      "iota": "comp_transp",
+      "label": "rand_neq_7",
+      "ok": false,
+      "pred": true
+    },
+    {
+      "f1": 1,
+      "f2": 2,
+      "fails": 0,
+      "first": null,
+      "iota": "id",
+      "label": "rand_neq_8",
+      "ok": true,
+      "pred": true
+    },
+    {
+      "f1": 1,
+      "f2": 2,
+      "fails": 0,
+      "first": null,
+      "iota": "comp_dir",
+      "label": "rand_neq_8",
+      "ok": true,
+      "pred": true
+    },
+    {
+      "f1": 1,
+      "f2": 2,
+      "fails": 0,
+      "first": null,
+      "iota": "transp",
+      "label": "rand_neq_8",
+      "ok": true,
+      "pred": true
+    },
+    {
+      "f1": 1,
+      "f2": 2,
+      "fails": 0,
+      "first": null,
+      "iota": "comp_transp",
+      "label": "rand_neq_8",
+      "ok": true,
+      "pred": true
+    },
+    {
+      "f1": 0,
+      "f2": 3,
+      "fails": 0,
+      "first": null,
+      "iota": "id",
+      "label": "rand_neq_9",
+      "ok": true,
+      "pred": true
+    },
+    {
+      "f1": 0,
+      "f2": 3,
+      "fails": 0,
+      "first": null,
+      "iota": "comp_dir",
+      "label": "rand_neq_9",
+      "ok": true,
+      "pred": true
+    },
+    {
+      "f1": 0,
+      "f2": 3,
+      "fails": 0,
+      "first": null,
+      "iota": "transp",
+      "label": "rand_neq_9",
+      "ok": true,
+      "pred": true
+    },
+    {
+      "f1": 0,
+      "f2": 3,
+      "fails": 0,
+      "first": null,
+      "iota": "comp_transp",
+      "label": "rand_neq_9",
+      "ok": true,
+      "pred": true
+    },
+    {
+      "f1": 3,
+      "f2": 1,
+      "fails": 0,
+      "first": null,
+      "iota": "id",
+      "label": "rand_neq_10",
+      "ok": true,
+      "pred": true
+    },
+    {
+      "f1": 3,
+      "f2": 1,
+      "fails": 0,
+      "first": null,
+      "iota": "comp_dir",
+      "label": "rand_neq_10",
+      "ok": true,
+      "pred": true
+    },
+    {
+      "f1": 3,
+      "f2": 1,
+      "fails": 0,
+      "first": null,
+      "iota": "transp",
+      "label": "rand_neq_10",
+      "ok": true,
+      "pred": true
+    },
+    {
+      "f1": 3,
+      "f2": 1,
+      "fails": 0,
+      "first": null,
+      "iota": "comp_transp",
+      "label": "rand_neq_10",
+      "ok": true,
+      "pred": true
+    },
+    {
+      "f1": 2,
+      "f2": 1,
+      "fails": 0,
+      "first": null,
+      "iota": "id",
+      "label": "rand_neq_11",
+      "ok": true,
+      "pred": true
+    },
+    {
+      "f1": 2,
+      "f2": 1,
+      "fails": 0,
+      "first": null,
+      "iota": "comp_dir",
+      "label": "rand_neq_11",
+      "ok": true,
+      "pred": true
+    },
+    {
+      "f1": 2,
+      "f2": 1,
+      "fails": 0,
+      "first": null,
+      "iota": "transp",
+      "label": "rand_neq_11",
+      "ok": true,
+      "pred": true
+    },
+    {
+      "f1": 2,
+      "f2": 1,
+      "fails": 0,
+      "first": null,
+      "iota": "comp_transp",
+      "label": "rand_neq_11",
+      "ok": true,
+      "pred": true
+    },
+    {
+      "f1": 0,
+      "f2": 3,
+      "fails": 0,
+      "first": null,
+      "iota": "id",
+      "label": "rand_neq_12",
+      "ok": true,
+      "pred": true
+    },
+    {
+      "f1": 0,
+      "f2": 3,
+      "fails": 0,
+      "first": null,
+      "iota": "comp_dir",
+      "label": "rand_neq_12",
+      "ok": true,
+      "pred": true
+    },
+    {
+      "f1": 0,
+      "f2": 3,
+      "fails": 0,
+      "first": null,
+      "iota": "transp",
+      "label": "rand_neq_12",
+      "ok": true,
+      "pred": true
+    },
+    {
+      "f1": 0,
+      "f2": 3,
+      "fails": 0,
+      "first": null,
+      "iota": "comp_transp",
+      "label": "rand_neq_12",
+      "ok": true,
+      "pred": true
+    },
+    {
+      "f1": 1,
+      "f2": 0,
+      "fails": 0,
+      "first": null,
+      "iota": "id",
+      "label": "rand_neq_13",
+      "ok": true,
+      "pred": true
+    },
+    {
+      "f1": 1,
+      "f2": 0,
+      "fails": 0,
+      "first": null,
+      "iota": "comp_dir",
+      "label": "rand_neq_13",
+      "ok": true,
+      "pred": true
+    },
+    {
+      "f1": 1,
+      "f2": 0,
+      "fails": 0,
+      "first": null,
+      "iota": "transp",
+      "label": "rand_neq_13",
+      "ok": true,
+      "pred": true
+    },
+    {
+      "f1": 1,
+      "f2": 0,
+      "fails": 0,
+      "first": null,
+      "iota": "comp_transp",
+      "label": "rand_neq_13",
+      "ok": true,
+      "pred": true
+    },
+    {
+      "f1": 1,
+      "f2": 0,
+      "fails": 0,
+      "first": null,
+      "iota": "id",
+      "label": "rand_neq_14",
+      "ok": true,
+      "pred": true
+    },
+    {
+      "f1": 1,
+      "f2": 0,
+      "fails": 384,
+      "first": [
+        21
+      ],
+      "iota": "comp_dir",
+      "label": "rand_neq_14",
+      "ok": false,
+      "pred": true
+    },
+    {
+      "f1": 1,
+      "f2": 0,
+      "fails": 0,
+      "first": null,
+      "iota": "transp",
+      "label": "rand_neq_14",
+      "ok": true,
+      "pred": true
+    },
+    {
+      "f1": 1,
+      "f2": 0,
+      "fails": 384,
+      "first": [
+        21
+      ],
+      "iota": "comp_transp",
+      "label": "rand_neq_14",
+      "ok": false,
+      "pred": true
+    },
+    {
+      "f1": 0,
+      "f2": 2,
+      "fails": 0,
+      "first": null,
+      "iota": "id",
+      "label": "rand_neq_15",
+      "ok": true,
+      "pred": true
+    },
+    {
+      "f1": 0,
+      "f2": 2,
+      "fails": 0,
+      "first": null,
+      "iota": "comp_dir",
+      "label": "rand_neq_15",
+      "ok": true,
+      "pred": true
+    },
+    {
+      "f1": 0,
+      "f2": 2,
+      "fails": 0,
+      "first": null,
+      "iota": "transp",
+      "label": "rand_neq_15",
+      "ok": true,
+      "pred": true
+    },
+    {
+      "f1": 0,
+      "f2": 2,
+      "fails": 0,
+      "first": null,
+      "iota": "comp_transp",
+      "label": "rand_neq_15",
+      "ok": true,
+      "pred": true
+    },
+    {
+      "f1": 0,
+      "f2": 1,
+      "fails": 0,
+      "first": null,
+      "iota": "id",
+      "label": "rand_neq_16",
+      "ok": true,
+      "pred": true
+    },
+    {
+      "f1": 0,
+      "f2": 1,
+      "fails": 0,
+      "first": null,
+      "iota": "comp_dir",
+      "label": "rand_neq_16",
+      "ok": true,
+      "pred": true
+    },
+    {
+      "f1": 0,
+      "f2": 1,
+      "fails": 0,
+      "first": null,
+      "iota": "transp",
+      "label": "rand_neq_16",
+      "ok": true,
+      "pred": true
+    },
+    {
+      "f1": 0,
+      "f2": 1,
+      "fails": 0,
+      "first": null,
+      "iota": "comp_transp",
+      "label": "rand_neq_16",
+      "ok": true,
+      "pred": true
+    },
+    {
+      "f1": 1,
+      "f2": 3,
+      "fails": 0,
+      "first": null,
+      "iota": "id",
+      "label": "rand_neq_17",
+      "ok": true,
+      "pred": true
+    },
+    {
+      "f1": 1,
+      "f2": 3,
+      "fails": 384,
+      "first": [
+        21
+      ],
+      "iota": "comp_dir",
+      "label": "rand_neq_17",
+      "ok": false,
+      "pred": true
+    },
+    {
+      "f1": 1,
+      "f2": 3,
+      "fails": 0,
+      "first": null,
+      "iota": "transp",
+      "label": "rand_neq_17",
+      "ok": true,
+      "pred": true
+    },
+    {
+      "f1": 1,
+      "f2": 3,
+      "fails": 384,
+      "first": [
+        21
+      ],
+      "iota": "comp_transp",
+      "label": "rand_neq_17",
+      "ok": false,
+      "pred": true
+    },
+    {
+      "f1": 1,
+      "f2": 2,
+      "fails": 0,
+      "first": null,
+      "iota": "id",
+      "label": "rand_neq_18",
+      "ok": true,
+      "pred": true
+    },
+    {
+      "f1": 1,
+      "f2": 2,
+      "fails": 0,
+      "first": null,
+      "iota": "comp_dir",
+      "label": "rand_neq_18",
+      "ok": true,
+      "pred": true
+    },
+    {
+      "f1": 1,
+      "f2": 2,
+      "fails": 0,
+      "first": null,
+      "iota": "transp",
+      "label": "rand_neq_18",
+      "ok": true,
+      "pred": true
+    },
+    {
+      "f1": 1,
+      "f2": 2,
+      "fails": 0,
+      "first": null,
+      "iota": "comp_transp",
+      "label": "rand_neq_18",
+      "ok": true,
+      "pred": true
+    },
+    {
+      "f1": 2,
+      "f2": 3,
+      "fails": 0,
+      "first": null,
+      "iota": "id",
+      "label": "rand_neq_19",
+      "ok": true,
+      "pred": true
+    },
+    {
+      "f1": 2,
+      "f2": 3,
+      "fails": 384,
+      "first": [
+        21
+      ],
+      "iota": "comp_dir",
+      "label": "rand_neq_19",
+      "ok": false,
+      "pred": true
+    },
+    {
+      "f1": 2,
+      "f2": 3,
+      "fails": 0,
+      "first": null,
+      "iota": "transp",
+      "label": "rand_neq_19",
+      "ok": true,
+      "pred": true
+    },
+    {
+      "f1": 2,
+      "f2": 3,
+      "fails": 384,
+      "first": [
+        21
+      ],
+      "iota": "comp_transp",
+      "label": "rand_neq_19",
+      "ok": false,
+      "pred": true
+    },
+    {
+      "f1": 0,
+      "f2": 1,
+      "fails": 0,
+      "first": null,
+      "iota": "id",
+      "label": "rand_neq_20",
+      "ok": true,
+      "pred": true
+    },
+    {
+      "f1": 0,
+      "f2": 1,
+      "fails": 0,
+      "first": null,
+      "iota": "comp_dir",
+      "label": "rand_neq_20",
+      "ok": true,
+      "pred": true
+    },
+    {
+      "f1": 0,
+      "f2": 1,
+      "fails": 0,
+      "first": null,
+      "iota": "transp",
+      "label": "rand_neq_20",
+      "ok": true,
+      "pred": true
+    },
+    {
+      "f1": 0,
+      "f2": 1,
+      "fails": 0,
+      "first": null,
+      "iota": "comp_transp",
+      "label": "rand_neq_20",
+      "ok": true,
+      "pred": true
+    },
+    {
+      "f1": 3,
+      "f2": 1,
+      "fails": 0,
+      "first": null,
+      "iota": "id",
+      "label": "rand_neq_21",
+      "ok": true,
+      "pred": true
+    },
+    {
+      "f1": 3,
+      "f2": 1,
+      "fails": 384,
+      "first": [
+        21
+      ],
+      "iota": "comp_dir",
+      "label": "rand_neq_21",
+      "ok": false,
+      "pred": true
+    },
+    {
+      "f1": 3,
+      "f2": 1,
+      "fails": 0,
+      "first": null,
+      "iota": "transp",
+      "label": "rand_neq_21",
+      "ok": true,
+      "pred": true
+    },
+    {
+      "f1": 3,
+      "f2": 1,
+      "fails": 384,
+      "first": [
+        21
+      ],
+      "iota": "comp_transp",
+      "label": "rand_neq_21",
+      "ok": false,
+      "pred": true
+    },
+    {
+      "f1": 3,
+      "f2": 1,
+      "fails": 0,
+      "first": null,
+      "iota": "id",
+      "label": "rand_neq_22",
+      "ok": true,
+      "pred": true
+    },
+    {
+      "f1": 3,
+      "f2": 1,
+      "fails": 384,
+      "first": [
+        21
+      ],
+      "iota": "comp_dir",
+      "label": "rand_neq_22",
+      "ok": false,
+      "pred": true
+    },
+    {
+      "f1": 3,
+      "f2": 1,
+      "fails": 0,
+      "first": null,
+      "iota": "transp",
+      "label": "rand_neq_22",
+      "ok": true,
+      "pred": true
+    },
+    {
+      "f1": 3,
+      "f2": 1,
+      "fails": 384,
+      "first": [
+        21
+      ],
+      "iota": "comp_transp",
+      "label": "rand_neq_22",
+      "ok": false,
+      "pred": true
+    },
+    {
+      "f1": 1,
+      "f2": 0,
+      "fails": 0,
+      "first": null,
+      "iota": "id",
+      "label": "rand_neq_23",
+      "ok": true,
+      "pred": true
+    },
+    {
+      "f1": 1,
+      "f2": 0,
+      "fails": 384,
+      "first": [
+        21
+      ],
+      "iota": "comp_dir",
+      "label": "rand_neq_23",
+      "ok": false,
+      "pred": true
+    },
+    {
+      "f1": 1,
+      "f2": 0,
+      "fails": 0,
+      "first": null,
+      "iota": "transp",
+      "label": "rand_neq_23",
+      "ok": true,
+      "pred": true
+    },
+    {
+      "f1": 1,
+      "f2": 0,
+      "fails": 384,
+      "first": [
+        21
+      ],
+      "iota": "comp_transp",
+      "label": "rand_neq_23",
+      "ok": false,
+      "pred": true
+    },
+    {
+      "f1": 3,
+      "f2": 2,
+      "fails": 0,
+      "first": null,
+      "iota": "id",
+      "label": "rand_neq_24",
+      "ok": true,
+      "pred": true
+    },
+    {
+      "f1": 3,
+      "f2": 2,
+      "fails": 0,
+      "first": null,
+      "iota": "comp_dir",
+      "label": "rand_neq_24",
+      "ok": true,
+      "pred": true
+    },
+    {
+      "f1": 3,
+      "f2": 2,
+      "fails": 0,
+      "first": null,
+      "iota": "transp",
+      "label": "rand_neq_24",
+      "ok": true,
+      "pred": true
+    },
+    {
+      "f1": 3,
+      "f2": 2,
+      "fails": 0,
+      "first": null,
+      "iota": "comp_transp",
+      "label": "rand_neq_24",
+      "ok": true,
+      "pred": true
+    },
+    {
+      "f1": 2,
+      "f2": 3,
+      "fails": 0,
+      "first": null,
+      "iota": "id",
+      "label": "rand_neq_25",
+      "ok": true,
+      "pred": true
+    },
+    {
+      "f1": 2,
+      "f2": 3,
+      "fails": 0,
+      "first": null,
+      "iota": "comp_dir",
+      "label": "rand_neq_25",
+      "ok": true,
+      "pred": true
+    },
+    {
+      "f1": 2,
+      "f2": 3,
+      "fails": 0,
+      "first": null,
+      "iota": "transp",
+      "label": "rand_neq_25",
+      "ok": true,
+      "pred": true
+    },
+    {
+      "f1": 2,
+      "f2": 3,
+      "fails": 0,
+      "first": null,
+      "iota": "comp_transp",
+      "label": "rand_neq_25",
+      "ok": true,
+      "pred": true
+    },
+    {
+      "f1": 3,
+      "f2": 0,
+      "fails": 0,
+      "first": null,
+      "iota": "id",
+      "label": "rand_neq_26",
+      "ok": true,
+      "pred": true
+    },
+    {
+      "f1": 3,
+      "f2": 0,
+      "fails": 384,
+      "first": [
+        21
+      ],
+      "iota": "comp_dir",
+      "label": "rand_neq_26",
+      "ok": false,
+      "pred": true
+    },
+    {
+      "f1": 3,
+      "f2": 0,
+      "fails": 0,
+      "first": null,
+      "iota": "transp",
+      "label": "rand_neq_26",
+      "ok": true,
+      "pred": true
+    },
+    {
+      "f1": 3,
+      "f2": 0,
+      "fails": 384,
+      "first": [
+        21
+      ],
+      "iota": "comp_transp",
+      "label": "rand_neq_26",
+      "ok": false,
+      "pred": true
+    },
+    {
+      "f1": 2,
+      "f2": 3,
+      "fails": 0,
+      "first": null,
+      "iota": "id",
+      "label": "rand_neq_27",
+      "ok": true,
+      "pred": true
+    },
+    {
+      "f1": 2,
+      "f2": 3,
+      "fails": 384,
+      "first": [
+        21
+      ],
+      "iota": "comp_dir",
+      "label": "rand_neq_27",
+      "ok": false,
+      "pred": true
+    },
+    {
+      "f1": 2,
+      "f2": 3,
+      "fails": 0,
+      "first": null,
+      "iota": "transp",
+      "label": "rand_neq_27",
+      "ok": true,
+      "pred": true
+    },
+    {
+      "f1": 2,
+      "f2": 3,
+      "fails": 384,
+      "first": [
+        21
+      ],
+      "iota": "comp_transp",
+      "label": "rand_neq_27",
+      "ok": false,
+      "pred": true
+    },
+    {
+      "f1": 3,
+      "f2": 0,
+      "fails": 0,
+      "first": null,
+      "iota": "id",
+      "label": "rand_neq_28",
+      "ok": true,
+      "pred": true
+    },
+    {
+      "f1": 3,
+      "f2": 0,
+      "fails": 384,
+      "first": [
+        21
+      ],
+      "iota": "comp_dir",
+      "label": "rand_neq_28",
+      "ok": false,
+      "pred": true
+    },
+    {
+      "f1": 3,
+      "f2": 0,
+      "fails": 0,
+      "first": null,
+      "iota": "transp",
+      "label": "rand_neq_28",
+      "ok": true,
+      "pred": true
+    },
+    {
+      "f1": 3,
+      "f2": 0,
+      "fails": 384,
+      "first": [
+        21
+      ],
+      "iota": "comp_transp",
+      "label": "rand_neq_28",
+      "ok": false,
+      "pred": true
+    },
+    {
+      "f1": 0,
+      "f2": 1,
+      "fails": 0,
+      "first": null,
+      "iota": "id",
+      "label": "rand_neq_29",
+      "ok": true,
+      "pred": true
+    },
+    {
+      "f1": 0,
+      "f2": 1,
+      "fails": 0,
+      "first": null,
+      "iota": "comp_dir",
+      "label": "rand_neq_29",
+      "ok": true,
+      "pred": true
+    },
+    {
+      "f1": 0,
+      "f2": 1,
+      "fails": 0,
+      "first": null,
+      "iota": "transp",
+      "label": "rand_neq_29",
+      "ok": true,
+      "pred": true
+    },
+    {
+      "f1": 0,
+      "f2": 1,
+      "fails": 0,
+      "first": null,
+      "iota": "comp_transp",
+      "label": "rand_neq_29",
+      "ok": true,
+      "pred": true
+    },
+    {
+      "f1": 1,
+      "f2": 2,
+      "fails": 0,
+      "first": null,
+      "iota": "id",
+      "label": "rand_neq_30",
+      "ok": true,
+      "pred": true
+    },
+    {
+      "f1": 1,
+      "f2": 2,
+      "fails": 384,
+      "first": [
+        21
+      ],
+      "iota": "comp_dir",
+      "label": "rand_neq_30",
+      "ok": false,
+      "pred": true
+    },
+    {
+      "f1": 1,
+      "f2": 2,
+      "fails": 0,
+      "first": null,
+      "iota": "transp",
+      "label": "rand_neq_30",
+      "ok": true,
+      "pred": true
+    },
+    {
+      "f1": 1,
+      "f2": 2,
+      "fails": 384,
+      "first": [
+        21
+      ],
+      "iota": "comp_transp",
+      "label": "rand_neq_30",
+      "ok": false,
+      "pred": true
+    },
+    {
+      "f1": 0,
+      "f2": 1,
+      "fails": 0,
+      "first": null,
+      "iota": "id",
+      "label": "rand_neq_31",
+      "ok": true,
+      "pred": true
+    },
+    {
+      "f1": 0,
+      "f2": 1,
+      "fails": 0,
+      "first": null,
+      "iota": "comp_dir",
+      "label": "rand_neq_31",
+      "ok": true,
+      "pred": true
+    },
+    {
+      "f1": 0,
+      "f2": 1,
+      "fails": 0,
+      "first": null,
+      "iota": "transp",
+      "label": "rand_neq_31",
+      "ok": true,
+      "pred": true
+    },
+    {
+      "f1": 0,
+      "f2": 1,
+      "fails": 0,
+      "first": null,
+      "iota": "comp_transp",
+      "label": "rand_neq_31",
+      "ok": true,
+      "pred": true
+    },
+    {
+      "f1": 3,
+      "f2": 1,
+      "fails": 0,
+      "first": null,
+      "iota": "id",
+      "label": "rand_neq_32",
+      "ok": true,
+      "pred": true
+    },
+    {
+      "f1": 3,
+      "f2": 1,
+      "fails": 0,
+      "first": null,
+      "iota": "comp_dir",
+      "label": "rand_neq_32",
+      "ok": true,
+      "pred": true
+    },
+    {
+      "f1": 3,
+      "f2": 1,
+      "fails": 0,
+      "first": null,
+      "iota": "transp",
+      "label": "rand_neq_32",
+      "ok": true,
+      "pred": true
+    },
+    {
+      "f1": 3,
+      "f2": 1,
+      "fails": 0,
+      "first": null,
+      "iota": "comp_transp",
+      "label": "rand_neq_32",
+      "ok": true,
+      "pred": true
+    },
+    {
+      "f1": 2,
+      "f2": 0,
+      "fails": 0,
+      "first": null,
+      "iota": "id",
+      "label": "rand_neq_33",
+      "ok": true,
+      "pred": true
+    },
+    {
+      "f1": 2,
+      "f2": 0,
+      "fails": 0,
+      "first": null,
+      "iota": "comp_dir",
+      "label": "rand_neq_33",
+      "ok": true,
+      "pred": true
+    },
+    {
+      "f1": 2,
+      "f2": 0,
+      "fails": 0,
+      "first": null,
+      "iota": "transp",
+      "label": "rand_neq_33",
+      "ok": true,
+      "pred": true
+    },
+    {
+      "f1": 2,
+      "f2": 0,
+      "fails": 0,
+      "first": null,
+      "iota": "comp_transp",
+      "label": "rand_neq_33",
+      "ok": true,
+      "pred": true
+    },
+    {
+      "f1": 0,
+      "f2": 2,
+      "fails": 0,
+      "first": null,
+      "iota": "id",
+      "label": "rand_neq_34",
+      "ok": true,
+      "pred": true
+    },
+    {
+      "f1": 0,
+      "f2": 2,
+      "fails": 0,
+      "first": null,
+      "iota": "comp_dir",
+      "label": "rand_neq_34",
+      "ok": true,
+      "pred": true
+    },
+    {
+      "f1": 0,
+      "f2": 2,
+      "fails": 0,
+      "first": null,
+      "iota": "transp",
+      "label": "rand_neq_34",
+      "ok": true,
+      "pred": true
+    },
+    {
+      "f1": 0,
+      "f2": 2,
+      "fails": 0,
+      "first": null,
+      "iota": "comp_transp",
+      "label": "rand_neq_34",
+      "ok": true,
+      "pred": true
+    },
+    {
+      "f1": 0,
+      "f2": 2,
+      "fails": 0,
+      "first": null,
+      "iota": "id",
+      "label": "rand_neq_35",
+      "ok": true,
+      "pred": true
+    },
+    {
+      "f1": 0,
+      "f2": 2,
+      "fails": 384,
+      "first": [
+        21
+      ],
+      "iota": "comp_dir",
+      "label": "rand_neq_35",
+      "ok": false,
+      "pred": true
+    },
+    {
+      "f1": 0,
+      "f2": 2,
+      "fails": 0,
+      "first": null,
+      "iota": "transp",
+      "label": "rand_neq_35",
+      "ok": true,
+      "pred": true
+    },
+    {
+      "f1": 0,
+      "f2": 2,
+      "fails": 384,
+      "first": [
+        21
+      ],
+      "iota": "comp_transp",
+      "label": "rand_neq_35",
+      "ok": false,
+      "pred": true
+    },
+    {
+      "f1": 2,
+      "f2": 3,
+      "fails": 0,
+      "first": null,
+      "iota": "id",
+      "label": "rand_neq_36",
+      "ok": true,
+      "pred": true
+    },
+    {
+      "f1": 2,
+      "f2": 3,
+      "fails": 384,
+      "first": [
+        21
+      ],
+      "iota": "comp_dir",
+      "label": "rand_neq_36",
+      "ok": false,
+      "pred": true
+    },
+    {
+      "f1": 2,
+      "f2": 3,
+      "fails": 0,
+      "first": null,
+      "iota": "transp",
+      "label": "rand_neq_36",
+      "ok": true,
+      "pred": true
+    },
+    {
+      "f1": 2,
+      "f2": 3,
+      "fails": 384,
+      "first": [
+        21
+      ],
+      "iota": "comp_transp",
+      "label": "rand_neq_36",
+      "ok": false,
+      "pred": true
+    },
+    {
+      "f1": 1,
+      "f2": 2,
+      "fails": 0,
+      "first": null,
+      "iota": "id",
+      "label": "rand_neq_37",
+      "ok": true,
+      "pred": true
+    },
+    {
+      "f1": 1,
+      "f2": 2,
+      "fails": 0,
+      "first": null,
+      "iota": "comp_dir",
+      "label": "rand_neq_37",
+      "ok": true,
+      "pred": true
+    },
+    {
+      "f1": 1,
+      "f2": 2,
+      "fails": 0,
+      "first": null,
+      "iota": "transp",
+      "label": "rand_neq_37",
+      "ok": true,
+      "pred": true
+    },
+    {
+      "f1": 1,
+      "f2": 2,
+      "fails": 0,
+      "first": null,
+      "iota": "comp_transp",
+      "label": "rand_neq_37",
+      "ok": true,
+      "pred": true
+    },
+    {
+      "f1": 0,
+      "f2": 3,
+      "fails": 0,
+      "first": null,
+      "iota": "id",
+      "label": "rand_neq_38",
+      "ok": true,
+      "pred": true
+    },
+    {
+      "f1": 0,
+      "f2": 3,
+      "fails": 384,
+      "first": [
+        21
+      ],
+      "iota": "comp_dir",
+      "label": "rand_neq_38",
+      "ok": false,
+      "pred": true
+    },
+    {
+      "f1": 0,
+      "f2": 3,
+      "fails": 0,
+      "first": null,
+      "iota": "transp",
+      "label": "rand_neq_38",
+      "ok": true,
+      "pred": true
+    },
+    {
+      "f1": 0,
+      "f2": 3,
+      "fails": 384,
+      "first": [
+        21
+      ],
+      "iota": "comp_transp",
+      "label": "rand_neq_38",
+      "ok": false,
+      "pred": true
+    },
+    {
+      "f1": 1,
+      "f2": 0,
+      "fails": 0,
+      "first": null,
+      "iota": "id",
+      "label": "rand_neq_39",
+      "ok": true,
+      "pred": true
+    },
+    {
+      "f1": 1,
+      "f2": 0,
+      "fails": 0,
+      "first": null,
+      "iota": "comp_dir",
+      "label": "rand_neq_39",
+      "ok": true,
+      "pred": true
+    },
+    {
+      "f1": 1,
+      "f2": 0,
+      "fails": 0,
+      "first": null,
+      "iota": "transp",
+      "label": "rand_neq_39",
+      "ok": true,
+      "pred": true
+    },
+    {
+      "f1": 1,
+      "f2": 0,
+      "fails": 0,
+      "first": null,
+      "iota": "comp_transp",
+      "label": "rand_neq_39",
+      "ok": true,
+      "pred": true
+    },
+    {
+      "f1": 3,
+      "f2": 0,
+      "fails": 0,
+      "first": null,
+      "iota": "id",
+      "label": "rand_neq_40",
+      "ok": true,
+      "pred": true
+    },
+    {
+      "f1": 3,
+      "f2": 0,
+      "fails": 0,
+      "first": null,
+      "iota": "comp_dir",
+      "label": "rand_neq_40",
+      "ok": true,
+      "pred": true
+    },
+    {
+      "f1": 3,
+      "f2": 0,
+      "fails": 0,
+      "first": null,
+      "iota": "transp",
+      "label": "rand_neq_40",
+      "ok": true,
+      "pred": true
+    },
+    {
+      "f1": 3,
+      "f2": 0,
+      "fails": 0,
+      "first": null,
+      "iota": "comp_transp",
+      "label": "rand_neq_40",
+      "ok": true,
+      "pred": true
+    },
+    {
+      "f1": 1,
+      "f2": 2,
+      "fails": 0,
+      "first": null,
+      "iota": "id",
+      "label": "rand_neq_41",
+      "ok": true,
+      "pred": true
+    },
+    {
+      "f1": 1,
+      "f2": 2,
+      "fails": 0,
+      "first": null,
+      "iota": "comp_dir",
+      "label": "rand_neq_41",
+      "ok": true,
+      "pred": true
+    },
+    {
+      "f1": 1,
+      "f2": 2,
+      "fails": 0,
+      "first": null,
+      "iota": "transp",
+      "label": "rand_neq_41",
+      "ok": true,
+      "pred": true
+    },
+    {
+      "f1": 1,
+      "f2": 2,
+      "fails": 0,
+      "first": null,
+      "iota": "comp_transp",
+      "label": "rand_neq_41",
+      "ok": true,
+      "pred": true
+    },
+    {
+      "f1": 1,
+      "f2": 3,
+      "fails": 0,
+      "first": null,
+      "iota": "id",
+      "label": "rand_neq_42",
+      "ok": true,
+      "pred": true
+    },
+    {
+      "f1": 1,
+      "f2": 3,
+      "fails": 0,
+      "first": null,
+      "iota": "comp_dir",
+      "label": "rand_neq_42",
+      "ok": true,
+      "pred": true
+    },
+    {
+      "f1": 1,
+      "f2": 3,
+      "fails": 0,
+      "first": null,
+      "iota": "transp",
+      "label": "rand_neq_42",
+      "ok": true,
+      "pred": true
+    },
+    {
+      "f1": 1,
+      "f2": 3,
+      "fails": 0,
+      "first": null,
+      "iota": "comp_transp",
+      "label": "rand_neq_42",
+      "ok": true,
+      "pred": true
+    },
+    {
+      "f1": 0,
+      "f2": 3,
+      "fails": 0,
+      "first": null,
+      "iota": "id",
+      "label": "rand_neq_43",
+      "ok": true,
+      "pred": true
+    },
+    {
+      "f1": 0,
+      "f2": 3,
+      "fails": 0,
+      "first": null,
+      "iota": "comp_dir",
+      "label": "rand_neq_43",
+      "ok": true,
+      "pred": true
+    },
+    {
+      "f1": 0,
+      "f2": 3,
+      "fails": 0,
+      "first": null,
+      "iota": "transp",
+      "label": "rand_neq_43",
+      "ok": true,
+      "pred": true
+    },
+    {
+      "f1": 0,
+      "f2": 3,
+      "fails": 0,
+      "first": null,
+      "iota": "comp_transp",
+      "label": "rand_neq_43",
+      "ok": true,
+      "pred": true
+    },
+    {
+      "f1": 3,
+      "f2": 2,
+      "fails": 0,
+      "first": null,
+      "iota": "id",
+      "label": "rand_neq_44",
+      "ok": true,
+      "pred": true
+    },
+    {
+      "f1": 3,
+      "f2": 2,
+      "fails": 384,
+      "first": [
+        21
+      ],
+      "iota": "comp_dir",
+      "label": "rand_neq_44",
+      "ok": false,
+      "pred": true
+    },
+    {
+      "f1": 3,
+      "f2": 2,
+      "fails": 0,
+      "first": null,
+      "iota": "transp",
+      "label": "rand_neq_44",
+      "ok": true,
+      "pred": true
+    },
+    {
+      "f1": 3,
+      "f2": 2,
+      "fails": 384,
+      "first": [
+        21
+      ],
+      "iota": "comp_transp",
+      "label": "rand_neq_44",
+      "ok": false,
+      "pred": true
+    },
+    {
+      "f1": 0,
+      "f2": 2,
+      "fails": 0,
+      "first": null,
+      "iota": "id",
+      "label": "rand_neq_45",
+      "ok": true,
+      "pred": true
+    },
+    {
+      "f1": 0,
+      "f2": 2,
+      "fails": 0,
+      "first": null,
+      "iota": "comp_dir",
+      "label": "rand_neq_45",
+      "ok": true,
+      "pred": true
+    },
+    {
+      "f1": 0,
+      "f2": 2,
+      "fails": 0,
+      "first": null,
+      "iota": "transp",
+      "label": "rand_neq_45",
+      "ok": true,
+      "pred": true
+    },
+    {
+      "f1": 0,
+      "f2": 2,
+      "fails": 0,
+      "first": null,
+      "iota": "comp_transp",
+      "label": "rand_neq_45",
+      "ok": true,
+      "pred": true
+    },
+    {
+      "f1": 0,
+      "f2": 1,
+      "fails": 0,
+      "first": null,
+      "iota": "id",
+      "label": "rand_neq_46",
+      "ok": true,
+      "pred": true
+    },
+    {
+      "f1": 0,
+      "f2": 1,
+      "fails": 384,
+      "first": [
+        21
+      ],
+      "iota": "comp_dir",
+      "label": "rand_neq_46",
+      "ok": false,
+      "pred": true
+    },
+    {
+      "f1": 0,
+      "f2": 1,
+      "fails": 0,
+      "first": null,
+      "iota": "transp",
+      "label": "rand_neq_46",
+      "ok": true,
+      "pred": true
+    },
+    {
+      "f1": 0,
+      "f2": 1,
+      "fails": 384,
+      "first": [
+        21
+      ],
+      "iota": "comp_transp",
+      "label": "rand_neq_46",
+      "ok": false,
+      "pred": true
+    },
+    {
+      "f1": 0,
+      "f2": 2,
+      "fails": 0,
+      "first": null,
+      "iota": "id",
+      "label": "rand_neq_47",
+      "ok": true,
+      "pred": true
+    },
+    {
+      "f1": 0,
+      "f2": 2,
+      "fails": 0,
+      "first": null,
+      "iota": "comp_dir",
+      "label": "rand_neq_47",
+      "ok": true,
+      "pred": true
+    },
+    {
+      "f1": 0,
+      "f2": 2,
+      "fails": 0,
+      "first": null,
+      "iota": "transp",
+      "label": "rand_neq_47",
+      "ok": true,
+      "pred": true
+    },
+    {
+      "f1": 0,
+      "f2": 2,
+      "fails": 0,
+      "first": null,
+      "iota": "comp_transp",
+      "label": "rand_neq_47",
+      "ok": true,
+      "pred": true
+    },
+    {
+      "f1": 0,
+      "f2": 1,
+      "fails": 0,
+      "first": null,
+      "iota": "id",
+      "label": "rand_neq_48",
+      "ok": true,
+      "pred": true
+    },
+    {
+      "f1": 0,
+      "f2": 1,
+      "fails": 384,
+      "first": [
+        21
+      ],
+      "iota": "comp_dir",
+      "label": "rand_neq_48",
+      "ok": false,
+      "pred": true
+    },
+    {
+      "f1": 0,
+      "f2": 1,
+      "fails": 0,
+      "first": null,
+      "iota": "transp",
+      "label": "rand_neq_48",
+      "ok": true,
+      "pred": true
+    },
+    {
+      "f1": 0,
+      "f2": 1,
+      "fails": 384,
+      "first": [
+        21
+      ],
+      "iota": "comp_transp",
+      "label": "rand_neq_48",
+      "ok": false,
+      "pred": true
+    },
+    {
+      "f1": 1,
+      "f2": 3,
+      "fails": 0,
+      "first": null,
+      "iota": "id",
+      "label": "rand_neq_49",
+      "ok": true,
+      "pred": true
+    },
+    {
+      "f1": 1,
+      "f2": 3,
+      "fails": 0,
+      "first": null,
+      "iota": "comp_dir",
+      "label": "rand_neq_49",
+      "ok": true,
+      "pred": true
+    },
+    {
+      "f1": 1,
+      "f2": 3,
+      "fails": 0,
+      "first": null,
+      "iota": "transp",
+      "label": "rand_neq_49",
+      "ok": true,
+      "pred": true
+    },
+    {
+      "f1": 1,
+      "f2": 3,
+      "fails": 0,
+      "first": null,
+      "iota": "comp_transp",
+      "label": "rand_neq_49",
+      "ok": true,
+      "pred": true
+    },
+    {
+      "f1": 0,
+      "f2": 3,
+      "fails": 0,
+      "first": null,
+      "iota": "id",
+      "label": "rand_neq_50",
+      "ok": true,
+      "pred": true
+    },
+    {
+      "f1": 0,
+      "f2": 3,
+      "fails": 0,
+      "first": null,
+      "iota": "comp_dir",
+      "label": "rand_neq_50",
+      "ok": true,
+      "pred": true
+    },
+    {
+      "f1": 0,
+      "f2": 3,
+      "fails": 0,
+      "first": null,
+      "iota": "transp",
+      "label": "rand_neq_50",
+      "ok": true,
+      "pred": true
+    },
+    {
+      "f1": 0,
+      "f2": 3,
+      "fails": 0,
+      "first": null,
+      "iota": "comp_transp",
+      "label": "rand_neq_50",
+      "ok": true,
+      "pred": true
+    },
+    {
+      "f1": 3,
+      "f2": 2,
+      "fails": 0,
+      "first": null,
+      "iota": "id",
+      "label": "rand_neq_51",
+      "ok": true,
+      "pred": true
+    },
+    {
+      "f1": 3,
+      "f2": 2,
+      "fails": 0,
+      "first": null,
+      "iota": "comp_dir",
+      "label": "rand_neq_51",
+      "ok": true,
+      "pred": true
+    },
+    {
+      "f1": 3,
+      "f2": 2,
+      "fails": 0,
+      "first": null,
+      "iota": "transp",
+      "label": "rand_neq_51",
+      "ok": true,
+      "pred": true
+    },
+    {
+      "f1": 3,
+      "f2": 2,
+      "fails": 0,
+      "first": null,
+      "iota": "comp_transp",
+      "label": "rand_neq_51",
+      "ok": true,
+      "pred": true
+    },
+    {
+      "f1": 2,
+      "f2": 0,
+      "fails": 0,
+      "first": null,
+      "iota": "id",
+      "label": "rand_neq_52",
+      "ok": true,
+      "pred": true
+    },
+    {
+      "f1": 2,
+      "f2": 0,
+      "fails": 384,
+      "first": [
+        21
+      ],
+      "iota": "comp_dir",
+      "label": "rand_neq_52",
+      "ok": false,
+      "pred": true
+    },
+    {
+      "f1": 2,
+      "f2": 0,
+      "fails": 0,
+      "first": null,
+      "iota": "transp",
+      "label": "rand_neq_52",
+      "ok": true,
+      "pred": true
+    },
+    {
+      "f1": 2,
+      "f2": 0,
+      "fails": 384,
+      "first": [
+        21
+      ],
+      "iota": "comp_transp",
+      "label": "rand_neq_52",
+      "ok": false,
+      "pred": true
+    },
+    {
+      "f1": 2,
+      "f2": 0,
+      "fails": 0,
+      "first": null,
+      "iota": "id",
+      "label": "rand_neq_53",
+      "ok": true,
+      "pred": true
+    },
+    {
+      "f1": 2,
+      "f2": 0,
+      "fails": 384,
+      "first": [
+        21
+      ],
+      "iota": "comp_dir",
+      "label": "rand_neq_53",
+      "ok": false,
+      "pred": true
+    },
+    {
+      "f1": 2,
+      "f2": 0,
+      "fails": 0,
+      "first": null,
+      "iota": "transp",
+      "label": "rand_neq_53",
+      "ok": true,
+      "pred": true
+    },
+    {
+      "f1": 2,
+      "f2": 0,
+      "fails": 384,
+      "first": [
+        21
+      ],
+      "iota": "comp_transp",
+      "label": "rand_neq_53",
+      "ok": false,
+      "pred": true
+    },
+    {
+      "f1": 0,
+      "f2": 3,
+      "fails": 0,
+      "first": null,
+      "iota": "id",
+      "label": "rand_neq_54",
+      "ok": true,
+      "pred": true
+    },
+    {
+      "f1": 0,
+      "f2": 3,
+      "fails": 384,
+      "first": [
+        21
+      ],
+      "iota": "comp_dir",
+      "label": "rand_neq_54",
+      "ok": false,
+      "pred": true
+    },
+    {
+      "f1": 0,
+      "f2": 3,
+      "fails": 0,
+      "first": null,
+      "iota": "transp",
+      "label": "rand_neq_54",
+      "ok": true,
+      "pred": true
+    },
+    {
+      "f1": 0,
+      "f2": 3,
+      "fails": 384,
+      "first": [
+        21
+      ],
+      "iota": "comp_transp",
+      "label": "rand_neq_54",
+      "ok": false,
+      "pred": true
+    },
+    {
+      "f1": 1,
+      "f2": 0,
+      "fails": 0,
+      "first": null,
+      "iota": "id",
+      "label": "rand_neq_55",
+      "ok": true,
+      "pred": true
+    },
+    {
+      "f1": 1,
+      "f2": 0,
+      "fails": 384,
+      "first": [
+        21
+      ],
+      "iota": "comp_dir",
+      "label": "rand_neq_55",
+      "ok": false,
+      "pred": true
+    },
+    {
+      "f1": 1,
+      "f2": 0,
+      "fails": 0,
+      "first": null,
+      "iota": "transp",
+      "label": "rand_neq_55",
+      "ok": true,
+      "pred": true
+    },
+    {
+      "f1": 1,
+      "f2": 0,
+      "fails": 384,
+      "first": [
+        21
+      ],
+      "iota": "comp_transp",
+      "label": "rand_neq_55",
+      "ok": false,
+      "pred": true
+    },
+    {
+      "f1": 1,
+      "f2": 3,
+      "fails": 0,
+      "first": null,
+      "iota": "id",
+      "label": "rand_neq_56",
+      "ok": true,
+      "pred": true
+    },
+    {
+      "f1": 1,
+      "f2": 3,
+      "fails": 0,
+      "first": null,
+      "iota": "comp_dir",
+      "label": "rand_neq_56",
+      "ok": true,
+      "pred": true
+    },
+    {
+      "f1": 1,
+      "f2": 3,
+      "fails": 0,
+      "first": null,
+      "iota": "transp",
+      "label": "rand_neq_56",
+      "ok": true,
+      "pred": true
+    },
+    {
+      "f1": 1,
+      "f2": 3,
+      "fails": 0,
+      "first": null,
+      "iota": "comp_transp",
+      "label": "rand_neq_56",
+      "ok": true,
+      "pred": true
+    },
+    {
+      "f1": 2,
+      "f2": 0,
+      "fails": 0,
+      "first": null,
+      "iota": "id",
+      "label": "rand_neq_57",
+      "ok": true,
+      "pred": true
+    },
+    {
+      "f1": 2,
+      "f2": 0,
+      "fails": 0,
+      "first": null,
+      "iota": "comp_dir",
+      "label": "rand_neq_57",
+      "ok": true,
+      "pred": true
+    },
+    {
+      "f1": 2,
+      "f2": 0,
+      "fails": 0,
+      "first": null,
+      "iota": "transp",
+      "label": "rand_neq_57",
+      "ok": true,
+      "pred": true
+    },
+    {
+      "f1": 2,
+      "f2": 0,
+      "fails": 0,
+      "first": null,
+      "iota": "comp_transp",
+      "label": "rand_neq_57",
+      "ok": true,
+      "pred": true
+    },
+    {
+      "f1": 1,
+      "f2": 2,
+      "fails": 0,
+      "first": null,
+      "iota": "id",
+      "label": "rand_neq_58",
+      "ok": true,
+      "pred": true
+    },
+    {
+      "f1": 1,
+      "f2": 2,
+      "fails": 0,
+      "first": null,
+      "iota": "comp_dir",
+      "label": "rand_neq_58",
+      "ok": true,
+      "pred": true
+    },
+    {
+      "f1": 1,
+      "f2": 2,
+      "fails": 0,
+      "first": null,
+      "iota": "transp",
+      "label": "rand_neq_58",
+      "ok": true,
+      "pred": true
+    },
+    {
+      "f1": 1,
+      "f2": 2,
+      "fails": 0,
+      "first": null,
+      "iota": "comp_transp",
+      "label": "rand_neq_58",
+      "ok": true,
+      "pred": true
+    },
+    {
+      "f1": 1,
+      "f2": 0,
+      "fails": 0,
+      "first": null,
+      "iota": "id",
+      "label": "rand_neq_59",
+      "ok": true,
+      "pred": true
+    },
+    {
+      "f1": 1,
+      "f2": 0,
+      "fails": 384,
+      "first": [
+        21
+      ],
+      "iota": "comp_dir",
+      "label": "rand_neq_59",
+      "ok": false,
+      "pred": true
+    },
+    {
+      "f1": 1,
+      "f2": 0,
+      "fails": 0,
+      "first": null,
+      "iota": "transp",
+      "label": "rand_neq_59",
+      "ok": true,
+      "pred": true
+    },
+    {
+      "f1": 1,
+      "f2": 0,
+      "fails": 384,
+      "first": [
+        21
+      ],
+      "iota": "comp_transp",
+      "label": "rand_neq_59",
+      "ok": false,
+      "pred": true
+    },
+    {
+      "f1": 2,
+      "f2": 1,
+      "fails": 0,
+      "first": null,
+      "iota": "id",
+      "label": "rand_neq_60",
+      "ok": true,
+      "pred": true
+    },
+    {
+      "f1": 2,
+      "f2": 1,
+      "fails": 0,
+      "first": null,
+      "iota": "comp_dir",
+      "label": "rand_neq_60",
+      "ok": true,
+      "pred": true
+    },
+    {
+      "f1": 2,
+      "f2": 1,
+      "fails": 0,
+      "first": null,
+      "iota": "transp",
+      "label": "rand_neq_60",
+      "ok": true,
+      "pred": true
+    },
+    {
+      "f1": 2,
+      "f2": 1,
+      "fails": 0,
+      "first": null,
+      "iota": "comp_transp",
+      "label": "rand_neq_60",
+      "ok": true,
+      "pred": true
+    },
+    {
+      "f1": 0,
+      "f2": 3,
+      "fails": 0,
+      "first": null,
+      "iota": "id",
+      "label": "rand_neq_61",
+      "ok": true,
+      "pred": true
+    },
+    {
+      "f1": 0,
+      "f2": 3,
+      "fails": 0,
+      "first": null,
+      "iota": "comp_dir",
+      "label": "rand_neq_61",
+      "ok": true,
+      "pred": true
+    },
+    {
+      "f1": 0,
+      "f2": 3,
+      "fails": 0,
+      "first": null,
+      "iota": "transp",
+      "label": "rand_neq_61",
+      "ok": true,
+      "pred": true
+    },
+    {
+      "f1": 0,
+      "f2": 3,
+      "fails": 0,
+      "first": null,
+      "iota": "comp_transp",
+      "label": "rand_neq_61",
+      "ok": true,
+      "pred": true
+    },
+    {
+      "f1": 0,
+      "f2": 3,
+      "fails": 0,
+      "first": null,
+      "iota": "id",
+      "label": "rand_neq_62",
+      "ok": true,
+      "pred": true
+    },
+    {
+      "f1": 0,
+      "f2": 3,
+      "fails": 0,
+      "first": null,
+      "iota": "comp_dir",
+      "label": "rand_neq_62",
+      "ok": true,
+      "pred": true
+    },
+    {
+      "f1": 0,
+      "f2": 3,
+      "fails": 0,
+      "first": null,
+      "iota": "transp",
+      "label": "rand_neq_62",
+      "ok": true,
+      "pred": true
+    },
+    {
+      "f1": 0,
+      "f2": 3,
+      "fails": 0,
+      "first": null,
+      "iota": "comp_transp",
+      "label": "rand_neq_62",
+      "ok": true,
+      "pred": true
+    },
+    {
+      "f1": 0,
+      "f2": 1,
+      "fails": 0,
+      "first": null,
+      "iota": "id",
+      "label": "rand_neq_63",
+      "ok": true,
+      "pred": true
+    },
+    {
+      "f1": 0,
+      "f2": 1,
+      "fails": 0,
+      "first": null,
+      "iota": "comp_dir",
+      "label": "rand_neq_63",
+      "ok": true,
+      "pred": true
+    },
+    {
+      "f1": 0,
+      "f2": 1,
+      "fails": 0,
+      "first": null,
+      "iota": "transp",
+      "label": "rand_neq_63",
+      "ok": true,
+      "pred": true
+    },
+    {
+      "f1": 0,
+      "f2": 1,
+      "fails": 0,
+      "first": null,
+      "iota": "comp_transp",
+      "label": "rand_neq_63",
+      "ok": true,
+      "pred": true
+    }
+  ],
+  "B_fails_summary": {
+    "comp_ok": 134,
+    "comp_total": 290,
+    "id_transp_ok": 290,
+    "id_transp_total": 290
+  },
+  "B_mismatch": [
+    {
+      "f1": 1,
+      "f2": 1,
+      "fails": 0,
+      "first": null,
+      "iota": "comp_dir",
+      "label": "umbral1",
+      "ok": false,
+      "pred": false
+    },
+    {
+      "f1": 1,
+      "f2": 1,
+      "fails": 0,
+      "first": null,
+      "iota": "comp_transp",
+      "label": "umbral1",
+      "ok": false,
+      "pred": false
+    },
+    {
+      "f1": 0,
+      "f2": 1,
+      "fails": 384,
+      "first": [
+        21
+      ],
+      "iota": "comp_dir",
+      "label": "umbral2",
+      "ok": false,
+      "pred": true
+    },
+    {
+      "f1": 0,
+      "f2": 1,
+      "fails": 384,
+      "first": [
+        21
+      ],
+      "iota": "comp_transp",
+      "label": "umbral2",
+      "ok": false,
+      "pred": true
+    },
+    {
+      "f1": 1,
+      "f2": 1,
+      "fails": 0,
+      "first": null,
+      "iota": "comp_dir",
+      "label": "trunc1",
+      "ok": false,
+      "pred": false
+    },
+    {
+      "f1": 1,
+      "f2": 1,
+      "fails": 0,
+      "first": null,
+      "iota": "comp_transp",
+      "label": "trunc1",
+      "ok": false,
+      "pred": false
+    },
+    {
+      "f1": 1,
+      "f2": 1,
+      "fails": 0,
+      "first": null,
+      "iota": "comp_dir",
+      "label": "raiz",
+      "ok": false,
+      "pred": false
+    },
+    {
+      "f1": 1,
+      "f2": 1,
+      "fails": 0,
+      "first": null,
+      "iota": "comp_transp",
+      "label": "raiz",
+      "ok": false,
+      "pred": false
+    },
+    {
+      "f1": 2,
+      "f2": 2,
+      "fails": 0,
+      "first": null,
+      "iota": "comp_dir",
+      "label": "rand_eq_0",
+      "ok": false,
+      "pred": false
+    },
+    {
+      "f1": 2,
+      "f2": 2,
+      "fails": 0,
+      "first": null,
+      "iota": "comp_transp",
+      "label": "rand_eq_0",
+      "ok": false,
+      "pred": false
+    },
+    {
+      "f1": 2,
+      "f2": 2,
+      "fails": 0,
+      "first": null,
+      "iota": "comp_dir",
+      "label": "rand_eq_1",
+      "ok": false,
+      "pred": false
+    },
+    {
+      "f1": 2,
+      "f2": 2,
+      "fails": 0,
+      "first": null,
+      "iota": "comp_transp",
+      "label": "rand_eq_1",
+      "ok": false,
+      "pred": false
+    },
+    {
+      "f1": 3,
+      "f2": 3,
+      "fails": 0,
+      "first": null,
+      "iota": "comp_dir",
+      "label": "rand_eq_2",
+      "ok": false,
+      "pred": false
+    },
+    {
+      "f1": 3,
+      "f2": 3,
+      "fails": 0,
+      "first": null,
+      "iota": "comp_transp",
+      "label": "rand_eq_2",
+      "ok": false,
+      "pred": false
+    },
+    {
+      "f1": 2,
+      "f2": 2,
+      "fails": 0,
+      "first": null,
+      "iota": "comp_dir",
+      "label": "rand_eq_3",
+      "ok": false,
+      "pred": false
+    },
+    {
+      "f1": 2,
+      "f2": 2,
+      "fails": 0,
+      "first": null,
+      "iota": "comp_transp",
+      "label": "rand_eq_3",
+      "ok": false,
+      "pred": false
+    },
+    {
+      "f1": 2,
+      "f2": 2,
+      "fails": 0,
+      "first": null,
+      "iota": "comp_dir",
+      "label": "rand_eq_4",
+      "ok": false,
+      "pred": false
+    },
+    {
+      "f1": 2,
+      "f2": 2,
+      "fails": 0,
+      "first": null,
+      "iota": "comp_transp",
+      "label": "rand_eq_4",
+      "ok": false,
+      "pred": false
+    },
+    {
+      "f1": 3,
+      "f2": 3,
+      "fails": 0,
+      "first": null,
+      "iota": "comp_dir",
+      "label": "rand_eq_5",
+      "ok": false,
+      "pred": false
+    },
+    {
+      "f1": 3,
+      "f2": 3,
+      "fails": 0,
+      "first": null,
+      "iota": "comp_transp",
+      "label": "rand_eq_5",
+      "ok": false,
+      "pred": false
+    },
+    {
+      "f1": 0,
+      "f2": 0,
+      "fails": 0,
+      "first": null,
+      "iota": "comp_dir",
+      "label": "rand_eq_6",
+      "ok": false,
+      "pred": false
+    },
+    {
+      "f1": 0,
+      "f2": 0,
+      "fails": 0,
+      "first": null,
+      "iota": "comp_transp",
+      "label": "rand_eq_6",
+      "ok": false,
+      "pred": false
+    },
+    {
+      "f1": 3,
+      "f2": 3,
+      "fails": 0,
+      "first": null,
+      "iota": "comp_dir",
+      "label": "rand_eq_7",
+      "ok": false,
+      "pred": false
+    },
+    {
+      "f1": 3,
+      "f2": 3,
+      "fails": 0,
+      "first": null,
+      "iota": "comp_transp",
+      "label": "rand_eq_7",
+      "ok": false,
+      "pred": false
+    },
+    {
+      "f1": 3,
+      "f2": 3,
+      "fails": 0,
+      "first": null,
+      "iota": "comp_dir",
+      "label": "rand_eq_8",
+      "ok": false,
+      "pred": false
+    },
+    {
+      "f1": 3,
+      "f2": 3,
+      "fails": 0,
+      "first": null,
+      "iota": "comp_transp",
+      "label": "rand_eq_8",
+      "ok": false,
+      "pred": false
+    },
+    {
+      "f1": 2,
+      "f2": 2,
+      "fails": 0,
+      "first": null,
+      "iota": "comp_dir",
+      "label": "rand_eq_9",
+      "ok": false,
+      "pred": false
+    },
+    {
+      "f1": 2,
+      "f2": 2,
+      "fails": 0,
+      "first": null,
+      "iota": "comp_transp",
+      "label": "rand_eq_9",
+      "ok": false,
+      "pred": false
+    },
+    {
+      "f1": 1,
+      "f2": 1,
+      "fails": 0,
+      "first": null,
+      "iota": "comp_dir",
+      "label": "rand_eq_10",
+      "ok": false,
+      "pred": false
+    },
+    {
+      "f1": 1,
+      "f2": 1,
+      "fails": 0,
+      "first": null,
+      "iota": "comp_transp",
+      "label": "rand_eq_10",
+      "ok": false,
+      "pred": false
+    },
+    {
+      "f1": 1,
+      "f2": 1,
+      "fails": 0,
+      "first": null,
+      "iota": "comp_dir",
+      "label": "rand_eq_12",
+      "ok": false,
+      "pred": false
+    },
+    {
+      "f1": 1,
+      "f2": 1,
+      "fails": 0,
+      "first": null,
+      "iota": "comp_transp",
+      "label": "rand_eq_12",
+      "ok": false,
+      "pred": false
+    },
+    {
+      "f1": 2,
+      "f2": 2,
+      "fails": 0,
+      "first": null,
+      "iota": "comp_dir",
+      "label": "rand_eq_13",
+      "ok": false,
+      "pred": false
+    },
+    {
+      "f1": 2,
+      "f2": 2,
+      "fails": 0,
+      "first": null,
+      "iota": "comp_transp",
+      "label": "rand_eq_13",
+      "ok": false,
+      "pred": false
+    },
+    {
+      "f1": 0,
+      "f2": 0,
+      "fails": 0,
+      "first": null,
+      "iota": "comp_dir",
+      "label": "rand_eq_14",
+      "ok": false,
+      "pred": false
+    },
+    {
+      "f1": 0,
+      "f2": 0,
+      "fails": 0,
+      "first": null,
+      "iota": "comp_transp",
+      "label": "rand_eq_14",
+      "ok": false,
+      "pred": false
+    },
+    {
+      "f1": 3,
+      "f2": 3,
+      "fails": 0,
+      "first": null,
+      "iota": "comp_dir",
+      "label": "rand_eq_16",
+      "ok": false,
+      "pred": false
+    },
+    {
+      "f1": 3,
+      "f2": 3,
+      "fails": 0,
+      "first": null,
+      "iota": "comp_transp",
+      "label": "rand_eq_16",
+      "ok": false,
+      "pred": false
+    },
+    {
+      "f1": 1,
+      "f2": 1,
+      "fails": 0,
+      "first": null,
+      "iota": "comp_dir",
+      "label": "rand_eq_17",
+      "ok": false,
+      "pred": false
+    },
+    {
+      "f1": 1,
+      "f2": 1,
+      "fails": 0,
+      "first": null,
+      "iota": "comp_transp",
+      "label": "rand_eq_17",
+      "ok": false,
+      "pred": false
+    },
+    {
+      "f1": 1,
+      "f2": 1,
+      "fails": 0,
+      "first": null,
+      "iota": "comp_dir",
+      "label": "rand_eq_18",
+      "ok": false,
+      "pred": false
+    },
+    {
+      "f1": 1,
+      "f2": 1,
+      "fails": 0,
+      "first": null,
+      "iota": "comp_transp",
+      "label": "rand_eq_18",
+      "ok": false,
+      "pred": false
+    },
+    {
+      "f1": 3,
+      "f2": 3,
+      "fails": 0,
+      "first": null,
+      "iota": "comp_dir",
+      "label": "rand_eq_19",
+      "ok": false,
+      "pred": false
+    },
+    {
+      "f1": 3,
+      "f2": 3,
+      "fails": 0,
+      "first": null,
+      "iota": "comp_transp",
+      "label": "rand_eq_19",
+      "ok": false,
+      "pred": false
+    },
+    {
+      "f1": 0,
+      "f2": 0,
+      "fails": 0,
+      "first": null,
+      "iota": "comp_dir",
+      "label": "rand_eq_20",
+      "ok": false,
+      "pred": false
+    },
+    {
+      "f1": 0,
+      "f2": 0,
+      "fails": 0,
+      "first": null,
+      "iota": "comp_transp",
+      "label": "rand_eq_20",
+      "ok": false,
+      "pred": false
+    },
+    {
+      "f1": 1,
+      "f2": 1,
+      "fails": 0,
+      "first": null,
+      "iota": "comp_dir",
+      "label": "rand_eq_21",
+      "ok": false,
+      "pred": false
+    },
+    {
+      "f1": 1,
+      "f2": 1,
+      "fails": 0,
+      "first": null,
+      "iota": "comp_transp",
+      "label": "rand_eq_21",
+      "ok": false,
+      "pred": false
+    },
+    {
+      "f1": 0,
+      "f2": 0,
+      "fails": 0,
+      "first": null,
+      "iota": "comp_dir",
+      "label": "rand_eq_23",
+      "ok": false,
+      "pred": false
+    },
+    {
+      "f1": 0,
+      "f2": 0,
+      "fails": 0,
+      "first": null,
+      "iota": "comp_transp",
+      "label": "rand_eq_23",
+      "ok": false,
+      "pred": false
+    },
+    {
+      "f1": 3,
+      "f2": 3,
+      "fails": 0,
+      "first": null,
+      "iota": "comp_dir",
+      "label": "rand_eq_24",
+      "ok": false,
+      "pred": false
+    },
+    {
+      "f1": 3,
+      "f2": 3,
+      "fails": 0,
+      "first": null,
+      "iota": "comp_transp",
+      "label": "rand_eq_24",
+      "ok": false,
+      "pred": false
+    },
+    {
+      "f1": 0,
+      "f2": 0,
+      "fails": 0,
+      "first": null,
+      "iota": "comp_dir",
+      "label": "rand_eq_25",
+      "ok": false,
+      "pred": false
+    },
+    {
+      "f1": 0,
+      "f2": 0,
+      "fails": 0,
+      "first": null,
+      "iota": "comp_transp",
+      "label": "rand_eq_25",
+      "ok": false,
+      "pred": false
+    },
+    {
+      "f1": 1,
+      "f2": 1,
+      "fails": 0,
+      "first": null,
+      "iota": "comp_dir",
+      "label": "rand_eq_26",
+      "ok": false,
+      "pred": false
+    },
+    {
+      "f1": 1,
+      "f2": 1,
+      "fails": 0,
+      "first": null,
+      "iota": "comp_transp",
+      "label": "rand_eq_26",
+      "ok": false,
+      "pred": false
+    },
+    {
+      "f1": 3,
+      "f2": 3,
+      "fails": 0,
+      "first": null,
+      "iota": "comp_dir",
+      "label": "rand_eq_27",
+      "ok": false,
+      "pred": false
+    },
+    {
+      "f1": 3,
+      "f2": 3,
+      "fails": 0,
+      "first": null,
+      "iota": "comp_transp",
+      "label": "rand_eq_27",
+      "ok": false,
+      "pred": false
+    },
+    {
+      "f1": 0,
+      "f2": 0,
+      "fails": 0,
+      "first": null,
+      "iota": "comp_dir",
+      "label": "rand_eq_28",
+      "ok": false,
+      "pred": false
+    },
+    {
+      "f1": 0,
+      "f2": 0,
+      "fails": 0,
+      "first": null,
+      "iota": "comp_transp",
+      "label": "rand_eq_28",
+      "ok": false,
+      "pred": false
+    },
+    {
+      "f1": 0,
+      "f2": 0,
+      "fails": 0,
+      "first": null,
+      "iota": "comp_dir",
+      "label": "rand_eq_29",
+      "ok": false,
+      "pred": false
+    },
+    {
+      "f1": 0,
+      "f2": 0,
+      "fails": 0,
+      "first": null,
+      "iota": "comp_transp",
+      "label": "rand_eq_29",
+      "ok": false,
+      "pred": false
+    },
+    {
+      "f1": 3,
+      "f2": 3,
+      "fails": 0,
+      "first": null,
+      "iota": "comp_dir",
+      "label": "rand_eq_32",
+      "ok": false,
+      "pred": false
+    },
+    {
+      "f1": 3,
+      "f2": 3,
+      "fails": 0,
+      "first": null,
+      "iota": "comp_transp",
+      "label": "rand_eq_32",
+      "ok": false,
+      "pred": false
+    },
+    {
+      "f1": 1,
+      "f2": 1,
+      "fails": 0,
+      "first": null,
+      "iota": "comp_dir",
+      "label": "rand_eq_33",
+      "ok": false,
+      "pred": false
+    },
+    {
+      "f1": 1,
+      "f2": 1,
+      "fails": 0,
+      "first": null,
+      "iota": "comp_transp",
+      "label": "rand_eq_33",
+      "ok": false,
+      "pred": false
+    },
+    {
+      "f1": 0,
+      "f2": 0,
+      "fails": 0,
+      "first": null,
+      "iota": "comp_dir",
+      "label": "rand_eq_34",
+      "ok": false,
+      "pred": false
+    },
+    {
+      "f1": 0,
+      "f2": 0,
+      "fails": 0,
+      "first": null,
+      "iota": "comp_transp",
+      "label": "rand_eq_34",
+      "ok": false,
+      "pred": false
+    },
+    {
+      "f1": 1,
+      "f2": 1,
+      "fails": 0,
+      "first": null,
+      "iota": "comp_dir",
+      "label": "rand_eq_35",
+      "ok": false,
+      "pred": false
+    },
+    {
+      "f1": 1,
+      "f2": 1,
+      "fails": 0,
+      "first": null,
+      "iota": "comp_transp",
+      "label": "rand_eq_35",
+      "ok": false,
+      "pred": false
+    },
+    {
+      "f1": 0,
+      "f2": 0,
+      "fails": 0,
+      "first": null,
+      "iota": "comp_dir",
+      "label": "rand_eq_36",
+      "ok": false,
+      "pred": false
+    },
+    {
+      "f1": 0,
+      "f2": 0,
+      "fails": 0,
+      "first": null,
+      "iota": "comp_transp",
+      "label": "rand_eq_36",
+      "ok": false,
+      "pred": false
+    },
+    {
+      "f1": 0,
+      "f2": 0,
+      "fails": 0,
+      "first": null,
+      "iota": "comp_dir",
+      "label": "rand_eq_37",
+      "ok": false,
+      "pred": false
+    },
+    {
+      "f1": 0,
+      "f2": 0,
+      "fails": 0,
+      "first": null,
+      "iota": "comp_transp",
+      "label": "rand_eq_37",
+      "ok": false,
+      "pred": false
+    },
+    {
+      "f1": 3,
+      "f2": 3,
+      "fails": 0,
+      "first": null,
+      "iota": "comp_dir",
+      "label": "rand_eq_38",
+      "ok": false,
+      "pred": false
+    },
+    {
+      "f1": 3,
+      "f2": 3,
+      "fails": 0,
+      "first": null,
+      "iota": "comp_transp",
+      "label": "rand_eq_38",
+      "ok": false,
+      "pred": false
+    },
+    {
+      "f1": 0,
+      "f2": 0,
+      "fails": 0,
+      "first": null,
+      "iota": "comp_dir",
+      "label": "rand_eq_39",
+      "ok": false,
+      "pred": false
+    },
+    {
+      "f1": 0,
+      "f2": 0,
+      "fails": 0,
+      "first": null,
+      "iota": "comp_transp",
+      "label": "rand_eq_39",
+      "ok": false,
+      "pred": false
+    },
+    {
+      "f1": 3,
+      "f2": 3,
+      "fails": 0,
+      "first": null,
+      "iota": "comp_dir",
+      "label": "rand_eq_40",
+      "ok": false,
+      "pred": false
+    },
+    {
+      "f1": 3,
+      "f2": 3,
+      "fails": 0,
+      "first": null,
+      "iota": "comp_transp",
+      "label": "rand_eq_40",
+      "ok": false,
+      "pred": false
+    },
+    {
+      "f1": 1,
+      "f2": 1,
+      "fails": 0,
+      "first": null,
+      "iota": "comp_dir",
+      "label": "rand_eq_42",
+      "ok": false,
+      "pred": false
+    },
+    {
+      "f1": 1,
+      "f2": 1,
+      "fails": 0,
+      "first": null,
+      "iota": "comp_transp",
+      "label": "rand_eq_42",
+      "ok": false,
+      "pred": false
+    },
+    {
+      "f1": 1,
+      "f2": 1,
+      "fails": 0,
+      "first": null,
+      "iota": "comp_dir",
+      "label": "rand_eq_43",
+      "ok": false,
+      "pred": false
+    },
+    {
+      "f1": 1,
+      "f2": 1,
+      "fails": 0,
+      "first": null,
+      "iota": "comp_transp",
+      "label": "rand_eq_43",
+      "ok": false,
+      "pred": false
+    },
+    {
+      "f1": 1,
+      "f2": 1,
+      "fails": 0,
+      "first": null,
+      "iota": "comp_dir",
+      "label": "rand_eq_44",
+      "ok": false,
+      "pred": false
+    },
+    {
+      "f1": 1,
+      "f2": 1,
+      "fails": 0,
+      "first": null,
+      "iota": "comp_transp",
+      "label": "rand_eq_44",
+      "ok": false,
+      "pred": false
+    },
+    {
+      "f1": 1,
+      "f2": 1,
+      "fails": 0,
+      "first": null,
+      "iota": "comp_dir",
+      "label": "rand_eq_48",
+      "ok": false,
+      "pred": false
+    },
+    {
+      "f1": 1,
+      "f2": 1,
+      "fails": 0,
+      "first": null,
+      "iota": "comp_transp",
+      "label": "rand_eq_48",
+      "ok": false,
+      "pred": false
+    },
+    {
+      "f1": 0,
+      "f2": 0,
+      "fails": 0,
+      "first": null,
+      "iota": "comp_dir",
+      "label": "rand_eq_49",
+      "ok": false,
+      "pred": false
+    },
+    {
+      "f1": 0,
+      "f2": 0,
+      "fails": 0,
+      "first": null,
+      "iota": "comp_transp",
+      "label": "rand_eq_49",
+      "ok": false,
+      "pred": false
+    },
+    {
+      "f1": 1,
+      "f2": 1,
+      "fails": 0,
+      "first": null,
+      "iota": "comp_dir",
+      "label": "rand_eq_51",
+      "ok": false,
+      "pred": false
+    },
+    {
+      "f1": 1,
+      "f2": 1,
+      "fails": 0,
+      "first": null,
+      "iota": "comp_transp",
+      "label": "rand_eq_51",
+      "ok": false,
+      "pred": false
+    },
+    {
+      "f1": 0,
+      "f2": 0,
+      "fails": 0,
+      "first": null,
+      "iota": "comp_dir",
+      "label": "rand_eq_52",
+      "ok": false,
+      "pred": false
+    },
+    {
+      "f1": 0,
+      "f2": 0,
+      "fails": 0,
+      "first": null,
+      "iota": "comp_transp",
+      "label": "rand_eq_52",
+      "ok": false,
+      "pred": false
+    },
+    {
+      "f1": 2,
+      "f2": 2,
+      "fails": 0,
+      "first": null,
+      "iota": "comp_dir",
+      "label": "rand_eq_54",
+      "ok": false,
+      "pred": false
+    },
+    {
+      "f1": 2,
+      "f2": 2,
+      "fails": 0,
+      "first": null,
+      "iota": "comp_transp",
+      "label": "rand_eq_54",
+      "ok": false,
+      "pred": false
+    },
+    {
+      "f1": 1,
+      "f2": 1,
+      "fails": 0,
+      "first": null,
+      "iota": "comp_dir",
+      "label": "rand_eq_56",
+      "ok": false,
+      "pred": false
+    },
+    {
+      "f1": 1,
+      "f2": 1,
+      "fails": 0,
+      "first": null,
+      "iota": "comp_transp",
+      "label": "rand_eq_56",
+      "ok": false,
+      "pred": false
+    },
+    {
+      "f1": 0,
+      "f2": 0,
+      "fails": 0,
+      "first": null,
+      "iota": "comp_dir",
+      "label": "rand_eq_57",
+      "ok": false,
+      "pred": false
+    },
+    {
+      "f1": 0,
+      "f2": 0,
+      "fails": 0,
+      "first": null,
+      "iota": "comp_transp",
+      "label": "rand_eq_57",
+      "ok": false,
+      "pred": false
+    },
+    {
+      "f1": 2,
+      "f2": 2,
+      "fails": 0,
+      "first": null,
+      "iota": "comp_dir",
+      "label": "rand_eq_58",
+      "ok": false,
+      "pred": false
+    },
+    {
+      "f1": 2,
+      "f2": 2,
+      "fails": 0,
+      "first": null,
+      "iota": "comp_transp",
+      "label": "rand_eq_58",
+      "ok": false,
+      "pred": false
+    },
+    {
+      "f1": 3,
+      "f2": 3,
+      "fails": 0,
+      "first": null,
+      "iota": "comp_dir",
+      "label": "rand_eq_59",
+      "ok": false,
+      "pred": false
+    },
+    {
+      "f1": 3,
+      "f2": 3,
+      "fails": 0,
+      "first": null,
+      "iota": "comp_transp",
+      "label": "rand_eq_59",
+      "ok": false,
+      "pred": false
+    },
+    {
+      "f1": 0,
+      "f2": 0,
+      "fails": 0,
+      "first": null,
+      "iota": "comp_dir",
+      "label": "rand_eq_60",
+      "ok": false,
+      "pred": false
+    },
+    {
+      "f1": 0,
+      "f2": 0,
+      "fails": 0,
+      "first": null,
+      "iota": "comp_transp",
+      "label": "rand_eq_60",
+      "ok": false,
+      "pred": false
+    },
+    {
+      "f1": 0,
+      "f2": 0,
+      "fails": 0,
+      "first": null,
+      "iota": "comp_dir",
+      "label": "rand_eq_61",
+      "ok": false,
+      "pred": false
+    },
+    {
+      "f1": 0,
+      "f2": 0,
+      "fails": 0,
+      "first": null,
+      "iota": "comp_transp",
+      "label": "rand_eq_61",
+      "ok": false,
+      "pred": false
+    },
+    {
+      "f1": 1,
+      "f2": 1,
+      "fails": 0,
+      "first": null,
+      "iota": "comp_dir",
+      "label": "rand_eq_62",
+      "ok": false,
+      "pred": false
+    },
+    {
+      "f1": 1,
+      "f2": 1,
+      "fails": 0,
+      "first": null,
+      "iota": "comp_transp",
+      "label": "rand_eq_62",
+      "ok": false,
+      "pred": false
+    },
+    {
+      "f1": 1,
+      "f2": 1,
+      "fails": 0,
+      "first": null,
+      "iota": "comp_dir",
+      "label": "rand_eq_63",
+      "ok": false,
+      "pred": false
+    },
+    {
+      "f1": 1,
+      "f2": 1,
+      "fails": 0,
+      "first": null,
+      "iota": "comp_transp",
+      "label": "rand_eq_63",
+      "ok": false,
+      "pred": false
+    },
+    {
+      "f1": 0,
+      "f2": 1,
+      "fails": 384,
+      "first": [
+        21
+      ],
+      "iota": "comp_dir",
+      "label": "rand_neq_7",
+      "ok": false,
+      "pred": true
+    },
+    {
+      "f1": 0,
+      "f2": 1,
+      "fails": 384,
+      "first": [
+        21
+      ],
+      "iota": "comp_transp",
+      "label": "rand_neq_7",
+      "ok": false,
+      "pred": true
+    },
+    {
+      "f1": 1,
+      "f2": 0,
+      "fails": 384,
+      "first": [
+        21
+      ],
+      "iota": "comp_dir",
+      "label": "rand_neq_14",
+      "ok": false,
+      "pred": true
+    },
+    {
+      "f1": 1,
+      "f2": 0,
+      "fails": 384,
+      "first": [
+        21
+      ],
+      "iota": "comp_transp",
+      "label": "rand_neq_14",
+      "ok": false,
+      "pred": true
+    },
+    {
+      "f1": 1,
+      "f2": 3,
+      "fails": 384,
+      "first": [
+        21
+      ],
+      "iota": "comp_dir",
+      "label": "rand_neq_17",
+      "ok": false,
+      "pred": true
+    },
+    {
+      "f1": 1,
+      "f2": 3,
+      "fails": 384,
+      "first": [
+        21
+      ],
+      "iota": "comp_transp",
+      "label": "rand_neq_17",
+      "ok": false,
+      "pred": true
+    },
+    {
+      "f1": 2,
+      "f2": 3,
+      "fails": 384,
+      "first": [
+        21
+      ],
+      "iota": "comp_dir",
+      "label": "rand_neq_19",
+      "ok": false,
+      "pred": true
+    },
+    {
+      "f1": 2,
+      "f2": 3,
+      "fails": 384,
+      "first": [
+        21
+      ],
+      "iota": "comp_transp",
+      "label": "rand_neq_19",
+      "ok": false,
+      "pred": true
+    },
+    {
+      "f1": 3,
+      "f2": 1,
+      "fails": 384,
+      "first": [
+        21
+      ],
+      "iota": "comp_dir",
+      "label": "rand_neq_21",
+      "ok": false,
+      "pred": true
+    },
+    {
+      "f1": 3,
+      "f2": 1,
+      "fails": 384,
+      "first": [
+        21
+      ],
+      "iota": "comp_transp",
+      "label": "rand_neq_21",
+      "ok": false,
+      "pred": true
+    },
+    {
+      "f1": 3,
+      "f2": 1,
+      "fails": 384,
+      "first": [
+        21
+      ],
+      "iota": "comp_dir",
+      "label": "rand_neq_22",
+      "ok": false,
+      "pred": true
+    },
+    {
+      "f1": 3,
+      "f2": 1,
+      "fails": 384,
+      "first": [
+        21
+      ],
+      "iota": "comp_transp",
+      "label": "rand_neq_22",
+      "ok": false,
+      "pred": true
+    },
+    {
+      "f1": 1,
+      "f2": 0,
+      "fails": 384,
+      "first": [
+        21
+      ],
+      "iota": "comp_dir",
+      "label": "rand_neq_23",
+      "ok": false,
+      "pred": true
+    },
+    {
+      "f1": 1,
+      "f2": 0,
+      "fails": 384,
+      "first": [
+        21
+      ],
+      "iota": "comp_transp",
+      "label": "rand_neq_23",
+      "ok": false,
+      "pred": true
+    },
+    {
+      "f1": 3,
+      "f2": 0,
+      "fails": 384,
+      "first": [
+        21
+      ],
+      "iota": "comp_dir",
+      "label": "rand_neq_26",
+      "ok": false,
+      "pred": true
+    },
+    {
+      "f1": 3,
+      "f2": 0,
+      "fails": 384,
+      "first": [
+        21
+      ],
+      "iota": "comp_transp",
+      "label": "rand_neq_26",
+      "ok": false,
+      "pred": true
+    },
+    {
+      "f1": 2,
+      "f2": 3,
+      "fails": 384,
+      "first": [
+        21
+      ],
+      "iota": "comp_dir",
+      "label": "rand_neq_27",
+      "ok": false,
+      "pred": true
+    },
+    {
+      "f1": 2,
+      "f2": 3,
+      "fails": 384,
+      "first": [
+        21
+      ],
+      "iota": "comp_transp",
+      "label": "rand_neq_27",
+      "ok": false,
+      "pred": true
+    },
+    {
+      "f1": 3,
+      "f2": 0,
+      "fails": 384,
+      "first": [
+        21
+      ],
+      "iota": "comp_dir",
+      "label": "rand_neq_28",
+      "ok": false,
+      "pred": true
+    },
+    {
+      "f1": 3,
+      "f2": 0,
+      "fails": 384,
+      "first": [
+        21
+      ],
+      "iota": "comp_transp",
+      "label": "rand_neq_28",
+      "ok": false,
+      "pred": true
+    },
+    {
+      "f1": 1,
+      "f2": 2,
+      "fails": 384,
+      "first": [
+        21
+      ],
+      "iota": "comp_dir",
+      "label": "rand_neq_30",
+      "ok": false,
+      "pred": true
+    },
+    {
+      "f1": 1,
+      "f2": 2,
+      "fails": 384,
+      "first": [
+        21
+      ],
+      "iota": "comp_transp",
+      "label": "rand_neq_30",
+      "ok": false,
+      "pred": true
+    },
+    {
+      "f1": 0,
+      "f2": 2,
+      "fails": 384,
+      "first": [
+        21
+      ],
+      "iota": "comp_dir",
+      "label": "rand_neq_35",
+      "ok": false,
+      "pred": true
+    },
+    {
+      "f1": 0,
+      "f2": 2,
+      "fails": 384,
+      "first": [
+        21
+      ],
+      "iota": "comp_transp",
+      "label": "rand_neq_35",
+      "ok": false,
+      "pred": true
+    },
+    {
+      "f1": 2,
+      "f2": 3,
+      "fails": 384,
+      "first": [
+        21
+      ],
+      "iota": "comp_dir",
+      "label": "rand_neq_36",
+      "ok": false,
+      "pred": true
+    },
+    {
+      "f1": 2,
+      "f2": 3,
+      "fails": 384,
+      "first": [
+        21
+      ],
+      "iota": "comp_transp",
+      "label": "rand_neq_36",
+      "ok": false,
+      "pred": true
+    },
+    {
+      "f1": 0,
+      "f2": 3,
+      "fails": 384,
+      "first": [
+        21
+      ],
+      "iota": "comp_dir",
+      "label": "rand_neq_38",
+      "ok": false,
+      "pred": true
+    },
+    {
+      "f1": 0,
+      "f2": 3,
+      "fails": 384,
+      "first": [
+        21
+      ],
+      "iota": "comp_transp",
+      "label": "rand_neq_38",
+      "ok": false,
+      "pred": true
+    },
+    {
+      "f1": 3,
+      "f2": 2,
+      "fails": 384,
+      "first": [
+        21
+      ],
+      "iota": "comp_dir",
+      "label": "rand_neq_44",
+      "ok": false,
+      "pred": true
+    },
+    {
+      "f1": 3,
+      "f2": 2,
+      "fails": 384,
+      "first": [
+        21
+      ],
+      "iota": "comp_transp",
+      "label": "rand_neq_44",
+      "ok": false,
+      "pred": true
+    },
+    {
+      "f1": 0,
+      "f2": 1,
+      "fails": 384,
+      "first": [
+        21
+      ],
+      "iota": "comp_dir",
+      "label": "rand_neq_46",
+      "ok": false,
+      "pred": true
+    },
+    {
+      "f1": 0,
+      "f2": 1,
+      "fails": 384,
+      "first": [
+        21
+      ],
+      "iota": "comp_transp",
+      "label": "rand_neq_46",
+      "ok": false,
+      "pred": true
+    },
+    {
+      "f1": 0,
+      "f2": 1,
+      "fails": 384,
+      "first": [
+        21
+      ],
+      "iota": "comp_dir",
+      "label": "rand_neq_48",
+      "ok": false,
+      "pred": true
+    },
+    {
+      "f1": 0,
+      "f2": 1,
+      "fails": 384,
+      "first": [
+        21
+      ],
+      "iota": "comp_transp",
+      "label": "rand_neq_48",
+      "ok": false,
+      "pred": true
+    },
+    {
+      "f1": 2,
+      "f2": 0,
+      "fails": 384,
+      "first": [
+        21
+      ],
+      "iota": "comp_dir",
+      "label": "rand_neq_52",
+      "ok": false,
+      "pred": true
+    },
+    {
+      "f1": 2,
+      "f2": 0,
+      "fails": 384,
+      "first": [
+        21
+      ],
+      "iota": "comp_transp",
+      "label": "rand_neq_52",
+      "ok": false,
+      "pred": true
+    },
+    {
+      "f1": 2,
+      "f2": 0,
+      "fails": 384,
+      "first": [
+        21
+      ],
+      "iota": "comp_dir",
+      "label": "rand_neq_53",
+      "ok": false,
+      "pred": true
+    },
+    {
+      "f1": 2,
+      "f2": 0,
+      "fails": 384,
+      "first": [
+        21
+      ],
+      "iota": "comp_transp",
+      "label": "rand_neq_53",
+      "ok": false,
+      "pred": true
+    },
+    {
+      "f1": 0,
+      "f2": 3,
+      "fails": 384,
+      "first": [
+        21
+      ],
+      "iota": "comp_dir",
+      "label": "rand_neq_54",
+      "ok": false,
+      "pred": true
+    },
+    {
+      "f1": 0,
+      "f2": 3,
+      "fails": 384,
+      "first": [
+        21
+      ],
+      "iota": "comp_transp",
+      "label": "rand_neq_54",
+      "ok": false,
+      "pred": true
+    },
+    {
+      "f1": 1,
+      "f2": 0,
+      "fails": 384,
+      "first": [
+        21
+      ],
+      "iota": "comp_dir",
+      "label": "rand_neq_55",
+      "ok": false,
+      "pred": true
+    },
+    {
+      "f1": 1,
+      "f2": 0,
+      "fails": 384,
+      "first": [
+        21
+      ],
+      "iota": "comp_transp",
+      "label": "rand_neq_55",
+      "ok": false,
+      "pred": true
+    },
+    {
+      "f1": 1,
+      "f2": 0,
+      "fails": 384,
+      "first": [
+        21
+      ],
+      "iota": "comp_dir",
+      "label": "rand_neq_59",
+      "ok": false,
+      "pred": true
+    },
+    {
+      "f1": 1,
+      "f2": 0,
+      "fails": 384,
+      "first": [
+        21
+      ],
+      "iota": "comp_transp",
+      "label": "rand_neq_59",
+      "ok": false,
+      "pred": true
+    }
+  ],
+  "C": [
+    {
+      "fails": 1,
+      "first": [
+        4,
+        0
+      ],
+      "kind": "comp_parcial",
+      "ok": true,
+      "smask": null
+    },
+    {
+      "fails": 1,
+      "first": [
+        3,
+        0
+      ],
+      "kind": "flip_inc0",
+      "ok": true,
+      "smask": null
+    },
+    {
+      "fails": 0,
+      "first": null,
+      "kind": "subset",
+      "ok": false,
+      "smask": 1
+    },
+    {
+      "fails": 0,
+      "first": null,
+      "kind": "subset",
+      "ok": false,
+      "smask": 2
+    },
+    {
+      "fails": 1,
+      "first": [
+        5,
+        0
+      ],
+      "kind": "subset",
+      "ok": true,
+      "smask": 3
+    },
+    {
+      "fails": 0,
+      "first": null,
+      "kind": "subset",
+      "ok": false,
+      "smask": 4
+    },
+    {
+      "fails": 1,
+      "first": [
+        5,
+        0
+      ],
+      "kind": "subset",
+      "ok": true,
+      "smask": 5
+    },
+    {
+      "fails": 1,
+      "first": [
+        5,
+        0
+      ],
+      "kind": "subset",
+      "ok": true,
+      "smask": 6
+    },
+    {
+      "fails": 1,
+      "first": [
+        5,
+        0
+      ],
+      "kind": "subset",
+      "ok": true,
+      "smask": 7
+    },
+    {
+      "fails": 0,
+      "first": null,
+      "kind": "subset",
+      "ok": false,
+      "smask": 8
+    },
+    {
+      "fails": 1,
+      "first": [
+        5,
+        0
+      ],
+      "kind": "subset",
+      "ok": true,
+      "smask": 9
+    },
+    {
+      "fails": 1,
+      "first": [
+        5,
+        0
+      ],
+      "kind": "subset",
+      "ok": true,
+      "smask": 10
+    },
+    {
+      "fails": 1,
+      "first": [
+        5,
+        0
+      ],
+      "kind": "subset",
+      "ok": true,
+      "smask": 11
+    },
+    {
+      "fails": 1,
+      "first": [
+        5,
+        0
+      ],
+      "kind": "subset",
+      "ok": true,
+      "smask": 12
+    },
+    {
+      "fails": 1,
+      "first": [
+        5,
+        0
+      ],
+      "kind": "subset",
+      "ok": true,
+      "smask": 13
+    },
+    {
+      "fails": 1,
+      "first": [
+        5,
+        0
+      ],
+      "kind": "subset",
+      "ok": true,
+      "smask": 14
+    },
+    {
+      "fails": 1,
+      "first": [
+        5,
+        0
+      ],
+      "kind": "subset",
+      "ok": true,
+      "smask": 15
+    },
+    {
+      "fails": 0,
+      "first": null,
+      "kind": "subset",
+      "ok": false,
+      "smask": 16
+    },
+    {
+      "fails": 1,
+      "first": [
+        5,
+        0
+      ],
+      "kind": "subset",
+      "ok": true,
+      "smask": 17
+    },
+    {
+      "fails": 1,
+      "first": [
+        5,
+        0
+      ],
+      "kind": "subset",
+      "ok": true,
+      "smask": 18
+    },
+    {
+      "fails": 1,
+      "first": [
+        5,
+        0
+      ],
+      "kind": "subset",
+      "ok": true,
+      "smask": 19
+    },
+    {
+      "fails": 1,
+      "first": [
+        5,
+        0
+      ],
+      "kind": "subset",
+      "ok": true,
+      "smask": 20
+    },
+    {
+      "fails": 1,
+      "first": [
+        5,
+        0
+      ],
+      "kind": "subset",
+      "ok": true,
+      "smask": 21
+    },
+    {
+      "fails": 1,
+      "first": [
+        5,
+        0
+      ],
+      "kind": "subset",
+      "ok": true,
+      "smask": 22
+    },
+    {
+      "fails": 1,
+      "first": [
+        5,
+        0
+      ],
+      "kind": "subset",
+      "ok": true,
+      "smask": 23
+    },
+    {
+      "fails": 1,
+      "first": [
+        5,
+        0
+      ],
+      "kind": "subset",
+      "ok": true,
+      "smask": 24
+    },
+    {
+      "fails": 1,
+      "first": [
+        5,
+        0
+      ],
+      "kind": "subset",
+      "ok": true,
+      "smask": 25
+    },
+    {
+      "fails": 1,
+      "first": [
+        5,
+        0
+      ],
+      "kind": "subset",
+      "ok": true,
+      "smask": 26
+    },
+    {
+      "fails": 1,
+      "first": [
+        5,
+        0
+      ],
+      "kind": "subset",
+      "ok": true,
+      "smask": 27
+    },
+    {
+      "fails": 1,
+      "first": [
+        5,
+        0
+      ],
+      "kind": "subset",
+      "ok": true,
+      "smask": 28
+    },
+    {
+      "fails": 1,
+      "first": [
+        5,
+        0
+      ],
+      "kind": "subset",
+      "ok": true,
+      "smask": 29
+    },
+    {
+      "fails": 1,
+      "first": [
+        5,
+        0
+      ],
+      "kind": "subset",
+      "ok": true,
+      "smask": 30
+    }
+  ],
+  "C_summary": {
+    "total": 32,
+    "witness": 27
+  },
+  "C_survivors": [
+    {
+      "fails": 0,
+      "first": null,
+      "kind": "subset",
+      "ok": false,
+      "smask": 1
+    },
+    {
+      "fails": 0,
+      "first": null,
+      "kind": "subset",
+      "ok": false,
+      "smask": 2
+    },
+    {
+      "fails": 0,
+      "first": null,
+      "kind": "subset",
+      "ok": false,
+      "smask": 4
+    },
+    {
+      "fails": 0,
+      "first": null,
+      "kind": "subset",
+      "ok": false,
+      "smask": 8
+    },
+    {
+      "fails": 0,
+      "first": null,
+      "kind": "subset",
+      "ok": false,
+      "smask": 16
+    }
+  ],
+  "hash": "e37ca747ad68ec2fc3ade91539707c72f4858df1604a81b41f31c4ed2c4944c7",
+  "nA": 145,
+  "nB": 580,
+  "nC": 32,
+  "sanity": {
+    "api_transp": "local",
+    "esperado_simetrico": "trivial",
+    "status": "ok"
+  },
+  "spec_sha256": "54ad76d689743e4cf89c63c49d9d76af9f1119ef2203d209249d3495df95dc02",
+  "wall_s": 73.398
+}
